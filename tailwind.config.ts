@@ -17,6 +17,10 @@ const config: Config = {
       colors: {
         brand: {
           lime: "#D9F043",
+          dark: "#2D2D2D",
+          "dark-light": "#3D3D3D",
+          "dark-lighter": "#454545",
+          gray: "#F5F5F5",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

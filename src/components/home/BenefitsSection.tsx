@@ -23,7 +23,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-[#2D2D2D]">
+    <section className="py-16 sm:py-20 lg:py-24 bg-brand-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 mb-12 lg:mb-16">
@@ -54,7 +54,7 @@ const BenefitsSection = () => {
               return (
                 <div
                   key={index}
-                  className="bg-[#3D3D3D] rounded-2xl p-8 lg:p-10 hover:bg-[#454545] transition-colors"
+                  className="bg-brand-dark-light rounded-2xl p-8 lg:p-10 hover:bg-brand-dark-lighter transition-colors"
                 >
                   <div className="w-14 h-14 sm:w-16 sm:h-16 bg-brand-lime rounded-full flex items-center justify-center mb-6">
                     <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-gray-900" />

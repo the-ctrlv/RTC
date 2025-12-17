@@ -5,73 +5,95 @@ const Projects = () => {
     {
       title: "Cardero",
       location: "1500 Cardero St, Vancouver, BC",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
       tags: ["Rope Access Building", "Glazed Application"],
     },
     {
       title: "Jim Pattison Toyota",
       location: "Jim Pattison Toyota Downtown, Vancouver, BC",
-      image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
       tags: ["Rope Access Building"],
     },
     {
       title: "400 West Georgia",
       location: "400 West Georgia, Vancouver, BC",
-      image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
       tags: ["Glazed Replacement", "Rope Access Building"],
     },
     {
       title: "Keltic Place",
       location: "1889 Alberni St, Vancouver, BC",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
       tags: ["Concrete Replacement", "Glazed Application"],
     },
     {
       title: "Park Towers",
       location: "Minoru Boulevard, Richmond, BC",
-      image: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=800",
-      tags: ["Water Damage Remediation", "Concrete Repairs", "Painting", "Membrane Replacement"],
+      image:
+        "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=800",
+      tags: [
+        "Water Damage Remediation",
+        "Concrete Repairs",
+        "Painting",
+        "Membrane Replacement",
+      ],
     },
     {
       title: "Business Center, Langley",
       location: "Langley Way, BC, Langley, BC",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
-      tags: ["Rope Ingress/Egress/Access", "Parkade Coating Repair", "Facade Replacement", "Fire Tank Installation"],
+      image:
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      tags: [
+        "Rope Ingress/Egress/Access",
+        "Parkade Coating Repair",
+        "Facade Replacement",
+        "Fire Tank Installation",
+      ],
     },
     {
       title: "Bayshore Gardens",
       location: "1750 Bayshore Drive, Vancouver, BC",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800",
       tags: ["Rope Access High-Rise Inspection"],
     },
     {
       title: "401 W Georgia Street",
       location: "401 W Georgia St, Vancouver, BC",
-      image: "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?q=80&w=800",
       tags: ["Rope Access Deep Clean, High-Rise Facade"],
     },
     {
       title: "The Grande",
       location: "The Grande, Coal Harbour, North Matheson Tkwy, Vancouver, BC",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
       tags: ["Rope Access Inspection", "Window Application"],
     },
     {
       title: "River Green",
       location: "River Green, Richmond, BC, 5077 Boundary Way",
-      image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800",
       tags: ["Glass Replacement", "Window Application"],
     },
     {
       title: "Four Seasons Resort",
       location: "Four Seasons Resort, Whistler, BC, 4591 Blackcomb Way",
-      image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800",
       tags: ["High Peak Gutter Instalation"],
     },
     {
       title: "Soleil",
       location: "5455 11th Street, Delta, BC",
-      image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=800",
       tags: ["Rope Access Membrane Application"],
     },
   ];
@@ -79,7 +101,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[#2D2D2D] text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
+      <section className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
             Our Projects

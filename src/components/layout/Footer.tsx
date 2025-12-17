@@ -29,7 +29,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#2D2D2D] text-white">
+    <footer className="bg-brand-dark text-white">
       <div className="container mx-auto px-7 sm:px-6 py-10 sm:py-12 lg:py-16">
         {/* Mobile/Tablet Layout - Single Column */}
         <div className="lg:hidden space-y-8">

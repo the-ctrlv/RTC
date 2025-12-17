@@ -126,7 +126,7 @@ const AboutUs = () => {
       </section>
 
       {/* Principles Section - Dark */}
-      <section className="py-16 lg:py-24 bg-[#2D2D2D]">
+      <section className="py-16 lg:py-24 bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-brand-lime font-bold mb-3 uppercase text-sm tracking-wider">
@@ -140,9 +140,12 @@ const AboutUs = () => {
 
             <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
               {principles.map((principle, index) => (
-                <div key={index} className="bg-[#3D3D3D] rounded-2xl p-8">
+                <div
+                  key={index}
+                  className="bg-brand-dark-light rounded-2xl p-8"
+                >
                   <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-6">
-                    <div className="w-6 h-6 rounded-full bg-[#2D2D2D]"></div>
+                    <div className="w-6 h-6 rounded-full bg-brand-dark"></div>
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4">
                     {principle.title}
@@ -213,7 +216,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Work Section - Dark */}
-      <section className="py-16 lg:py-24 bg-[#2D2D2D] relative">
+      <section className="py-16 lg:py-24 bg-brand-dark relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h3 className="text-brand-lime font-bold mb-3 uppercase text-sm tracking-wider text-center">

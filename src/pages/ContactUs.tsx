@@ -22,9 +22,9 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#2D2D2D]">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[#2D2D2D] text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
+      <section className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
             Contact Us

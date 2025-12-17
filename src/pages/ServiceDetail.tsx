@@ -249,7 +249,7 @@ const ServiceDetail = () => {
       </section>
 
       {/* Key Services Section - Dark */}
-      <section className="py-16 lg:py-24 bg-[#2D2D2D]">
+      <section className="py-16 lg:py-24 bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-12 lg:mb-16 text-center">
@@ -259,7 +259,7 @@ const ServiceDetail = () => {
               {service.keyServices.services.map((item: any, index: number) => (
                 <div
                   key={index}
-                  className="bg-[#3D3D3D] rounded-2xl p-6 lg:p-8"
+                  className="bg-brand-dark-light rounded-2xl p-6 lg:p-8"
                 >
                   <h3 className="text-xl font-bold text-white mb-4">
                     {item.title}
@@ -348,7 +348,7 @@ const ServiceDetail = () => {
             <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:gap-20">
               {/* Empty div for desktop layout to push questions to right */}
               <div className="hidden lg:block"></div>
-              
+
               {/* Questions */}
               <div className="space-y-4">
                 {service.faq.questions.map((item: any, index: number) => (

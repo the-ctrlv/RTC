@@ -57,7 +57,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-[#2D2D2D]">
+    <section className="py-16 sm:py-20 lg:py-24 bg-brand-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 lg:mb-16">
           <h3 className="text-brand-lime font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">

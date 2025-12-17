@@ -22,12 +22,12 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-[#F5F5F5]">
+    <section className="py-16 sm:py-20 lg:py-24 bg-brand-gray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile Layout - Single Column */}
         <div className="lg:hidden space-y-8">
           {/* Contact Information */}
-          <div className="bg-[#F5F5F5] py-6">
+          <div className="bg-brand-gray py-6">
             <h3 className="text-brand-lime font-bold mb-2 uppercase text-xs tracking-wider">
               CONTACT US
             </h3>
