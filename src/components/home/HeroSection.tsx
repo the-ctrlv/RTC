@@ -19,18 +19,23 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen bg-cover lg:bg-center bg-no-repeat bg-[url('/home-bg-mob.jpg')] lg:bg-[url('/home-bg.jpg')]">
+    <section className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-[url('/home-bg-mob.jpg')] lg:bg-[url('/home-bg.jpg')]">
+      {/* Overlay for better text readability on mobile */}
+      <div className="absolute inset-0 bg-black/30 lg:bg-black/20"></div>
+
       {/* Content */}
-      <div className="relative container justify-center lg:justify-start mx-auto px-4 sm:px-6 flex flex-col min-h-screen gap-6 sm:gap-10 pt-32 sm:pt-[20vh] pb-12">
+      <div className="relative container justify-center lg:justify-start mx-auto px-4 sm:px-6 flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-12">
         {/* Location Badge */}
         <div>
-          <div className="inline-flex items-center gap-2 border border-white rounded-full px-4 py-2.5 text-white backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
             <img
               src="/map_pin.svg"
               alt="Location"
               className="w-5 h-5 sm:w-6 sm:h-6"
             />
-            <span className="text-xs sm:text-sm">Based in Vancouver, BC</span>
+            <span className="text-xs sm:text-sm font-medium">
+              Based in Vancouver, BC
+            </span>
           </div>
         </div>
 
@@ -42,11 +47,11 @@ const HeroSection = () => {
         </h1>
 
         {/* Contact Button - Mobile Only */}
-        <div className="lg:hidden mt-4">
+        <div className="lg:hidden mt-2">
           <Link to="/contact">
             <Button
               size="lg"
-              className="w-full sm:w-auto bg-brand-lime hover:bg-brand-lime/90 text-black font-semibold px-8 py-6 text-base max-w-[250px]"
+              className="w-full sm:w-auto bg-brand-lime hover:bg-brand-lime/90 text-gray-900 font-semibold px-10 py-6 text-base rounded-full"
             >
               Contact Us
             </Button>

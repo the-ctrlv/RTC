@@ -29,67 +29,199 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-[#2D2D2D] text-white">
+      <div className="container mx-auto px-7 sm:px-6 py-10 sm:py-12 lg:py-16">
+        {/* Mobile/Tablet Layout - Single Column */}
+        <div className="lg:hidden space-y-8">
           {/* Logo and Contact Info */}
           <div>
-            <Link to="/" className="flex items-center mb-8">
-              <div className="text-white">
-                <div className="text-3xl font-bold tracking-tight">RTC</div>
-                <div className="text-xs uppercase tracking-wider text-gray-400">
-                  Rope Tech Group
-                </div>
-              </div>
+            <Link to="/" className="inline-block mb-6">
+              <img src="/logo.svg" alt="RTC Logo" className="w-[138px]" />
             </Link>
 
-            <div className="space-y-4">
+            <div className="space-y-5">
               <div>
-                <h4 className="text-lime-400 font-semibold mb-2 uppercase text-sm">
+                <h4 className="text-brand-lime font-semibold mb-2 uppercase text-xs tracking-wide">
                   EMAIL
                 </h4>
                 <a
                   href="mailto:info.ropetechgroup@gmail.com"
-                  className="text-gray-300 hover:text-lime-400 transition-colors"
+                  className="text-white hover:text-brand-lime transition-colors text-sm block"
                 >
                   info.ropetechgroup@gmail.com
                 </a>
               </div>
 
               <div>
-                <h4 className="text-lime-400 font-semibold mb-2 uppercase text-sm">
+                <h4 className="text-brand-lime font-semibold mb-2 uppercase text-xs tracking-wide">
                   PHONE
                 </h4>
-                <div className="text-gray-300">
+                <div className="text-white text-sm">
                   <a
                     href="tel:+17789807798"
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-brand-lime transition-colors"
                   >
                     1(778)980-7798
                   </a>
                   ,{" "}
                   <a
                     href="tel:+16046574744"
-                    className="hover:text-lime-400 transition-colors"
+                    className="hover:text-brand-lime transition-colors"
                   >
                     1(604)657-4744
                   </a>
                 </div>
               </div>
+
+              {/* <div>
+                <h4 className="text-brand-lime font-semibold mb-2 uppercase text-xs tracking-wide">
+                  INSTAGRAM
+                </h4>
+                <a
+                  href="https://instagram.com/ropetechgroup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-brand-lime transition-colors text-sm"
+                >
+                  ropetechgroup
+                </a>
+              </div> */}
+            </div>
+          </div>
+
+          {/* Links Sections - 2 Columns on Mobile */}
+          <div className="grid grid-cols-2 gap-8 pt-4">
+            {/* Quick Links & Services */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-brand-lime font-bold mb-4 uppercase text-xs tracking-wide">
+                  QUICK LINKS
+                </h3>
+                <ul className="space-y-2.5">
+                  {quickLinks.map((link) => (
+                    <li key={link.path}>
+                      <Link
+                        to={link.path}
+                        className="text-white hover:text-brand-lime transition-colors text-sm"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-brand-lime font-bold mb-4 uppercase text-xs tracking-wide">
+                  SERVICES
+                </h3>
+                <ul className="space-y-2.5">
+                  {services.map((link) => (
+                    <li key={link.path}>
+                      <Link
+                        to={link.path}
+                        className="text-white hover:text-brand-lime transition-colors text-sm"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Industries - Full Width */}
+          <div>
+            <h3 className="text-brand-lime font-bold mb-4 uppercase text-xs tracking-wide">
+              INDUSTRIES
+            </h3>
+            <ul className="space-y-2.5">
+              {industries.map((link) => (
+                <li key={link.path}>
+                  <Link
+                    to={link.path}
+                    className="text-white hover:text-brand-lime transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Desktop Layout - 4 Columns */}
+        <div className="hidden lg:grid grid-cols-4 gap-12">
+          {/* Logo and Contact Info */}
+          <div>
+            <Link to="/" className="inline-block mb-8">
+              <img src="/logo.svg" alt="RTC Logo" className="w-[87px]" />
+            </Link>
+
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-brand-lime font-semibold mb-2 uppercase text-sm tracking-wide">
+                  EMAIL
+                </h4>
+                <a
+                  href="mailto:info.ropetechgroup@gmail.com"
+                  className="text-white hover:text-brand-lime transition-colors text-sm"
+                >
+                  info.ropetechgroup@gmail.com
+                </a>
+              </div>
+
+              <div>
+                <h4 className="text-brand-lime font-semibold mb-2 uppercase text-sm tracking-wide">
+                  PHONE
+                </h4>
+                <div className="text-white text-sm">
+                  <a
+                    href="tel:+17789807798"
+                    className="hover:text-brand-lime transition-colors"
+                  >
+                    1(778)980-7798
+                  </a>
+                  ,{" "}
+                  <a
+                    href="tel:+16046574744"
+                    className="hover:text-brand-lime transition-colors"
+                  >
+                    1(604)657-4744
+                  </a>
+                </div>
+              </div>
+
+              {/* <div>
+                <h4 className="text-brand-lime font-semibold mb-2 uppercase text-sm tracking-wide">
+                  INSTAGRAM
+                </h4>
+                <a
+                  href="https://instagram.com/ropetechgroup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-brand-lime transition-colors text-sm"
+                >
+                  ropetechgroup
+                </a>
+              </div> */}
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lime-400 font-semibold mb-6 uppercase text-sm">
-              Quick Links
+            <h3 className="text-brand-lime font-bold mb-6 uppercase text-sm tracking-wide">
+              QUICK LINKS
             </h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-gray-300 hover:text-lime-400 transition-colors"
+                    className="text-white hover:text-brand-lime transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -100,15 +232,15 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lime-400 font-semibold mb-6 uppercase text-sm">
-              Services
+            <h3 className="text-brand-lime font-bold mb-6 uppercase text-sm tracking-wide">
+              SERVICES
             </h3>
             <ul className="space-y-3">
               {services.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-gray-300 hover:text-lime-400 transition-colors"
+                    className="text-white hover:text-brand-lime transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -119,15 +251,15 @@ const Footer = () => {
 
           {/* Industries */}
           <div>
-            <h3 className="text-lime-400 font-semibold mb-6 uppercase text-sm">
-              Industries
+            <h3 className="text-brand-lime font-bold mb-6 uppercase text-sm tracking-wide">
+              INDUSTRIES
             </h3>
             <ul className="space-y-3">
               {industries.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-gray-300 hover:text-lime-400 transition-colors"
+                    className="text-white hover:text-brand-lime transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -139,22 +271,22 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
-        <div className="container mx-auto px-6 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
+      <div className="border-t border-white/10">
+        <div className="container mx-auto px-4 sm:px-6 py-5 sm:py-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm">
+            <p className="text-gray-400 text-center sm:text-left">
               © {new Date().getFullYear()} All Rights Reserved Rope Tech Group
             </p>
-            <div className="flex gap-8">
+            <div className="flex gap-6 sm:gap-8">
               <Link
                 to="/terms"
-                className="text-gray-400 hover:text-lime-400 transition-colors text-sm underline"
+                className="text-gray-400 hover:text-brand-lime transition-colors underline"
               >
                 Terms of use
               </Link>
               <Link
                 to="/privacy"
-                className="text-gray-400 hover:text-lime-400 transition-colors text-sm underline"
+                className="text-gray-400 hover:text-brand-lime transition-colors underline"
               >
                 Privacy policy
               </Link>

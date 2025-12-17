@@ -1,86 +1,154 @@
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const Services = () => {
   const services = [
     {
-      title: "Web Development",
-      description: "Custom web applications built with modern technologies for optimal performance and user experience.",
-      icon: "💻",
-      features: ["Responsive Design", "Modern Frameworks", "API Integration", "Performance Optimization"]
+      title: "Industrial Services",
+      description:
+        "We provide safe, compliant, and efficient access and maintenance solutions for industrial facilities on infrastructure projects across British Columbia. Supporting petrochemical, power generation, manufacturing, and specialized industries with safe access and maintenance solutions that keep your operations running.",
+      image:
+        "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
+      link: "/services/industrial-services",
     },
     {
-      title: "Mobile Development",
-      description: "Native and cross-platform mobile applications for iOS and Android devices.",
-      icon: "📱",
-      features: ["iOS Development", "Android Development", "React Native", "Flutter"]
+      title: "Building Services",
+      description:
+        "We deliver comprehensive building envelope solutions focused on concrete, coatings, waterproofing, and structural maintenance for residential, commercial, and industrial properties. Supporting the safe operation and longevity of high-rise and complex structures throughout British Columbia.",
+      image:
+        "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
+      link: "/services/building-services",
     },
-    {
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and migration services to power your business.",
-      icon: "☁️",
-      features: ["AWS", "Azure", "Google Cloud", "Cloud Migration"]
-    },
-    {
-      title: "UI/UX Design",
-      description: "Beautiful and intuitive user interfaces that enhance user engagement and satisfaction.",
-      icon: "🎨",
-      features: ["User Research", "Wireframing", "Prototyping", "Visual Design"]
-    },
-    {
-      title: "Consulting",
-      description: "Expert technology consulting to help you make informed decisions and achieve your goals.",
-      icon: "🎯",
-      features: ["Technology Strategy", "Digital Transformation", "Process Optimization", "Technical Audits"]
-    },
-    {
-      title: "Support & Maintenance",
-      description: "Ongoing support and maintenance to keep your systems running smoothly.",
-      icon: "🛠️",
-      features: ["24/7 Support", "Bug Fixes", "Updates", "Monitoring"]
-    }
   ];
 
   return (
     <div className="min-h-screen">
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Our Services</h1>
-          <p className="text-xl text-blue-100">Comprehensive solutions tailored to your needs</p>
+      {/* Hero Section */}
+      <section className="bg-[#2D2D2D] text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+            Services
+          </h1>
+          <img
+            src="/decoration_line.svg"
+            alt="Divider"
+            className="h-[14px] w-auto"
+          />
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Services Cards Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Mobile Layout */}
+          <div className="lg:hidden space-y-8 max-w-md mx-auto">
             {services.map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-gray-700">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+              <div key={index} className="bg-white">
+                <div className="relative overflow-hidden rounded-3xl aspect-[4/5] mb-6">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  {service.title}
+                </h2>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  {service.description}
+                </p>
+                <Link
+                  to={service.link}
+                  className="inline-flex items-center text-gray-900 font-semibold hover:text-brand-lime transition-colors"
+                >
+                  Learn more
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:block max-w-7xl mx-auto space-y-16">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className={`grid grid-cols-2 gap-12 items-center ${
+                  index % 2 === 1 ? "direction-rtl" : ""
+                }`}
+              >
+                {index % 2 === 0 ? (
+                  <>
+                    <div className="relative overflow-hidden rounded-3xl aspect-[4/5]">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                        {service.title}
+                      </h2>
+                      <p className="text-gray-700 text-lg leading-relaxed mb-8">
+                        {service.description}
+                      </p>
+                      <a
+                        href={service.link}
+                        className="inline-flex items-center text-gray-900 font-semibold text-lg hover:text-brand-lime transition-colors"
+                      >
+                        Learn more
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </a>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div>
+                      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                        {service.title}
+                      </h2>
+                      <p className="text-gray-700 text-lg leading-relaxed mb-8">
+                        {service.description}
+                      </p>
+                      <Link
+                        to={service.link}
+                        className="inline-flex items-center text-gray-900 font-semibold text-lg hover:text-brand-lime transition-colors"
+                      >
+                        Learn more
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Link>
+                    </div>
+                    <div className="relative overflow-hidden rounded-3xl aspect-[4/5]">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Need a Custom Solution?</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            We can create a tailored solution specifically for your business needs.
-          </p>
-          <a
-            href="/contact"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-          >
-            Get in Touch
-          </a>
+      {/* CTA Section */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-brand-lime rounded-3xl p-8 lg:p-12 flex items-center justify-between">
+              <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">
+                Ready to Discuss
+                <br className="hidden sm:block" />
+                Your Project?
+              </h2>
+              <button className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6">
+                <ArrowRight className="text-white w-6 h-6" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>

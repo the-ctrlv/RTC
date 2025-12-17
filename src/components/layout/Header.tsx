@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Header = () => {
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  // const isHomePage = location.pathname === "/";
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
@@ -26,11 +26,7 @@ const Header = () => {
 
   return (
     <header
-      className={`backdrop-blur-lg ${
-        isHomePage
-          ? "absolute top-0 left-0 right-0 z-50 bg-transparent"
-          : "sticky top-0 z-50 bg-gray-900 shadow-lg"
-      }`}
+      className={`backdrop-blur-lg absolute top-0 left-0 right-0 z-50 bg-transparent`}
     >
       <nav className="container mx-auto py-3.5 lg:py-6 px-6">
         <div className="flex items-center justify-between">
@@ -80,7 +76,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-0 top-[88px] bg-gray-900 z-40">
+          <div className="lg:hidden fixed inset-0 top-20 bg-gray-900 z-40 h-[calc(100vh-80px)]">
             <div className="flex flex-col h-full">
               <ul className="flex flex-col p-6 space-y-6">
                 {navItems.map((item) => (

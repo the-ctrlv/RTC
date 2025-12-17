@@ -1,140 +1,165 @@
+import { MapPin, ArrowRight } from "lucide-react";
+
 const Projects = () => {
   const projects = [
     {
-      title: "Enterprise Resource Planning System",
-      client: "Global Manufacturing Corp",
-      industry: "Manufacturing",
-      description: "Comprehensive ERP solution integrating inventory, production, and supply chain management for a Fortune 500 company.",
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
-      results: ["40% increase in operational efficiency", "Real-time inventory tracking", "Reduced production downtime by 30%"],
-      image: "🏭"
+      title: "Cardero",
+      location: "1500 Cardero St, Vancouver, BC",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      tags: ["Rope Access Building", "Glazed Application"],
     },
     {
-      title: "Telemedicine Platform",
-      client: "Healthcare Partners Inc",
-      industry: "Healthcare",
-      description: "HIPAA-compliant telemedicine platform enabling virtual consultations, prescription management, and patient records.",
-      technologies: ["React Native", "Python", "MongoDB", "WebRTC"],
-      results: ["200,000+ virtual consultations", "98% patient satisfaction", "Expanded healthcare access to rural areas"],
-      image: "🏥"
+      title: "Jim Pattison Toyota",
+      location: "Jim Pattison Toyota Downtown, Vancouver, BC",
+      image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
+      tags: ["Rope Access Building"],
     },
     {
-      title: "E-Commerce Marketplace",
-      client: "Retail Innovations Ltd",
-      industry: "E-Commerce",
-      description: "Multi-vendor marketplace with advanced search, real-time inventory, and integrated payment processing.",
-      technologies: ["Next.js", "Express", "Redis", "Stripe"],
-      results: ["$50M+ in annual transactions", "5,000+ active vendors", "Mobile-first responsive design"],
-      image: "🛒"
+      title: "400 West Georgia",
+      location: "400 West Georgia, Vancouver, BC",
+      image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
+      tags: ["Glazed Replacement", "Rope Access Building"],
     },
     {
-      title: "Financial Trading Platform",
-      client: "FinTech Solutions",
-      industry: "Finance",
-      description: "High-frequency trading platform with real-time market data, portfolio management, and risk analytics.",
-      technologies: ["Angular", "Java", "Kafka", "Kubernetes"],
-      results: ["Sub-millisecond latency", "99.99% uptime", "Processing 100,000+ trades daily"],
-      image: "📈"
+      title: "Keltic Place",
+      location: "1889 Alberni St, Vancouver, BC",
+      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
+      tags: ["Concrete Replacement", "Glazed Application"],
     },
     {
-      title: "Learning Management System",
-      client: "EduTech University",
-      industry: "Education",
-      description: "Comprehensive LMS with virtual classrooms, assignments, grading, and student analytics.",
-      technologies: ["Vue.js", "Django", "MySQL", "Zoom API"],
-      results: ["50,000+ students enrolled", "Interactive virtual classrooms", "Automated grading system"],
-      image: "🎓"
+      title: "Park Towers",
+      location: "Minoru Boulevard, Richmond, BC",
+      image: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=800",
+      tags: ["Water Damage Remediation", "Concrete Repairs", "Painting", "Membrane Replacement"],
     },
     {
-      title: "Smart Logistics Platform",
-      client: "TransGlobal Shipping",
-      industry: "Logistics",
-      description: "IoT-enabled logistics platform with route optimization, fleet management, and real-time tracking.",
-      technologies: ["React", "Go", "InfluxDB", "Google Maps API"],
-      results: ["25% reduction in fuel costs", "Real-time shipment tracking", "Optimized delivery routes"],
-      image: "🚚"
-    }
+      title: "Business Center, Langley",
+      location: "Langley Way, BC, Langley, BC",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      tags: ["Rope Ingress/Egress/Access", "Parkade Coating Repair", "Facade Replacement", "Fire Tank Installation"],
+    },
+    {
+      title: "Bayshore Gardens",
+      location: "1750 Bayshore Drive, Vancouver, BC",
+      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800",
+      tags: ["Rope Access High-Rise Inspection"],
+    },
+    {
+      title: "401 W Georgia Street",
+      location: "401 W Georgia St, Vancouver, BC",
+      image: "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?q=80&w=800",
+      tags: ["Rope Access Deep Clean, High-Rise Facade"],
+    },
+    {
+      title: "The Grande",
+      location: "The Grande, Coal Harbour, North Matheson Tkwy, Vancouver, BC",
+      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
+      tags: ["Rope Access Inspection", "Window Application"],
+    },
+    {
+      title: "River Green",
+      location: "River Green, Richmond, BC, 5077 Boundary Way",
+      image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800",
+      tags: ["Glass Replacement", "Window Application"],
+    },
+    {
+      title: "Four Seasons Resort",
+      location: "Four Seasons Resort, Whistler, BC, 4591 Blackcomb Way",
+      image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800",
+      tags: ["High Peak Gutter Instalation"],
+    },
+    {
+      title: "Soleil",
+      location: "5455 11th Street, Delta, BC",
+      image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=800",
+      tags: ["Rope Access Membrane Application"],
+    },
   ];
 
   return (
     <div className="min-h-screen">
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Our Projects</h1>
-          <p className="text-xl text-blue-100">Successful solutions that drive real business results</p>
+      {/* Hero Section */}
+      <section className="bg-[#2D2D2D] text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+            Our Projects
+          </h1>
+          <img
+            src="/decoration_line.svg"
+            alt="Divider"
+            className="h-[14px] w-auto"
+          />
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
-            <p className="text-lg text-gray-700">
-              Explore some of our recent projects and the impact we've made for our clients
-              across various industries.
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="md:flex">
-                  <div className="md:w-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center p-8">
-                    <div className="text-8xl">{project.image}</div>
+      {/* Projects Grid Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
+              {projects.map((project, index) => (
+                <div
+                  key={index}
+                  className="group cursor-pointer bg-white rounded-3xl overflow-hidden hover:shadow-xl transition-shadow"
+                >
+                  {/* Image */}
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="flex items-start gap-2 bg-black/60 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
+                        <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <div className="font-bold">{project.title}</div>
+                          <div className="text-xs opacity-90">
+                            {project.location}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-6 flex-1">
-                    <div className="flex items-start justify-between mb-2">
-                      <div>
-                        <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
-                        <p className="text-sm text-gray-600">
-                          <span className="font-semibold">{project.client}</span> • {project.industry}
-                        </p>
-                      </div>
-                    </div>
-                    <p className="text-gray-700 mb-4">{project.description}</p>
 
-                    <div className="mb-4">
-                      <p className="text-sm font-semibold text-gray-800 mb-2">Technologies:</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech, idx) => (
-                          <span key={idx} className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div>
-                      <p className="text-sm font-semibold text-gray-800 mb-2">Key Results:</p>
-                      <ul className="space-y-1">
-                        {project.results.map((result, idx) => (
-                          <li key={idx} className="flex items-start text-sm text-gray-700">
-                            <span className="text-green-600 mr-2 mt-0.5">✓</span>
-                            {result}
-                          </li>
-                        ))}
-                      </ul>
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">
+                      {project.title}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, idx) => (
+                        <span
+                          key={idx}
+                          className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Let's discuss how we can help bring your vision to life.
-          </p>
-          <a
-            href="/contact"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-          >
-            Get Started
-          </a>
+      {/* CTA Section */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-brand-lime rounded-3xl p-8 lg:p-12 flex items-center justify-between">
+              <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">
+                Ready to Discuss
+                <br className="hidden sm:block" />
+                Your Project?
+              </h2>
+              <button className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6">
+                <ArrowRight className="text-white w-6 h-6" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
