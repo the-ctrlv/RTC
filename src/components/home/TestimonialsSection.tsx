@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 
 // Import Swiper styles
@@ -10,11 +9,12 @@ import "swiper/css/pagination";
 const testimonials = [
   {
     id: 1,
-    text: "Our expertise in working-at-heights and confined space access solutions, as well as our specialization in the Infrastructure, Industrial, and Energy sectors, allows us to provide innovative solutions tailored to our clients' specific needs. Our expertise in working-at-heights and confined space access solutions, as well as our specialization in the Infrastructure, Industrial, and Energy sectors, allows us to provide innovative solutions tailored to our clients' specific needs.",
+    text: "Working with Rope Tech Group has been exceptional. Their professionalism and expertise in rope access solutions made our project seamless and cost-effective.",
     author: "Salvatore Tirabassi",
     role: "CFO ProAnalytics",
     company: "BENZINGA",
-    avatar: "/api/placeholder/64/64",
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
   },
   {
     id: 2,
@@ -22,7 +22,8 @@ const testimonials = [
     author: "John Anderson",
     role: "Project Manager",
     company: "BUILDCO",
-    avatar: "/api/placeholder/64/64",
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
   },
   {
     id: 3,
@@ -30,7 +31,17 @@ const testimonials = [
     author: "Sarah Mitchell",
     role: "Operations Director",
     company: "SKYTECH",
-    avatar: "/api/placeholder/64/64",
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
+  },
+  {
+    id: 4,
+    text: "The team at RTC provided innovative solutions for our building maintenance needs. Highly recommend their services for any high-rise projects.",
+    author: "Sarah Mitchell",
+    role: "Operations Director",
+    company: "SKYTECH",
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
   },
 ];
 
@@ -41,46 +52,72 @@ const TestimonialsSection = () => {
     <section className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 sm:mb-12 lg:mb-16">
-          <h3 className="text-brand-lime font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">
+          <h3 className="text-brand-lime3 font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">
             TESTIMONIALS
           </h3>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-20">
             Hear From Our Clients
           </h2>
         </div>
+      </div>
 
-        <div className="relative max-w-6xl mx-auto">
-          <Swiper
-            modules={[Pagination]}
-            spaceBetween={0}
-            slidesPerView={1}
-            pagination={{
-              clickable: true,
-              bulletClass: "swiper-pagination-bullet !bg-gray-300",
-              bulletActiveClass: "swiper-pagination-bullet-active !bg-gray-900",
-            }}
-            onSwiper={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            className="testimonials-swiper pb-14"
-          >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <div className="bg-white border-2 border-gray-900 rounded-3xl py-8 px-6 sm:py-10 sm:px-8 lg:py-12 lg:px-10 relative">
-                  {/* Quote Icon */}
-                  <div className="text-6xl sm:text-7xl lg:text-8xl text-gray-900 font-serif leading-none mb-6 sm:mb-8">
-                    "
-                  </div>
+      <div className="relative w-full cursor-pointer user-select-none">
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={2.5}
+          centeredSlides
+          initialSlide={0}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          onSlideChange={(swiper) => {
+            // Add active class animation
+            const slides = swiper.slides;
+            slides.forEach((slide, index) => {
+              if (index === swiper.activeIndex) {
+                slide.style.transform = "scale(1)";
+                slide.style.opacity = "1";
+              } else {
+                slide.style.transform = "scale(0.65)";
+                slide.style.opacity = "0.5";
+              }
+            });
+          }}
+          onInit={(swiper) => {
+            // Initialize with active slide scaled
+            const slides = swiper.slides;
+            slides.forEach((slide, index) => {
+              if (index === swiper.activeIndex) {
+                slide.style.transform = "scale(1)";
+                slide.style.opacity = "1";
+                slide.style.transition =
+                  "transform 0.3s ease, opacity 0.5s ease";
+              } else {
+                slide.style.transform = "scale(0.85)";
+                slide.style.opacity = "0.5";
+                slide.style.transition =
+                  "transform 0.3s ease, opacity 0.5s ease";
+              }
+            });
+          }}
+          className="testimonials-swiper pb-14"
+        >
+          {testimonials.map((testimonial) => (
+            <SwiperSlide key={testimonial.id}>
+              <div className="relative">
+                {/* Quote Icon */}
+                <img src="/home/quotes.svg" className="w-[22px] mb-10 block" />
 
-                  {/* Testimonial Text */}
-                  <p className="text-gray-900 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 sm:mb-10 lg:mb-12">
-                    {testimonial.text}
-                  </p>
+                {/* Testimonial Text */}
+                <p className="text-gray-900 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 sm:mb-10 lg:mb-12">
+                  {testimonial.text}
+                </p>
 
-                  {/* Divider Line */}
-                  <div className="w-full h-px bg-gray-300 mb-6 sm:mb-8"></div>
+                {/* Divider Line */}
+                <div className="w-full h-px bg-black mb-6" />
 
-                  {/* Author Info */}
+                {/* Author Info */}
+                <div className="flex items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 rounded-full overflow-hidden flex-shrink-0">
                       <img
@@ -98,11 +135,20 @@ const TestimonialsSection = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* Company Logo */}
+                  <div className="flex-shrink-0">
+                    <img
+                      src={testimonial.sponsor}
+                      alt={testimonial.company}
+                      className="h-4.5 w-auto"
+                    />
+                  </div>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

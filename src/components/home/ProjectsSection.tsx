@@ -59,16 +59,24 @@ const ProjectsSection = () => {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-brand-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-12 lg:mb-16">
-          <h3 className="text-brand-lime font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">
+        <div>
+          <h3 className="text-brand-lime3 font-bold mb-4 uppercase text-sm tracking-wider">
             OUR WORK
           </h3>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Industrial Services
-          </h2>
-          <div className="flex items-center gap-3">
-            <div className="w-3 h-3 bg-brand-lime rounded-full flex-shrink-0"></div>
-            <div className="flex-1 h-px bg-brand-lime max-w-md"></div>
+          <div
+            className="flex items-center w-full gap-7 relative mb-[70px]
+          "
+          >
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-nowrap">
+              Latest Projects
+            </h2>
+            <div className="flex-grow relative">
+              <img
+                src="/home/decoration_line_wide.svg"
+                alt="Divider"
+                className="block flex-grow"
+              />
+            </div>
           </div>
         </div>
 
@@ -91,37 +99,39 @@ const ProjectsSection = () => {
           >
             {projects.map((project, index) => (
               <SwiperSlide key={index}>
-                <div className="group relative overflow-hidden rounded-3xl cursor-pointer bg-gray-800">
-                  <div className="relative h-96 overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-                  </div>
+                <div className="group relative overflow-hidden rounded-3xl cursor-pointer h-[500px]">
+                  {/* Image with overlay */}
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
 
-                  {/* Location Badge */}
-                  <div className="absolute top-6 left-6 bg-black/60 backdrop-blur-sm px-4 py-3 rounded-xl flex items-start gap-3 max-w-[calc(100%-3rem)]">
-                    <MapPin className="w-5 h-5 text-brand-lime flex-shrink-0 mt-0.5" />
-                    <div className="text-white">
-                      <div className="font-semibold text-base">
-                        {project.location}
-                      </div>
-                      <div className="text-gray-300 text-sm">
-                        {project.address}
+                  {/* Location Badge with background */}
+                  <div className="absolute top-0 left-0 right-0 backdrop-blue-lg pt-6 pb-16 px-6">
+                    <div className="flex items-start gap-2.5 text-white">
+                      <MapPin className="w-5 h-5 text-brand-lime flex-shrink-0 mt-0.5" />
+                      <div>
+                        <div className="font-semibold text-base leading-tight">
+                          {project.location}
+                        </div>
+                        <div className="text-gray-300 text-sm mt-0.5">
+                          {project.address}
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* Project Info */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-3xl font-bold mb-4">{project.title}</h3>
-                    <div className="flex flex-wrap gap-2.5">
+                  {/* Project Info - Bottom with dark background */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-brand-dark-light p-6">
+                    <h3 className="text-3xl font-bold text-white mb-4">
+                      {project.title}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
                       {project.services.map((service, idx) => (
                         <span
                           key={idx}
-                          className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm border border-white/20"
+                          className="px-4 py-2 bg-transparent rounded-full text-sm text-white border border-white/40"
                         >
                           {service}
                         </span>
@@ -135,42 +145,50 @@ const ProjectsSection = () => {
         </div>
 
         {/* Desktop Grid - visible on large screens */}
-        <div className="hidden lg:grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="hidden lg:grid lg:grid-cols-2 gap-3 mb-12">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-800"
+              className="group relative overflow-hidden rounded-3xl cursor-pointer aspect-square"
             >
-              <div className="relative h-80 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-              </div>
+              {/* Image with overlay */}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
 
-              {/* Location Badge */}
-              <div className="absolute top-6 left-6 bg-black/50 backdrop-blur-sm px-3 py-2 rounded-lg flex items-start gap-2 max-w-[calc(100%-3rem)]">
-                <MapPin className="w-4 h-4 text-brand-lime flex-shrink-0 mt-0.5" />
-                <div className="text-white text-sm">
-                  <div className="font-semibold">{project.location}</div>
-                  <div className="text-gray-300">{project.address}</div>
+              {/* Project Info - Bottom with dark background */}
+              <div className="absolute bottom-0 left-0 right-0">
+                <div className="flex items-center gap-2.5 text-white backdrop-blur-md py-5 px-10">
+                  <img
+                    src="/map_pin.svg"
+                    alt="Map Pin"
+                    className="w-6 h-auto text-brand-lime2"
+                  />
+                  <div>
+                    <div className="font-semibold text-base leading-tight">
+                      {project.location}
+                    </div>
+                    <div className="text-white text-sm mt-0.5">
+                      {project.address}
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              {/* Project Info */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
-                <div className="flex flex-wrap gap-2">
-                  {project.services.map((service, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-sm border border-white/20"
-                    >
-                      {service}
-                    </span>
-                  ))}
+                <div className="bg-brand-dark-light p-6 px-10">
+                  <h3 className="text-3xl font-bold text-white mb-4">
+                    {project.title}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {project.services.map((service, idx) => (
+                      <span
+                        key={idx}
+                        className="px-4 py-2 bg-transparent rounded-full text-sm text-white border border-white/40"
+                      >
+                        {service}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

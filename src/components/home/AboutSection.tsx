@@ -1,6 +1,6 @@
 const AboutSection = () => {
   const stats = [
-    { value: "95%", label: "SUCCESSFUL DELIVERED NATIONWIDE" },
+    { value: "95%", label: "SUCCESSFUL PROJECTS DELIVERED NATIONWIDE" },
     { value: "500+", label: "SUCCESSFUL PROJECTS ACROSS CANADA" },
   ];
 
@@ -20,7 +20,7 @@ const AboutSection = () => {
           {/* Image */}
           <div className="mb-8">
             <img
-              src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800"
+              src="/home/about_us.jpg"
               alt="Rope access worker"
               className="rounded-3xl w-full object-cover aspect-[3/4]"
             />
@@ -37,13 +37,13 @@ const AboutSection = () => {
           </p>
 
           {/* Stats */}
-          <div className="space-y-8">
+          <div className="grid grid-cols-2 gap-8 mb-6">
             {stats.map((stat, index) => (
               <div key={index}>
-                <div className="text-5xl font-bold text-brand-lime mb-2">
+                <div className="text-5xl font-bold text-brand-lime2 mb-2">
                   {stat.value}
                 </div>
-                <div className="text-xs text-gray-900 font-bold uppercase tracking-wide">
+                <div className="text-xs text-gray-900 font-bold uppercase tracking-wide max-w-[120px]">
                   {stat.label}
                 </div>
               </div>
@@ -52,19 +52,17 @@ const AboutSection = () => {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div className="hidden lg:flex gap-12 items-center max-w-7xl mx-auto">
           {/* Image */}
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800"
-              alt="Rope access worker"
-              className="rounded-3xl shadow-lg w-full object-cover aspect-square"
-            />
-          </div>
+          <img
+            src="/home/about_us.jpg"
+            alt="Rope access worker"
+            className="rounded-3xl w-full max-w-[510px] w-full"
+          />
 
           {/* Content */}
           <div>
-            <h3 className="text-brand-lime font-bold mb-3 uppercase text-sm tracking-wider">
+            <h3 className="text-brand-lime2 font-bold mb-3 uppercase text-sm tracking-wider">
               ABOUT US
             </h3>
             <h2 className="text-5xl font-bold mb-8 text-gray-900 leading-tight">
@@ -83,10 +81,10 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-8">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <div className="text-6xl font-bold text-brand-lime mb-3">
+                  <div className="text-6xl font-semibold text-brand-lime2 mb-3">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-gray-900 font-semibold uppercase tracking-wide">
+                  <div className="text-sm text-gray-900 font-bold uppercase tracking-wide max-w-[200px]">
                     {stat.label}
                   </div>
                 </div>

@@ -17,6 +17,8 @@ const config: Config = {
       colors: {
         brand: {
           lime: "#D9F043",
+          lime2: "#C3D534",
+          lime3: "#A5B716",
           dark: "#2D2D2D",
           "dark-light": "#3D3D3D",
           "dark-lighter": "#454545",
@@ -25,6 +27,8 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         lime: "#D9F043",
+        lime2: "#C3D534",
+        lime3: "#A5B716",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

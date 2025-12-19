@@ -2,7 +2,7 @@ import {
   HeroSection,
   AboutSection,
   BenefitsSection,
-  ServicesSection,
+  OurServicesSection,
   ProjectsSection,
   TestimonialsSection,
   CTASection,
@@ -15,10 +15,13 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <BenefitsSection />
-      <ServicesSection />
-      <ProjectsSection />
+      <OurServicesSection />
+
       <TestimonialsSection />
       <CTASection />
+      {/* <ServicesSection /> */}
+      <ProjectsSection />
+
       <ContactSection />
     </div>
   );
