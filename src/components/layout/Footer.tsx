@@ -57,17 +57,11 @@ const Footer = () => {
                   PHONE
                 </h4>
                 <div className="text-white text-sm">
-                  <a
-                    href="tel:+17789807798"
-                    className="hover:text-brand-lime transition-colors"
-                  >
+                  <a href="tel:+17789807798" className="hover:text-brand-lime transition-colors">
                     1(778)980-7798
                   </a>
                   ,{" "}
-                  <a
-                    href="tel:+16046574744"
-                    className="hover:text-brand-lime transition-colors"
-                  >
+                  <a href="tel:+16046574744" className="hover:text-brand-lime transition-colors">
                     1(604)657-4744
                   </a>
                 </div>
@@ -179,17 +173,11 @@ const Footer = () => {
                   PHONE
                 </h4>
                 <div className="text-white text-sm">
-                  <a
-                    href="tel:+17789807798"
-                    className="hover:text-brand-lime transition-colors"
-                  >
+                  <a href="tel:+17789807798" className="hover:text-brand-lime transition-colors">
                     1(778)980-7798
                   </a>
                   ,{" "}
-                  <a
-                    href="tel:+16046574744"
-                    className="hover:text-brand-lime transition-colors"
-                  >
+                  <a href="tel:+16046574744" className="hover:text-brand-lime transition-colors">
                     1(604)657-4744
                   </a>
                 </div>

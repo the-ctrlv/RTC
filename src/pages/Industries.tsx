@@ -52,7 +52,7 @@ const Industries = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-blue-600 text-white py-16">
+      <section className="bg-blue-600 text-white py-16 h-full">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Industries We Serve</h1>
           <p className="text-xl text-blue-100">Specialized solutions for diverse sectors</p>

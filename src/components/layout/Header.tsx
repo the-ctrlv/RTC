@@ -1,11 +1,29 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const navItems = [
     { path: "/about", label: "About Us" },
@@ -25,11 +43,14 @@ const Header = () => {
 
   return (
     <header
-      className={`backdrop-blur-lg absolute top-0 left-0 right-0 z-50 bg-transparent`}
+      className={`
+        top-0 left-0 right-0 z-50 fixed transition-all
+        ${scrolled ? "bg-[#343434] backdrop-blur-0" : "backdrop-blur-lg bg-transparent"}
+      `}
     >
       <nav className="container mx-auto py-3.5 lg:py-6 px-6">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
+        <div className="relative flex items-center justify-between">
+          <Link to="/" className="flex items-center z-[1000]" onClick={closeMobileMenu}>
             <img src="/logo.svg" alt="RTC Logo" className="w-[87px]" />
           </Link>
 
@@ -62,31 +83,39 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             className="lg:hidden w-12 h-12 bg-brand-lime rounded-full flex items-center justify-center"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
+            onClick={() => setIsMobileMenuOpen(true)}
+            aria-label="Open menu"
           >
-            {isMobileMenuOpen ? (
-              <X className="min-w-6 min-h-6 text-black" />
-            ) : (
-              <Menu className="min-w-6 min-h-6 text-black" />
-            )}
+            <Menu className="min-w-6 min-h-6 text-black" />
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-0 top-0 bg-brand-dark z-40">
-            <div className="flex flex-col h-full pt-28 pb-8">
+          <div
+            className="
+              fixed top-0 left-0 w-[100vw] h-[100vh] bg-brand-dark z-[99] pb-10
+              flex flex-col items-center gap-3
+            "
+          >
+            <div className="w-full bg-[#343434] py-3.5 px-6">
+              <Button
+                onClick={closeMobileMenu}
+                variant={"rounded"}
+                className="bg-white w-12 h-12 float-end"
+              >
+                <X className="min-w-6 min-h-6 text-black" />
+              </Button>
+            </div>
+            <div className="flex flex-col gap-4 pt-4">
               {/* Navigation Links */}
-              <ul className="flex flex-col items-center space-y-8 mb-auto">
+              <ul className="flex flex-col items-center gap-2 mb-auto">
                 <li>
                   <Link
                     to="/"
                     onClick={closeMobileMenu}
-                    className={`text-2xl font-medium transition-colors hover:text-brand-lime ${
-                      location.pathname === "/"
-                        ? "text-brand-lime"
-                        : "text-white"
+                    className={`text-lg font-medium transition-colors hover:text-brand-lime ${
+                      location.pathname === "/" ? "text-brand-lime" : "text-white"
                     }`}
                   >
                     Home
@@ -97,7 +126,7 @@ const Header = () => {
                     <Link
                       to={item.path}
                       onClick={closeMobileMenu}
-                      className={`text-2xl font-medium transition-colors hover:text-brand-lime ${
+                      className={`text-lg font-medium transition-colors hover:text-brand-lime ${
                         isActive(item.path) ? "text-brand-lime" : "text-white"
                       }`}
                     >
@@ -111,7 +140,7 @@ const Header = () => {
               <div className="w-full max-w-md mx-auto border-t border-gray-600 my-8"></div>
 
               {/* Contact Information */}
-              <div className="px-8 space-y-6">
+              <div className="px-8 space-y-4">
                 {/* Call or Text Us */}
                 <div className="text-center">
                   <p className="text-brand-lime text-sm font-bold uppercase tracking-wider mb-2">
@@ -119,14 +148,14 @@ const Header = () => {
                   </p>
                   <a
                     href="tel:+17789807798"
-                    className="text-white text-lg hover:text-brand-lime transition-colors"
+                    className="text-white text-md hover:text-brand-lime transition-colors"
                   >
                     1(778)980-7798
                   </a>
                   <span className="text-white text-lg">, </span>
                   <a
                     href="tel:+16046574744"
-                    className="text-white text-lg hover:text-brand-lime transition-colors"
+                    className="text-white text-md hover:text-brand-lime transition-colors"
                   >
                     1(604)657-4744
                   </a>
@@ -139,7 +168,7 @@ const Header = () => {
                   </p>
                   <a
                     href="mailto:info.ropetechgroup@gmail.com"
-                    className="text-white text-lg hover:text-brand-lime transition-colors"
+                    className="text-white text-md hover:text-brand-lime transition-colors"
                   >
                     info.ropetechgroup@gmail.com
                   </a>
@@ -163,31 +192,12 @@ const Header = () => {
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-brand-lime transition-colors"
                   >
-                    <svg
-                      className="w-6 h-6"
-                      fill="url(#instagram-gradient)"
-                      viewBox="0 0 24 24"
-                    >
+                    <svg className="w-6 h-6" fill="url(#instagram-gradient)" viewBox="0 0 24 24">
                       <defs>
-                        <linearGradient
-                          id="instagram-gradient"
-                          x1="0%"
-                          y1="100%"
-                          x2="100%"
-                          y2="0%"
-                        >
-                          <stop
-                            offset="0%"
-                            style={{ stopColor: "#FD5949", stopOpacity: 1 }}
-                          />
-                          <stop
-                            offset="50%"
-                            style={{ stopColor: "#D6249F", stopOpacity: 1 }}
-                          />
-                          <stop
-                            offset="100%"
-                            style={{ stopColor: "#285AEB", stopOpacity: 1 }}
-                          />
+                        <linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                          <stop offset="0%" style={{ stopColor: "#FD5949", stopOpacity: 1 }} />
+                          <stop offset="50%" style={{ stopColor: "#D6249F", stopOpacity: 1 }} />
+                          <stop offset="100%" style={{ stopColor: "#285AEB", stopOpacity: 1 }} />
                         </linearGradient>
                       </defs>
                       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />

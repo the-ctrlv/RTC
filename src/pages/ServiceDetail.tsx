@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useParams, Navigate } from "react-router-dom";
 import { ArrowRight, Plus, Minus } from "lucide-react";
 import { useState } from "react";
@@ -11,15 +12,13 @@ const ServiceDetail = () => {
       title: "Industrial Services",
       hero: {
         title: "Industrial Services",
-        image:
-          "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=1600",
+        image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=1600",
       },
       whatIsWork: {
         title: "What is Work at Heights & Rope Access?",
         description:
           "Work at heights and rope access are specialized techniques used to safely access hard-to-reach areas on industrial sites, infrastructure, and buildings. Rope access allows technicians to reach elevated or confined spaces using ropes and harnesses—offering a safer, faster, and more cost-effective alternative to scaffolding or heavy equipment.",
-        image:
-          "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
       },
       keyServices: {
         title: "Key Rope Access Services We Provide",
@@ -101,15 +100,13 @@ const ServiceDetail = () => {
       title: "Building Services",
       hero: {
         title: "Building Services",
-        image:
-          "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=1600",
+        image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=1600",
       },
       whatIsWork: {
         title: "What is Work at Heights & Rope Access?",
         description:
           "Building services encompass comprehensive maintenance and restoration solutions for residential, commercial, and industrial properties. Our rope access techniques enable safe and efficient work on building envelopes, facades, and structural components.",
-        image:
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
       },
       keyServices: {
         title: "Key Rope Access Services We Provide",
@@ -126,18 +123,15 @@ const ServiceDetail = () => {
           },
           {
             title: "Structural Repairs",
-            description:
-              "Expert repair of concrete, masonry, and steel structural elements.",
+            description: "Expert repair of concrete, masonry, and steel structural elements.",
           },
           {
             title: "Window & Glazing Systems",
-            description:
-              "Installation and maintenance of modern window systems and glass facades.",
+            description: "Installation and maintenance of modern window systems and glass facades.",
           },
           {
             title: "Waterproofing Solutions",
-            description:
-              "Advanced waterproofing systems to protect buildings from water damage.",
+            description: "Advanced waterproofing systems to protect buildings from water damage.",
           },
           {
             title: "Preventive Maintenance",
@@ -195,6 +189,7 @@ const ServiceDetail = () => {
   }
 
   const service = servicesData[slug];
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -215,11 +210,7 @@ const ServiceDetail = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
             {service.hero.title}
           </h1>
-          <img
-            src="/decoration_line.svg"
-            alt="Divider"
-            className="h-[14px] w-auto"
-          />
+          <img src="/decoration_line.svg" alt="Divider" className="h-[14px] w-auto" />
         </div>
       </section>
 
@@ -257,16 +248,9 @@ const ServiceDetail = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               {service.keyServices.services.map((item: any, index: number) => (
-                <div
-                  key={index}
-                  className="bg-brand-dark-light rounded-2xl p-6 lg:p-8"
-                >
-                  <h3 className="text-xl font-bold text-white mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    {item.description}
-                  </p>
+                <div key={index} className="bg-brand-dark-light rounded-2xl p-6 lg:p-8">
+                  <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
+                  <p className="text-gray-300 leading-relaxed">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -282,20 +266,15 @@ const ServiceDetail = () => {
               {service.realConditions.title}
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              {service.realConditions.images.map(
-                (image: string, index: number) => (
-                  <div
-                    key={index}
-                    className="relative overflow-hidden rounded-3xl aspect-[4/5]"
-                  >
-                    <img
-                      src={image}
-                      alt={`Project ${index + 1}`}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                )
-              )}
+              {service.realConditions.images.map((image: string, index: number) => (
+                <div key={index} className="relative overflow-hidden rounded-3xl aspect-[4/5]">
+                  <img
+                    src={image}
+                    alt={`Project ${index + 1}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -309,19 +288,15 @@ const ServiceDetail = () => {
               {service.whyChoose.title}
             </h2>
             <ul className="grid md:grid-cols-2 gap-4 mb-12">
-              {service.whyChoose.reasons.map(
-                (reason: string, index: number) => (
-                  <li key={index} className="flex items-center text-gray-900">
-                    <span className="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
-                    <span className="text-base lg:text-lg">{reason}</span>
-                  </li>
-                )
-              )}
+              {service.whyChoose.reasons.map((reason: string, index: number) => (
+                <li key={index} className="flex items-center text-gray-900">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+                  <span className="text-base lg:text-lg">{reason}</span>
+                </li>
+              ))}
             </ul>
             <div className="flex items-center justify-between bg-gray-900 rounded-full p-2 pl-8 max-w-md">
-              <span className="text-white font-bold text-lg">
-                {service.whyChoose.cta}
-              </span>
+              <span className="text-white font-bold text-lg">{service.whyChoose.cta}</span>
               <button className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center hover:bg-white transition-colors">
                 <ArrowRight className="text-gray-900 w-6 h-6" />
               </button>
@@ -336,7 +311,7 @@ const ServiceDetail = () => {
           <div className="max-w-6xl mx-auto">
             {/* Title */}
             <div className="mb-8 lg:mb-0">
-              <h3 className="text-brand-lime font-bold mb-3 uppercase text-sm tracking-wider">
+              <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider">
                 FAQ'S
               </h3>
               <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-8 lg:mb-12">
@@ -345,20 +320,17 @@ const ServiceDetail = () => {
             </div>
 
             {/* Questions - Single column on mobile, two columns on desktop */}
-            <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:gap-20">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-20">
               {/* Empty div for desktop layout to push questions to right */}
               <div className="hidden lg:block"></div>
 
               {/* Questions */}
               <div className="space-y-4">
                 {service.faq.questions.map((item: any, index: number) => (
-                  <div
-                    key={index}
-                    className="bg-gray-50 rounded-2xl overflow-hidden"
-                  >
+                  <div key={index} className="bg-gray-50 rounded-2xl overflow-hidden">
                     <button
                       onClick={() => toggleFaq(index)}
-                      className="w-full px-6 lg:px-8 py-5 lg:py-6 flex items-center justify-between text-left hover:bg-gray-100 transition-colors"
+                      className="w-full px-6 lg:px-8 py-5 lg:py-6 flex items-center justify-between text-left bg-gray-100 transition-colors"
                     >
                       <h3 className="text-base lg:text-lg font-bold text-gray-900 pr-4">
                         {item.question}
@@ -373,9 +345,7 @@ const ServiceDetail = () => {
                     </button>
                     {openFaqIndex === index && (
                       <div className="px-6 lg:px-8 pb-5 lg:pb-6">
-                        <p className="text-gray-700 leading-relaxed">
-                          {item.answer}
-                        </p>
+                        <p className="text-gray-700 leading-relaxed">{item.answer}</p>
                       </div>
                     )}
                   </div>

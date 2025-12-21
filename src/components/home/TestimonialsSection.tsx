@@ -1,10 +1,11 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
+import { Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
+import { Button } from "../ui/button";
 
 const testimonials = [
   {
@@ -61,14 +62,28 @@ const TestimonialsSection = () => {
         </div>
       </div>
 
-      <div className="relative w-full cursor-pointer user-select-none">
+      <div className="relative cursor-pointer user-select-none px-[16px]">
         <Swiper
-          spaceBetween={50}
-          slidesPerView={2.5}
+          modules={[Pagination]}
+          pagination={{
+            type: "bullets",
+            clickable: true,
+          }}
+          spaceBetween={20}
           centeredSlides
           initialSlide={0}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 1.5,
+              initialSlide: 0,
+            },
+            1024: {
+              slidesPerView: 2.5,
+              initialSlide: 1,
+            },
           }}
           onSlideChange={(swiper) => {
             // Add active class animation
@@ -90,20 +105,19 @@ const TestimonialsSection = () => {
               if (index === swiper.activeIndex) {
                 slide.style.transform = "scale(1)";
                 slide.style.opacity = "1";
-                slide.style.transition =
-                  "transform 0.3s ease, opacity 0.5s ease";
+                slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
+                // slide.style.width = "100%";
               } else {
                 slide.style.transform = "scale(0.85)";
                 slide.style.opacity = "0.5";
-                slide.style.transition =
-                  "transform 0.3s ease, opacity 0.5s ease";
+                slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
               }
             });
           }}
           className="testimonials-swiper pb-14"
         >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.id}>
+          {testimonials.map((testimonial, idx) => (
+            <SwiperSlide key={testimonial.id} onClick={() => swiperRef.current?.slideTo(idx)}>
               <div className="relative">
                 {/* Quote Icon */}
                 <img src="/home/quotes.svg" className="w-[22px] mb-10 block" />
@@ -130,9 +144,7 @@ const TestimonialsSection = () => {
                       <div className="font-bold text-sm sm:text-base text-gray-900">
                         {testimonial.author}
                       </div>
-                      <div className="text-xs sm:text-sm text-gray-600">
-                        {testimonial.role}
-                      </div>
+                      <div className="text-xs sm:text-sm text-gray-600">{testimonial.role}</div>
                     </div>
                   </div>
 
@@ -148,6 +160,32 @@ const TestimonialsSection = () => {
               </div>
             </SwiperSlide>
           ))}
+          <div
+            className="hidden md:block
+              absolute
+              inset-x-0
+              top-1/2
+              -translate-y-1/2
+              z-10
+              pointer-events-none"
+          >
+            <div className="flex justify-between px-2">
+              <Button
+                variant={"rounded"}
+                className="flex justify-center items-center float-start w-16 h-16"
+                onClick={() => swiperRef.current?.slidePrev()}
+              >
+                <img src="/home/arrow.svg" alt="Arrow Left" className="w-4 h-4 rotate-180" />
+              </Button>
+              <Button
+                variant={"rounded"}
+                className="flex justify-center items-center float-end w-16 h-16 rounded-full"
+                onClick={() => swiperRef.current?.slideNext()}
+              >
+                <img src="/home/arrow.svg" alt="Arrow Right" className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
         </Swiper>
       </div>
     </section>

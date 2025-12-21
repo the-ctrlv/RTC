@@ -27,8 +27,7 @@ const AboutUs = () => {
     },
     {
       title: "Purpose",
-      description:
-        "We exist to protect and preserve buildings through innovative access methods.",
+      description: "We exist to protect and preserve buildings through innovative access methods.",
     },
   ];
 
@@ -43,18 +42,15 @@ const AboutUs = () => {
 
   const projects = [
     {
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
       title: "High-Rise Facade Inspection",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
       title: "Building Maintenance",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
       title: "Glass Replacement",
     },
   ];
@@ -62,74 +58,139 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section
-        className="relative bg-cover bg-center py-24 lg:py-32"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+      <section className="relative bg-cover bg-center bg-[url('/about-us/hero.jpg')]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-center min-h-[80vh]">
+          {/* <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between h-full gap-8"> */}
+          <div className="max-w-2xl">
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
               About
               <br />
-              Rope Tech Groupe
+              Rope Tech Group
             </h1>
           </div>
-        </div>
-      </section>
+          <div className="absolute bottom-[7vh] right-0">
+            <div className="xl:flex items-center gap-2 mb-6 hidden">
+              <span className="text-white text-base font-medium">Company Details</span>
+              <img
+                src="/about-us/arrow_down_right.svg"
+                alt="Company Details Icon"
+                className="w-5"
+              />
+            </div>
 
-      {/* About Content Section */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h3 className="text-brand-lime font-bold mb-4 uppercase text-sm tracking-wider">
-              ABOUT US
-            </h3>
-            <p className="text-gray-700 text-base lg:text-lg leading-relaxed mb-12">
-              Rope Tech Group provides safe and efficient high-rise, industrial,
-              and infrastructure services across British Columbia. Our
-              IRATA-certified technicians use advanced rope access methods to
-              reach complex areas with minimal disruption.
-            </p>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-              {stats.map((stat, index) => (
-                <div key={index}>
-                  <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
-                    {stat.value}
-                  </div>
-                  <div className="text-xs text-gray-600 uppercase tracking-wide">
-                    {stat.label}
-                  </div>
+            <div className="xl:flex flex-col sm:flex-row gap-4 hidden">
+              {/* Business Hours Card */}
+              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 min-w-[260px]">
+                <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-4">
+                  <svg
+                    className="w-6 h-6 text-brand-dark"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="12" cy="12" r="10" strokeWidth={2} />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 6v6l4 2"
+                    />
+                  </svg>
                 </div>
-              ))}
+                <div className="text-white text-sm mb-2">Business Hours</div>
+                <div className="text-white font-semibold text-lg">
+                  Mon–Fri,
+                  <br />
+                  8:00 AM – 6:00 PM
+                </div>
+              </div>
+
+              {/* Location Card */}
+              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 min-w-[260px]">
+                <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-4">
+                  <svg
+                    className="w-6 h-6 text-brand-dark"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div className="text-white text-sm mb-2">Location</div>
+                <div className="text-white font-semibold text-lg">
+                  1428 W 8th Ave,
+                  <br />
+                  Vancouver, BC V6H 1E1
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <div className="bg-[url('/about-us/map.jpg')] bg-cover bg-no-repeat">
+        {/* About Content Section */}
+        <section className="py-16 lg:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-10">
+            <div className="flex justify-between w-full flex-col xl:flex-row">
+              <h3 className="text-[#a5b715]3 font-bold mb-4 uppercase text-sm tracking-wider">
+                ABOUT US
+              </h3>
+              <div className="max-w-[856px]">
+                <p className="text-gray-700 text-base lg:text-[32px] font-semibold leading-relaxed mb-12">
+                  Rope Tech Group provides safe and efficient high-rise, industrial, and
+                  infrastructure services across British Columbia. Our IRATA-certified technicians
+                  use advanced rope access methods to reach complex areas with minimal disruption.
+                </p>
+                <img src="/home/decoration_line_wide.svg" className="my-14 block" />
 
-      {/* Large Image Section */}
-      <section className="py-8 lg:py-12 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <img
-              src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=1200"
-              alt="Rope access technician at work"
-              className="rounded-3xl w-full object-cover aspect-[16/10]"
-            />
+                {/* Stats Grid */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                  {stats.map((stat, index) => (
+                    <div key={index}>
+                      <div className="text-3xl lg:text-[44px] font-semibold text-gray-900 mb-2">
+                        {stat.value}
+                      </div>
+                      <div className="text-base font-semibold uppercase tracking-wide">
+                        {stat.label}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
+        {/* Large Image Section */}
+        <section className="py-8 lg:py-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <img
+                src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=1200"
+                alt="Rope access technician at work"
+                className="rounded-3xl w-full object-cover aspect-[16/10]"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
       {/* Principles Section - Dark */}
       <section className="py-16 lg:py-24 bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-brand-lime font-bold mb-3 uppercase text-sm tracking-wider">
+            <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider">
               OUR APPROACH
             </h3>
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-12 lg:mb-16">
@@ -137,36 +198,31 @@ const AboutUs = () => {
               <br />
               Behind Our Work
             </h2>
+            <img src="/home/decoration_line_wide.svg" className="block lg:hidden my-14" />
 
             <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
               {principles.map((principle, index) => (
-                <div
-                  key={index}
-                  className="bg-brand-dark-light rounded-2xl p-8"
-                >
+                <div key={index} className="bg-brand-dark-light rounded-2xl p-8">
                   <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-6">
                     <div className="w-6 h-6 rounded-full bg-brand-dark"></div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4">
-                    {principle.title}
-                  </h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    {principle.description}
-                  </p>
+                  <h3 className="text-xl font-bold text-white mb-4">{principle.title}</h3>
+                  <p className="text-gray-300 leading-relaxed">{principle.description}</p>
                 </div>
               ))}
             </div>
+            <img src="/home/decoration_line_wide.svg" className="hidden lg:block my-14" />
           </div>
         </div>
       </section>
 
       {/* Safety & Certifications Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
-                <h3 className="text-brand-lime font-bold mb-3 uppercase text-sm tracking-wider">
+                <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider">
                   SAFETY & COMPLIANCE
                 </h3>
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
@@ -174,21 +230,18 @@ const AboutUs = () => {
                   Certifications
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                  Safety is our top priority. Every team member is
-                  IRATA-certified and undergoes ongoing training to stay ahead
-                  of industry standards. We follow strict safety protocols on
-                  every job, ensuring safety at every step.
+                  Safety is our top priority. Every team member is IRATA-certified and undergoes
+                  ongoing training to stay ahead of industry standards. We follow strict safety
+                  protocols on every job, ensuring safety at every step.
                 </p>
               </div>
 
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-6">
-                  What sets us apart:
-                </h3>
+              <div className="bg-white p-6 rounded-3xl">
+                <h3 className="text-xl font-bold text-gray-900 mb-6">What sets us apart:</h3>
                 <ul className="space-y-4">
                   {certifications.map((cert, index) => (
                     <li key={index} className="flex items-start">
-                      <span className="text-brand-lime mr-3 mt-1">•</span>
+                      <span className="text-[#c3d533] mr-3 mt-1">•</span>
                       <span className="text-gray-700">{cert}</span>
                     </li>
                   ))}
@@ -207,7 +260,7 @@ const AboutUs = () => {
               <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">
                 Let's Discuss Your Project
               </h2>
-              <button className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6">
+              <button className="w-[58px] h-[58px] lg:w-16 lg:h-16 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6">
                 <ArrowRight className="text-white w-6 h-6" />
               </button>
             </div>
@@ -219,7 +272,7 @@ const AboutUs = () => {
       <section className="py-16 lg:py-24 bg-brand-dark relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <h3 className="text-brand-lime font-bold mb-3 uppercase text-sm tracking-wider text-center">
+            <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider text-center">
               OUR WORK
             </h3>
             <h2 className="text-3xl lg:text-5xl font-bold text-white text-center mb-12 lg:mb-16">
@@ -230,19 +283,20 @@ const AboutUs = () => {
             <div className="lg:hidden">
               <Swiper
                 modules={[Pagination]}
-                spaceBetween={20}
-                slidesPerView={1}
+                spaceBetween={30}
+                centeredSlides
+                slidesPerView={1.3}
+                initialSlide={1}
                 pagination={{
                   clickable: true,
                   bulletClass: "swiper-pagination-bullet !bg-white/50",
-                  bulletActiveClass:
-                    "swiper-pagination-bullet-active !bg-brand-lime",
+                  bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
                 }}
                 className="!pb-12"
               >
                 {projects.map((project, index) => (
                   <SwiperSlide key={index}>
-                    <div className="relative overflow-hidden rounded-[32px] aspect-[9/14] mx-4">
+                    <div className="relative overflow-hidden rounded-[24px] aspect-[9/14]">
                       <img
                         src={project.image}
                         alt={project.title}
@@ -267,8 +321,7 @@ const AboutUs = () => {
                 pagination={{
                   clickable: true,
                   bulletClass: "swiper-pagination-bullet !bg-white/50",
-                  bulletActiveClass:
-                    "swiper-pagination-bullet-active !bg-brand-lime",
+                  bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
                 }}
                 className="!pb-12"
               >
@@ -305,10 +358,10 @@ const AboutUs = () => {
               </Swiper>
 
               {/* Custom Navigation Buttons */}
-              <button className="our-work-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <button className="our-work-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors">
                 <ArrowRight className="w-6 h-6 text-gray-900 rotate-180" />
               </button>
-              <button className="our-work-next absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <button className="our-work-next absolute right-4 top-1/2 -translate-y-1/2 z-10 w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors">
                 <ArrowRight className="w-6 h-6 text-gray-900" />
               </button>
             </div>

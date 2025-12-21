@@ -15,6 +15,10 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        gray: {
+          400: "#404040",
+        },
+        darkGray: "#292929",
         brand: {
           lime: "#D9F043",
           lime2: "#C3D534",
