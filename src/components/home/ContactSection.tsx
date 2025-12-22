@@ -28,65 +28,55 @@ const ContactSection = () => {
         <div className="lg:hidden space-y-8">
           {/* Contact Information */}
           <div className="bg-brand-gray py-6">
-            <h3 className="text-brand-lime3 font-bold mb-2 uppercase text-xs tracking-wider">
+            <h3 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
               CONTACT US
             </h3>
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">
-              Get in Touch
-            </h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900">Get in Touch</h2>
 
             <div className="space-y-6">
               <div>
-                <h4 className="text-brand-lime3 font-bold mb-2 uppercase text-xs tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
                   EMAIL
                 </h4>
                 <a
                   href="mailto:info.ropetechgroup@gmail.com"
-                  className="text-gray-900 hover:text-brand-lime3 transition-colors text-sm block"
+                  className="text-gray-900 hover:text-[#a5b715] transition-colors text-sm block"
                 >
                   info.ropetechgroup@gmail.com
                 </a>
               </div>
 
               <div>
-                <h4 className="text-brand-lime3 font-bold mb-2 uppercase text-xs tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
                   PHONE
                 </h4>
                 <div className="text-gray-900 text-sm">
-                  <a
-                    href="tel:+17789807798"
-                    className="hover:text-brand-lime3 transition-colors"
-                  >
+                  <a href="tel:+17789807798" className="hover:text-[#a5b715] transition-colors">
                     1(778)980-7798
                   </a>
                   ,{" "}
-                  <a
-                    href="tel:+16046574744"
-                    className="hover:text-brand-lime3 transition-colors"
-                  >
+                  <a href="tel:+16046574744" className="hover:text-[#a5b715] transition-colors">
                     1(604)657-4744
                   </a>
                 </div>
               </div>
 
               <div>
-                <h4 className="text-brand-lime3 font-bold mb-2 uppercase text-xs tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
                   LOCATION
                 </h4>
-                <p className="text-gray-900 text-sm">
-                  142B W 8th Ave,Vancouver, BC V6H 1E1
-                </p>
+                <p className="text-gray-900 text-sm">142B W 8th Ave,Vancouver, BC V6H 1E1</p>
               </div>
 
               <div>
-                <h4 className="text-brand-lime3 font-bold mb-2 uppercase text-xs tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
                   INSTAGRAM
                 </h4>
                 <a
                   href="https://instagram.com/ropetechgroup"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-900 hover:text-brand-lime3 transition-colors text-sm"
+                  className="text-gray-900 hover:text-[#a5b715] transition-colors text-sm"
                 >
                   ropetechgroup
                 </a>
@@ -96,9 +86,7 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <div className="bg-white p-6 rounded-2xl shadow-sm">
-            <h2 className="text-2xl font-bold mb-6 text-gray-900">
-              Fill Out the Form
-            </h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-900">Fill Out the Form</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
               <div>
                 <label
@@ -114,11 +102,7 @@ const ContactSection = () => {
                   placeholder="Enter your name"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all bg-white text-sm"
                 />
-                {errors.name && (
-                  <p className="mt-1 text-sm text-red-600">
-                    {errors.name.message}
-                  </p>
-                )}
+                {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
               </div>
 
               <div>
@@ -136,9 +120,7 @@ const ContactSection = () => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all bg-white text-sm"
                 />
                 {errors.email && (
-                  <p className="mt-1 text-sm text-red-600">
-                    {errors.email.message}
-                  </p>
+                  <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
                 )}
               </div>
 
@@ -160,7 +142,7 @@ const ContactSection = () => {
 
               <Button
                 type="submit"
-                className="w-full bg-brand-lime3 hover:bg-brand-lime3/90 text-gray-900 font-semibold py-5 text-base rounded-lg"
+                className="w-full bg-[#d3f143] hover:bg-[#d3f143]/90 text-gray-900 font-semibold py-5 text-base rounded-lg"
               >
                 Send
               </Button>
@@ -175,38 +157,36 @@ const ContactSection = () => {
             <h3 className="text-lime3 font-bold mb-4 uppercase text-md tracking-wider">
               CONTACT US
             </h3>
-            <h2 className="text-5xl font-bold mb-14 text-gray-900">
-              Get in Touch
-            </h2>
+            <h2 className="text-5xl font-bold mb-14 text-gray-900">Get in Touch</h2>
 
             <div className="space-y-8">
               <div>
-                <h4 className="text-brand-lime3 font-bold mb-2 uppercase text-md tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-md tracking-wider">
                   EMAIL
                 </h4>
                 <a
                   href="mailto:info.ropetechgroup@gmail.com"
-                  className="hover:text-brand-lime3 transition-colors text-base text-black block font-bold"
+                  className="hover:text-[#a5b715] transition-colors text-base text-black block font-bold"
                 >
                   info.ropetechgroup@gmail.com
                 </a>
               </div>
 
               <div>
-                <h4 className="text-brand-lime3 font-bold mb-2 uppercase text-md tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-md tracking-wider">
                   PHONE
                 </h4>
                 <div className="text-gray-900 text-base">
                   <a
                     href="tel:+17789807798"
-                    className="hover:text-brand-lime3 transition-colors text-black font-bold"
+                    className="hover:text-[#a5b715] transition-colors text-black font-bold"
                   >
                     1(778)980-7798
                   </a>
                   ,{" "}
                   <a
                     href="tel:+16046574744"
-                    className="hover:text-brand-lime3 transition-colors text-black font-bold"
+                    className="hover:text-[#a5b715] transition-colors text-black font-bold"
                   >
                     1(604)657-4744
                   </a>
@@ -214,7 +194,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <h4 className="text-brand-lime3 font-bold mb-2 uppercase text-md tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-md tracking-wider">
                   LOCATION
                 </h4>
                 <p className="text-base text-black font-bold">
@@ -223,14 +203,14 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <h4 className="text-brand-lime3 font-bold mb-2 uppercase text-md tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-md tracking-wider">
                   INSTAGRAM
                 </h4>
                 <a
                   href="https://instagram.com/ropetechgroup"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black font-bold hover:text-brand-lime3 transition-colors text-base"
+                  className="text-black font-bold hover:text-[#a5b715] transition-colors text-base"
                 >
                   ropetechgroup
                 </a>
@@ -240,15 +220,10 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <div className="p-12 bg-white rounded-[40px]">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">
-              Fill Out the Form
-            </h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900">Fill Out the Form</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
-                <label
-                  htmlFor="name-desktop"
-                  className="block text-base font-semibold mb-2"
-                >
+                <label htmlFor="name-desktop" className="block text-base font-semibold mb-2">
                   Your name
                 </label>
                 <input
@@ -258,18 +233,11 @@ const ContactSection = () => {
                   placeholder="Enter your name"
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all bg-white"
                 />
-                {errors.name && (
-                  <p className="mt-1 text-sm text-red-600">
-                    {errors.name.message}
-                  </p>
-                )}
+                {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
               </div>
 
               <div>
-                <label
-                  htmlFor="email-desktop"
-                  className="block text-base font-semibold mb-2"
-                >
+                <label htmlFor="email-desktop" className="block text-base font-semibold mb-2">
                   Your e-mail
                 </label>
                 <input
@@ -280,17 +248,12 @@ const ContactSection = () => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all bg-white"
                 />
                 {errors.email && (
-                  <p className="mt-1 text-sm text-red-600">
-                    {errors.email.message}
-                  </p>
+                  <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
                 )}
               </div>
 
               <div>
-                <label
-                  htmlFor="message-desktop"
-                  className="block text-base font-semibold mb-2"
-                >
+                <label htmlFor="message-desktop" className="block text-base font-semibold mb-2">
                   Message
                 </label>
                 <textarea
@@ -304,7 +267,7 @@ const ContactSection = () => {
 
               <Button
                 type="submit"
-                className="w-full bg-brand-lime hover:bg-brand-lime3/90 text-gray-900 font-semibold py-6 text-base"
+                className="w-full bg-[#d9f143] hover:bg-[#d9f143]/90 text-gray-900 font-semibold py-6 text-base"
               >
                 Send
               </Button>

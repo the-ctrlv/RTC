@@ -262,19 +262,19 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 sm:px-6 py-5 sm:py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm">
-            <p className="text-gray-400 text-center sm:text-left">
+            <p className="text-gray-300 text-center sm:text-left">
               © {new Date().getFullYear()} All Rights Reserved Rope Tech Group
             </p>
             <div className="flex gap-6 sm:gap-8">
               <Link
                 to="/terms"
-                className="text-gray-400 hover:text-brand-lime transition-colors underline"
+                className="text-gray-300 hover:text-brand-lime transition-colors underline"
               >
                 Terms of use
               </Link>
               <Link
                 to="/privacy"
-                className="text-gray-400 hover:text-brand-lime transition-colors underline"
+                className="text-gray-300 hover:text-brand-lime transition-colors underline"
               >
                 Privacy policy
               </Link>

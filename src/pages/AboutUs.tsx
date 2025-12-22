@@ -58,11 +58,11 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center bg-[url('/about-us/hero.jpg')]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-center min-h-[80vh]">
+      <section className="relative bg-cover bg-[position:15%] lg:bg-center bg-[url('/about-us/hero.jpg')]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[50vh] lg:min-h-[80vh]">
           {/* <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between h-full gap-8"> */}
           <div className="max-w-2xl">
-            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
+            <h1 className="text-4xl lg:text-7xl font-bold text-white leading-tight">
               About
               <br />
               Rope Tech Group
@@ -144,16 +144,16 @@ const AboutUs = () => {
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-10">
             <div className="flex justify-between w-full flex-col xl:flex-row">
-              <h3 className="text-[#a5b715]3 font-bold mb-4 uppercase text-sm tracking-wider">
+              <h3 className="text-[#a5b715] font-bold mb-4 uppercase text-sm tracking-wider">
                 ABOUT US
               </h3>
               <div className="max-w-[856px]">
-                <p className="text-gray-700 text-base lg:text-[32px] font-semibold leading-relaxed mb-12">
+                <p className="text-gray-700 text-base lg:text-[32px] font-semibold leading-relaxed mb-0 lg:mb-12">
                   Rope Tech Group provides safe and efficient high-rise, industrial, and
                   infrastructure services across British Columbia. Our IRATA-certified technicians
                   use advanced rope access methods to reach complex areas with minimal disruption.
                 </p>
-                <img src="/home/decoration_line_wide.svg" className="my-14 block" />
+                <img src="/home/decoration_line_wide.svg" className="my-7 lg:my-14 block" />
 
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -193,11 +193,17 @@ const AboutUs = () => {
             <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider">
               OUR APPROACH
             </h3>
-            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-12 lg:mb-16">
-              The Principles
-              <br />
-              Behind Our Work
-            </h2>
+            <div className="grid grid-rows-2 lg:grid-cols-2">
+              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-0 lg:mb-16">
+                The Principles
+                <br />
+                Behind Our Work
+              </h2>
+              <p className="text-white text-xl">
+                We focus on delivering precise, reliable results in complex environments-through
+                communication, strong planning, and execution you can trust.
+              </p>
+            </div>
             <img src="/home/decoration_line_wide.svg" className="block lg:hidden my-14" />
 
             <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">

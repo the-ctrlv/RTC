@@ -29,7 +29,7 @@ const BenefitsSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 mb-12 lg:mb-16">
             {/* Left Column - Title */}
             <div>
-              <h3 className="text-brand-lime font-bold mb-5 uppercase text-xs sm:text-sm tracking-wider">
+              <h3 className="text-[#c3d533] font-bold mb-5 uppercase text-xs sm:text-sm tracking-wider">
                 WHY CHOOSE US
               </h3>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">

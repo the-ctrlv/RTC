@@ -92,6 +92,15 @@ button:focus-visible {
   background-color: #c3d533 !important;
 }
 
+.testimonials-slider {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+
 @media screen and (min-width: 1024px) {
   .swiper-slide {
     border: none;

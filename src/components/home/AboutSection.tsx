@@ -10,7 +10,7 @@ const AboutSection = () => {
         {/* Mobile Layout */}
         <div className="lg:hidden max-w-md mx-auto">
           {/* Header */}
-          <h3 className="text-brand-lime font-bold mb-4 uppercase text-sm tracking-wider">
+          <h3 className="text-[#c3d533] font-bold mb-4 uppercase text-sm tracking-wider">
             ABOUT US
           </h3>
           <h2 className="text-3xl font-bold mb-8 text-gray-900 leading-tight">
@@ -28,11 +28,10 @@ const AboutSection = () => {
 
           {/* Description */}
           <p className="text-gray-700 mb-10 leading-relaxed text-base">
-            Since 2013, Rope Tech Group has delivered expert rope access and
-            high-rise maintenance services across Canada. Our certified team
-            provides safe and efficient solutions for façades, concrete repairs,
-            waterproofing, glazing, and inspections. We combine experience and
-            innovation to help property owners protect their buildings with
+            Since 2013, Rope Tech Group has delivered expert rope access and high-rise maintenance
+            services across Canada. Our certified team provides safe and efficient solutions for
+            façades, concrete repairs, waterproofing, glazing, and inspections. We combine
+            experience and innovation to help property owners protect their buildings with
             confidence.
           </p>
 
@@ -40,9 +39,7 @@ const AboutSection = () => {
           <div className="grid grid-cols-2 gap-8 mb-6">
             {stats.map((stat, index) => (
               <div key={index}>
-                <div className="text-5xl font-bold text-brand-lime2 mb-2">
-                  {stat.value}
-                </div>
+                <div className="text-5xl font-bold text-[#c3d533] mb-2">{stat.value}</div>
                 <div className="text-xs text-gray-900 font-bold uppercase tracking-wide max-w-[120px]">
                   {stat.label}
                 </div>
@@ -57,33 +54,30 @@ const AboutSection = () => {
           <img
             src="/home/about_us.jpg"
             alt="Rope access worker"
-            className="rounded-3xl w-full max-w-[510px] w-full"
+            className="rounded-3xl max-w-[510px] w-full"
           />
 
           {/* Content */}
           <div>
-            <h3 className="text-brand-lime2 font-bold mb-3 uppercase text-sm tracking-wider">
+            <h3 className="text-[#c3d533] font-bold mb-3 uppercase text-sm tracking-wider">
               ABOUT US
             </h3>
             <h2 className="text-5xl font-bold mb-8 text-gray-900 leading-tight">
               Delivering Safe & Certified Rope Access Solutions
             </h2>
             <p className="text-gray-700 mb-12 leading-relaxed text-lg">
-              Since 2013, Rope Tech Group has delivered expert rope access and
-              high-rise maintenance services across Canada. Our certified team
-              provides safe and efficient solutions for façades, concrete
-              repairs, waterproofing, glazing, and inspections. We combine
-              experience and innovation to help property owners protect their
-              buildings with confidence.
+              Since 2013, Rope Tech Group has delivered expert rope access and high-rise maintenance
+              services across Canada. Our certified team provides safe and efficient solutions for
+              façades, concrete repairs, waterproofing, glazing, and inspections. We combine
+              experience and innovation to help property owners protect their buildings with
+              confidence.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <div className="text-6xl font-semibold text-brand-lime2 mb-3">
-                    {stat.value}
-                  </div>
+                  <div className="text-6xl font-semibold text-[#c3d533] mb-3">{stat.value}</div>
                   <div className="text-sm text-gray-900 font-bold uppercase tracking-wide max-w-[200px]">
                     {stat.label}
                   </div>

@@ -53,10 +53,10 @@ const TestimonialsSection = () => {
     <section className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 sm:mb-12 lg:mb-16">
-          <h3 className="text-brand-lime3 font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">
+          <h3 className="text-[#c3d533] font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">
             TESTIMONIALS
           </h3>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-20">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-20">
             Hear From Our Clients
           </h2>
         </div>
@@ -117,7 +117,11 @@ const TestimonialsSection = () => {
           className="testimonials-swiper pb-14"
         >
           {testimonials.map((testimonial, idx) => (
-            <SwiperSlide key={testimonial.id} onClick={() => swiperRef.current?.slideTo(idx)}>
+            <SwiperSlide
+              className="p-5 border border-black rounded-3xl"
+              key={testimonial.id}
+              onClick={() => swiperRef.current?.slideTo(idx)}
+            >
               <div className="relative">
                 {/* Quote Icon */}
                 <img src="/home/quotes.svg" className="w-[22px] mb-10 block" />
@@ -153,7 +157,7 @@ const TestimonialsSection = () => {
                     <img
                       src={testimonial.sponsor}
                       alt={testimonial.company}
-                      className="h-4.5 w-auto"
+                      className="h-4.5 w-auto hidden lg:block"
                     />
                   </div>
                 </div>
