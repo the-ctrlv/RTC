@@ -5,7 +5,6 @@ import {
   OurServicesSection,
   ProjectsSection,
   TestimonialsSection,
-  CTASection,
   ContactSection,
 } from "@/components/home";
 
@@ -18,7 +17,6 @@ const Home = () => {
       <OurServicesSection />
 
       <TestimonialsSection />
-      <CTASection />
       {/* <ServicesSection /> */}
       <ProjectsSection />
 

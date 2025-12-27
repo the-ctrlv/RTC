@@ -1,30 +1,32 @@
+import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { Modal } from "./Modal";
+import { ContactForm } from "../ContactForm";
 
-interface CTASectionProps {
-  title: string;
-  onClick?: () => void;
-}
+export const CTASection = () => {
+  const [modalOpen, setModalOpen] = useState(false);
 
-const CTASection = ({ title, onClick }: CTASectionProps) => {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <>
+      <Modal className="!p-0" isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+        <ContactForm />
+      </Modal>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-brand-lime rounded-3xl p-8 lg:p-12 flex items-center justify-between">
-            <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">
-              {title}
-            </h2>
-            <button
-              onClick={onClick}
-              className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6"
-            >
-              <ArrowRight className="text-white w-6 h-6" />
-            </button>
+        <div onClick={() => setModalOpen(true)} className="cursor-pointer">
+          <div className="max-w-6xl mx-auto inline">
+            <div className="h-full bg-brand-lime rounded-[40px] p-6 lg:p-12 flex flex-col lg:items-start gap-y-[11px] justify-between">
+              <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">
+                Let’s Discuss Your <br /> Project
+              </h2>
+              <div className="flex justify-end w-full">
+                <button className="w-[58px] h-[58px] lg:w-16 lg:h-16 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6">
+                  <ArrowRight className="text-white w-6 h-6" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
-
-export default CTASection;

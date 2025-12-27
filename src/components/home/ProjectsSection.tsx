@@ -80,11 +80,11 @@ const ProjectsSection = () => {
               <SwiperSlide key={index}>
                 <div
                   className="
-            group relative
-            min-h-[65vh] max-h-[80vh]
-            rounded-3xl overflow-hidden cursor-pointer
-            bg-cover bg-center
-          "
+                    group relative
+                    min-h-[45vh] max-h-[80vh]
+                    rounded-3xl overflow-hidden cursor-pointer
+                    bg-cover bg-center
+                  "
                   style={{ backgroundImage: `url(${project.image})` }}
                 >
                   <div className="absolute inset-0 bg-black/20" />

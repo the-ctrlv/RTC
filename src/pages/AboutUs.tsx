@@ -6,6 +6,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import missonIcon from "../../public/about-us/mission.svg";
+import purposeIcon from "../../public/about-us/purpose.svg";
+import visionIcon from "../../public/about-us/vision.svg";
+import { CTASection } from "@/components/common/CTASection";
+
 const AboutUs = () => {
   const stats = [
     { value: "95%", label: "SUCCESSFUL RATE" },
@@ -19,15 +24,18 @@ const AboutUs = () => {
       title: "Mission",
       description:
         "To deliver safe, efficient, and cost-effective rope access solutions across Canada.",
+      icon: missonIcon,
     },
     {
       title: "Vision",
       description:
         "To be the most trusted name in rope access and high-rise services across Canada.",
+      icon: purposeIcon,
     },
     {
       title: "Purpose",
       description: "We exist to protect and preserve buildings through innovative access methods.",
+      icon: visionIcon,
     },
   ];
 
@@ -59,7 +67,7 @@ const AboutUs = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-[position:15%] lg:bg-center bg-[url('/about-us/hero.jpg')]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[50vh] lg:min-h-[80vh]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[80vh]">
           {/* <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between h-full gap-8"> */}
           <div className="max-w-2xl">
             <h1 className="text-4xl lg:text-7xl font-bold text-white leading-tight">
@@ -141,8 +149,8 @@ const AboutUs = () => {
       </section>
       <div className="bg-[url('/about-us/map.jpg')] bg-cover bg-no-repeat">
         {/* About Content Section */}
-        <section className="py-16 lg:py-24">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-10">
+        <section className="py-16 lg:py-24 pb-10 lg:pb-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
             <div className="flex justify-between w-full flex-col xl:flex-row">
               <h3 className="text-[#a5b715] font-bold mb-4 uppercase text-sm tracking-wider">
                 ABOUT US
@@ -156,9 +164,9 @@ const AboutUs = () => {
                 <img src="/home/decoration_line_wide.svg" className="my-7 lg:my-14 block" />
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 p-4">
                   {stats.map((stat, index) => (
-                    <div key={index}>
+                    <div key={index} className="self-center">
                       <div className="text-3xl lg:text-[44px] font-semibold text-gray-900 mb-2">
                         {stat.value}
                       </div>
@@ -174,7 +182,7 @@ const AboutUs = () => {
         </section>
 
         {/* Large Image Section */}
-        <section className="py-8 lg:py-12">
+        <section className="py-4 pb-14 lg:py-12 lg:pb-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <img
@@ -189,188 +197,193 @@ const AboutUs = () => {
       {/* Principles Section - Dark */}
       <section className="py-16 lg:py-24 bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider">
-              OUR APPROACH
-            </h3>
-            <div className="grid grid-rows-2 lg:grid-cols-2">
-              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-0 lg:mb-16">
-                The Principles
-                <br />
-                Behind Our Work
-              </h2>
-              <p className="text-white text-xl">
-                We focus on delivering precise, reliable results in complex environments-through
-                communication, strong planning, and execution you can trust.
-              </p>
-            </div>
-            <img src="/home/decoration_line_wide.svg" className="block lg:hidden my-14" />
-
-            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-              {principles.map((principle, index) => (
-                <div key={index} className="bg-brand-dark-light rounded-2xl p-8">
-                  <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-6">
-                    <div className="w-6 h-6 rounded-full bg-brand-dark"></div>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-4">{principle.title}</h3>
-                  <p className="text-gray-300 leading-relaxed">{principle.description}</p>
-                </div>
-              ))}
-            </div>
-            <img src="/home/decoration_line_wide.svg" className="hidden lg:block my-14" />
+          <h3 className="text-[#a5b715] font-bold mb-6 uppercase text-sm tracking-wider">
+            OUR APPROACH
+          </h3>
+          <div className="flex flex-col gap-6 lg:grid lg:gap-16 lg:grid-cols-2">
+            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-0 lg:mb-16">
+              The Principles
+              <br />
+              Behind Our Work
+            </h2>
+            <p className="text-white text-xl">
+              We focus on delivering precise, reliable results in complex environments-through
+              communication, strong planning, and execution you can trust.
+            </p>
           </div>
+          <img src="/home/decoration_line_wide.svg" className="block lg:hidden my-14" />
+
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            {principles.map((principle, index) => (
+              <div key={index} className="bg-brand-dark-light rounded-2xl p-8">
+                <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-6">
+                  <img src={principle.icon} alt={principle.title} />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">{principle.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{principle.description}</p>
+              </div>
+            ))}
+          </div>
+          <img src="/home/decoration_line_wide.svg" className="hidden lg:block my-14" />
         </div>
       </section>
 
       {/* Safety & Certifications Section */}
       <section className="py-16 lg:py-24 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div>
-                <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider">
-                  SAFETY & COMPLIANCE
-                </h3>
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                  Safety &<br />
-                  Certifications
-                </h2>
-                <p className="text-gray-700 leading-relaxed">
-                  Safety is our top priority. Every team member is IRATA-certified and undergoes
-                  ongoing training to stay ahead of industry standards. We follow strict safety
-                  protocols on every job, ensuring safety at every step.
-                </p>
-              </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider">
+                OUR SAFETY STANDARDS
+              </h3>
+              <h2 className="text-3xl lg:text-6xl font-bold text-gray-900 mb-6">
+                Safety &<br />
+                Certifications
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Safety is our top priority. Every team member is IRATA-certified and undergoes
+                ongoing training to stay ahead of industry standards. We follow strict safety
+                protocols on every job, ensuring safety at every step.
+              </p>
+            </div>
 
-              <div className="bg-white p-6 rounded-3xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-6">What sets us apart:</h3>
-                <ul className="space-y-4">
-                  {certifications.map((cert, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="text-[#c3d533] mr-3 mt-1">•</span>
-                      <span className="text-gray-700">{cert}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="bg-white p-6 rounded-3xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-6">What sets us apart:</h3>
+
+              <ul className="space-y-4">
+                {certifications.map((cert, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    {/* FIXED ICON WRAPPER */}
+                    <span className="flex-shrink-0 w-4 h-4 mt-1">
+                      <img src="/green_check.svg" alt="check" />
+                    </span>
+
+                    {/* TEXT */}
+                    <span className="text-gray-700 leading-snug">{cert}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-brand-lime rounded-3xl p-8 lg:p-12 flex items-center justify-between">
-              <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">
-                Let's Discuss Your Project
-              </h2>
-              <button className="w-[58px] h-[58px] lg:w-16 lg:h-16 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6">
-                <ArrowRight className="text-white w-6 h-6" />
-              </button>
-            </div>
-          </div>
+        <div className="mt-[80px] lg:mt-[120px]">
+          <CTASection />
         </div>
       </section>
 
       {/* Our Work Section - Dark */}
-      <section className="py-16 lg:py-24 bg-brand-dark relative">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider text-center">
-              OUR WORK
-            </h3>
-            <h2 className="text-3xl lg:text-5xl font-bold text-white text-center mb-12 lg:mb-16">
-              Our Work in Real Conditions
-            </h2>
+      <section className="py-16 lg:py-24 bg-brand-dark relative overflow-hidden">
+        <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider text-center">
+          OUR WORK
+        </h3>
+        <h2 className="text-3xl lg:text-5xl font-bold text-white text-center mb-12 lg:mb-16">
+          Our Work in Real Conditions
+        </h2>
 
-            {/* Mobile Swiper */}
-            <div className="lg:hidden">
-              <Swiper
-                modules={[Pagination]}
-                spaceBetween={30}
-                centeredSlides
-                slidesPerView={1.3}
-                initialSlide={1}
-                pagination={{
-                  clickable: true,
-                  bulletClass: "swiper-pagination-bullet !bg-white/50",
-                  bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
-                }}
-                className="!pb-12"
-              >
-                {projects.map((project, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="relative overflow-hidden rounded-[24px] aspect-[9/14]">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+        {/* ================= MOBILE ================= */}
+        <div className="lg:hidden">
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={20}
+            slidesPerView="auto"
+            centeredSlides
+            pagination={{
+              clickable: true,
+              bulletClass: "swiper-pagination-bullet !bg-white/40",
+              bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
+            }}
+            className="!pb-12"
+          >
+            {projects.map((project, index) => (
+              <SwiperSlide key={index} className="!w-[80vw] max-w-[320px]">
+                <div className="relative overflow-hidden rounded-2xl aspect-[9/14]">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
 
-            {/* Desktop Swiper */}
-            <div className="hidden lg:block relative">
-              <Swiper
-                modules={[Navigation, Pagination]}
-                spaceBetween={30}
-                slidesPerView={1}
-                navigation={{
-                  nextEl: ".our-work-next",
-                  prevEl: ".our-work-prev",
-                }}
-                pagination={{
-                  clickable: true,
-                  bulletClass: "swiper-pagination-bullet !bg-white/50",
-                  bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
-                }}
-                className="!pb-12"
-              >
-                {projects.map((project, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="grid grid-cols-3 gap-6 px-12">
-                      {/* Left small image */}
-                      <div className="relative overflow-hidden rounded-3xl aspect-[3/4]">
-                        <img
-                          src="https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800"
-                          alt="Project detail"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      {/* Center large image */}
-                      <div className="relative overflow-hidden rounded-[40px] border-4 border-[#5A9BD5] aspect-[3/4]">
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      {/* Right small image */}
-                      <div className="relative overflow-hidden rounded-3xl aspect-[3/4]">
-                        <img
-                          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800"
-                          alt="Project detail"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+        {/* ================= DESKTOP ================= */}
+        <div className="hidden lg:block relative">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            slidesPerView="auto"
+            centeredSlides
+            initialSlide={1}
+            spaceBetween={40}
+            navigation={{
+              nextEl: ".our-work-next",
+              prevEl: ".our-work-prev",
+            }}
+            pagination={{
+              clickable: true,
+              bulletClass: "swiper-pagination-bullet !bg-white/40",
+              bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
+            }}
+            className="!pb-12"
+          >
+            {projects.map((project, index) => (
+              <SwiperSlide key={index} className="!w-[60vw] max-w-[720px]">
+                <div className="relative overflow-hidden rounded-3xl aspect-[16/9]">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-              {/* Custom Navigation Buttons */}
-              <button className="our-work-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors">
-                <ArrowRight className="w-6 h-6 text-gray-900 rotate-180" />
-              </button>
-              <button className="our-work-next absolute right-4 top-1/2 -translate-y-1/2 z-10 w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors">
-                <ArrowRight className="w-6 h-6 text-gray-900" />
-              </button>
-            </div>
+          {/* Navigation */}
+          <div
+            className="
+              absolute
+              top-[45%]
+              left-1/2
+              -translate-x-1/2
+              -translate-y-1/2
+              flex justify-between
+              w-full max-w-[840px]
+              px-6
+              pointer-events-none
+              z-10
+            "
+          >
+            <button
+              className="
+                our-work-prev
+                pointer-events-auto
+                w-[60px] h-[60px]
+                rounded-full bg-white
+                flex items-center justify-center
+                hover:bg-gray-100 transition-colors
+                border-black
+                border-1
+              "
+            >
+              <ArrowRight className="w-6 h-6 text-gray-900 rotate-180" />
+            </button>
+
+            <button
+              className="
+                our-work-next
+                pointer-events-auto
+                w-[60px] h-[60px]
+                rounded-full bg-white
+                flex items-center justify-center
+                hover:bg-gray-100 transition-colors
+                border-black
+                border-1
+              "
+            >
+              <ArrowRight className="w-6 h-6 text-gray-900" />
+            </button>
           </div>
         </div>
       </section>

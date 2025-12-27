@@ -1,11 +1,12 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
-import { Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import { Button } from "../ui/button";
+import { Pagination } from "swiper/modules";
+import { CTASection } from "../common/CTASection";
 
 const testimonials = [
   {
@@ -50,7 +51,7 @@ const TestimonialsSection = () => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 sm:mb-12 lg:mb-16">
           <h3 className="text-[#c3d533] font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">
@@ -62,12 +63,13 @@ const TestimonialsSection = () => {
         </div>
       </div>
 
-      <div className="relative cursor-pointer user-select-none px-[16px]">
+      <div className="cursor-pointer user-select-none px-[16px] py-6">
         <Swiper
           modules={[Pagination]}
           pagination={{
             type: "bullets",
             clickable: true,
+            enabled: true,
           }}
           spaceBetween={20}
           centeredSlides
@@ -83,6 +85,11 @@ const TestimonialsSection = () => {
             1024: {
               slidesPerView: 2.5,
               initialSlide: 1,
+              pagination: {
+                type: "bullets",
+                clickable: true,
+                enabled: false,
+              },
             },
           }}
           onSlideChange={(swiper) => {
@@ -164,33 +171,56 @@ const TestimonialsSection = () => {
               </div>
             </SwiperSlide>
           ))}
-          <div
-            className="hidden md:block
-              absolute
-              inset-x-0
-              top-1/2
-              -translate-y-1/2
-              z-10
-              pointer-events-none"
-          >
-            <div className="flex justify-between px-2">
-              <Button
-                variant={"rounded"}
-                className="flex justify-center items-center float-start w-16 h-16"
-                onClick={() => swiperRef.current?.slidePrev()}
+          <div className="hidden lg:flex justify-between absolute z-20 w-full right-0 lg:w-[50%] top-[50%] lg:right-[25%]">
+            <Button
+              variant={"rounded"}
+              className="flex justify-center items-center float-start w-16 h-16 bg-[#f5f5f5] border-black"
+              onClick={() => swiperRef.current?.slidePrev()}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="lucide lucide-arrow-right !w-6 !h-6 text-black rotate-180"
+                aria-hidden="true"
               >
-                <img src="/home/arrow.svg" alt="Arrow Left" className="w-4 h-4 rotate-180" />
-              </Button>
-              <Button
-                variant={"rounded"}
-                className="flex justify-center items-center float-end w-16 h-16 rounded-full"
-                onClick={() => swiperRef.current?.slideNext()}
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </Button>
+            <Button
+              variant={"rounded"}
+              className="flex justify-center items-center float-start w-16 h-16 bg-[#f5f5f5] border-black"
+              onClick={() => swiperRef.current?.slideNext()}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="lucide lucide-arrow-right !w-6 !h-6 text-black"
+                aria-hidden="true"
               >
-                <img src="/home/arrow.svg" alt="Arrow Right" className="w-4 h-4" />
-              </Button>
-            </div>
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </Button>
           </div>
         </Swiper>
+      </div>
+      <div className="pt-[80px] lg:pt-[120px] pb-[20px]">
+        <CTASection />
       </div>
     </section>
   );
