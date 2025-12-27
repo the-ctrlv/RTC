@@ -1,5 +1,3 @@
-import { CheckCircle2, Star, BarChart3 } from "lucide-react";
-
 const BenefitsSection = () => {
   const benefits = [
     {

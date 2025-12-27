@@ -8,7 +8,7 @@ export const CTASection = () => {
 
   return (
     <>
-      <Modal className="!p-0" isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+      <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
         <ContactForm />
       </Modal>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
