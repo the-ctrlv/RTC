@@ -84,9 +84,9 @@ const Projects = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
+      <section className="bg-brand-dark text-white pt-[130px] pb-[50px] sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Our Projects</h1>
+          <h1 className="text-[36px] lg:text-[64px] font-bold mb-4">Our Projects</h1>
           <img src="/decoration_line.svg" alt="Divider" className="h-[14px] w-auto" />
         </div>
       </section>
@@ -95,7 +95,7 @@ const Projects = () => {
       <section className="py-12 lg:pt-0 pt-0 bg-[#2d2d2d]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[12px] mb-12">
               {projects.map((project, index) => (
                 <div
                   key={index}

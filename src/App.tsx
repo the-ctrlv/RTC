@@ -9,6 +9,8 @@ import Industries from "./pages/Industries";
 import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import Careers from "./pages/Careers";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import "./App.css";
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </Layout>
     </Router>

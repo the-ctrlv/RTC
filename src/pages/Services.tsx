@@ -34,7 +34,7 @@ const Services = () => {
         <div
           className="
             container mx-auto px-4 sm:px-6 lg:px-8
-            -translate-y-20 sm:-translate-y-24 lg:-translate-y-20
+            -translate-y-20 sm:-translate-y-24 lg:-translate-y-24
           "
         >
           <div className="flex flex-col lg:flex-row gap-4">

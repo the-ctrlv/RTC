@@ -231,7 +231,7 @@ const ServiceDetail = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-        className="flex justify-center relative bg-cover bg-center pt-24 lg:pt-32 h-[32vh] lg:h-[80vh]"
+        className="flex justify-center relative bg-cover bg-center pt-24 lg:pt-32 h-[35vh] lg:h-[80vh]"
         style={{
           backgroundImage: `url('${service.hero.image}')`,
         }}
@@ -253,9 +253,11 @@ const ServiceDetail = () => {
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20 items-start">
-            <div className="flex flex-col gap-5">
-              <span className="text-[#C3D534] font-bold uppercase">Service Overview</span>
-              <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <div className="flex flex-col">
+              <span className="text-[#A5B716] font-bold uppercase text-[16px] mb-[18px]">
+                Service Overview
+              </span>
+              <h2 className="text-[34px] lg:text-5xl font-bold text-gray-900 mb-[32px]">
                 {service.whatIsWork.title}
               </h2>
               <div className="relative lg:hidden overflow-hidden rounded-3xl aspect-[4/5]">
@@ -265,7 +267,7 @@ const ServiceDetail = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-gray-700 text-base lg:text-lg leading-relaxed">
+              <p className="text-gray-700 text-[18px] lg:text-lg leading-relaxed mt-[44px]">
                 {service.whatIsWork.description}
               </p>
             </div>
@@ -281,7 +283,7 @@ const ServiceDetail = () => {
       </section>
 
       {/* Key Services Section - Dark */}
-      <section className="py-16 lg:py-32 bg-brand-dark">
+      <section className="py-20 lg:py-32 bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative flex flex-col lg:flex-row gap-10 lg:gap-20">
             <svg
@@ -306,7 +308,7 @@ const ServiceDetail = () => {
               />
             </svg>
             <div className="flex flex-col gap-8 items-start z-10">
-              <span className="text-[#C3D534] font-bold uppercase">Our Services</span>
+              <span className="text-[#A5B716] font-bold uppercase">Our Services</span>
               <h2 className="text-3xl lg:text-5xl font-bold text-white">
                 {service.keyServices.title}
               </h2>
@@ -359,8 +361,8 @@ const ServiceDetail = () => {
       <section className="py-16 lg:py-24 bg-white">
         <div>
           <div className="text-center">
-            <span className="text-[#C3D534] font-bold uppercase">Our Work</span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-4 mb-12 text-center">
+            <span className="text-[#A5B716] font-bold uppercase">Our Work</span>
+            <h2 className="text-[34px] lg:text-[48px] font-bold text-gray-900 mt-4 mb-12 text-center">
               {service.realConditions.title}
             </h2>
             <div className="lg:hidden mb-10">
@@ -477,12 +479,12 @@ const ServiceDetail = () => {
       <section className="py-20 lg:py-24 pb-0 lg:pb-24 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center gap-10 lg:gap-16">
-            <div className="flex flex-col gap-8 items-start">
-              <span className="text-[#C3D534] font-bold uppercase">Why choose us</span>
+            <div className="flex flex-col gap-[18px] items-start">
+              <span className="text-[#A5B716] font-bold uppercase">Why choose us</span>
               <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
                 {service.whyChoose.title}
               </h2>
-              <p>{service.whyChoose.description}</p>
+              <p className="text-[18px]">{service.whyChoose.description}</p>
             </div>
             <div className="!bg-white p-6 rounded-3xl w-full">
               <h3 className="text-xl font-bold text-gray-900 mb-6">What sets us apart:</h3>
@@ -499,7 +501,7 @@ const ServiceDetail = () => {
                       >
                         <path
                           d="M14.5833 1.25L5.41667 10.4167L1.25 6.25"
-                          stroke="#C3D534"
+                          stroke="#A5B716"
                           strokeWidth="2.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -508,14 +510,14 @@ const ServiceDetail = () => {
                     </span>
 
                     {/* TEXT */}
-                    <span className="text-gray-700 leading-snug">{reason}</span>
+                    <span className="text-gray-700 leading-snug text-[16px]">{reason}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
         </div>
-        <div className="py-[80px] lg:pb-0 lg:pt-[120px]">
+        <div className="py-[60px] pb-[80px] lg:pb-0 lg:pt-[120px]">
           <CTASection />
         </div>
       </section>
@@ -526,10 +528,10 @@ const ServiceDetail = () => {
           <div className="flex flex-col lg:flex-row justify-between gap-5">
             {/* Title */}
             <div className="lg:max-w-md">
-              <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider">
+              <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider">
                 FAQ'S
               </h3>
-              <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-8 lg:mb-12">
+              <h2 className="text-[34px] lg:text-5xl font-bold text-gray-900 mb-8 lg:mb-12">
                 {service.faq.title}
               </h2>
             </div>
