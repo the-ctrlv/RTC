@@ -112,12 +112,14 @@ const TestimonialsSection = () => {
               if (index === swiper.activeIndex) {
                 slide.style.transform = "scale(1)";
                 slide.style.opacity = "1";
-                slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
+                slide.style.transition =
+                  "transform 0.3s ease, opacity 0.5s ease";
                 // slide.style.width = "100%";
               } else {
                 slide.style.transform = "scale(0.85)";
                 slide.style.opacity = "0.5";
-                slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
+                slide.style.transition =
+                  "transform 0.3s ease, opacity 0.5s ease";
               }
             });
           }}
@@ -134,7 +136,7 @@ const TestimonialsSection = () => {
                 <img src="/home/quotes.svg" className="w-[22px] mb-10 block" />
 
                 {/* Testimonial Text */}
-                <p className="text-gray-900 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 sm:mb-10 lg:mb-12">
+                <p className="text-gray-900 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10 lg:mb-12">
                   {testimonial.text}
                 </p>
 
@@ -155,7 +157,9 @@ const TestimonialsSection = () => {
                       <div className="font-bold text-sm sm:text-base text-gray-900">
                         {testimonial.author}
                       </div>
-                      <div className="text-xs sm:text-sm text-gray-600">{testimonial.role}</div>
+                      <div className="text-xs sm:text-sm text-gray-600">
+                        {testimonial.role}
+                      </div>
                     </div>
                   </div>
 

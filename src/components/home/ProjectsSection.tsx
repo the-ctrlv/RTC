@@ -26,28 +26,32 @@ const ProjectsSection = () => {
       location: "Cardero St, Vancouver",
       address: "1550 Alberni St",
       services: ["Rope Access Glazing", "Sealant Applications"],
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
     },
     {
       title: "Jim Pattison Toyota",
       location: "Jim Pattison Toyota Downtown",
       address: "1200 Burrard St",
       services: ["Rope Access Glazing"],
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
     },
     {
       title: "400 West Georgia",
       location: "400 West Georgia, Vancouver",
       address: "Downtown Vancouver",
       services: ["Glass Installation", "Rope Access System"],
-      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=800",
     },
     {
       title: "Keltic Place",
       location: "Keltic Place, Richmond",
       address: "8388 No. 3 Road",
       services: ["Storefront Installation", "Sealant Applications"],
-      image: "https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?q=80&w=800",
     },
   ];
 
@@ -55,15 +59,19 @@ const ProjectsSection = () => {
     <section className="py-16 sm:py-20 lg:py-24 bg-brand-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div>
-          <h3 className="text-[#c3d533] font-bold mb-4 uppercase text-sm tracking-wider">
+          <h3 className="text-[#D9F043] font-bold mb-4 uppercase text-base tracking-wider">
             OUR WORK
           </h3>
           <div className="flex flex-col items-start md:flex-row md:items-center w-full gap-7 relative mb-[70px]">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-nowrap">
-              Industrial Services
+              Latest Projects
             </h2>
             <div className="flex-grow relative">
-              <img src="/home/decoration_line_wide.svg" alt="Divider" className="block flex-grow" />
+              <img
+                src="/home/decoration_line_wide.svg"
+                alt="Divider"
+                className="block flex-grow"
+              />
             </div>
           </div>
         </div>
@@ -96,15 +104,21 @@ const ProjectsSection = () => {
                       <div className="flex gap-2 text-white">
                         <MapPin className="w-4 h-4 text-[#c3d533] mt-0.5 shrink-0" />
                         <div>
-                          <div className="font-semibold text-sm">{project.location}</div>
-                          <div className="text-gray-300 text-xs">{project.address}</div>
+                          <div className="font-semibold text-sm">
+                            {project.location}
+                          </div>
+                          <div className="text-gray-300 text-xs">
+                            {project.address}
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     {/* Info */}
                     <div className="bg-brand-dark-light p-4">
-                      <h3 className="text-lg font-bold text-white mb-2">{project.title}</h3>
+                      <h3 className="text-lg font-bold text-white mb-2">
+                        {project.title}
+                      </h3>
 
                       <div className="flex flex-wrap gap-2 max-h-[96px] overflow-hidden">
                         {project.services.map((service, idx) => (
@@ -141,14 +155,24 @@ const ProjectsSection = () => {
               {/* Project Info - Bottom with dark background */}
               <div className="absolute bottom-0 left-0 right-0">
                 <div className="flex items-center gap-2.5 text-white backdrop-blur-md py-5 px-10 border-b border-brand-lime">
-                  <img src="/map_pin.svg" alt="Map Pin" className="w-6 h-auto text-[#c3d533]" />
+                  <img
+                    src="/map_pin.svg"
+                    alt="Map Pin"
+                    className="w-6 h-auto text-[#c3d533]"
+                  />
                   <div>
-                    <div className="font-semibold text-base leading-tight">{project.location}</div>
-                    <div className="text-white text-sm mt-0.5">{project.address}</div>
+                    <div className="font-semibold text-base leading-tight">
+                      {project.location}
+                    </div>
+                    <div className="text-white text-sm mt-0.5">
+                      {project.address}
+                    </div>
                   </div>
                 </div>
                 <div className="bg-brand-dark-light p-6 px-10">
-                  <h3 className="text-3xl font-bold text-white mb-4">{project.title}</h3>
+                  <h3 className="text-3xl font-bold text-white mb-4">
+                    {project.title}
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {project.services.map((service, idx) => (
                       <span

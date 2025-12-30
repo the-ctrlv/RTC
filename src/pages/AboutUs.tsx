@@ -34,7 +34,8 @@ const AboutUs = () => {
     },
     {
       title: "Purpose",
-      description: "We exist to protect and preserve buildings through innovative access methods.",
+      description:
+        "We exist to protect and preserve buildings through innovative access methods.",
       icon: visionIcon,
     },
   ];
@@ -50,15 +51,18 @@ const AboutUs = () => {
 
   const projects = [
     {
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
       title: "High-Rise Facade Inspection",
     },
     {
-      image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
       title: "Building Maintenance",
     },
     {
-      image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
       title: "Glass Replacement",
     },
   ];
@@ -78,7 +82,9 @@ const AboutUs = () => {
           </div>
           <div className="absolute bottom-[7vh] right-0">
             <div className="xl:flex items-center gap-2 mb-6 hidden">
-              <span className="text-white text-base font-medium">Company Details</span>
+              <span className="text-white text-base font-medium">
+                Company Details
+              </span>
               <img
                 src="/about-us/arrow_down_right.svg"
                 alt="Company Details Icon"
@@ -157,11 +163,15 @@ const AboutUs = () => {
               </h3>
               <div className="max-w-[856px]">
                 <p className="text-gray-700 text-base lg:text-[32px] font-semibold leading-relaxed mb-0 lg:mb-12">
-                  Rope Tech Group provides safe and efficient high-rise, industrial, and
-                  infrastructure services across British Columbia. Our IRATA-certified technicians
-                  use advanced rope access methods to reach complex areas with minimal disruption.
+                  Rope Tech Group provides safe and efficient high-rise,
+                  industrial, and infrastructure services across British
+                  Columbia. Our IRATA-certified technicians use advanced rope
+                  access methods to reach complex areas with minimal disruption.
                 </p>
-                <img src="/home/decoration_line_wide.svg" className="my-7 lg:my-14 block" />
+                <img
+                  src="/home/decoration_line_wide.svg"
+                  className="my-7 lg:my-14 block"
+                />
 
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 p-4">
@@ -207,11 +217,15 @@ const AboutUs = () => {
               Behind Our Work
             </h2>
             <p className="text-white text-xl">
-              We focus on delivering precise, reliable results in complex environments-through
-              communication, strong planning, and execution you can trust.
+              We focus on delivering precise, reliable results in complex
+              environments-through communication, strong planning, and execution
+              you can trust.
             </p>
           </div>
-          <img src="/home/decoration_line_wide.svg" className="block lg:hidden my-14" />
+          <img
+            src="/home/decoration_line_wide.svg"
+            className="block lg:hidden my-14"
+          />
 
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             {principles.map((principle, index) => (
@@ -219,12 +233,19 @@ const AboutUs = () => {
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-6">
                   <img src={principle.icon} alt={principle.title} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">{principle.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{principle.description}</p>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {principle.title}
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  {principle.description}
+                </p>
               </div>
             ))}
           </div>
-          <img src="/home/decoration_line_wide.svg" className="hidden lg:block my-14" />
+          <img
+            src="/home/decoration_line_wide.svg"
+            className="hidden lg:block my-14"
+          />
         </div>
       </section>
 
@@ -241,14 +262,17 @@ const AboutUs = () => {
                 Certifications
               </h2>
               <p className="text-gray-700 leading-relaxed">
-                Safety is our top priority. Every team member is IRATA-certified and undergoes
-                ongoing training to stay ahead of industry standards. We follow strict safety
-                protocols on every job, ensuring safety at every step.
+                Safety is our top priority. Every team member is IRATA-certified
+                and undergoes ongoing training to stay ahead of industry
+                standards. We follow strict safety protocols on every job,
+                ensuring safety at every step.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-3xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">What sets us apart:</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">
+                What sets us apart:
+              </h3>
 
               <ul className="space-y-4">
                 {certifications.map((cert, index) => (
@@ -267,13 +291,13 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="mt-[80px] lg:mt-[120px]">
-          <CTASection />
+          <CTASection option={2} />
         </div>
       </section>
 
       {/* Our Work Section - Dark */}
       <section className="py-16 lg:py-24 bg-brand-dark relative overflow-hidden">
-        <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-sm tracking-wider text-center">
+        <h3 className="text-[#D9F043] font-bold mb-3 uppercase text-base tracking-wider text-center">
           OUR WORK
         </h3>
         <h2 className="text-3xl lg:text-5xl font-bold text-white text-center mb-12 lg:mb-16">
@@ -290,7 +314,8 @@ const AboutUs = () => {
             pagination={{
               clickable: true,
               bulletClass: "swiper-pagination-bullet !bg-white/40",
-              bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
+              bulletActiveClass:
+                "swiper-pagination-bullet-active !bg-brand-lime",
             }}
             className="!pb-12"
           >
@@ -323,7 +348,8 @@ const AboutUs = () => {
             pagination={{
               clickable: true,
               bulletClass: "swiper-pagination-bullet !bg-white/40",
-              bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
+              bulletActiveClass:
+                "swiper-pagination-bullet-active !bg-brand-lime",
             }}
             className="!pb-12"
           >

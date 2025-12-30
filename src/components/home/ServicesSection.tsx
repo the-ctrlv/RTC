@@ -44,7 +44,7 @@ const ServicesSection = () => {
 
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         {/* Mobile Layout */}
         <div className="lg:hidden">
           <div className="mb-8">
@@ -120,17 +120,17 @@ const ServicesSection = () => {
         {/* Desktop Layout */}
         <div className="hidden lg:grid lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-brand-lime font-bold mb-3 uppercase text-sm tracking-wider">
+            <h3 className="text-brand-lime font-bold mb-3 uppercase text-base tracking-wider">
               OUR SERVICES
             </h3>
-            <h2 className="text-4xl font-bold mb-6 text-gray-900">
+            <h2 className="text-[48px] font-bold mb-6 text-gray-900">
               Industrial Services
             </h2>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-3 h-3 bg-brand-lime rounded-full flex-shrink-0"></div>
               <div className="flex-1 h-px bg-brand-lime max-w-md"></div>
             </div>
-            <p className="text-gray-700 leading-relaxed text-base">
+            <p className="text-gray-700 leading-relaxed text-lg">
               Our team provides specialized industrial services that ensure
               safety, reliability, and long-term performance. We deliver
               professional maintenance, inspection, and repair solutions — even

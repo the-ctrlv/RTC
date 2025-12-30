@@ -22,12 +22,12 @@ const BenefitsSection = () => {
 
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-brand-dark min-h-screen flex items-center">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 mb-12 lg:mb-16">
             {/* Left Column - Title */}
             <div>
-              <h3 className="text-[#c3d533] font-bold mb-5 uppercase text-xs sm:text-sm tracking-wider">
+              <h3 className="text-[#c3d533] font-bold mb-5 uppercase text-xs sm:text-base tracking-wider">
                 WHY CHOOSE US
               </h3>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
@@ -37,7 +37,7 @@ const BenefitsSection = () => {
 
             {/* Right Column - Description */}
             <div className="flex items-center">
-              <p className="text-white text-base sm:text-lg leading-relaxed">
+              <p className="text-white text-base sm:text-lg leading-relaxed lg:mt-12">
                 We focus on delivering precise, reliable results in complex
                 environments—through clear communication, strong planning, and
                 execution you can trust.
@@ -57,7 +57,7 @@ const BenefitsSection = () => {
               return (
                 <div
                   key={index}
-                  className="bg-brand-dark-light rounded-2xl p-7 hover:bg-brand-dark-lighter transition-colors"
+                  className="bg-brand-dark-light rounded-[40px] p-7 hover:bg-brand-dark-lighter transition-colors"
                 >
                   <div className="w-12 h-12 sm:w-14 sm:h-14 bg-brand-lime rounded-full flex items-center justify-center mb-14">
                     <img
