@@ -16,8 +16,15 @@ const ContactSection = () => {
   } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data);
-    alert("Thank you for contacting us! We will get back to you soon.");
+    const subject = encodeURIComponent(
+      `Contact Form Submission from ${data.name}`
+    );
+    const body = encodeURIComponent(
+      `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+    );
+    const mailtoLink = `mailto:Skyaccessbc@gmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
     reset();
   };
 

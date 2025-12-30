@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 
 const Footer = () => {
+  const navigate = useNavigate();
   const links = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About us" },
@@ -23,7 +24,10 @@ const Footer = () => {
             <p className="text-[#7F7F7F]">
               Professional industrial & building access solutions across Canada.
             </p>
-            <Button className="bg-[#D9F043] text-gray-600 w-full hover:bg-[#D9F043]">
+            <Button
+              className="bg-[#D9F043] text-gray-600 w-full hover:bg-[#D9F043]"
+              onClick={() => navigate("/contact")}
+            >
               Get in Touch
             </Button>
           </div>
