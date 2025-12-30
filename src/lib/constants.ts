@@ -1,7 +1,7 @@
 // Common className patterns used throughout the app
 
 export const SECTION_PADDING = "py-16 sm:py-20 lg:py-24";
-export const CONTAINER = "container mx-auto px-4 sm:px-6 lg:px-8";
+export const CONTAINER = "container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14";
 export const MAX_WIDTH_SECTION = "max-w-7xl mx-auto";
 export const MAX_WIDTH_CONTENT = "max-w-6xl mx-auto";
 export const MAX_WIDTH_TEXT = "max-w-4xl mx-auto";

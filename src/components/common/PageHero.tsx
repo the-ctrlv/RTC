@@ -6,7 +6,7 @@ interface PageHeroProps {
 const PageHero = ({ title, subtitle }: PageHeroProps) => {
   return (
     <section className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
           {title}
         </h1>

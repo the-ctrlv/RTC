@@ -90,7 +90,7 @@ const Projects = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-brand-dark text-white pt-[130px] pb-[50px] sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <h1 className="text-[36px] lg:text-[64px] font-bold mb-4">
             Our Projects
           </h1>
@@ -104,7 +104,7 @@ const Projects = () => {
 
       {/* Projects Grid Section */}
       <section className="py-12 lg:pt-0 pt-0 bg-[#2d2d2d]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-[12px] mb-12">
               {projects.map((project, index) => (

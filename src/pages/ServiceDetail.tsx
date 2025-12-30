@@ -26,13 +26,13 @@ const ServiceDetail = () => {
       title: "Industrial Services",
       hero: {
         title: "Industrial Services",
-        image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=1600",
+        image: "/service1.jpg",
       },
       whatIsWork: {
         title: "What is Work at Heights & Rope Access?",
         description:
           "Work at heights and rope access are specialized techniques used to safely access hard-to-reach areas on industrial sites, infrastructure, and buildings. Rope access allows technicians to reach elevated or confined spaces using ropes and harnesses—offering a safer, faster, and more cost-effective alternative to scaffolding or heavy equipment.",
-        image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
+        image: "/building-service.jpeg",
       },
       keyServices: {
         title: "Key Rope Access Services We Provide",
@@ -77,14 +77,10 @@ const ServiceDetail = () => {
       },
       realConditions: {
         title: "Our Work in Real Conditions",
-        images: [
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
-          "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
-          "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
-        ],
+        images: ["/slider-1.jpeg", "/slider-2.jpeg", "/slider-3.jpeg"],
       },
       whyChoose: {
-        title: "Why Choose Rope Tech Group for Rope Access?",
+        title: "Why Choose <br /> Rope Tech Group <br /> for Rope Access?",
         reasons: [
           "IRATA-certified technicians",
           "Proven safety record",
@@ -122,13 +118,13 @@ const ServiceDetail = () => {
       title: "Building Services",
       hero: {
         title: "Building Services",
-        image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=1600",
+        image: "/service2.jpg",
       },
       whatIsWork: {
         title: "What is Work at Heights & Rope Access?",
         description:
           "Building services encompass comprehensive maintenance and restoration solutions for residential, commercial, and industrial properties. Our rope access techniques enable safe and efficient work on building envelopes, facades, and structural components.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+        image: "/service2.jpg",
       },
       keyServices: {
         title: "Key Rope Access Services We Provide",
@@ -177,14 +173,10 @@ const ServiceDetail = () => {
       },
       realConditions: {
         title: "Our Work in Real Conditions",
-        images: [
-          "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
-          "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
-        ],
+        images: ["/slider-1.jpeg", "/slider-2.jpeg", "/slider-3.jpeg"],
       },
       whyChoose: {
-        title: "Why Choose Rope Tech Group for Rope Access?",
+        title: "Why Choose <br /> Rope Tech Group <br /> for Rope Access?",
         reasons: [
           "Certified building specialists",
           "Comprehensive service portfolio",
@@ -251,7 +243,7 @@ const ServiceDetail = () => {
 
       {/* What is Work Section */}
       <section className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20 items-start">
             <div className="flex flex-col">
               <span className="text-[#A5B716] font-bold uppercase text-[16px] mb-[18px]">
@@ -284,9 +276,9 @@ const ServiceDetail = () => {
 
       {/* Key Services Section - Dark */}
       <section className="py-20 lg:py-32 bg-brand-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <div className="relative flex flex-col lg:flex-row gap-10 lg:gap-20">
-            <svg
+            {/* <svg
               width="435"
               height="348"
               viewBox="0 0 435 348"
@@ -306,9 +298,11 @@ const ServiceDetail = () => {
                 d="M272.516 64.2458C274.869 51.2556 286.735 43.3156 296.061 34.5422C298.151 32.4625 300.241 30.3828 302.395 28.24C311.917 19.1537 318.365 13.3432 331.244 9.78193C341.387 10.8809 345.363 12.9337 352.968 19.4973C355.067 21.295 357.166 23.0926 359.33 24.9447C362.169 27.485 362.169 27.485 365.067 30.0767C368.95 33.1611 368.95 33.1611 372.912 36.3079C380.432 45.2517 382.496 52.5124 384.043 64.0168C377.415 78.9902 365.804 89.4639 354.136 100.689C352.264 102.555 350.393 104.421 348.465 106.344C346.649 108.102 344.834 109.861 342.964 111.673C341.32 113.274 339.677 114.875 337.984 116.524C333.146 119.931 333.146 119.931 323.113 119.368C313.939 112.364 306.03 103.97 297.871 95.8464C295.568 93.64 293.266 91.4335 290.894 89.1602C288.717 87.0122 286.541 84.8642 284.299 82.6511C282.3 80.6868 280.301 78.7225 278.242 76.6987C273.86 70.7758 273.86 70.7758 272.516 64.2458ZM326.284 69.7369C328.849 71.196 331.414 72.6551 334.057 74.1584C341.796 71.0428 341.796 71.0428 348.61 67.0067C346.255 62.272 343.899 57.5373 341.472 52.6591C336.669 55.0192 331.867 57.3792 326.919 59.8108C326.709 63.0864 326.5 66.362 326.284 69.7369Z"
                 fill="#252525"
               />
-            </svg>
+            </svg> */}
             <div className="flex flex-col gap-8 items-start z-10">
-              <span className="text-[#A5B716] font-bold uppercase">Our Services</span>
+              <span className="text-[#A5B716] font-bold uppercase">
+                Our Services
+              </span>
               <h2 className="text-3xl lg:text-5xl font-bold text-white">
                 {service.keyServices.title}
               </h2>
@@ -324,7 +318,11 @@ const ServiceDetail = () => {
             </div>
             <Accordion>
               {service.keyServices.services.map(
-                (service: { title: string; content: string | undefined; bullets: string[] }) => {
+                (service: {
+                  title: string;
+                  content: string | undefined;
+                  bullets: string[];
+                }) => {
                   return (
                     <AccordionItem
                       dark
@@ -346,7 +344,7 @@ const ServiceDetail = () => {
                       </ul>
                     </AccordionItem>
                   );
-                },
+                }
               )}
             </Accordion>
             <Button className="flex lg:hidden bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-5">
@@ -374,22 +372,27 @@ const ServiceDetail = () => {
                 }}
                 spaceBetween={16}
                 slidesPerView="auto"
-                initialSlide={1}
+                initialSlide={0}
                 centeredSlides
                 className="projects-swiper py-10"
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
               >
-                {service.realConditions.images.map((image: string, index: number) => (
-                  <SwiperSlide key={index} className="max-w-[320px]">
-                    <div key={index} className="relative overflow-hidden rounded-3xl aspect-[4/5]">
-                      <img
-                        src={image}
-                        alt={`Project ${index + 1}`}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
+                {service.realConditions.images.map(
+                  (image: string, index: number) => (
+                    <SwiperSlide key={index} className="max-w-[320px]">
+                      <div
+                        key={index}
+                        className="relative overflow-hidden rounded-3xl aspect-[4/5]"
+                      >
+                        <img
+                          src={image}
+                          alt={`Project ${index + 1}`}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </SwiperSlide>
+                  )
+                )}
               </Swiper>
             </div>
 
@@ -399,7 +402,7 @@ const ServiceDetail = () => {
                 modules={[Navigation, Pagination]}
                 slidesPerView="auto"
                 centeredSlides
-                initialSlide={1}
+                initialSlide={0}
                 spaceBetween={40}
                 navigation={{
                   nextEl: ".our-work-next",
@@ -408,21 +411,27 @@ const ServiceDetail = () => {
                 pagination={{
                   clickable: true,
                   bulletClass: "swiper-pagination-bullet !bg-white/40",
-                  bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
+                  bulletActiveClass:
+                    "swiper-pagination-bullet-active !bg-brand-lime",
                 }}
                 className="!pb-12"
               >
-                {service.realConditions.images.map((image: string, index: number) => (
-                  <SwiperSlide key={index} className="!w-[60vw] max-w-[720px]">
-                    <div className="relative overflow-hidden rounded-3xl aspect-[16/9]">
-                      <img
-                        src={image}
-                        alt={`Project ${index + 1}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
+                {service.realConditions.images.map(
+                  (image: string, index: number) => (
+                    <SwiperSlide
+                      key={index}
+                      className="!w-[60vw] max-w-[720px]"
+                    >
+                      <div className="relative overflow-hidden rounded-3xl aspect-[16/9]">
+                        <img
+                          src={image}
+                          alt={`Project ${index + 1}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </SwiperSlide>
+                  )
+                )}
               </Swiper>
 
               {/* NAVIGATION */}
@@ -480,39 +489,48 @@ const ServiceDetail = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center gap-10 lg:gap-16">
             <div className="flex flex-col gap-[18px] items-start">
-              <span className="text-[#A5B716] font-bold uppercase">Why choose us</span>
-              <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
-                {service.whyChoose.title}
-              </h2>
+              <span className="text-[#A5B716] font-bold uppercase">
+                Why choose us
+              </span>
+              <h2
+                className="text-3xl lg:text-5xl font-bold text-gray-900"
+                dangerouslySetInnerHTML={{ __html: service.whyChoose.title }}
+              />
               <p className="text-[18px]">{service.whyChoose.description}</p>
             </div>
             <div className="!bg-white p-6 rounded-3xl w-full">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">What sets us apart:</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">
+                What sets us apart:
+              </h3>
               <ul className="space-y-4">
-                {service.whyChoose.reasons.map((reason: string, index: number) => (
-                  <li key={index} className="flex items-start gap-3">
-                    {/* FIXED ICON WRAPPER */}
-                    <span className="flex-shrink-0 w-4 h-4 mt-1">
-                      <svg
-                        viewBox="0 0 16 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-full h-full"
-                      >
-                        <path
-                          d="M14.5833 1.25L5.41667 10.4167L1.25 6.25"
-                          stroke="#A5B716"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
+                {service.whyChoose.reasons.map(
+                  (reason: string, index: number) => (
+                    <li key={index} className="flex items-start gap-3">
+                      {/* FIXED ICON WRAPPER */}
+                      <span className="flex-shrink-0 w-4 h-4 mt-1">
+                        <svg
+                          viewBox="0 0 16 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-full h-full"
+                        >
+                          <path
+                            d="M14.5833 1.25L5.41667 10.4167L1.25 6.25"
+                            stroke="#A5B716"
+                            strokeWidth="2.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
 
-                    {/* TEXT */}
-                    <span className="text-gray-700 leading-snug text-[16px]">{reason}</span>
-                  </li>
-                ))}
+                      {/* TEXT */}
+                      <span className="text-gray-700 leading-snug text-[16px]">
+                        {reason}
+                      </span>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           </div>
@@ -539,7 +557,10 @@ const ServiceDetail = () => {
             {/* FAQ */}
             <Accordion>
               {service.faq.questions.map(
-                (question: { question: string; answer: string }, idx: number) => (
+                (
+                  question: { question: string; answer: string },
+                  idx: number
+                ) => (
                   <AccordionItem
                     key={idx}
                     title={question.question}
@@ -548,7 +569,7 @@ const ServiceDetail = () => {
                   >
                     <p className="text-gray-400">{question.answer}</p>
                   </AccordionItem>
-                ),
+                )
               )}
             </Accordion>
           </div>

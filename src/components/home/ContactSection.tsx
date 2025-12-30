@@ -30,12 +30,12 @@ const ContactSection = () => {
 
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-brand-gray">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         {/* Mobile Layout - Single Column */}
         <div className="lg:hidden space-y-8">
           {/* Contact Information */}
           <div className="bg-brand-gray py-6">
-            <h3 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
+            <h3 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
               CONTACT US
             </h3>
             <h2 className="text-3xl font-bold mb-8 text-gray-900">
@@ -44,7 +44,7 @@ const ContactSection = () => {
 
             <div className="space-y-6">
               <div>
-                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
                   EMAIL
                 </h4>
                 <a
@@ -56,7 +56,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
                   PHONE
                 </h4>
                 <div className="text-gray-900 text-sm">
@@ -77,7 +77,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
                   LOCATION
                 </h4>
                 <p className="text-gray-900 text-sm">
@@ -86,7 +86,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-xs tracking-wider">
+                <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
                   INSTAGRAM
                 </h4>
                 <a

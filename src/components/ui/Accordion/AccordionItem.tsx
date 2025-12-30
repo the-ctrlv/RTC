@@ -40,7 +40,9 @@ export function AccordionItem({
         `}
       >
         <div className={`flex flex-col ${subtitle ? "gap-4" : "gap-0"}`}>
-          <h3 className={`text-base lg:text-xl font-bold ${text} pr-4`}>{title}</h3>
+          <h3 className={`text-base lg:text-xl font-bold ${text} pr-4`}>
+            {title}
+          </h3>
           <span className={`${text} font-normal`}>{subtitle}</span>
         </div>
 

@@ -34,7 +34,8 @@ const AboutUs = () => {
     },
     {
       title: "Purpose",
-      description: "We exist to protect and preserve buildings through innovative access methods.",
+      description:
+        "We exist to protect and preserve buildings through innovative access methods.",
       icon: visionIcon,
     },
   ];
@@ -50,15 +51,18 @@ const AboutUs = () => {
 
   const projects = [
     {
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
       title: "High-Rise Facade Inspection",
     },
     {
-      image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
       title: "Building Maintenance",
     },
     {
-      image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
+      image:
+        "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
       title: "Glass Replacement",
     },
   ];
@@ -78,7 +82,9 @@ const AboutUs = () => {
           </div>
           <div className="absolute bottom-[7vh] right-0">
             <div className="xl:flex items-center gap-2 mb-6 hidden">
-              <span className="text-white text-base font-medium">Company Details</span>
+              <span className="text-white text-base font-medium">
+                Company Details
+              </span>
               <img
                 src="/about-us/arrow_down_right.svg"
                 alt="Company Details Icon"
@@ -105,7 +111,9 @@ const AboutUs = () => {
                     />
                   </svg>
                 </div>
-                <div className="text-white text-[16px] mb-2">Business Hours</div>
+                <div className="text-white text-[16px] mb-2">
+                  Business Hours
+                </div>
                 <div className="text-white font-semibold text-lg">
                   Mon–Fri,
                   <br />
@@ -157,11 +165,12 @@ const AboutUs = () => {
               </h3>
               <div className="max-w-[872px]">
                 <p className="text-[#292929] text-[19px] lg:text-[32px] font-semibold leading-relaxed">
-                  Since 2013, Rope Tech Group has delivered expert rope access and high-rise
-                  maintenance services across British Columbia. Our certified team provides safe and
-                  efficient solutions for façades, concrete repairs, waterproofing, glazing, and
-                  inspections, combining experience and innovation to protect buildings with
-                  confidence.
+                  Since 2013, Rope Tech Group has delivered expert rope access
+                  and high-rise maintenance services across British Columbia.
+                  Our certified team provides safe and efficient solutions for
+                  façades, concrete repairs, waterproofing, glazing, and
+                  inspections, combining experience and innovation to protect
+                  buildings with confidence.
                 </p>
                 <img
                   src="/home/decoration_line_wide.svg"
@@ -188,7 +197,7 @@ const AboutUs = () => {
 
         {/* Large Image Section */}
         <section className="mt-[80px] lg:mt-[120px]">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
             <div className="max-w-5xl mx-auto">
               <img
                 src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=1200"
@@ -201,7 +210,7 @@ const AboutUs = () => {
       </div>
       {/* Principles Section - Dark */}
       <section className="py-[80px] lg:py-[140px] bg-brand-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <h3 className="text-[#a5b715] font-bold mb-6 uppercase text-[16px] tracking-wider">
             OUR APPROACH
           </h3>
@@ -212,11 +221,15 @@ const AboutUs = () => {
               Behind Our Work
             </h2>
             <p className="text-white text-[18px]">
-              We focus on delivering precise, reliable results in complex environments-through
-              communication, strong planning, and execution you can trust.
+              We focus on delivering precise, reliable results in complex
+              environments-through communication, strong planning, and execution
+              you can trust.
             </p>
           </div>
-          <img src="/home/decoration_line_wide.svg" className="block lg:hidden my-14" />
+          <img
+            src="/home/decoration_line_wide.svg"
+            className="block lg:hidden my-14"
+          />
 
           <div className="grid lg:grid-cols-3 gap-[8px]">
             {principles.map((principle, index) => (
@@ -224,18 +237,25 @@ const AboutUs = () => {
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-6">
                   <img src={principle.icon} alt={principle.title} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">{principle.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{principle.description}</p>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {principle.title}
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  {principle.description}
+                </p>
               </div>
             ))}
           </div>
-          <img src="/home/decoration_line_wide.svg" className="hidden lg:block my-14" />
+          <img
+            src="/home/decoration_line_wide.svg"
+            className="hidden lg:block my-14"
+          />
         </div>
       </section>
 
       {/* Safety & Certifications Section */}
       <section className="py-[80px] lg:py-[140px] bg-[#f5f5f5]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider">
@@ -246,14 +266,17 @@ const AboutUs = () => {
                 Certifications
               </h2>
               <p className="text-gray-700 leading-relaxed text-[18px]">
-                Safety is our top priority. Every team member is IRATA-certified and undergoes
-                ongoing training to stay ahead of industry standards. We follow strict safety
-                protocols on every job, ensuring safety at every step.
+                Safety is our top priority. Every team member is IRATA-certified
+                and undergoes ongoing training to stay ahead of industry
+                standards. We follow strict safety protocols on every job,
+                ensuring safety at every step.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-3xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">What sets us apart:</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">
+                What sets us apart:
+              </h3>
 
               <ul className="space-y-4">
                 {certifications.map((cert, index) => (
@@ -295,7 +318,8 @@ const AboutUs = () => {
             pagination={{
               clickable: true,
               bulletClass: "swiper-pagination-bullet !bg-white/40",
-              bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
+              bulletActiveClass:
+                "swiper-pagination-bullet-active !bg-brand-lime",
             }}
           >
             {projects.map((project, index) => (
@@ -327,7 +351,8 @@ const AboutUs = () => {
             pagination={{
               clickable: true,
               bulletClass: "swiper-pagination-bullet !bg-white/40",
-              bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
+              bulletActiveClass:
+                "swiper-pagination-bullet-active !bg-brand-lime",
             }}
           >
             {projects.map((project, index) => (

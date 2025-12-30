@@ -5,15 +5,21 @@ const ContactUs = () => {
     <div className="min-h-screen mb-[-50vh] lg:mb-0">
       {/* Hero Section */}
       <section className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24 h-[70vh] lg:h-auto">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 lg:mb-10">Contact Us</h1>
-          <img src="/decoration_line.svg" alt="Divider" className="h-[14px] w-auto" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 lg:mb-10">
+            Contact Us
+          </h1>
+          <img
+            src="/decoration_line.svg"
+            alt="Divider"
+            className="h-[14px] w-auto"
+          />
         </div>
       </section>
 
       {/* Contact Content */}
       <section className="py-12 sm:py-16 lg:py-20 -translate-y-[50vh] lg:translate-y-0">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-7xl mx-auto">
             {/* Contact Information */}
             <div className="space-y-8 order-2 lg:order-1">

@@ -10,7 +10,7 @@ const OurServicesSection = () => {
             <div className="flex flex-col lg:items-end lg:justify-between">
               {/* Left Column - Title */}
               <div>
-                <h3 className="text-[#c3d533] font-bold mb-4 uppercase text-sm tracking-wider">
+                <h3 className="text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
                   SERVICES
                 </h3>
                 <div className="flex flex-col lg:items-start lg:flex-row w-full gap-7">
@@ -89,7 +89,7 @@ const OurServicesSection = () => {
 
                 <Link to="/services/industrial-services">
                   <button className="w-full bg-[#d9f143] text-center hover:bg-[#d9f143]/90 text-gray-900 font-semibold py-4 px-6 rounded-md flex items-center gap-4 justify-center transition-colors group">
-                    <span className="text-lg font-semibold">
+                    <span className="text-sm lg:text-lg font-semibold">
                       Explore Industrial Services
                     </span>
                     <img
@@ -151,8 +151,8 @@ const OurServicesSection = () => {
                 </div>
                 <Link to="/services/industrial-services">
                   <button className="w-full bg-[#d9f143] text-center hover:bg-[#d9f143]/90 text-gray-900 font-semibold py-4 px-6 rounded-md flex items-center gap-4 justify-center transition-colors group">
-                    <span className="text-lg font-semibold">
-                      Explore Industrial Services
+                    <span className="text-sm lg:text-lg  font-semibold">
+                      Explore Building Services
                     </span>
                     <img
                       src="/home/arrow_diagonal.svg"

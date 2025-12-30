@@ -11,11 +11,13 @@ export const CTASection = ({ option }: { option?: number }) => {
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
         <ContactForm />
       </Modal>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <div onClick={() => setModalOpen(true)} className="cursor-pointer">
           <div className="max-w-6xl mx-auto inline">
             <div className="h-full bg-brand-lime rounded-[40px] p-6 lg:p-12 flex flex-col lg:items-start gap-y-[11px] justify-between">
-              <h2 className="text-2xl lg:text-[36px] font-bold text-gray-900 leading-tight">
+              <h2
+                className={`text-2xl lg:text-[36px] font-bold text-gray-900 leading-tight mb-10 lg:mb-0`}
+              >
                 {option === 2 ? (
                   <>
                     Ready to Work <br /> With Us?

@@ -10,11 +10,11 @@ const AboutSection = () => {
         {/* Mobile Layout */}
         <div className="lg:hidden max-w-md mx-auto">
           {/* Header */}
-          <h3 className="text-[#c3d533] font-bold mb-4 uppercase text-sm tracking-wider">
+          <h3 className="text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
             ABOUT US
           </h3>
           <h2 className="text-3xl font-bold mb-8 text-gray-900 leading-tight">
-            Delivering Safe & Certified Rope Access Solutions
+            Delivering Safe & Certified Rope <br /> Access Solutions
           </h2>
           {/* Image */}
           <div className="mb-8">
@@ -26,9 +26,9 @@ const AboutSection = () => {
           </div>
           {/* Description */}
           <p className="text-gray-700 mb-10 leading-relaxed text-base">
-            Since 2013, Rope Tech Group has delivered expert rope access and
-            high-rise maintenance services across Canada. Our certified team
-            provides safe and efficient solutions for façades, concrete repairs,
+            Rope Tech Group has delivered expert rope access and high-rise
+            maintenance services across Canada. Our certified team provides safe
+            and efficient solutions for façades, concrete repairs,
             waterproofing, glazing, and inspections. We combine experience and
             innovation to help property owners protect their buildings with
             confidence.
@@ -65,12 +65,12 @@ const AboutSection = () => {
               Delivering Safe & Certified Rope Access Solutions
             </h2>
             <p className="text-gray-700 mb-12 leading-relaxed text-lg">
-              Since 2013, Rope Tech Group has delivered expert rope access and
-              high-rise maintenance services across Canada. Our certified team
-              provides safe and efficient solutions for façades, concrete
-              repairs, waterproofing, glazing, and inspections. We combine
-              experience and innovation to help property owners protect their
-              buildings with confidence.
+              Rope Tech Group has delivered expert rope access and high-rise
+              maintenance services across Canada. Our certified team provides
+              safe and efficient solutions for façades, concrete repairs,
+              waterproofing, glazing, and inspections. We combine experience and
+              innovation to help property owners protect their buildings with
+              confidence.
             </p>
 
             {/* Stats */}

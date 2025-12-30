@@ -54,7 +54,7 @@ const TestimonialsSection = () => {
     <section className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <div className="mb-8 sm:mb-12 lg:mb-16">
-          <h3 className="text-[#c3d533] font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">
+          <h3 className="text-[#c3d533] font-bold mb-3 uppercase text-base tracking-wider">
             TESTIMONIALS
           </h3>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-20">
@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
         </div>
       </div>
 
-      <div className="cursor-pointer user-select-none px-[16px] py-6">
+      <div className="cursor-pointer user-select-none py-6">
         <Swiper
           modules={[Pagination]}
           pagination={{
@@ -71,8 +71,9 @@ const TestimonialsSection = () => {
             clickable: true,
             enabled: true,
           }}
-          spaceBetween={20}
+          spaceBetween={0}
           centeredSlides
+          slidesPerView={1.3}
           initialSlide={0}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
@@ -100,8 +101,8 @@ const TestimonialsSection = () => {
                 slide.style.transform = "scale(1)";
                 slide.style.opacity = "1";
               } else {
-                slide.style.transform = "scale(0.65)";
-                slide.style.opacity = "0.5";
+                slide.style.transform = "scale(0.85)";
+                slide.style.opacity = "0.8";
               }
             });
           }}
@@ -224,7 +225,7 @@ const TestimonialsSection = () => {
         </Swiper>
       </div>
       <div className="pt-[80px] lg:pt-[120px] pb-[20px] xl:px-14">
-        <CTASection />
+        <CTASection option={2} />
       </div>
     </section>
   );

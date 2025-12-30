@@ -57,7 +57,7 @@ const ProjectsSection = () => {
 
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-brand-dark">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <div>
           <h3 className="text-[#D9F043] font-bold mb-4 uppercase text-base tracking-wider">
             OUR WORK
@@ -75,69 +75,6 @@ const ProjectsSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Mobile Swiper - visible on small screens */}
-        <div className="lg:hidden mb-10">
-          <Swiper
-            spaceBetween={16}
-            slidesPerView={1.05}
-            className="projects-swiper pb-10"
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-          >
-            {projects.map((project, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="
-                    group relative
-                    min-h-[45vh] max-h-[80vh]
-                    rounded-3xl overflow-hidden cursor-pointer
-                    bg-cover bg-center
-                  "
-                  style={{ backgroundImage: `url(${project.image})` }}
-                >
-                  <div className="absolute inset-0 bg-black/20" />
-
-                  {/* Bottom content */}
-                  <div className="absolute bottom-0 left-0 right-0">
-                    {/* Location */}
-                    <div className="bg-black/20 backdrop-blur-md px-4 pt-4 pb-3 border-b border-brand-lime">
-                      <div className="flex gap-2 text-white">
-                        <MapPin className="w-4 h-4 text-[#c3d533] mt-0.5 shrink-0" />
-                        <div>
-                          <div className="font-semibold text-sm">
-                            {project.location}
-                          </div>
-                          <div className="text-gray-300 text-xs">
-                            {project.address}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Info */}
-                    <div className="bg-brand-dark-light p-4">
-                      <h3 className="text-lg font-bold text-white mb-2">
-                        {project.title}
-                      </h3>
-
-                      <div className="flex flex-wrap gap-2 max-h-[96px] overflow-hidden">
-                        {project.services.map((service, idx) => (
-                          <span
-                            key={idx}
-                            className="px-3 py-1.5 text-xs text-white border border-white/40 rounded-full"
-                          >
-                            {service}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-
         {/* Desktop Grid - visible on large screens */}
         <div className="hidden lg:grid lg:grid-cols-2 gap-3 mb-12">
           {projects.map((project, index) => (
@@ -188,14 +125,75 @@ const ProjectsSection = () => {
             </div>
           ))}
         </div>
+      </div>
+      {/* Mobile Swiper - visible on small screens */}
+      <div className="lg:hidden mb-10">
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={1.15}
+          centeredSlides
+          className="projects-swiper pb-10"
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+        >
+          {projects.map((project, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="
+                    group relative
+                    min-h-[45vh] max-h-[80vh]
+                    rounded-3xl overflow-hidden cursor-pointer
+                    bg-cover bg-center
+                  "
+                style={{ backgroundImage: `url(${project.image})` }}
+              >
+                <div className="absolute inset-0 bg-black/20" />
 
-        <div className="text-center">
-          <Link to="/projects">
-            <Button className="bg-brand-lime hover:bg-brand-lime/90 text-gray-900 font-semibold px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
-              View All Projects
-            </Button>
-          </Link>
-        </div>
+                {/* Bottom content */}
+                <div className="absolute bottom-0 left-0 right-0">
+                  {/* Location */}
+                  <div className="bg-black/20 backdrop-blur-md px-4 pt-4 pb-3 border-b border-brand-lime">
+                    <div className="flex gap-2 text-white">
+                      <MapPin className="w-4 h-4 text-[#c3d533] mt-0.5 shrink-0" />
+                      <div>
+                        <div className="font-semibold text-sm">
+                          {project.location}
+                        </div>
+                        <div className="text-gray-300 text-xs">
+                          {project.address}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Info */}
+                  <div className="bg-brand-dark-light p-4">
+                    <h3 className="text-lg font-bold text-white mb-2">
+                      {project.title}
+                    </h3>
+
+                    <div className="flex flex-wrap gap-2 max-h-[96px] overflow-hidden">
+                      {project.services.map((service, idx) => (
+                        <span
+                          key={idx}
+                          className="px-3 py-1.5 text-xs text-white border border-white/40 rounded-full"
+                        >
+                          {service}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="block lg:hidden text-center container px-4 sm:px-6 lg:px-8 xl:px-14">
+        <Link to="/projects">
+          <Button className="bg-brand-lime hover:bg-brand-lime/90 text-gray-900 font-semibold px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
+            View All Projects
+          </Button>
+        </Link>
       </div>
     </section>
   );

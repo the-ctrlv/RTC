@@ -30,7 +30,7 @@ const Careers = () => {
       bg-[url('/careers-bg.jpg')] bg-cover bg-center
       "
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 lg:mb-10">
             Join Our Team
           </h1>
@@ -44,7 +44,7 @@ const Careers = () => {
 
       {/* Careers Content */}
       <section className="py-12 sm:py-16 lg:py-20 -translate-y-[50vh] lg:translate-y-0 lg:mb-[-20vh]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mx-auto">
             {/* Career Information */}
             <div className="space-y-6 order-2 lg:order-1">
@@ -67,8 +67,8 @@ const Careers = () => {
             </div>
 
             {/* Application Form */}
-            <div className="bg-white p-7 sm:p-8 lg:p-10 rounded-[40px] order-1 lg:order-2 lg:-translate-y-[33vh] max-w-[562px]">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">
+            <div className="bg-white p-7 sm:p-8 lg:p-10 rounded-[40px] order-1 lg:order-2 lg:-translate-y-[33vh] max-w-[562px] shadow-lg">
+              <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-bold mb-6 sm:mb-8">
                 Submit Your Application
               </h2>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
