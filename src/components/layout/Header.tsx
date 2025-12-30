@@ -44,13 +44,17 @@ const Header = () => {
 
   return (
     <header
-      className={`top-0 left-0 right-0 z-50 fixed transition-all backdrop-blur-lg ${
-        scrolled ? "bg-[#343434] backdrop-blur-0" : "bg-transparent"
+      className={`top-0 left-0 right-0 z-50 fixed transition-all ${
+        scrolled ? "bg-[#343434]/20 backdrop-blur-lg" : "backdrop-blur-0"
       } flex justify-between`}
     >
-      <nav className="container mx-auto py-3.5 lg:py-6 px-6">
+      <nav className="container mx-auto py-3.5 px-6">
         <div className="relative flex items-center justify-between">
-          <Link to="/" className="flex items-center z-[1000]" onClick={closeMobileMenu}>
+          <Link
+            to="/"
+            className="flex items-center z-[1000]"
+            onClick={closeMobileMenu}
+          >
             <img src="/logo.svg" alt="RTC Logo" className="w-[87px]" />
           </Link>
 
@@ -62,7 +66,7 @@ const Header = () => {
                   <Link
                     to={item.path}
                     className={`text-md font-medium transition-colors hover:text-[#c3d533] ${
-                      isActive(item.path) ? "text-[#c3d533]" : "text-white"
+                      isActive(item.path) ? "text-[#D9F043]" : "text-white"
                     }`}
                   >
                     {item.label}
@@ -96,7 +100,7 @@ const Header = () => {
           <div
             className="
               fixed inset-0 z-[99]
-              bg-[#2a2a2a] 
+              bg-[#2a2a2a]
               flex flex-col
               h-screen w-screen
             "
@@ -104,7 +108,11 @@ const Header = () => {
             {/* TOP BAR */}
             <div className="shrink-0 w-full py-3.5 px-6 flex justify-between items-center bg-[#343434]">
               <img src="/logo.svg" alt="RTC Logo" className="w-[87px]" />
-              <Button onClick={closeMobileMenu} variant="rounded" className="bg-white w-12 h-12">
+              <Button
+                onClick={closeMobileMenu}
+                variant="rounded"
+                className="bg-white w-12 h-12"
+              >
                 <X className="w-6 h-6 text-black" />
               </Button>
             </div>
@@ -176,7 +184,11 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-[#c3d533] transition-colors"
                     >
-                      <svg className="w-6 h-6" fill="#0866FF" viewBox="0 0 24 24">
+                      <svg
+                        className="w-6 h-6"
+                        fill="#0866FF"
+                        viewBox="0 0 24 24"
+                      >
                         {" "}
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />{" "}
                       </svg>
@@ -189,7 +201,11 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-[#c3d533] transition-colors"
                     >
-                      <svg className="w-6 h-6" fill="url(#instagram-gradient)" viewBox="0 0 24 24">
+                      <svg
+                        className="w-6 h-6"
+                        fill="url(#instagram-gradient)"
+                        viewBox="0 0 24 24"
+                      >
                         {" "}
                         <defs>
                           {" "}
@@ -205,7 +221,10 @@ const Header = () => {
                               offset="0%"
                               style={{ stopColor: "#FD5949", stopOpacity: 1 }}
                             />{" "}
-                            <stop offset="50%" style={{ stopColor: "#D6249F", stopOpacity: 1 }} />{" "}
+                            <stop
+                              offset="50%"
+                              style={{ stopColor: "#D6249F", stopOpacity: 1 }}
+                            />{" "}
                             <stop
                               offset="100%"
                               style={{ stopColor: "#285AEB", stopOpacity: 1 }}
@@ -223,7 +242,11 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-[#c3d533] transition-colors"
                     >
-                      <svg className="w-6 h-6" fill="#0A66C2" viewBox="0 0 24 24">
+                      <svg
+                        className="w-6 h-6"
+                        fill="#0A66C2"
+                        viewBox="0 0 24 24"
+                      >
                         {" "}
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />{" "}
                       </svg>

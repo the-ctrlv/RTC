@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="py-16 lg:py-24 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <div className="mb-8 sm:mb-12 lg:mb-16">
           <h3 className="text-[#c3d533] font-bold mb-3 uppercase text-xs sm:text-sm tracking-wider">
             TESTIMONIALS
@@ -223,7 +223,7 @@ const TestimonialsSection = () => {
           </div>
         </Swiper>
       </div>
-      <div className="pt-[80px] lg:pt-[120px] pb-[20px]">
+      <div className="pt-[80px] lg:pt-[120px] pb-[20px] xl:px-14">
         <CTASection />
       </div>
     </section>
