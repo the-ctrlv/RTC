@@ -18,11 +18,11 @@ export const CTASection = ({ option }: { option?: number }) => {
               <h2 className="text-2xl lg:text-[36px] font-bold text-gray-900 leading-tight">
                 {option === 2 ? (
                   <>
-                    Let’s Discuss Your <br /> Project
+                    Ready to Work <br /> With Us?
                   </>
                 ) : (
                   <>
-                    Ready to Work <br /> With Us?
+                    Let’s Discuss Your <br /> Project
                   </>
                 )}
               </h2>
