@@ -6,14 +6,14 @@ const services = [
     title: "Industrial Services",
     description:
       "We provide safe, compliant, and efficient access and maintenance solutions for industrial facilities, infrastructure, and complex environments — supporting critical operations and large-scale projects across Canada.",
-    image: "/service1.jpg",
+    image: "/home/services.jpg",
     link: "/services/industrial-services",
   },
   {
     title: "Building Services",
     description:
       "We deliver comprehensive building envelope solutions focused on durability, weather protection, and long-term performance for residential, commercial, and institutional buildings — from low-rise to high-rise projects across Canada.",
-    image: "/service2.jpg",
+    image: "/home/building-services.jpg",
     link: "/services/building-services",
   },
 ];

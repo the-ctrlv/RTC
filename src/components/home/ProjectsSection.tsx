@@ -23,35 +23,31 @@ const ProjectsSection = () => {
   const projects: Project[] = [
     {
       title: "Cardero",
-      location: "Cardero St, Vancouver",
+      location: "620 Cardero St,Vancouver,BC",
       address: "1550 Alberni St",
       services: ["Rope Access Glazing", "Sealant Applications"],
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+      image: "/projects/cardero.jpeg",
     },
     {
       title: "Jim Pattison Toyota",
       location: "Jim Pattison Toyota Downtown",
-      address: "1200 Burrard St",
+      address: "1290 Burrard St",
       services: ["Rope Access Glazing"],
-      image:
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800",
+      image: "/projects/jim.jpeg",
     },
     {
       title: "400 West Georgia",
       location: "400 West Georgia, Vancouver",
       address: "Downtown Vancouver",
       services: ["Glass Installation", "Rope Access System"],
-      image:
-        "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=800",
+      image: "/projects/400.jpeg",
     },
     {
       title: "Keltic Place",
       location: "Keltic Place, Richmond",
-      address: "8388 No. 3 Road",
+      address: "1550 Alberni St",
       services: ["Storefront Installation", "Sealant Applications"],
-      image:
-        "https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?q=80&w=800",
+      image: "/projects/keltic.jpeg",
     },
   ];
 
@@ -188,7 +184,7 @@ const ProjectsSection = () => {
           ))}
         </Swiper>
       </div>
-      <div className="block lg:hidden text-center container px-4 sm:px-6 lg:px-8 xl:px-14">
+      <div className="block text-center container px-4 sm:px-6 lg:px-8 xl:px-14 mx-auto">
         <Link to="/projects">
           <Button className="bg-brand-lime hover:bg-brand-lime/90 text-gray-900 font-semibold px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
             View All Projects

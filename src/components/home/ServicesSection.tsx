@@ -59,10 +59,10 @@ const ServicesSection = () => {
               <div className="flex-1 h-px bg-brand-lime"></div>
             </div>
             <p className="text-gray-700 leading-relaxed text-sm">
-              Our team provides specialized industrial services that ensure
-              safety, reliability, and long-term performance. We deliver
-              professional maintenance, inspection, and repair solutions — even
-              in hard-to-access areas.
+              Our team provides specialized industrial and building services
+              that ensure safety, reliability, and long-term performance. We
+              deliver professional maintenance, inspection, and repair solutions
+              — even in hard-to-access areas.
             </p>
           </div>
 

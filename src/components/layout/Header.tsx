@@ -76,14 +76,14 @@ const Header = () => {
             </ul>
           </div>
 
-          <Link to="/contact" className="hidden lg:block">
+          <a href="tel:+17789807798" className="hidden lg:block">
             <Button
               size="lg"
               className="bg-[#c3d533] hover:bg-[#c3d533]/90 text-black font-semibold !px-10"
             >
               Call us
             </Button>
-          </Link>
+          </a>
 
           {/* Mobile Menu Button */}
           <button

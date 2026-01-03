@@ -26,13 +26,13 @@ const ServiceDetail = () => {
       title: "Industrial Services",
       hero: {
         title: "Industrial Services",
-        image: "/service1.jpg",
+        image: "/home/services.jpg",
       },
       whatIsWork: {
-        title: "What is Work at Heights & Rope Access?",
+        title: "Industrial Rope Access Services",
         description:
-          "Work at heights and rope access are specialized techniques used to safely access hard-to-reach areas on industrial sites, infrastructure, and buildings. Rope access allows technicians to reach elevated or confined spaces using ropes and harnesses—offering a safer, faster, and more cost-effective alternative to scaffolding or heavy equipment.",
-        image: "/building-service.jpeg",
+          "Many industrial facilities have areas that are difficult or impossible to reach using conventional access methods. Rope access provides a safe, efficient, and cost-effective solution for inspections, repairs, and maintenance where scaffolding or lifts are impractical.",
+        image: "/home/industrial-service.jpg",
       },
       keyServices: {
         title: "Key Rope Access Services We Provide",
@@ -80,14 +80,16 @@ const ServiceDetail = () => {
         images: ["/slider-1.jpeg", "/slider-2.jpeg", "/slider-3.jpeg"],
       },
       whyChoose: {
-        title: "Why Choose <br /> Rope Tech Group <br /> for Rope Access?",
+        title:
+          "Why Choose <br /> Rope Tech Group <br /> for Industrial Services?",
         reasons: [
-          "IRATA-certified technicians",
-          "Proven safety record",
+          "IRATA-certified rope access technicians",
+          "Zero-accident safety record",
+          "Fast mobilisation and flexible scheduling",
           "Cost-effective solutions",
-          "Minimal disruption",
-          "Faster project completion",
-          "Expertise across industries",
+          "Proven experience across complex industrial sites",
+          "Fully insured and compliant with all regulations",
+          "Strong quality control and documentation standards",
         ],
         cta: "Let's Discuss Your Project",
         description:
@@ -99,7 +101,7 @@ const ServiceDetail = () => {
           {
             question: "What is rope access?",
             answer:
-              "Rope access is a method of working at height using ropes and specialized equipment, providing safe and efficient access to difficult-to-reach areas.",
+              "Rope Tech Group delivers safe, efficient, and compliant rope access solutions performed by highly trained IRATA technicians. We work with precision, provide consistent results, and tailor each project to the specific challenges of your site.",
           },
           {
             question: "Is rope access safe?",
@@ -118,13 +120,13 @@ const ServiceDetail = () => {
       title: "Building Services",
       hero: {
         title: "Building Services",
-        image: "/service2.jpg",
+        image: "/home/building-services2.jpg",
       },
       whatIsWork: {
-        title: "What is Work at Heights & Rope Access?",
+        title: "Building & <br /> Commercial Services",
         description:
-          "Building services encompass comprehensive maintenance and restoration solutions for residential, commercial, and industrial properties. Our rope access techniques enable safe and efficient work on building envelopes, facades, and structural components.",
-        image: "/service2.jpg",
+          "We provide professional building maintenance and repair services to protect structural integrity and prevent water damage. Our work includes concrete repairs, crack injection, waterproofing, and exterior maintenance.<br /><br />Using efficient access methods, including rope access when required, we deliver reliable, high-quality results with minimal disruption to building operations.",
+        image: "/home/building-service.jpg",
       },
       keyServices: {
         title: "Key Rope Access Services We Provide",
@@ -249,9 +251,12 @@ const ServiceDetail = () => {
               <span className="text-[#A5B716] font-bold uppercase text-[16px] mb-[18px]">
                 Service Overview
               </span>
-              <h2 className="text-[34px] lg:text-5xl font-bold text-gray-900 mb-[32px]">
-                {service.whatIsWork.title}
-              </h2>
+              <h2
+                className="text-[34px] lg:text-5xl font-bold text-gray-900 mb-[32px]"
+                dangerouslySetInnerHTML={{
+                  __html: service.whatIsWork.title,
+                }}
+              />
               <div className="relative lg:hidden overflow-hidden rounded-3xl aspect-[4/5]">
                 <img
                   src={service.whatIsWork.image}
@@ -259,9 +264,12 @@ const ServiceDetail = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-gray-700 text-[18px] lg:text-lg leading-relaxed mt-[44px]">
-                {service.whatIsWork.description}
-              </p>
+              <p
+                className="text-gray-700 text-[18px] lg:text-lg leading-relaxed mt-[44px]"
+                dangerouslySetInnerHTML={{
+                  __html: service.whatIsWork.description,
+                }}
+              />
             </div>
             <div className="hidden lg:block overflow-hidden rounded-3xl aspect-[4/5]">
               <img
@@ -277,7 +285,7 @@ const ServiceDetail = () => {
       {/* Key Services Section - Dark */}
       <section className="py-20 lg:py-32 bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
-          <div className="relative flex flex-col lg:flex-row gap-10 lg:gap-20">
+          <div className="relative flex flex-col lg:flex-row gap-10 lg:gap-18">
             {/* <svg
               width="435"
               height="348"
@@ -334,11 +342,13 @@ const ServiceDetail = () => {
                     >
                       <ul className="list-none space-y-3 text-white">
                         {service.bullets.map((bullet: string, idx: number) => (
-                          <li key={idx} className="flex items-center gap-2">
-                            <span className="flex-shrink-0 w-4 h-4 mt-1">
-                              <img src="/green_check.svg" alt="check" />
-                            </span>
-                            {bullet}
+                          <li key={idx} className="flex items-start gap-2">
+                            <img
+                              src="/green_check.svg"
+                              alt="check"
+                              className="w-5 h-5"
+                            />
+                            <p className="font-semibold">{bullet}</p>
                           </li>
                         ))}
                       </ul>
@@ -376,6 +386,34 @@ const ServiceDetail = () => {
                 centeredSlides
                 className="projects-swiper py-10"
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
+                onSlideChange={(swiper) => {
+                  const slides = swiper.slides;
+                  slides.forEach((slide, index) => {
+                    if (index === swiper.activeIndex) {
+                      slide.style.transform = "scale(1)";
+                      slide.style.opacity = "1";
+                    } else {
+                      slide.style.transform = "scale(0.85)";
+                      slide.style.opacity = "0.8";
+                    }
+                  });
+                }}
+                onInit={(swiper) => {
+                  const slides = swiper.slides;
+                  slides.forEach((slide, index) => {
+                    if (index === swiper.activeIndex) {
+                      slide.style.transform = "scale(1)";
+                      slide.style.opacity = "1";
+                      slide.style.transition =
+                        "transform 0.3s ease, opacity 0.5s ease";
+                    } else {
+                      slide.style.transform = "scale(0.85)";
+                      slide.style.opacity = "0.5";
+                      slide.style.transition =
+                        "transform 0.3s ease, opacity 0.5s ease";
+                    }
+                  });
+                }}
               >
                 {service.realConditions.images.map(
                   (image: string, index: number) => (
@@ -415,6 +453,34 @@ const ServiceDetail = () => {
                     "swiper-pagination-bullet-active !bg-brand-lime",
                 }}
                 className="!pb-12"
+                onSlideChange={(swiper) => {
+                  const slides = swiper.slides;
+                  slides.forEach((slide, index) => {
+                    if (index === swiper.activeIndex) {
+                      slide.style.transform = "scale(1)";
+                      slide.style.opacity = "1";
+                    } else {
+                      slide.style.transform = "scale(0.85)";
+                      slide.style.opacity = "0.8";
+                    }
+                  });
+                }}
+                onInit={(swiper) => {
+                  const slides = swiper.slides;
+                  slides.forEach((slide, index) => {
+                    if (index === swiper.activeIndex) {
+                      slide.style.transform = "scale(1)";
+                      slide.style.opacity = "1";
+                      slide.style.transition =
+                        "transform 0.3s ease, opacity 0.5s ease";
+                    } else {
+                      slide.style.transform = "scale(0.85)";
+                      slide.style.opacity = "0.5";
+                      slide.style.transition =
+                        "transform 0.3s ease, opacity 0.5s ease";
+                    }
+                  });
+                }}
               >
                 {service.realConditions.images.map(
                   (image: string, index: number) => (
@@ -537,42 +603,6 @@ const ServiceDetail = () => {
         </div>
         <div className="py-[60px] pb-[80px] lg:pb-0 lg:pt-[120px]">
           <CTASection />
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 pb-[80px] lg:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row justify-between gap-5">
-            {/* Title */}
-            <div className="lg:max-w-md">
-              <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider">
-                FAQ'S
-              </h3>
-              <h2 className="text-[34px] lg:text-5xl font-bold text-gray-900 mb-8 lg:mb-12">
-                {service.faq.title}
-              </h2>
-            </div>
-
-            {/* FAQ */}
-            <Accordion>
-              {service.faq.questions.map(
-                (
-                  question: { question: string; answer: string },
-                  idx: number
-                ) => (
-                  <AccordionItem
-                    key={idx}
-                    title={question.question}
-                    isOpen={openIndex === 0}
-                    onToggle={() => toggle(0)}
-                  >
-                    <p className="text-gray-400">{question.answer}</p>
-                  </AccordionItem>
-                )
-              )}
-            </Accordion>
-          </div>
         </div>
       </section>
     </div>

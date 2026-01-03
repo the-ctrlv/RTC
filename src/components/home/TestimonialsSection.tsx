@@ -11,39 +11,93 @@ import { CTASection } from "../common/CTASection";
 const testimonials = [
   {
     id: 1,
-    text: "Working with Rope Tech Group has been exceptional. Their professionalism and expertise in rope access solutions made our project seamless and cost-effective.",
-    author: "Salvatore Tirabassi",
-    role: "CFO ProAnalytics",
-    company: "BENZINGA",
+    text: "We have worked with this rope access team on multiple projects involving concrete repairs, coatings, membrane applications, and crack injection. Their crew consistently delivers high-quality workmanship and adapts well to complex site conditions. Reliable, knowledgeable, and safety focused — a great partner on challenging projects.",
+    author: "Dan Miller",
+    role: "Norsco Construction LTD",
+    rating: 5,
     avatar: "/home/avatar.png",
     sponsor: "/home/sponsor.svg",
+    company: "Norsco Construction LTD",
   },
   {
     id: 2,
-    text: "Working with Rope Tech Group has been exceptional. Their professionalism and expertise in rope access solutions made our project seamless and cost-effective.",
-    author: "John Anderson",
-    role: "Project Manager",
-    company: "BUILDCO",
+    text: "Professional and dependable rope access services. They supported us on several high-rise membrane application projects throughout the Lower Mainland. The team is experienced, efficient, and works to a very high safety standard.",
+    author: "Steven Danzing",
+    role: "Metalife LTD",
+    rating: 5,
     avatar: "/home/avatar.png",
     sponsor: "/home/sponsor.svg",
+    company: "Metalife LTD",
   },
   {
     id: 3,
-    text: "The team at RTC provided innovative solutions for our building maintenance needs. Highly recommend their services for any high-rise projects.",
-    author: "Sarah Mitchell",
-    role: "Operations Director",
-    company: "SKYTECH",
+    text: "We partnered with this company on several glass replacement projects where access was extremely limited. Their rope access technicians made complex installations possible without delays. Excellent coordination, strong safety practices, and great results.",
+    author: "Merle Beck",
+    role: "Action Glass Inc.",
+    rating: 4.5,
     avatar: "/home/avatar.png",
     sponsor: "/home/sponsor.svg",
+    company: "Action Glass Inc.",
   },
   {
     id: 4,
-    text: "The team at RTC provided innovative solutions for our building maintenance needs. Highly recommend their services for any high-rise projects.",
-    author: "Sarah Mitchell",
-    role: "Operations Director",
-    company: "SKYTECH",
+    text: "We have collaborated on many high-rise glass replacement and installation projects across the Lower Mainland. Their rope access support allowed us to complete work in very hard-to-reach areas, including cladding assistance. Skilled technicians, smooth coordination, and professional execution every time.",
+    author: "Sergii",
+    role: "High Rise Glass LTD",
+    rating: 5,
     avatar: "/home/avatar.png",
     sponsor: "/home/sponsor.svg",
+    company: "High Rise Glass LTD",
+  },
+  {
+    id: 5,
+    text: "They provided rope access support for membrane and sealant applications as well as glass replacement work. The team was well organized, safety oriented, and easy to work with on active construction sites. We would not hesitate to work with them again.",
+    author: "Dennis Lesik",
+    role: "Siber Facade Group LTD",
+    rating: 5,
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
+    company: "Siber Facade Group LTD",
+  },
+  {
+    id: 6,
+    text: "Strong rope access glazing support on multiple projects. Their technicians were experienced, efficient, and integrated well with our installation crews. A reliable partner for complex glazing work at height.",
+    author: "Pavel Sokol",
+    role: "Altitude Installations LTD",
+    rating: 4.5,
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
+    company: "Altitude Installations LTD",
+  },
+  {
+    id: 7,
+    text: "We worked with this company on a large project involving the installation of a heat trace cable system on our building. The work was completed safely, professionally, and with minimal disruption to operations. Excellent planning, execution, and communication throughout the project.",
+    author: "Darren Boyd",
+    role: "Four Seasons Resort Whistler",
+    rating: 5,
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
+    company: "Four Seasons Resort Whistler",
+  },
+  {
+    id: 8,
+    text: "We engaged this team for several industrial rope access and construction-related projects. Their ability to safely access difficult areas and deliver quality results made them a valuable contractor on our sites. Professional, responsive, and safety driven.",
+    author: "Stan Phillips",
+    role: "Pomerleau LTD",
+    rating: 4.5,
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
+    company: "Pomerleau LTD",
+  },
+  {
+    id: 9,
+    text: "They assisted us with high-rise inspections, window system support, and water leak investigations. Their rope access approach allowed for thorough assessments without invasive methods. Clear reporting, strong technical knowledge, and professional service.",
+    author: "James Payette",
+    role: "Tribe Management Inc.",
+    rating: 5,
+    avatar: "/home/avatar.png",
+    sponsor: "/home/sponsor.svg",
+    company: "Tribe Management Inc.",
   },
 ];
 
@@ -145,15 +199,15 @@ const TestimonialsSection = () => {
                 <div className="w-full h-px bg-black mb-6" />
 
                 {/* Author Info */}
-                <div className="flex items-center justify-between gap-4">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 rounded-full overflow-hidden flex-shrink-0">
+                    {/* <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 rounded-full overflow-hidden flex-shrink-0">
                       <img
                         src={testimonial.avatar}
                         alt={testimonial.author}
                         className="w-full h-full object-cover"
                       />
-                    </div>
+                    </div> */}
                     <div>
                       <div className="font-bold text-sm sm:text-base text-gray-900">
                         {testimonial.author}
@@ -164,13 +218,42 @@ const TestimonialsSection = () => {
                     </div>
                   </div>
 
-                  {/* Company Logo */}
-                  <div className="flex-shrink-0">
-                    <img
-                      src={testimonial.sponsor}
-                      alt={testimonial.company}
-                      className="h-4.5 w-auto hidden lg:block"
-                    />
+                  {/* Rating Stars */}
+                  <div className="flex-shrink-0 flex items-center gap-0.5">
+                    {[1, 2, 3, 4, 5].map((star) => {
+                      const isFull = star <= testimonial.rating;
+                      const isHalf =
+                        star === Math.ceil(testimonial.rating) &&
+                        testimonial.rating % 1 !== 0;
+
+                      return (
+                        <svg
+                          key={star}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          className="w-4 h-4 sm:w-5 sm:h-5"
+                        >
+                          <defs>
+                            <linearGradient
+                              id={`half-${testimonial.id}-${star}`}
+                            >
+                              <stop offset="50%" stopColor="#FCD34D" />
+                              <stop offset="50%" stopColor="#E5E7EB" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            fill={
+                              isFull
+                                ? "#FCD34D"
+                                : isHalf
+                                  ? `url(#half-${testimonial.id}-${star})`
+                                  : "#E5E7EB"
+                            }
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                      );
+                    })}
                   </div>
                 </div>
               </div>

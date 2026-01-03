@@ -107,7 +107,7 @@ const OurServicesSection = () => {
                 className="
                   w-full
                   relative overflow-hidden
-                  bg-[url('/home/services.jpg')]
+                  bg-[url('/home/building-services.jpg')]
                   bg-cover bg-center
                   rounded-[40px]
                   min-h-[240px] lg:min-h-0
@@ -124,28 +124,28 @@ const OurServicesSection = () => {
                       Access, Safety & Fall Protection
                     </h4>
                     <p className="text-base max-w-lg font-medium">
-                      Engineered access, fall protection, and confined space
-                      solutions for industrial environments.
+                      Safe access systems and fall protection solutions for
+                      residential and commercial buildings.
                     </p>
                   </div>
                   <hr />
                   <div>
                     <h4 className="font-bold mb-2 text-lg">
-                      Inspections, Maintenance & Reliability
+                      Envelope Inspections & Maintenance
                     </h4>
                     <p className="text-base max-w-lg font-medium">
-                      Inspections, maintenance, and repair services supporting
-                      long-term asset performance.
+                      Façade inspections, maintenance, and repair services to
+                      extend building lifespan.
                     </p>
                   </div>
                   <hr />
                   <div>
                     <h4 className="font-bold mb-2 text-lg">
-                      Specialized & High-Risk Operations
+                      Envelope Restoration & Repairs
                     </h4>
                     <p className="text-base max-w-lg font-medium">
-                      Shutdowns, emergency response, rescue operations, and
-                      complex lifting tasks.
+                      Concrete repairs, waterproofing, glazing, and exterior
+                      envelope improvements.
                     </p>
                   </div>
                 </div>

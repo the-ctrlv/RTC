@@ -26,12 +26,12 @@ const AboutSection = () => {
           </div>
           {/* Description */}
           <p className="text-gray-700 mb-10 leading-relaxed text-base">
-            Rope Tech Group has delivered expert rope access and high-rise
-            maintenance services across Canada. Our certified team provides safe
-            and efficient solutions for façades, concrete repairs,
-            waterproofing, glazing, and inspections. We combine experience and
-            innovation to help property owners protect their buildings with
-            confidence.
+            Rope Tech Group provides safe and efficient high-rise, industrial,
+            and infrastructure services across Canada. Our IRATA-certified
+            technicians use advanced rope access methods to reach complex areas
+            with minimal disruption. We focus on reliability, safety standards,
+            and professional execution to support projects of any scale and
+            complexity.
           </p>
           <div className="grid grid-cols-2 gap-8 mb-6">
             {stats.map((stat, index) => (
@@ -65,12 +65,12 @@ const AboutSection = () => {
               Delivering Safe & Certified Rope Access Solutions
             </h2>
             <p className="text-gray-700 mb-12 leading-relaxed text-lg">
-              Rope Tech Group has delivered expert rope access and high-rise
-              maintenance services across Canada. Our certified team provides
-              safe and efficient solutions for façades, concrete repairs,
-              waterproofing, glazing, and inspections. We combine experience and
-              innovation to help property owners protect their buildings with
-              confidence.
+              Rope Tech Group provides safe and efficient high-rise, industrial,
+              and infrastructure services across Canada. Our IRATA-certified
+              technicians use advanced rope access methods to reach complex
+              areas with minimal disruption. We focus on reliability, safety
+              standards, and professional execution to support projects of any
+              scale and complexity.
             </p>
 
             {/* Stats */}
