@@ -41,6 +41,7 @@ body {
   color: #292929;
 }
 h2 {
+  line-height: normal !important;
    @media (min-width: 1200px) {
     line-height: 60px !important;
    }

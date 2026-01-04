@@ -101,7 +101,7 @@ const ContactSection = () => {
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com/ropetechgroup"
+                  href="https://www.instagram.com/ropetechgroup"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#c3d533] transition-colors"

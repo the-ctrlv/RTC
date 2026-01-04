@@ -196,7 +196,7 @@ const Header = () => {
 
                     {/* Instagram */}
                     <a
-                      href="https://instagram.com/ropetechgroup"
+                      href="https://www.instagram.com/ropetechgroup"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-[#c3d533] transition-colors"

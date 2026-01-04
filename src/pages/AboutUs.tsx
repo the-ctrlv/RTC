@@ -16,7 +16,7 @@ const AboutUs = () => {
     { value: "95%", label: "SUCCESSFUL PROJECTS" },
     { value: "500+", label: "Completed Jobs" },
     { value: "15+", label: "YEARS EXPERIENCE" },
-    { value: "100%", label: "SAFETY SUCCESS" },
+    { value: "100%", label: "SAFETY FOCUS" },
   ];
 
   const principles = [
@@ -50,19 +50,52 @@ const AboutUs = () => {
 
   const projects = [
     {
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
-      title: "High-Rise Facade Inspection",
+      image: "/projects/cardero.jpeg",
+      title: "Cardero",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800",
-      title: "Building Maintenance",
+      image: "/projects/jim.jpeg",
+      title: "Jim Pattison Toyota",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=800",
-      title: "Glass Replacement",
+      image: "/projects/400.jpeg",
+      title: "400 West Georgia",
+    },
+    {
+      image: "/projects/keltic.jpeg",
+      title: "Keltic Place",
+    },
+    {
+      image: "/projects/park.jpeg",
+      title: "Park Towers",
+    },
+    {
+      image: "/projects/business.jpeg",
+      title: "Business Center, Langley",
+    },
+    {
+      image: "/projects/bayshore.jpeg",
+      title: "Bayshore Gardens",
+    },
+    {
+      image: "/projects/401.jpeg",
+      title: "401 W Georgia Street",
+    },
+    {
+      image: "/projects/grande.jpeg",
+      title: "The Grande",
+    },
+    {
+      image: "/projects/river.jpeg",
+      title: "River Green",
+    },
+    {
+      image: "/projects/four.jpeg",
+      title: "Four Seasons Resort",
+    },
+    {
+      image: "/projects/soleil.jpeg",
+      title: "Soleil",
     },
   ];
 
@@ -70,7 +103,7 @@ const AboutUs = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-cover bg-[position:15%] lg:bg-center bg-[url('/about-us/hero.jpg')]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[50vh] lg:min-h-[85vh]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[40vh] lg:min-h-[70vh]">
           {/* <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between h-full gap-8"> */}
           <div className="max-w-2xl">
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
@@ -189,7 +222,7 @@ const AboutUs = () => {
                       <div className="text-[44px] font-semibold text-gray-900 mb-2">
                         {stat.value}
                       </div>
-                      <div className="text-[16px] font-semibold uppercase tracking-wide">
+                      <div className="text-[16px] font-semibold uppercase tracking-wide max-w-[100px]">
                         {stat.label}
                       </div>
                     </div>
@@ -203,10 +236,12 @@ const AboutUs = () => {
         {/* Large Image Section */}
         <section className="mt-[80px] lg:mt-[120px]">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
-            <div className="max-w-5xl mx-auto">
-              <img
-                src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=1200"
-                alt="Rope access technician at work"
+            <div className="mx-auto">
+              <video
+                src="/videos/about.mp4"
+                controls
+                loop
+                playsInline
                 className="rounded-3xl w-full object-cover aspect-[16/10]"
               />
             </div>
@@ -226,9 +261,9 @@ const AboutUs = () => {
               Behind Our Work
             </h2>
             <p className="text-white text-[18px]">
-              Safety is the foundation of every project we take on. Our team
-              works in accordance with internationally recognized rope access
-              standards and follows established safety procedures on every site.
+              We focus on safety, efficiency, and minimal disruption, using
+              proven rope access techniques to deliver reliable results at
+              height and in hard-to-reach locations.
             </p>
           </div>
           <img
@@ -239,13 +274,13 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-3 gap-[8px]">
             {principles.map((principle, index) => (
               <div key={index} className="bg-brand-dark-light rounded-2xl p-8">
-                <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-14">
                   <img src={principle.icon} alt={principle.title} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">
                   {principle.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed font-semibold">
+                <p className="text-white leading-relaxed font-normal">
                   {principle.description}
                 </p>
               </div>
@@ -278,7 +313,7 @@ const AboutUs = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-3xl">
+            <div className="bg-white px-6 py-7 lg:px-10 lg:py-11 rounded-3xl">
               <h3 className="text-xl font-bold text-gray-900 mb-6">
                 What sets us apart:
               </h3>
@@ -311,7 +346,7 @@ const AboutUs = () => {
         <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider text-center">
           OUR WORK
         </h3>
-        <h2 className="text-[34px] font-bold text-white text-center mb-12 lg:mb-16">
+        <h2 className="text-[34px] lg:text-[48px] font-bold text-white text-center mb-12 lg:mb-16">
           Our Work in Real Conditions
         </h2>
 
@@ -319,7 +354,7 @@ const AboutUs = () => {
         <div className="lg:hidden">
           <Swiper
             modules={[Pagination]}
-            spaceBetween={5}
+            spaceBetween={0}
             slidesPerView="auto"
             centeredSlides
             pagination={{

@@ -19,7 +19,11 @@ const Footer = () => {
           {/* Logo and Contact Info */}
           <div className="flex flex-col gap-7 items-start justify-center max-w-xs">
             <Link to="/" className="inline-block">
-              <img src="/logo.svg" alt="RTC Logo" className="w-[172px]" />
+              <img
+                src="/logo.svg"
+                alt="RTC Logo"
+                className="w-[134px] lg:w-[172px]"
+              />
             </Link>
             <p className="text-[#7F7F7F]">
               Professional industrial & building <br /> access solutions across
@@ -66,7 +70,7 @@ const Footer = () => {
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com/ropetechgroup"
+                  href="https://www.instagram.com/ropetechgroup"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#c3d533] transition-colors"

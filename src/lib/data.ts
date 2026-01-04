@@ -15,7 +15,7 @@ export const CONTACT_INFO = {
   },
   social: {
     instagram: "ropetechgroup",
-    instagramUrl: "https://instagram.com/ropetechgroup",
+    instagramUrl: "https://www.instagram.com/ropetechgroup",
   },
 };
 

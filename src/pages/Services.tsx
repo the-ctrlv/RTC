@@ -64,7 +64,7 @@ const Services = () => {
                     {service.title}
                   </h2>
 
-                  <p className="text-gray-600">{service.description}</p>
+                  <p className="">{service.description}</p>
 
                   <Link to={service.link} className="mt-auto">
                     <span

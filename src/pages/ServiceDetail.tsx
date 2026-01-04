@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -31,7 +31,7 @@ const ServiceDetail = () => {
       whatIsWork: {
         title: "Industrial Rope Access Services",
         description:
-          "Many industrial facilities have areas that are difficult or impossible to reach using conventional access methods. Rope access provides a safe, efficient, and cost-effective solution for inspections, repairs, and maintenance where scaffolding or lifts are impractical.",
+          "Many industrial facilities have areas that are difficult or impossible to reach using conventional access methods. Rope access provides a safe, efficient, and cost-effective solution for inspections, repairs, and maintenance where scaffolding or lifts are impractical. <br /><br /> Our certified rope access technicians complete work faster, reduce site disruption, and lower overall project costs while maintaining the highest safety standards.",
         image: "/home/industrial-service.jpg",
       },
       keyServices: {
@@ -77,7 +77,20 @@ const ServiceDetail = () => {
       },
       realConditions: {
         title: "Our Work in Real Conditions",
-        images: ["/slider-1.jpeg", "/slider-2.jpeg", "/slider-3.jpeg"],
+        images: [
+          "/projects/cardero.jpeg",
+          "/projects/jim.jpeg",
+          "/projects/400.jpeg",
+          "/projects/keltic.jpeg",
+          "/projects/park.jpeg",
+          "/projects/business.jpeg",
+          "/projects/bayshore.jpeg",
+          "/projects/401.jpeg",
+          "/projects/grande.jpeg",
+          "/projects/river.jpeg",
+          "/projects/four.jpeg",
+          "/projects/soleil.jpeg",
+        ],
       },
       whyChoose: {
         title:
@@ -175,10 +188,23 @@ const ServiceDetail = () => {
       },
       realConditions: {
         title: "Our Work in Real Conditions",
-        images: ["/slider-1.jpeg", "/slider-2.jpeg", "/slider-3.jpeg"],
+        images: [
+          "/projects/cardero.jpeg",
+          "/projects/jim.jpeg",
+          "/projects/400.jpeg",
+          "/projects/keltic.jpeg",
+          "/projects/park.jpeg",
+          "/projects/business.jpeg",
+          "/projects/bayshore.jpeg",
+          "/projects/401.jpeg",
+          "/projects/grande.jpeg",
+          "/projects/river.jpeg",
+          "/projects/four.jpeg",
+          "/projects/soleil.jpeg",
+        ],
       },
       whyChoose: {
-        title: "Why Choose <br /> Rope Tech Group <br /> for Rope Access?",
+        title: "Why Choose <br /> Rope Tech Group <br />for Building Services?",
         reasons: [
           "Certified building specialists",
           "Comprehensive service portfolio",
@@ -225,9 +251,10 @@ const ServiceDetail = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-        className="flex justify-center relative bg-cover bg-center pt-24 lg:pt-32 h-[35vh] lg:h-[80vh]"
+        className="flex justify-center relative bg-cover bg-center pt-24 lg:pt-32 h-[35vh] lg:h-[70vh]"
         style={{
           backgroundImage: `url('${service.hero.image}')`,
+          backgroundPosition: "center 70%",
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
@@ -319,10 +346,12 @@ const ServiceDetail = () => {
                 alt="Divider"
                 className="block lg:hidden h-[14px] w-auto"
               />
-              <Button className="hidden lg:flex items-center justify-between gap-[10px] bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-6">
-                Discuss your project with us
-                <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
-              </Button>
+              <Link to="/contact" className="hidden lg:block">
+                <Button className="flex items-center justify-between gap-[10px] bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-6">
+                  Discuss your project with us
+                  <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
+                </Button>
+              </Link>
             </div>
             <Accordion>
               {service.keyServices.services.map(
@@ -357,10 +386,12 @@ const ServiceDetail = () => {
                 }
               )}
             </Accordion>
-            <Button className="flex lg:hidden bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-5">
-              Discuss your project with us
-              <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
-            </Button>
+            <Link to="/contact" className="flex lg:hidden">
+              <Button className="bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-5">
+                Discuss your project with us
+                <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -564,7 +595,7 @@ const ServiceDetail = () => {
               />
               <p className="text-[18px]">{service.whyChoose.description}</p>
             </div>
-            <div className="!bg-white p-6 rounded-3xl w-full">
+            <div className="bg-white px-6 py-7 lg:px-10 lg:py-11 rounded-3xl">
               <h3 className="text-xl font-bold text-gray-900 mb-6">
                 What sets us apart:
               </h3>
@@ -591,9 +622,7 @@ const ServiceDetail = () => {
                       </span>
 
                       {/* TEXT */}
-                      <span className="text-gray-700 leading-snug text-[16px]">
-                        {reason}
-                      </span>
+                      <span className="leading-snug text-lg">{reason}</span>
                     </li>
                   )
                 )}
