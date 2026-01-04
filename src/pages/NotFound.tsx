@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 
 const NotFound = () => {
   return (
     <div className="min-h-screen bg-brand-dark flex items-center justify-center relative overflow-hidden">
+      <SEO
+        title="Page Not Found"
+        description="The page you are looking for could not be found. Return to Rope Tech Group homepage to explore our rope access services."
+        keywords="404, page not found, Rope Tech Group"
+      />
       {/* Large 404 Background Text */}
       <div className="absolute inset-0 flex items-center justify-center opacity-10">
         <h1 className="text-[200px] sm:text-[300px] lg:text-[600px] font-bold text-white leading-none select-none">

@@ -10,6 +10,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Accordion } from "@/components/ui/Accordion/Accordion";
 import { AccordionItem } from "@/components/ui/Accordion/AccordionItem";
 import { CTASection } from "@/components/common/CTASection";
+import SEO from "@/components/SEO";
 
 const ServiceDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -26,6 +27,12 @@ const ServiceDetail = () => {
   const servicesData: Record<string, any> = {
     "industrial-services": {
       title: "Industrial Services",
+      seo: {
+        description:
+          "Professional industrial rope access services across Canada. IRATA-certified technicians for inspections, maintenance, and specialized operations. Safe, efficient, and cost-effective solutions.",
+        keywords:
+          "industrial rope access, IRATA certified, industrial inspections, maintenance services, rope access Canada, industrial access solutions",
+      },
       hero: {
         title: "Industrial Services",
         image: "/home/services.jpg",
@@ -133,6 +140,12 @@ const ServiceDetail = () => {
     },
     "building-services": {
       title: "Building Services",
+      seo: {
+        description:
+          "Expert building maintenance and repair services in Vancouver and across Canada. Specialized in waterproofing, concrete repairs, facade restoration, and building envelope solutions.",
+        keywords:
+          "building maintenance, waterproofing services, concrete repairs, facade restoration, building envelope, rope access building services, Vancouver",
+      },
       hero: {
         title: "Building Services",
         image: "/home/building-services2.jpg",
@@ -251,6 +264,11 @@ const ServiceDetail = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title={service.title}
+        description={service.seo.description}
+        keywords={service.seo.keywords}
+      />
       {/* Hero Section */}
       <section
         className="flex justify-center relative bg-cover bg-center pt-24 lg:pt-32 h-[35vh] lg:h-[70vh]"

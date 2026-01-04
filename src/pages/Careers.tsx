@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 
 type FormData = {
   name: string;
@@ -24,6 +25,11 @@ const Careers = () => {
 
   return (
     <div className="min-h-screen mb-[-50vh] lg:mb-0">
+      <SEO
+        title="Careers"
+        description="Join the Rope Tech Group team. We're looking for skilled IRATA-certified rope access technicians and professionals to join our growing team in Vancouver and across Canada."
+        keywords="rope access jobs, IRATA careers, Vancouver jobs, rope access technician positions, industrial jobs Canada, building maintenance careers"
+      />
       {/* Hero Section */}
       <section
         className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-20 h-[70vh] lg:h-auto

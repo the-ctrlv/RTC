@@ -2,6 +2,7 @@ import ContactSection from "@/components/home/ContactSection";
 import { ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import SEO from "@/components/SEO";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -101,6 +102,11 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="About Us"
+        description="Learn about Rope Tech Group - Vancouver's trusted rope access specialists. Expert team, safety-first approach, and proven track record in industrial and building services across Canada."
+        keywords="about Rope Tech Group, rope access company, Vancouver specialists, IRATA team, industrial access experts, safety record"
+      />
       {/* Hero Section */}
       <section className="relative bg-cover bg-[position:15%] lg:bg-center bg-[url('/about-us/hero.jpg')]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[40vh] lg:min-h-[70vh]">
@@ -248,6 +254,7 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
+
       {/* Principles Section - Dark */}
       <section className="py-[80px] lg:py-[140px] bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">

@@ -1,3 +1,5 @@
+import SEO from "@/components/SEO";
+
 const Industries = () => {
   const industries = [
     {
@@ -100,6 +102,11 @@ const Industries = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Industries We Serve"
+        description="Rope Tech Group serves diverse industries with specialized rope access solutions including oil & gas, construction, mining, infrastructure, and commercial buildings across Canada."
+        keywords="rope access industries, oil and gas services, construction access, mining rope access, infrastructure maintenance, commercial building services"
+      />
       <section className="bg-blue-600 text-white py-16 h-full">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Industries We Serve</h1>

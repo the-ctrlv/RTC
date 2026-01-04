@@ -1,8 +1,14 @@
 import { ContactForm } from "@/components/ContactForm";
+import SEO from "@/components/SEO";
 
 const ContactUs = () => {
   return (
     <div className="min-h-screen mb-[-50vh] lg:mb-0">
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Rope Tech Group for professional rope access services in Vancouver and across Canada. Request a quote or consultation for your industrial or building project."
+        keywords="contact rope access, Vancouver rope access, get quote, consultation, rope access inquiry, industrial services contact"
+      />
       {/* Hero Section */}
       <section className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24 h-[70vh] lg:h-auto">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">

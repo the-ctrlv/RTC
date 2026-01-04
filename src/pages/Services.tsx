@@ -1,5 +1,6 @@
 import { CTASection } from "@/components/common/CTASection";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const services = [
   {
@@ -21,6 +22,11 @@ const services = [
 const Services = () => {
   return (
     <div className="min-h-screen relative">
+      <SEO
+        title="Our Services"
+        description="Comprehensive rope access services including industrial inspections, building maintenance, facade repairs, waterproofing, and specialized access solutions. IRATA-certified professionals serving Vancouver and Canada."
+        keywords="rope access services, industrial inspections, building maintenance, facade repairs, waterproofing services, IRATA certified, Vancouver services"
+      />
       {/* HERO */}
       <section className="relative bg-brand-dark text-white pt-32 pb-32 sm:pt-36 sm:pb-36 lg:pt-44 lg:pb-44">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">

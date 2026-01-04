@@ -1,8 +1,13 @@
 import PageHero from "@/components/common/PageHero";
-
+import SEO from "@/components/SEO";
 const TermsAndConditions = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Terms and Conditions"
+        description="Terms and conditions for using Rope Tech Group's services. Review our service agreements, terms of use, and legal policies."
+        keywords="terms and conditions, service agreement, terms of use, Rope Tech Group terms, legal policies"
+      />
       <PageHero title="Terms and Conditions" />
 
       <section className="py-12 lg:py-16 bg-gray-100">

@@ -1,4 +1,5 @@
 import { CTASection } from "@/components/common/CTASection";
+import SEO from "@/components/SEO";
 
 const Projects = () => {
   const projects = [
@@ -100,6 +101,11 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Our Projects"
+        description="View our portfolio of completed rope access projects across Vancouver and Canada. From high-rise buildings to industrial facilities - see our expertise in action."
+        keywords="rope access projects, Vancouver projects, building maintenance portfolio, industrial access work, completed projects, case studies"
+      />
       {/* Hero Section */}
       <section className="bg-brand-dark text-white pt-[130px] pb-[50px] sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
