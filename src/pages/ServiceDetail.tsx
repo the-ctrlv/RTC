@@ -284,7 +284,7 @@ const ServiceDetail = () => {
           </h1>
           <img
             src="/home/decoration_line.svg"
-            alt="Divider"
+            alt="Decorative line element"
             className="block lg:hidden h-[14px] w-auto"
           />
         </div>
@@ -307,7 +307,7 @@ const ServiceDetail = () => {
               <div className="relative lg:hidden overflow-hidden rounded-3xl aspect-[4/5]">
                 <img
                   src={service.whatIsWork.image}
-                  alt="Work at heights"
+                  alt="Professional rope access technician working at heights on industrial building"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -321,7 +321,7 @@ const ServiceDetail = () => {
             <div className="hidden lg:block overflow-hidden rounded-3xl aspect-[4/5]">
               <img
                 src={service.whatIsWork.image}
-                alt="Work at heights"
+                alt="Professional rope access technician working at heights on industrial building"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -363,7 +363,7 @@ const ServiceDetail = () => {
               </h2>
               <img
                 src="/home/decoration_line.svg"
-                alt="Divider"
+                alt="Decorative line element"
                 className="block lg:hidden h-[14px] w-auto"
               />
               <Button
@@ -371,7 +371,7 @@ const ServiceDetail = () => {
                 className="hidden lg:flex items-center justify-between gap-[10px] bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-6"
               >
                 Discuss your project with us
-                <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
+                <img src="/home/arrow_diagonal.svg" alt="Arrow icon" />
               </Button>
             </div>
             <Accordion>
@@ -395,7 +395,7 @@ const ServiceDetail = () => {
                           <li key={idx} className="flex items-start gap-2">
                             <img
                               src="/green_check.svg"
-                              alt="check"
+                              alt="Checkmark icon"
                               className="w-5 h-5"
                             />
                             <p className="font-semibold">{bullet}</p>
@@ -412,7 +412,7 @@ const ServiceDetail = () => {
               className="flex lg:hidden bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-5"
             >
               Discuss your project with us
-              <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
+              <img src="/home/arrow_diagonal.svg" alt="Arrow icon" />
             </Button>
           </div>
         </div>
@@ -477,7 +477,7 @@ const ServiceDetail = () => {
                       >
                         <img
                           src={image}
-                          alt={`Project ${index + 1}`}
+                          alt={`Completed rope access project showcasing ${service.title.toLowerCase()} work`}
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>
@@ -544,7 +544,7 @@ const ServiceDetail = () => {
                       <div className="relative overflow-hidden rounded-3xl aspect-[16/9]">
                         <img
                           src={image}
-                          alt={`Project ${index + 1}`}
+                          alt={`Completed rope access project showcasing ${service.title.toLowerCase()} work`}
                           className="w-full h-full object-cover"
                         />
                       </div>

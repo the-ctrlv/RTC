@@ -65,7 +65,7 @@ const ProjectsSection = () => {
             <div className="flex-grow relative">
               <img
                 src="/home/decoration_line_wide.svg"
-                alt="Divider"
+                alt="Decorative line element"
                 className="block flex-grow"
               />
             </div>
@@ -81,7 +81,7 @@ const ProjectsSection = () => {
               {/* Image with overlay */}
               <img
                 src={project.image}
-                alt={project.title}
+                alt={`${project.title} building project - completed rope access work`}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
                 <div className="flex items-center gap-2.5 text-white backdrop-blur-md py-5 px-10 border-b border-brand-lime">
                   <img
                     src="/map_pin.svg"
-                    alt="Map Pin"
+                    alt="Location icon"
                     className="w-6 h-auto text-[#c3d533]"
                   />
                   <div>

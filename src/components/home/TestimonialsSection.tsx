@@ -188,7 +188,11 @@ const TestimonialsSection = () => {
             >
               <div className="relative">
                 {/* Quote Icon */}
-                <img src="/home/quotes.svg" className="w-[32px] mb-10 block" />
+                <img
+                  src="/home/quotes.svg"
+                  alt="Quote mark"
+                  className="w-[32px] mb-10 block"
+                />
 
                 {/* Testimonial Text */}
                 <p className="text-gray-900 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10 lg:mb-12">

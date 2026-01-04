@@ -20,7 +20,7 @@ const OurServicesSection = () => {
                   <div className="flex-grow relative mb-7 lg:mt-7 lg:mb-0">
                     <img
                       src="/home/decoration_line_wide.svg"
-                      alt="Divider"
+                      alt="Decorative line element"
                       className="inline-block"
                     />
                   </div>
@@ -156,7 +156,7 @@ const OurServicesSection = () => {
                     </span>
                     <img
                       src="/home/arrow_diagonal.svg"
-                      alt="Arrow Right"
+                      alt="Arrow icon"
                       className="w-3 h-3"
                     />
                   </button>

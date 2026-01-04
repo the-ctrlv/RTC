@@ -17,7 +17,7 @@ const ContactUs = () => {
           </h1>
           <img
             src="/decoration_line.svg"
-            alt="Divider"
+            alt="Decorative divider"
             className="h-[14px] w-auto"
           />
         </div>

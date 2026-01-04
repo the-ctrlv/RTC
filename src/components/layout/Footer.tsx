@@ -22,7 +22,7 @@ const Footer = () => {
             <Link to="/" className="inline-block">
               <img
                 src="/logo.svg"
-                alt="RTC Logo"
+                alt="Rope Tech Group Logo"
                 className="w-[134px] lg:w-[172px]"
               />
             </Link>

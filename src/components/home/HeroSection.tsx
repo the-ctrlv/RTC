@@ -30,7 +30,7 @@ const HeroSection = () => {
           <div className="inline-flex mt-40 lg:mt-0 items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
             <img
               src="/map_pin.svg"
-              alt="Location"
+              alt="Location icon"
               className="w-5 h-5 sm:w-6 sm:h-6"
             />
             <span className="text-xs sm:text-sm font-medium">

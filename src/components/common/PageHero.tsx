@@ -13,7 +13,7 @@ const PageHero = ({ title, subtitle }: PageHeroProps) => {
         {subtitle && <p className="text-xl text-gray-300 mb-4">{subtitle}</p>}
         <img
           src="/decoration_line.svg"
-          alt="Divider"
+          alt="Decorative line element"
           className="h-[14px] w-auto"
         />
       </div>

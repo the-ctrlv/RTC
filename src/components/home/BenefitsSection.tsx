@@ -45,7 +45,7 @@ const BenefitsSection = () => {
             </div>
             <img
               src="/home/decoration_line.svg"
-              alt="Divider"
+              alt="Decorative line element"
               className="h-[18px] w-auto lg:hidden"
             />
           </div>
@@ -62,7 +62,7 @@ const BenefitsSection = () => {
                   <div className="w-12 h-12 sm:w-14 sm:h-14 bg-brand-lime rounded-full flex items-center justify-center mb-14">
                     <img
                       src={`/home/${Icon}`}
-                      alt={benefit.title}
+                      alt={`${benefit.title} icon`}
                       className="w-7 h-7"
                     />
                   </div>

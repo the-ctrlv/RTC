@@ -125,7 +125,7 @@ const AboutUs = () => {
               </span>
               <img
                 src="/about-us/arrow_down_right.svg"
-                alt="Company Details Icon"
+                alt="Decorative arrow icon"
                 className="w-5"
               />
             </div>
@@ -218,6 +218,7 @@ const AboutUs = () => {
                 </p>
                 <img
                   src="/home/decoration_line_wide.svg"
+                  alt="Decorative line element"
                   className="my-[32px] lg:my-[54px] block"
                 />
 
@@ -275,6 +276,7 @@ const AboutUs = () => {
           </div>
           <img
             src="/home/decoration_line_wide.svg"
+            alt="Decorative line element"
             className="block lg:hidden my-14"
           />
 
@@ -282,7 +284,7 @@ const AboutUs = () => {
             {principles.map((principle, index) => (
               <div key={index} className="bg-brand-dark-light rounded-2xl p-8">
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-14">
-                  <img src={principle.icon} alt={principle.title} />
+                  <img src={principle.icon} alt={`${principle.title} icon`} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">
                   {principle.title}
@@ -295,6 +297,7 @@ const AboutUs = () => {
           </div>
           <img
             src="/home/decoration_line_wide.svg"
+            alt="Decorative line element"
             className="hidden lg:block my-14"
           />
         </div>
@@ -330,7 +333,7 @@ const AboutUs = () => {
                   <li key={index} className="flex items-start gap-3">
                     {/* FIXED ICON WRAPPER */}
                     <span className="flex-shrink-0 w-4 h-4 mt-1">
-                      <img src="/green_check.svg" alt="check" />
+                      <img src="/green_check.svg" alt="Checkmark icon" />
                     </span>
 
                     {/* TEXT */}
@@ -404,7 +407,7 @@ const AboutUs = () => {
                 <div className="relative overflow-hidden rounded-2xl aspect-[9/14]">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} - completed rope access project showcasing our work`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -465,7 +468,7 @@ const AboutUs = () => {
                 <div className="relative overflow-hidden rounded-3xl aspect-[16/9]">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} - completed rope access project showcasing our work`}
                     className="w-full h-full object-cover"
                   />
                 </div>

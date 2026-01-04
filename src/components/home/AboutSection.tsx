@@ -28,7 +28,7 @@ const AboutSection = () => {
           <div className="mb-8">
             <img
               src="/home/about_us.jpg"
-              alt="Rope access worker"
+              alt="IRATA-certified rope access technician performing high-rise maintenance work"
               className="rounded-3xl w-full object-cover aspect-[3/4]"
             />
           </div>
@@ -60,7 +60,7 @@ const AboutSection = () => {
           {/* Image */}
           <img
             src="/home/about_us.jpg"
-            alt="Rope access worker"
+            alt="IRATA-certified rope access technician performing high-rise maintenance work"
             className="rounded-3xl max-w-[510px] w-full"
           />
 
