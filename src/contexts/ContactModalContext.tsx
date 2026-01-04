@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, type ReactNode } from "react";
 import { Modal } from "@/components/common/Modal";
 import { ContactForm } from "@/components/ContactForm";
 
