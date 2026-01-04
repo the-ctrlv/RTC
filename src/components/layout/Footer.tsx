@@ -1,8 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
+import { useContactModal } from "@/contexts/ContactModalContext";
 
 const Footer = () => {
   const navigate = useNavigate();
+  const { openModal } = useContactModal();
   const links = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About us" },
@@ -31,7 +33,7 @@ const Footer = () => {
             </p>
             <Button
               className="bg-[#D9F043] text-gray-600 w-full max-w-[220px] h-12 hover:bg-[#D9F043]"
-              onClick={() => navigate("/contact")}
+              onClick={openModal}
             >
               Get in Touch
             </Button>

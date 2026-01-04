@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useParams, Navigate, Link } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useContactModal } from "@/contexts/ContactModalContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
@@ -13,6 +14,7 @@ import { CTASection } from "@/components/common/CTASection";
 const ServiceDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const swiperRef = useRef<SwiperType | null>(null);
+  const { openModal } = useContactModal();
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -346,12 +348,13 @@ const ServiceDetail = () => {
                 alt="Divider"
                 className="block lg:hidden h-[14px] w-auto"
               />
-              <Link to="/contact" className="hidden lg:block">
-                <Button className="flex items-center justify-between gap-[10px] bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-6">
-                  Discuss your project with us
-                  <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
-                </Button>
-              </Link>
+              <Button
+                onClick={openModal}
+                className="hidden lg:flex items-center justify-between gap-[10px] bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-6"
+              >
+                Discuss your project with us
+                <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
+              </Button>
             </div>
             <Accordion>
               {service.keyServices.services.map(
@@ -386,12 +389,13 @@ const ServiceDetail = () => {
                 }
               )}
             </Accordion>
-            <Link to="/contact" className="flex lg:hidden">
-              <Button className="bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-5">
-                Discuss your project with us
-                <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
-              </Button>
-            </Link>
+            <Button
+              onClick={openModal}
+              className="flex lg:hidden bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-5"
+            >
+              Discuss your project with us
+              <img src="/home/arrow_diagonal.svg" alt="arrow_diagonal" />
+            </Button>
           </div>
         </div>
       </section>
