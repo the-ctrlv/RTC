@@ -1,0 +1,13 @@
+# robots.txt for Rope Tech Group
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://ropetechgroup.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Disallow sensitive areas (if any)
+Disallow: /admin/
+Disallow: /private/
