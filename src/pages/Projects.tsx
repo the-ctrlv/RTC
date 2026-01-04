@@ -165,9 +165,9 @@ const Projects = () => {
 
                     {/* Project info */}
                     <div className="bg-brand-dark-light p-6 px-6 lg:px-10">
-                      <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
+                      <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
                         {project.title}
-                      </h3>
+                      </h2>
 
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag, idx) => (

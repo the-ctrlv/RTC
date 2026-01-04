@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
             Last updated: December 22, 2025
           </p>
 
-          <div className="prose text-[16px] text-gray-700 [&>h3]:text-[24px] [&>h3]:font-semibold [&>h3]:text-gray-900 [&>h3]:mt-6 [&>h3]:mb-2 [&>p]:mb-4 [&>ul]:mt-2">
+          <div className="prose text-[16px] text-gray-700 [&>h2]:text-[24px] [&>h2]:font-semibold [&>h2]:text-gray-900 [&>h2]:mt-6 [&>h2]:mb-2 [&>p]:mb-4 [&>ul]:mt-2">
             <p>
               Rope Tech Group ("we", "us", or "our") operates the website (the
               "Website"). This Privacy Policy explains how we collect, use,
@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
               information in accordance with this Privacy Policy.
             </p>
 
-            <h3>Information We Collect</h3>
+            <h2>Information We Collect</h2>
             <p className="text-[18px] font-semibold mb-2">
               When you use our Website or contact us, we may collect personal
               information that you voluntarily provide, including but not
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
               </li>
             </ul>
 
-            <h3>How We Use Your Information</h3>
+            <h2>How We Use Your Information</h2>
             <p className="text-[18px] font-semibold mb-2">
               Personal information collected by Rope Tech Group may be used to:
             </p>
@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
               <li>Comply with legal or regulatory requirements</li>
             </ul>
 
-            <h3>Log Data</h3>
+            <h2>Log Data</h2>
             <p>
               When you visit our Website, certain information may be collected
               automatically by your browser or hosting services. This may
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
               used for Website analytics and performance monitoring only.
             </p>
 
-            <h3>Cookies</h3>
+            <h2>Cookies</h2>
             <p>
               Cookies are small data files stored on your device to improve
               Website functionality and user experience. Rope Tech Group may use
@@ -76,7 +76,7 @@ const PrivacyPolicy = () => {
               disabled.
             </p>
 
-            <h3>Third-Party Service Providers</h3>
+            <h2>Third-Party Service Providers</h2>
             <p>
               We may use trusted third-party service providers to support
               Website functionality, analytics, or communication services. These
@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
               protect and not misuse your information.
             </p>
 
-            <h3>Data Security</h3>
+            <h2>Data Security</h2>
             <p>
               We take reasonable administrative, technical, and physical
               measures to protect personal information against unauthorized
@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
               guaranteed to be completely secure.
             </p>
 
-            <h3>Links to External Websites</h3>
+            <h2>Links to External Websites</h2>
             <p>
               Our Website may contain links to external websites not operated by
               Rope Tech Group. We are not responsible for the content, privacy
@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
               to review the privacy policies of any external websites you visit.
             </p>
 
-            <h3>Children's Privacy</h3>
+            <h2>Children's Privacy</h2>
             <p>
               Our Website is not intended for individuals under the age of 18.
               We do not knowingly collect personal information from children
@@ -110,14 +110,14 @@ const PrivacyPolicy = () => {
               collected, we will delete it promptly.
             </p>
 
-            <h3>Legal Disclosure</h3>
+            <h2>Legal Disclosure</h2>
             <p>
               We may disclose personal information when required to do so by
               applicable law, regulation, court order, or other legal process in
               Canada.
             </p>
 
-            <h3>Changes to This Privacy Policy</h3>
+            <h2>Changes to This Privacy Policy</h2>
             <p>
               Rope Tech Group may update this Privacy Policy from time to time.
               Any changes will be posted on this page with a revised "Last
@@ -125,7 +125,7 @@ const PrivacyPolicy = () => {
               posted constitutes acceptance of the updated Privacy Policy.
             </p>
 
-            <h3>Contact Information</h3>
+            <h2>Contact Information</h2>
             <p>
               If you have any questions about this Privacy Policy or how your
               personal information is handled, please contact us:

@@ -10,12 +10,12 @@ const AboutSection = () => {
         {/* Mobile Layout */}
         <div className="lg:hidden max-w-md mx-auto">
           {/* Header */}
-          <h3 className="text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
+          <h2 className="text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
             ABOUT US
-          </h3>
-          <h2 className="text-3xl font-bold mb-8 text-gray-900 leading-tight">
-            Delivering Safe & Certified Rope <br /> Access Solutions
           </h2>
+          <h3 className="text-3xl font-bold mb-8 text-gray-900 leading-tight">
+            Delivering Safe & Certified Rope <br /> Access Solutions
+          </h3>
           <p className="lg:hidden block text-gray-700 mb-10 leading-relaxed text-lg">
             Rope Tech Group provides safe and efficient high-rise, industrial,
             and infrastructure services across Canada. Our IRATA-certified

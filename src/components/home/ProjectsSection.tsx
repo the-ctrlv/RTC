@@ -103,9 +103,9 @@ const ProjectsSection = () => {
                   </div>
                 </div>
                 <div className="bg-brand-dark-light p-6 px-10 pb-10">
-                  <h3 className="text-3xl font-bold text-white mb-4">
+                  <h4 className="text-3xl font-bold text-white mb-4">
                     {project.title}
-                  </h3>
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.services.map((service, idx) => (
                       <span

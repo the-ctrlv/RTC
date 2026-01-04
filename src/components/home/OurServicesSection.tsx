@@ -10,13 +10,13 @@ const OurServicesSection = () => {
             <div className="flex flex-col lg:items-end lg:justify-between">
               {/* Left Column - Title */}
               <div>
-                <h3 className="text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
+                <h2 className="text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
                   SERVICES
-                </h3>
+                </h2>
                 <div className="flex flex-col lg:items-start lg:flex-row w-full gap-7">
-                  <h2 className="text-4xl sm:text-5xl lg:text-[48px] font-bold text-gray-900 leading-tight whitespace-nowrap">
+                  <h3 className="text-4xl sm:text-5xl lg:text-[48px] font-bold text-gray-900 leading-tight whitespace-nowrap">
                     Our Services{" "}
-                  </h2>
+                  </h3>
                   <div className="flex-grow relative mb-7 lg:mt-7 lg:mb-0">
                     <img
                       src="/home/decoration_line_wide.svg"
@@ -51,15 +51,15 @@ const OurServicesSection = () => {
                 "
               />
               <div className="p-7 lg:p-10 lg:py-12 bg-white rounded-[40px] order-2 lg:order-1">
-                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-[32px]">
+                <h4 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-[32px]">
                   Industrial Services
-                </h3>
+                </h4>
 
                 <div className="space-y-5 lg:space-y-6 mb-8">
                   <div>
-                    <h4 className="font-bold mb-2 text-base lg:text-lg whitespace-nowrap">
+                    <h5 className="font-bold mb-2 text-base lg:text-lg whitespace-nowrap">
                       Access, Safety & Fall Protection
-                    </h4>
+                    </h5>
                     <p className="text-base max-w-lg font-medium">
                       Engineered access, fall protection, and confined space
                       solutions for industrial environments.
@@ -67,9 +67,9 @@ const OurServicesSection = () => {
                   </div>
                   <hr />
                   <div>
-                    <h4 className="font-bold mb-2 text-base lg:text-lg">
+                    <h5 className="font-bold mb-2 text-base lg:text-lg">
                       Inspections, Maintenance & Reliability
-                    </h4>
+                    </h5>
                     <p className="text-base max-w-lg font-medium">
                       Inspections, maintenance, and repair services supporting
                       long-term asset performance.
@@ -77,9 +77,9 @@ const OurServicesSection = () => {
                   </div>
                   <hr />
                   <div>
-                    <h4 className="font-bold mb-2 text-base lg:text-lg whitespace-nowrap">
+                    <h5 className="font-bold mb-2 text-base lg:text-lg whitespace-nowrap">
                       Specialized & High-Risk Operations
-                    </h4>
+                    </h5>
                     <p className="text-base max-w-lg font-medium">
                       Shutdowns, emergency response, rescue operations, and
                       complex lifting tasks.
@@ -114,15 +114,15 @@ const OurServicesSection = () => {
                 "
               />
               <div className="p-7 lg:p-10 bg-white rounded-[40px]">
-                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-[32px]">
+                <h4 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-[32px]">
                   Building Services
-                </h3>
+                </h4>
 
                 <div className="space-y-5 lg:space-y-6 mb-8">
                   <div>
-                    <h4 className="font-bold mb-2 text-base lg:text-lg">
+                    <h5 className="font-bold mb-2 text-base lg:text-lg">
                       Access, Safety & Fall Protection
-                    </h4>
+                    </h5>
                     <p className="text-base max-w-lg font-medium">
                       Safe access systems and fall protection solutions for
                       residential and commercial buildings.
@@ -130,9 +130,9 @@ const OurServicesSection = () => {
                   </div>
                   <hr />
                   <div>
-                    <h4 className="font-bold mb-2 text-base lg:text-lg">
+                    <h5 className="font-bold mb-2 text-base lg:text-lg">
                       Envelope Inspections & Maintenance
-                    </h4>
+                    </h5>
                     <p className="text-base max-w-lg font-medium">
                       Façade inspections, maintenance, and repair services to
                       extend building lifespan.
@@ -140,9 +140,9 @@ const OurServicesSection = () => {
                   </div>
                   <hr />
                   <div>
-                    <h4 className="font-bold mb-2 text-base lg:text-lg">
+                    <h5 className="font-bold mb-2 text-base lg:text-lg">
                       Envelope Restoration & Repairs
-                    </h4>
+                    </h5>
                     <p className="text-base max-w-lg font-medium">
                       Concrete repairs, waterproofing, glazing, and exterior
                       envelope improvements.

@@ -68,6 +68,7 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
         `}
       >
         <Button
+          aria-label="Close modal"
           variant="ghost"
           className="absolute top-3 right-0 bg-transparent hover:bg-transparent rounded-full"
           onClick={onClose}
@@ -77,6 +78,6 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
         {children}
       </div>
     </div>,
-    portalEl,
+    portalEl
   );
 }

@@ -27,12 +27,12 @@ const BenefitsSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 mb-12 lg:mb-16">
             {/* Left Column - Title */}
             <div>
-              <h3 className="text-[#c3d533] font-bold mb-5 uppercase text-base tracking-wider">
+              <h2 className="text-[#c3d533] font-bold mb-5 uppercase text-base tracking-wider">
                 WHY CHOOSE US
-              </h3>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                Key Benefits of Working With Us
               </h2>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                Key Benefits of Working With Us
+              </h3>
             </div>
 
             {/* Right Column - Description */}
@@ -66,9 +66,9 @@ const BenefitsSection = () => {
                       className="w-7 h-7"
                     />
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white">
+                  <h4 className="text-xl sm:text-2xl font-bold mb-4 text-white">
                     {benefit.title}
-                  </h3>
+                  </h4>
                   <p className="text-white text-sm sm:text-base leading-relaxed">
                     {benefit.description}
                   </p>

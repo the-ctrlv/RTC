@@ -48,12 +48,12 @@ const ServicesSection = () => {
         {/* Mobile Layout */}
         <div className="lg:hidden">
           <div className="mb-8">
-            <h3 className="text-brand-lime font-bold mb-3 uppercase text-xs tracking-wider">
+            <h2 className="text-brand-lime font-bold mb-3 uppercase text-xs tracking-wider">
               OUR SERVICES
-            </h3>
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">
-              Industrial Services
             </h2>
+            <h3 className="text-3xl font-bold mb-6 text-gray-900">
+              Industrial Services
+            </h3>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 bg-brand-lime rounded-full flex-shrink-0"></div>
               <div className="flex-1 h-px bg-brand-lime"></div>
@@ -120,12 +120,12 @@ const ServicesSection = () => {
         {/* Desktop Layout */}
         <div className="hidden lg:grid lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-brand-lime font-bold mb-3 uppercase text-base tracking-wider">
+            <h2 className="text-brand-lime font-bold mb-3 uppercase text-base tracking-wider">
               OUR SERVICES
-            </h3>
-            <h2 className="text-[48px] font-bold mb-6 text-gray-900">
-              Industrial Services
             </h2>
+            <h3 className="text-[48px] font-bold mb-6 text-gray-900">
+              Industrial Services
+            </h3>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-3 h-3 bg-brand-lime rounded-full flex-shrink-0"></div>
               <div className="flex-1 h-px bg-brand-lime max-w-md"></div>

@@ -24,15 +24,15 @@ const ContactUs = () => {
       </section>
 
       {/* Contact Content */}
-      <section className="py-12 sm:py-16 lg:py-20 -translate-y-[50vh] lg:translate-y-0 bg-[#F5F5F5]">
+      <section className="py-12 sm:py-16 lg:py-20 -translate-y-[45vh] lg:translate-y-0 bg-[#F5F5F5]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-7xl mx-auto">
             {/* Contact Information */}
             <div className="space-y-8 order-2 lg:order-1">
               <div>
-                <h3 className="text-brand-lime3 font-bold mb-1 uppercase text-[14px] lg:text-lg tracking-wide">
+                <h2 className="text-brand-lime3 font-bold mb-1 uppercase text-[14px] lg:text-lg tracking-wide">
                   EMAIL
-                </h3>
+                </h2>
                 <a
                   href="mailto:info.ropetechgroup@gmail.com"
                   className="hover:text-brand-lime font-bold transition-colors text-base lg:text-lg block text-darkGray"
@@ -42,9 +42,9 @@ const ContactUs = () => {
               </div>
 
               <div>
-                <h3 className="text-brand-lime3 font-bold mb-1 uppercase text-[14px] lg:text-lg tracking-wide">
+                <h2 className="text-brand-lime3 font-bold mb-1 uppercase text-[14px] lg:text-lg tracking-wide">
                   PHONE
-                </h3>
+                </h2>
                 <div className="text-gray-900 text-lg space-y-1">
                   <div>
                     <a
@@ -65,9 +65,9 @@ const ContactUs = () => {
               </div>
 
               <div>
-                <h3 className="text-brand-lime3 font-bold mb-1 uppercase text-[14px] lg:text-lg tracking-wide">
+                <h2 className="text-brand-lime3 font-bold mb-1 uppercase text-[14px] lg:text-lg tracking-wide">
                   LOCATION
-                </h3>
+                </h2>
                 <p className="text-darkGray text-base lg:text-lg font-bold">
                   142B W 8th Ave, Vancouver, BC V6H 1E1
                 </p>

@@ -35,12 +35,12 @@ const ContactSection = () => {
         <div className="lg:hidden space-y-8">
           {/* Contact Information */}
           <div className="bg-brand-gray py-6">
-            <h3 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
+            <h2 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
               CONTACT US
-            </h3>
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">
-              Get in Touch
             </h2>
+            <h3 className="text-3xl font-bold mb-8 text-gray-900">
+              Get in Touch
+            </h3>
 
             <div className="space-y-6">
               <div>
@@ -158,9 +158,9 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <div className="bg-white p-6 rounded-2xl shadow-sm">
-            <h2 className="text-2xl font-bold mb-6 text-gray-900">
+            <h4 className="text-2xl font-bold mb-6 text-gray-900">
               Fill Out the Form
-            </h2>
+            </h4>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
               <div>
                 <label
@@ -357,9 +357,9 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <div className="p-12 bg-white rounded-[40px]">
-            <h2 className="text-[36px] font-bold mb-8 text-gray-900">
+            <h4 className="text-[36px] font-bold mb-8 text-gray-900">
               Fill Out the Form
-            </h2>
+            </h4>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
                 <label

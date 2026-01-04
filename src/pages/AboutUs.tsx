@@ -198,9 +198,9 @@ const AboutUs = () => {
         <section>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
             <div className="flex justify-between w-full flex-col xl:flex-row">
-              <h3 className="text-[#a5b715] font-bold mb-[24px] lg:mb-0 uppercase text-[16px] tracking-wider">
+              <h2 className="text-[#a5b715] font-bold mb-[24px] lg:mb-0 uppercase text-[16px] tracking-wider">
                 ABOUT US
-              </h3>
+              </h2>
               <div className="max-w-[872px]">
                 <p className="text-[#292929] text-[16px] lg:text-[24px] font-semibold leading-relaxed">
                   Since 2013, Rope Tech Group has delivered expert rope access
@@ -259,15 +259,15 @@ const AboutUs = () => {
       {/* Principles Section - Dark */}
       <section className="py-[80px] lg:py-[140px] bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
-          <h3 className="text-[#a5b715] font-bold mb-6 uppercase text-[16px] tracking-wider">
+          <h2 className="text-[#a5b715] font-bold mb-6 uppercase text-[16px] tracking-wider">
             OUR APPROACH
-          </h3>
+          </h2>
           <div className="flex flex-col gap-6 lg:grid lg:gap-16 lg:grid-cols-2">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-0 lg:mb-16">
+            <h3 className="text-4xl lg:text-5xl font-bold text-white mb-0 lg:mb-16">
               The Principles
               <br />
               Behind Our Work
-            </h2>
+            </h3>
             <p className="text-white text-[18px]">
               We focus on safety, efficiency, and minimal disruption, using
               proven rope access techniques to deliver reliable results at
@@ -286,9 +286,9 @@ const AboutUs = () => {
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-14">
                   <img src={principle.icon} alt={`${principle.title} icon`} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">
+                <h4 className="text-xl font-bold text-white mb-4">
                   {principle.title}
-                </h3>
+                </h4>
                 <p className="text-white leading-relaxed font-normal">
                   {principle.description}
                 </p>
@@ -308,13 +308,13 @@ const AboutUs = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider">
+              <h2 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider">
                 OUR SAFETY STANDARDS
-              </h3>
-              <h2 className="text-[34px] lg:text-6xl font-bold text-gray-900 mb-6">
+              </h2>
+              <h3 className="text-[34px] lg:text-6xl font-bold text-gray-900 mb-6">
                 Safety &<br />
                 Certifications
-              </h2>
+              </h3>
               <p className="text-gray-700 leading-relaxed text-[18px]">
                 Safety is our top priority. Every team member is IRATA-certified
                 and undergoes ongoing training to stay ahead of industry
@@ -324,9 +324,9 @@ const AboutUs = () => {
             </div>
 
             <div className="bg-white px-6 py-7 lg:px-10 lg:py-11 rounded-3xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">
+              <h4 className="text-xl font-bold text-gray-900 mb-6">
                 What sets us apart:
-              </h3>
+              </h4>
 
               <ul className="space-y-4">
                 {certifications.map((cert, index) => (
@@ -353,12 +353,12 @@ const AboutUs = () => {
 
       {/* Our Work Section - Dark */}
       <section className="py-[80px] lg:py-[140px] bg-brand-dark relative overflow-hidden">
-        <h3 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider text-center">
+        <h2 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider text-center">
           OUR WORK
-        </h3>
-        <h2 className="text-[34px] lg:text-[48px] font-bold text-white text-center mb-12 lg:mb-16">
-          Our Work in Real Conditions
         </h2>
+        <h3 className="text-[34px] lg:text-[48px] font-bold text-white text-center mb-12 lg:mb-16">
+          Our Work in Real Conditions
+        </h3>
 
         {/* ================= MOBILE ================= */}
         <div className="lg:hidden">
@@ -507,6 +507,7 @@ const AboutUs = () => {
             </button>
 
             <button
+              aria-label="Next slide"
               className="
                 our-work-next
                 pointer-events-auto

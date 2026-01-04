@@ -569,6 +569,7 @@ const ServiceDetail = () => {
                 "
               >
                 <button
+                  aria-label="Previous slide"
                   className="
                     our-work-prev
                     pointer-events-auto
@@ -584,6 +585,7 @@ const ServiceDetail = () => {
                 </button>
 
                 <button
+                  aria-label="Next slide"
                   className="
                     our-work-next
                     pointer-events-auto

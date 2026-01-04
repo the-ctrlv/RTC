@@ -112,6 +112,7 @@ const Header = () => {
                 onClick={closeMobileMenu}
                 variant="rounded"
                 className="bg-white w-12 h-12"
+                aria-label="Close mobile menu"
               >
                 <X className="w-6 h-6 text-black" />
               </Button>
