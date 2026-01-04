@@ -13,40 +13,39 @@ import { CTASection } from "@/components/common/CTASection";
 
 const AboutUs = () => {
   const stats = [
-    { value: "95%", label: "SUCCESSFUL RATE" },
-    { value: "500+", label: "CLIENTS SERVED" },
+    { value: "95%", label: "SUCCESSFUL PROJECTS" },
+    { value: "500+", label: "Completed Jobs" },
     { value: "15+", label: "YEARS EXPERIENCE" },
-    { value: "24/7", label: "EXPERT SUPPORT" },
+    { value: "100%", label: "SAFETY SUCCESS" },
   ];
 
   const principles = [
     {
       title: "Mission",
       description:
-        "To deliver safe, efficient, and cost-effective rope access solutions across Canada.",
+        "To deliver precise, reliable rope access solutions that solve complex challenges efficiently.",
       icon: missonIcon,
     },
     {
       title: "Vision",
       description:
-        "To be the most trusted name in rope access and high-rise services across Canada.",
+        "To be a trusted long-term partner for high-rise and industrial maintenance projects.",
       icon: purposeIcon,
     },
     {
       title: "Purpose",
       description:
-        "We exist to protect and preserve buildings through innovative access methods.",
+        "To help clients extend the life of their assets through smart, well-executed access solutions.",
       icon: visionIcon,
     },
   ];
 
   const certifications = [
     "IRATA-certified rope access technicians",
-    "Fully safety-trained and certified",
-    "All workers are WSIB-covered",
-    "Fully compliant with IRATA standards and best practices",
-    "Full insurance coverage for all projects",
-    "Compliance with regional legislation and industry standards",
+    "Regular safety and skills training",
+    "Full equipment inspection, logging, and maintenance",
+    "Site-specific risk assessments and rescue planning",
+    "Compliance with regional workplace and industry regulations",
   ];
 
   const projects = [
@@ -164,13 +163,19 @@ const AboutUs = () => {
                 ABOUT US
               </h3>
               <div className="max-w-[872px]">
-                <p className="text-[#292929] text-[19px] lg:text-[32px] font-semibold leading-relaxed">
+                <p className="text-[#292929] text-[16px] lg:text-[24px] font-semibold leading-relaxed">
                   Since 2013, Rope Tech Group has delivered expert rope access
                   and high-rise maintenance services across British Columbia.
                   Our certified team provides safe and efficient solutions for
                   façades, concrete repairs, waterproofing, glazing, and
                   inspections, combining experience and innovation to protect
                   buildings with confidence.
+                  <br />
+                  <br />
+                  Our certified technicians specialize in façade maintenance,
+                  concrete repairs, waterproofing, glazing, inspections, bridge
+                  work, industrial facilities, rock scaling, and support
+                  services for the oil and gas sector.
                 </p>
                 <img
                   src="/home/decoration_line_wide.svg"
@@ -221,9 +226,9 @@ const AboutUs = () => {
               Behind Our Work
             </h2>
             <p className="text-white text-[18px]">
-              We focus on delivering precise, reliable results in complex
-              environments-through communication, strong planning, and execution
-              you can trust.
+              Safety is the foundation of every project we take on. Our team
+              works in accordance with internationally recognized rope access
+              standards and follows established safety procedures on every site.
             </p>
           </div>
           <img
@@ -240,7 +245,7 @@ const AboutUs = () => {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {principle.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed font-semibold">
                   {principle.description}
                 </p>
               </div>
@@ -287,7 +292,9 @@ const AboutUs = () => {
                     </span>
 
                     {/* TEXT */}
-                    <span className="text-gray-700 leading-snug">{cert}</span>
+                    <span className="text-[#404040] leading-snug font-medium">
+                      {cert}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -312,7 +319,7 @@ const AboutUs = () => {
         <div className="lg:hidden">
           <Swiper
             modules={[Pagination]}
-            spaceBetween={20}
+            spaceBetween={5}
             slidesPerView="auto"
             centeredSlides
             pagination={{
@@ -320,6 +327,34 @@ const AboutUs = () => {
               bulletClass: "swiper-pagination-bullet !bg-white/40",
               bulletActiveClass:
                 "swiper-pagination-bullet-active !bg-brand-lime",
+            }}
+            onSlideChange={(swiper) => {
+              const slides = swiper.slides;
+              slides.forEach((slide, index) => {
+                if (index === swiper.activeIndex) {
+                  slide.style.transform = "scale(1)";
+                  slide.style.opacity = "1";
+                } else {
+                  slide.style.transform = "scale(0.85)";
+                  slide.style.opacity = "0.8";
+                }
+              });
+            }}
+            onInit={(swiper) => {
+              const slides = swiper.slides;
+              slides.forEach((slide, index) => {
+                if (index === swiper.activeIndex) {
+                  slide.style.transform = "scale(1)";
+                  slide.style.opacity = "1";
+                  slide.style.transition =
+                    "transform 0.3s ease, opacity 0.5s ease";
+                } else {
+                  slide.style.transform = "scale(0.85)";
+                  slide.style.opacity = "0.5";
+                  slide.style.transition =
+                    "transform 0.3s ease, opacity 0.5s ease";
+                }
+              });
             }}
           >
             {projects.map((project, index) => (
@@ -353,6 +388,34 @@ const AboutUs = () => {
               bulletClass: "swiper-pagination-bullet !bg-white/40",
               bulletActiveClass:
                 "swiper-pagination-bullet-active !bg-brand-lime",
+            }}
+            onSlideChange={(swiper) => {
+              const slides = swiper.slides;
+              slides.forEach((slide, index) => {
+                if (index === swiper.activeIndex) {
+                  slide.style.transform = "scale(1)";
+                  slide.style.opacity = "1";
+                } else {
+                  slide.style.transform = "scale(0.85)";
+                  slide.style.opacity = "0.8";
+                }
+              });
+            }}
+            onInit={(swiper) => {
+              const slides = swiper.slides;
+              slides.forEach((slide, index) => {
+                if (index === swiper.activeIndex) {
+                  slide.style.transform = "scale(1)";
+                  slide.style.opacity = "1";
+                  slide.style.transition =
+                    "transform 0.3s ease, opacity 0.5s ease";
+                } else {
+                  slide.style.transform = "scale(0.85)";
+                  slide.style.opacity = "0.5";
+                  slide.style.transition =
+                    "transform 0.3s ease, opacity 0.5s ease";
+                }
+              });
             }}
           >
             {projects.map((project, index) => (
