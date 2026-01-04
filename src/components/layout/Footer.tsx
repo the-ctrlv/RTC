@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Logo and Contact Info */}
           <div className="flex flex-col gap-7 items-start justify-center max-w-xs">
             <Link to="/" className="inline-block">
-              <img src="/logo.svg" alt="RTC Logo" className="w-[200px]" />
+              <img src="/logo.svg" alt="RTC Logo" className="w-[172px]" />
             </Link>
             <p className="text-[#7F7F7F]">
               Professional industrial & building <br /> access solutions across
@@ -53,7 +53,7 @@ const Footer = () => {
               <div className="flex justify-center gap-6">
                 {/* Facebook */}
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/share/1FaCR8U6RY/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#c3d533] transition-colors"
@@ -139,7 +139,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 sm:px-6 py-5 sm:py-6 lg:mb-12">
+        <div className="container mx-auto px-4 sm:px-6 mt-3 lg:mt-6 lg:mb-12">
           <div className="flex flex-col sm:flex-row justify-between items-start lg:items-center gap-3 sm:gap-4 text-xs sm:text-sm">
             <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-6">
               <p className="text-gray-300 text-center sm:text-left">

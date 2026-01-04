@@ -188,7 +188,7 @@ const TestimonialsSection = () => {
             >
               <div className="relative">
                 {/* Quote Icon */}
-                <img src="/home/quotes.svg" className="w-[22px] mb-10 block" />
+                <img src="/home/quotes.svg" className="w-[32px] mb-10 block" />
 
                 {/* Testimonial Text */}
                 <p className="text-gray-900 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10 lg:mb-12">
@@ -307,7 +307,7 @@ const TestimonialsSection = () => {
           </div>
         </Swiper>
       </div>
-      <div className="pt-[80px] lg:pt-[120px] pb-[20px] xl:px-14">
+      <div className="pt-[80px] lg:pt-[100px] pb-[20px] xl:px-14">
         <CTASection option={2} />
       </div>
     </section>

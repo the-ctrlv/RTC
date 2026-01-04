@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: "Keltic Place",
       location: "Keltic Place, Richmond",
-      subtitle: "1550 Alberni St",
+      subtitle: "6388 No. 3 Road",
       image: "/projects/keltic.jpeg",
       tags: ["Sunshade Installation", "Sealant Application"],
     },

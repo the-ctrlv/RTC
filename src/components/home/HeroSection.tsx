@@ -24,10 +24,10 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/30 lg:bg-black/20"></div>
 
       {/* Content */}
-      <div className="relative container justify-center items-start lg:justify-start mx-auto flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-12">
+      <div className="relative container justify-center items-start lg:justify-start mx-auto flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-20 px-3 lg:px-0">
         {/* Location Badge */}
         <div>
-          <div className="inline-flex items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
+          <div className="inline-flex mt-40 lg:mt-0 items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
             <img
               src="/map_pin.svg"
               alt="Location"
@@ -47,7 +47,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Contact Button - Mobile Only */}
-        <div className="lg:hidden mt-2">
+        <div className="lg:hidden mt-5">
           <Link to="/contact">
             <Button
               size="lg"
@@ -67,9 +67,9 @@ const HeroSection = () => {
           <div className="flex gap-6 w-full">
             {expertiseCards.map((card, index) => (
               <Link key={index} to={card.link}>
-                <div className="group relative backdrop-blur-lg py-8 px-7 rounded-xl cursor-pointer text-white overflow-hidden w-[343px] h-[172px] bg-white/10 border border-white/20 hover:bg-white/20 transition-all">
+                <div className="group relative backdrop-blur-lg py-8 px-7 rounded-r-[25px] rounded-l-[10px] cursor-pointer text-white overflow-hidden w-[343px] h-[172px] bg-white/10 transition-all">
                   <div className="absolute bg-[#c3d533] h-full w-2 left-0 top-0 z-10" />
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center justify-between mb-10">
                     <h3 className="text-white text-xl font-semibold">
                       {card.title}
                     </h3>

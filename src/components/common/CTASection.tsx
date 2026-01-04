@@ -16,7 +16,7 @@ export const CTASection = ({ option }: { option?: number }) => {
           <div className="max-w-6xl mx-auto inline">
             <div className="h-full bg-brand-lime rounded-[40px] p-6 lg:p-12 flex flex-col lg:items-start gap-y-[11px] justify-between">
               <h2
-                className={`text-2xl lg:text-[36px] font-bold text-gray-900 leading-tight mb-10 lg:mb-0`}
+                className={`text-[30px] lg:text-[36px] font-bold text-gray-900 leading-tight mb-20 lg:mb-0`}
               >
                 {option === 2 ? (
                   <>
@@ -29,7 +29,7 @@ export const CTASection = ({ option }: { option?: number }) => {
                 )}
               </h2>
               <div className="flex justify-end w-full">
-                <button className="w-[58px] h-[58px] lg:w-16 lg:h-16 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6">
+                <button className="h-20 w-20 lg:w-[58px] lg:h-[58px] rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6">
                   <ArrowRight className="text-white w-6 h-6" />
                 </button>
               </div>

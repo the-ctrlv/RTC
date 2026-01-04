@@ -14,7 +14,7 @@ const OurServicesSection = () => {
                   SERVICES
                 </h3>
                 <div className="flex flex-col lg:items-start lg:flex-row w-full gap-7">
-                  <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight whitespace-nowrap">
+                  <h2 className="text-4xl sm:text-5xl lg:text-[48px] font-bold text-gray-900 leading-tight whitespace-nowrap">
                     Our Services{" "}
                   </h2>
                   <div className="flex-grow relative mb-7 lg:mt-7 lg:mb-0">
@@ -27,7 +27,7 @@ const OurServicesSection = () => {
                 </div>
               </div>
 
-              <p className="text-gray-700 text-base lg:text-lg leading-relaxed max-w-xl">
+              <p className="text-gray-700 text-lg leading-relaxed max-w-xl">
                 Our team provides specialized industrial services that ensure
                 safety, reliability, and long-term performance. We deliver
                 professional maintenance, inspection, and repair solutions —
@@ -50,14 +50,14 @@ const OurServicesSection = () => {
                   order-1 lg:order-2
                 "
               />
-              <div className="p-8 lg:p-10 lg:py-12 bg-white rounded-[40px] order-2 lg:order-1">
-                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-16">
+              <div className="p-7 lg:p-10 lg:py-12 bg-white rounded-[40px] order-2 lg:order-1">
+                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-[32px]">
                   Industrial Services
                 </h3>
 
                 <div className="space-y-5 lg:space-y-6 mb-8">
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">
+                    <h4 className="font-bold mb-2 text-base lg:text-lg whitespace-nowrap">
                       Access, Safety & Fall Protection
                     </h4>
                     <p className="text-base max-w-lg font-medium">
@@ -67,7 +67,7 @@ const OurServicesSection = () => {
                   </div>
                   <hr />
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">
+                    <h4 className="font-bold mb-2 text-base lg:text-lg">
                       Inspections, Maintenance & Reliability
                     </h4>
                     <p className="text-base max-w-lg font-medium">
@@ -77,7 +77,7 @@ const OurServicesSection = () => {
                   </div>
                   <hr />
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">
+                    <h4 className="font-bold mb-2 text-base lg:text-lg whitespace-nowrap">
                       Specialized & High-Risk Operations
                     </h4>
                     <p className="text-base max-w-lg font-medium">
@@ -113,14 +113,14 @@ const OurServicesSection = () => {
                   min-h-[240px] lg:min-h-0
                 "
               />
-              <div className="p-8 lg:p-10 bg-white rounded-[40px]">
-                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-16">
+              <div className="p-7 lg:p-10 bg-white rounded-[40px]">
+                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-[32px]">
                   Building Services
                 </h3>
 
                 <div className="space-y-5 lg:space-y-6 mb-8">
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">
+                    <h4 className="font-bold mb-2 text-base lg:text-lg">
                       Access, Safety & Fall Protection
                     </h4>
                     <p className="text-base max-w-lg font-medium">
@@ -130,7 +130,7 @@ const OurServicesSection = () => {
                   </div>
                   <hr />
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">
+                    <h4 className="font-bold mb-2 text-base lg:text-lg">
                       Envelope Inspections & Maintenance
                     </h4>
                     <p className="text-base max-w-lg font-medium">
@@ -140,7 +140,7 @@ const OurServicesSection = () => {
                   </div>
                   <hr />
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">
+                    <h4 className="font-bold mb-2 text-base lg:text-lg">
                       Envelope Restoration & Repairs
                     </h4>
                     <p className="text-base max-w-lg font-medium">

@@ -37,7 +37,7 @@ const BenefitsSection = () => {
 
             {/* Right Column - Description */}
             <div className="flex items-center">
-              <p className="text-white text-base sm:text-lg leading-relaxed lg:mt-12">
+              <p className="text-white text-lg sm:text-lg leading-relaxed lg:mt-12">
                 We focus on delivering precise, reliable results in complex
                 environments—through clear communication, strong planning, and
                 execution you can trust.

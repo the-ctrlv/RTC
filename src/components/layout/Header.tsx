@@ -48,7 +48,7 @@ const Header = () => {
         scrolled ? "bg-[#343434]/20 backdrop-blur-lg" : "backdrop-blur-0"
       } flex justify-between`}
     >
-      <nav className="container mx-auto py-3.5 max-w-[1350px]">
+      <nav className="container mx-auto py-3.5 max-w-[1350px] px-3 lg:px-0">
         <div className="relative flex items-center justify-between">
           <Link
             to="/"
@@ -79,7 +79,7 @@ const Header = () => {
           <a href="tel:+17789807798" className="hidden lg:block">
             <Button
               size="lg"
-              className="bg-[#c3d533] hover:bg-[#c3d533]/90 text-black font-semibold w-[146px] h-12"
+              className="bg-[#c3d533] hover:bg-[#c3d533]/90 text-black lg:text-base font-semibold w-[146px] h-11"
             >
               Call us
             </Button>

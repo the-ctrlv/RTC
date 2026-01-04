@@ -59,7 +59,7 @@ const ProjectsSection = () => {
             OUR WORK
           </h3>
           <div className="flex flex-col items-start md:flex-row md:items-center w-full gap-7 relative mb-[70px]">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-nowrap">
+            <h2 className="text-4xl sm:text-5xl lg:text-[48px] font-bold text-white leading-tight whitespace-nowrap">
               Latest Projects
             </h2>
             <div className="flex-grow relative">
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-3xl cursor-pointer aspect-square"
+              className="group relative overflow-hidden rounded-[40px] cursor-pointer aspect-square"
             >
               {/* Image with overlay */}
               <img
@@ -102,7 +102,7 @@ const ProjectsSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-brand-dark-light p-6 px-10">
+                <div className="bg-brand-dark-light p-6 px-10 pb-10">
                   <h3 className="text-3xl font-bold text-white mb-4">
                     {project.title}
                   </h3>
@@ -136,7 +136,7 @@ const ProjectsSection = () => {
               <div
                 className="
                     group relative
-                    min-h-[45vh] max-h-[80vh]
+                    min-h-[446px] max-h-[80vh]
                     rounded-3xl overflow-hidden cursor-pointer
                     bg-cover bg-center
                   "
