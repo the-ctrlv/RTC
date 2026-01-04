@@ -126,7 +126,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <ul className="flex flex-col gap-[18px]">
+              <ul className="flex flex-col gap-[18px] lg:pe-10">
                 {links.map((link, idx) => (
                   <li key={idx}>
                     <Link

@@ -26,11 +26,12 @@ const Careers = () => {
     <div className="min-h-screen mb-[-50vh] lg:mb-0">
       {/* Hero Section */}
       <section
-        className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24 h-[70vh] lg:h-auto
-      bg-[url('/careers-bg.jpg')] bg-cover bg-center
+        className="bg-brand-dark text-white pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-20 h-[70vh] lg:h-auto
+      bg-[url('/join.jpg')] bg-cover bg-center relative
       "
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14 relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 lg:mb-10">
             Join Our Team
           </h1>
@@ -48,16 +49,16 @@ const Careers = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mx-auto">
             {/* Career Information */}
             <div className="space-y-6 order-2 lg:order-1">
-              <h2 className="text-lg font-bold">
+              <h4 className="text-lg font-bold">
                 We're always looking for skilled, motivated, and safety-driven
                 professionals to join our team.
-              </h2>
-              <p className="text-base font-medium text-darkGray leading-relaxed">
+              </h4>
+              <p className="text-base font-medium text-[#292929] leading-relaxed">
                 If you have experience in rope access, building envelope work,
                 inspections, maintenance, or industrial operations — we'd love
                 to hear from you.
               </p>
-              <p className="text-base font-medium text-darkGray leading-relaxed">
+              <p className="text-base font-medium text-[#292929] leading-relaxed">
                 At Rope Tech Group, we value professionalism, teamwork, and a
                 strong commitment to safety and quality. Whether you're an
                 experienced specialist or looking to grow your career in a
