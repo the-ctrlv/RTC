@@ -105,7 +105,7 @@ const TestimonialsSection = () => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 xl:py-[150px] bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <div className="mb-8 sm:mb-12 lg:mb-16">
           <h3 className="text-[#c3d533] font-bold mb-3 uppercase text-base tracking-wider">
@@ -117,7 +117,7 @@ const TestimonialsSection = () => {
         </div>
       </div>
 
-      <div className="cursor-pointer user-select-none py-6">
+      <div className="cursor-pointer user-select-none py-6 lg:mb-10">
         <Swiper
           modules={[Pagination]}
           pagination={{

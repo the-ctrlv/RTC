@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const OurServicesSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-[#f5f5f5]">
+    <section className="py-16 sm:py-20 lg:py-[150px] bg-[#f5f5f5]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="mb-12 lg:mb-16">
+          <div className="mb-12 lg:mb-20">
             <div className="flex flex-col lg:items-end lg:justify-between">
               {/* Left Column - Title */}
               <div>
@@ -27,7 +27,7 @@ const OurServicesSection = () => {
                 </div>
               </div>
 
-              <p className="text-gray-700 text-base leading-relaxed max-w-lg">
+              <p className="text-gray-700 text-base lg:text-lg leading-relaxed max-w-xl">
                 Our team provides specialized industrial services that ensure
                 safety, reliability, and long-term performance. We deliver
                 professional maintenance, inspection, and repair solutions —
@@ -37,7 +37,7 @@ const OurServicesSection = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="flex flex-col items-center justify-center gap-10">
+          <div className="flex flex-col items-center justify-center gap-3">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 justify-center items-stretch w-full">
               <div
                 className="
@@ -50,8 +50,8 @@ const OurServicesSection = () => {
                   order-1 lg:order-2
                 "
               />
-              <div className="p-8 lg:p-10 bg-white rounded-[40px] order-2 lg:order-1">
-                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-8">
+              <div className="p-8 lg:p-10 lg:py-12 bg-white rounded-[40px] order-2 lg:order-1">
+                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-16">
                   Industrial Services
                 </h3>
 
@@ -114,7 +114,7 @@ const OurServicesSection = () => {
                 "
               />
               <div className="p-8 lg:p-10 bg-white rounded-[40px]">
-                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-8">
+                <h3 className="text-2xl lg:text-[36px] font-bold text-gray-900 mb-6 lg:mb-16">
                   Building Services
                 </h3>
 

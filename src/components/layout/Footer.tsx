@@ -14,18 +14,19 @@ const Footer = () => {
 
   return (
     <footer className="bg-brand-dark text-white">
-      <div className="container mx-auto px-5 py-10 lg:py-16">
+      <div className="container mx-auto px-5 py-10 lg:pt-[70px] lg:pb-[80px]">
         <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
           {/* Logo and Contact Info */}
-          <div className="flex flex-col gap-5 items-start justify-center max-w-xs">
+          <div className="flex flex-col gap-7 items-start justify-center max-w-xs">
             <Link to="/" className="inline-block">
-              <img src="/logo.svg" alt="RTC Logo" className="w-[134px]" />
+              <img src="/logo.svg" alt="RTC Logo" className="w-[200px]" />
             </Link>
             <p className="text-[#7F7F7F]">
-              Professional industrial & building access solutions across Canada.
+              Professional industrial & building <br /> access solutions across
+              Canada.
             </p>
             <Button
-              className="bg-[#D9F043] text-gray-600 w-full hover:bg-[#D9F043]"
+              className="bg-[#D9F043] text-gray-600 w-full max-w-[220px] h-12 hover:bg-[#D9F043]"
               onClick={() => navigate("/contact")}
             >
               Get in Touch
@@ -138,7 +139,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 sm:px-6 py-5 sm:py-6">
+        <div className="container mx-auto px-4 sm:px-6 py-5 sm:py-6 lg:mb-12">
           <div className="flex flex-col sm:flex-row justify-between items-start lg:items-center gap-3 sm:gap-4 text-xs sm:text-sm">
             <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-6">
               <p className="text-gray-300 text-center sm:text-left">

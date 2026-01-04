@@ -52,7 +52,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-brand-dark">
+    <section className="py-16 sm:py-20 lg:py-24 xl:py-[150px] bg-brand-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
         <div>
           <h3 className="text-[#D9F043] font-bold mb-4 uppercase text-base tracking-wider">
@@ -72,7 +72,7 @@ const ProjectsSection = () => {
           </div>
         </div>
         {/* Desktop Grid - visible on large screens */}
-        <div className="hidden lg:grid lg:grid-cols-2 gap-3 mb-12">
+        <div className="hidden lg:grid lg:grid-cols-2 gap-3 mb-20">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -186,7 +186,7 @@ const ProjectsSection = () => {
       </div>
       <div className="block text-center container px-4 sm:px-6 lg:px-8 xl:px-14 mx-auto">
         <Link to="/projects">
-          <Button className="bg-brand-lime hover:bg-brand-lime/90 text-gray-900 font-semibold px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
+          <Button className="bg-brand-lime hover:bg-brand-lime/90 text-gray-900 lg:max-h-[50px] max-w-[200px] font-semibold px-8 sm:px-10 py-5 xl:py-6 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
             View All Projects
           </Button>
         </Link>

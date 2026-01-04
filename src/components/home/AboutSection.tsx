@@ -5,7 +5,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-white">
+    <section className="py-16 sm:py-20 lg:py-24 xl:py-[150px] bg-white">
       <div className="container mx-auto px-4 sm:px-6 xl:px-14">
         {/* Mobile Layout */}
         <div className="lg:hidden max-w-md mx-auto">
@@ -57,14 +57,14 @@ const AboutSection = () => {
           />
 
           {/* Content */}
-          <div>
-            <h3 className="text-[#c3d533] font-bold mb-3 uppercase text-base tracking-wider">
+          <div className="py-10 flex flex-col justify-between">
+            <h3 className="text-[#c3d533] font-bold uppercase text-base tracking-wider mb-3">
               ABOUT US
             </h3>
-            <h2 className="text-3xl lg:text-[54px] font-bold mb-8 text-gray-900 leading-tight">
+            <h2 className="text-3xl lg:text-[54px] font-bold mb-5 text-gray-900 leading-tight">
               Delivering Safe & Certified Rope Access Solutions
             </h2>
-            <p className="text-gray-700 mb-12 leading-relaxed text-lg">
+            <p className="text-gray-700 mb-5 leading-relaxed text-lg">
               Rope Tech Group provides safe and efficient high-rise, industrial,
               and infrastructure services across Canada. Our IRATA-certified
               technicians use advanced rope access methods to reach complex

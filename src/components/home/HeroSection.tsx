@@ -24,7 +24,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/30 lg:bg-black/20"></div>
 
       {/* Content */}
-      <div className="relative container justify-center items-start lg:justify-start mx-auto px-4 sm:px-6 flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-12">
+      <div className="relative container justify-center items-start lg:justify-start mx-auto flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-12">
         {/* Location Badge */}
         <div>
           <div className="inline-flex items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
