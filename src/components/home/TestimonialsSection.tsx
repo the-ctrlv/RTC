@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     id: 2,
-    text: "Professional and dependable rope access services. They supported us on several high-rise membrane application projects throughout the Lower Mainland. The team is experienced, efficient, and works to a very high safety standard.",
+    text: "Very professional rope access company. The team worked safely, stayed on schedule, and delivered quality results.",
     author: "Steven Danzing",
     role: "Metalife LTD",
     rating: 5,
@@ -51,7 +51,7 @@ const testimonials = [
   },
   {
     id: 5,
-    text: "They provided rope access support for membrane and sealant applications as well as glass replacement work. The team was well organized, safety oriented, and easy to work with on active construction sites. We would not hesitate to work with them again.",
+    text: "Professional rope access team. Work was completed safely, on time, and to a high standard.",
     author: "Dennis Lesik",
     role: "Siber Facade Group LTD",
     rating: 5,
