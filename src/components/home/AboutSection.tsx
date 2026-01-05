@@ -10,9 +10,9 @@ const AboutSection = () => {
         {/* Mobile Layout */}
         <div className="lg:hidden max-w-md mx-auto">
           {/* Header */}
-          <h2 className="text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
+          <span className="block text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
             ABOUT US
-          </h2>
+          </span>
           <h3 className="text-3xl font-bold mb-8 text-gray-900 leading-tight">
             Delivering Safe & Certified Rope <br /> Access Solutions
           </h3>

@@ -15,7 +15,7 @@ const testimonials = [
     author: "Dan Miller",
     role: "Norsco Construction LTD",
     rating: 5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/miller.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Norsco Construction LTD",
   },
@@ -25,7 +25,7 @@ const testimonials = [
     author: "Steven Danzing",
     role: "Metalife LTD",
     rating: 5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/popkov.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Metalife LTD",
   },
@@ -35,7 +35,7 @@ const testimonials = [
     author: "Merle Beck",
     role: "Action Glass Inc.",
     rating: 4.5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/beck.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Action Glass Inc.",
   },
@@ -45,7 +45,7 @@ const testimonials = [
     author: "Sergii",
     role: "High Rise Glass LTD",
     rating: 5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/sokolov.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "High Rise Glass LTD",
   },
@@ -55,7 +55,7 @@ const testimonials = [
     author: "Dennis Lesik",
     role: "Siber Facade Group LTD",
     rating: 5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/lesik.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Siber Facade Group LTD",
   },
@@ -65,7 +65,7 @@ const testimonials = [
     author: "Pavel Sokol",
     role: "Altitude Installations LTD",
     rating: 4.5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/sokolov.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Altitude Installations LTD",
   },
@@ -75,7 +75,7 @@ const testimonials = [
     author: "Darren Boyd",
     role: "Four Seasons Resort Whistler",
     rating: 5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/boyd.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Four Seasons Resort Whistler",
   },
@@ -85,7 +85,7 @@ const testimonials = [
     author: "Stan Phillips",
     role: "Pomerleau LTD",
     rating: 4.5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/phillips.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Pomerleau LTD",
   },
@@ -95,7 +95,7 @@ const testimonials = [
     author: "James Payette",
     role: "Tribe Management Inc.",
     rating: 5,
-    avatar: "/home/avatar.png",
+    avatar: "/slider/payette.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Tribe Management Inc.",
   },
@@ -205,13 +205,13 @@ const TestimonialsSection = () => {
                 {/* Author Info */}
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    {/* <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 rounded-full overflow-hidden flex-shrink-0">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 overflow-hidden flex-shrink-0">
                       <img
                         src={testimonial.avatar}
                         alt={testimonial.author}
                         className="w-full h-full object-cover"
                       />
-                    </div> */}
+                    </div>
                     <div>
                       <div className="font-bold text-sm sm:text-base text-gray-900">
                         {testimonial.author}

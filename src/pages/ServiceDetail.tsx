@@ -431,7 +431,7 @@ const ServiceDetail = () => {
                   type: "bullets",
                   clickable: true,
                 }}
-                spaceBetween={16}
+                spaceBetween={0}
                 slidesPerView="auto"
                 initialSlide={0}
                 centeredSlides
@@ -489,10 +489,10 @@ const ServiceDetail = () => {
             <div className="hidden lg:block relative our-work-swiper">
               <Swiper
                 modules={[Navigation, Pagination]}
-                slidesPerView="auto"
+                slidesPerView={3}
                 centeredSlides
                 initialSlide={0}
-                spaceBetween={40}
+                spaceBetween={0}
                 navigation={{
                   nextEl: ".our-work-next",
                   prevEl: ".our-work-prev",
@@ -535,11 +535,8 @@ const ServiceDetail = () => {
               >
                 {service.realConditions.images.map(
                   (image: string, index: number) => (
-                    <SwiperSlide
-                      key={index}
-                      className="!w-[60vw] max-w-[720px]"
-                    >
-                      <div className="relative overflow-hidden rounded-3xl aspect-[16/9]">
+                    <SwiperSlide key={index} className="max-w-[720px]">
+                      <div className="relative overflow-hidden rounded-3xl aspect-[3/3] min-h-[450px]">
                         <img
                           src={image}
                           alt={`Completed rope access project showcasing ${service.title.toLowerCase()} work`}

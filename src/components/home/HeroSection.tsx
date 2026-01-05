@@ -19,15 +19,15 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-[url('/home-bg-mob.jpg')] lg:bg-[url('/home-bg.jpg')]">
+    <section className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-[url('/home_video_bg-mob.jpeg')] lg:bg-[url('/home_video_bg.jpg')]">
       <div className="absolute w-full h-full inset-0 overflow-hidden">
         <video
-          src="/videos/about.mp4"
+          src="/videos/home.mp4"
           muted
           autoPlay
           loop
           playsInline
-          className="w-full object-cover aspect-[16/10] hidden lg:block"
+          className="w-full hidden lg:block"
         />
         <video
           src="/videos/about-mob.mp4"
@@ -39,10 +39,10 @@ const HeroSection = () => {
         />
       </div>
       {/* Overlay for better text readability on mobile */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/60 z-10" />
 
       {/* Content */}
-      <div className="relative container justify-center items-start lg:justify-start mx-auto flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-20 px-3 lg:px-0">
+      <div className="relative container justify-center items-start lg:justify-start mx-auto flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-20 px-3 lg:px-0 z-20">
         {/* Location Badge */}
         <div>
           <div className="inline-flex mt-40 lg:mt-0 items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">

@@ -243,12 +243,10 @@ const AboutUs = () => {
               </h2>
               <div className="max-w-[872px]">
                 <p className="text-[#292929] text-[16px] lg:text-[24px] font-semibold leading-relaxed">
-                  Since 2013, Rope Tech Group has delivered expert rope access
-                  and high-rise maintenance services across British Columbia.
-                  Our certified team provides safe and efficient solutions for
-                  façades, concrete repairs, waterproofing, glazing, and
-                  inspections, combining experience and innovation to protect
-                  buildings with confidence.
+                  Since 2013, Rope Tech Group has provided professional rope
+                  access and high-rise maintenance services across British
+                  Columbia. Based in Vancouver, we work on residential,
+                  commercial, industrial, and infrastructure projects.
                   <br />
                   <br />
                   Our certified technicians specialize in façade maintenance,
@@ -460,10 +458,10 @@ const AboutUs = () => {
         <div className="hidden lg:block relative">
           <Swiper
             modules={[Navigation, Pagination]}
-            slidesPerView="auto"
+            slidesPerView={3}
             centeredSlides
             initialSlide={1}
-            spaceBetween={40}
+            spaceBetween={0}
             navigation={{
               nextEl: ".our-work-next",
               prevEl: ".our-work-prev",
@@ -504,8 +502,8 @@ const AboutUs = () => {
             }}
           >
             {projects.map((project, index) => (
-              <SwiperSlide key={index} className="!w-[60vw] max-w-[720px]">
-                <div className="relative overflow-hidden rounded-3xl aspect-[16/9]">
+              <SwiperSlide key={index} className="max-w-[720px]">
+                <div className="relative overflow-hidden rounded-3xl aspect-[3/3] min-h-[450px]">
                   <img
                     src={project.image}
                     alt={`${project.title} - completed rope access project showcasing our work`}

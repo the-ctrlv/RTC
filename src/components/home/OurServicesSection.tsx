@@ -10,9 +10,9 @@ const OurServicesSection = () => {
             <div className="flex flex-col lg:items-end lg:justify-between">
               {/* Left Column - Title */}
               <div>
-                <h2 className="text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
+                <span className="block text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
                   SERVICES
-                </h2>
+                </span>
                 <div className="flex flex-col lg:items-start lg:flex-row w-full gap-7">
                   <h3 className="text-4xl sm:text-5xl lg:text-[48px] font-bold text-gray-900 leading-tight whitespace-nowrap">
                     Our Services{" "}
@@ -28,10 +28,10 @@ const OurServicesSection = () => {
               </div>
 
               <p className="text-gray-700 text-lg leading-relaxed max-w-xl">
-                Our team provides specialized industrial services that ensure
-                safety, reliability, and long-term performance. We deliver
-                professional maintenance, inspection, and repair solutions —
-                even in hard-to-access areas.
+                Our team provides specialized industrial and building services
+                that ensure safety, reliability, and long-term performance. We
+                deliver professional maintenance, inspection, and repair
+                solutions — even in hard-to-access areas.
               </p>
             </div>
           </div>
@@ -149,7 +149,7 @@ const OurServicesSection = () => {
                     </p>
                   </div>
                 </div>
-                <Link to="/services/industrial-services">
+                <Link to="/services/building-services">
                   <button className="w-full bg-[#d9f143] text-center hover:bg-[#d9f143]/90 text-gray-900 font-semibold py-4 px-6 rounded-md flex items-center gap-4 justify-center transition-colors group">
                     <span className="text-sm lg:text-lg  font-semibold">
                       Explore Building Services

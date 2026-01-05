@@ -44,8 +44,8 @@ const Header = () => {
 
   return (
     <header
-      className={`top-0 left-0 right-0 z-50 fixed transition-all ${
-        scrolled ? "bg-[#343434]/20 backdrop-blur-lg" : "backdrop-blur-0"
+      className={`top-0 left-0 right-0 z-50 fixed transition-all bg-[#343434]/20 ${
+        scrolled ? " backdrop-blur-lg" : ""
       } flex justify-between`}
     >
       <nav className="container mx-auto py-3.5 max-w-[1350px] px-3 lg:px-0">
