@@ -46,12 +46,12 @@ const Projects = () => {
     {
       title: "Business Center, Langley",
       location: "Langley Twp, BC",
-      subtitle: "6000 88 Ave W",
+      subtitle: "8700 88 Ave W ",
       image: "/projects/business.jpeg",
       tags: [
         "Water Ingress Investigations",
-        "Parking Installation",
-        "Sealant replacement",
+        "Flashing Installation",
+        "Sealant Replacement",
         "Fish Tank Installation",
       ],
     },
@@ -88,7 +88,7 @@ const Projects = () => {
       location: "Four Seasons Resort, Whistler",
       subtitle: "4591 Blackcomb Way",
       image: "/projects/four.jpeg",
-      tags: ["Heat Tape Cable Installation"],
+      tags: ["Heat Trace Cable Installation"],
     },
     {
       title: "Soleil",

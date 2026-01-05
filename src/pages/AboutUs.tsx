@@ -51,52 +51,92 @@ const AboutUs = () => {
 
   const projects = [
     {
-      image: "/projects/cardero.jpeg",
+      image: "/slider/building/1.jpg",
       title: "Cardero",
     },
     {
-      image: "/projects/jim.jpeg",
+      image: "/slider/building/2.jpg",
       title: "Jim Pattison Toyota",
     },
     {
-      image: "/projects/400.jpeg",
+      image: "/slider/building/3.jpg",
       title: "400 West Georgia",
     },
     {
-      image: "/projects/keltic.jpeg",
+      image: "/slider/building/4.jpg",
       title: "Keltic Place",
     },
     {
-      image: "/projects/park.jpeg",
+      image: "/slider/building/5.jpg",
       title: "Park Towers",
     },
     {
-      image: "/projects/business.jpeg",
+      image: "/slider/building/6.jpg",
       title: "Business Center, Langley",
     },
     {
-      image: "/projects/bayshore.jpeg",
+      image: "/slider/building/7.jpg",
       title: "Bayshore Gardens",
     },
     {
-      image: "/projects/401.jpeg",
+      image: "/slider/building/8.jpg",
       title: "401 W Georgia Street",
     },
     {
-      image: "/projects/grande.jpeg",
+      image: "/slider/building/9.jpg",
       title: "The Grande",
     },
     {
-      image: "/projects/river.jpeg",
+      image: "/slider/building/10.jpg",
       title: "River Green",
     },
     {
-      image: "/projects/four.jpeg",
+      image: "/slider/building/11.jpg",
       title: "Four Seasons Resort",
     },
     {
-      image: "/projects/soleil.jpeg",
+      image: "/slider/building/12.jpg",
       title: "Soleil",
+    },
+    {
+      image: "/slider/building/13.jpg",
+      title: "The Erickson",
+    },
+    {
+      image: "/slider/building/14.jpg",
+      title: "The Douglas",
+    },
+    {
+      image: "/slider/building/15.jpg",
+      title: "Woodwards",
+    },
+    {
+      image: "/slider/building/16.jpg",
+      title: "Vancouver House",
+    },
+    {
+      image: "/slider/industrial/1.jpg",
+      title: "LNG Canada",
+    },
+    {
+      image: "/slider/industrial/2.jpg",
+      title: "Teck Resources",
+    },
+    {
+      image: "/slider/industrial/3.jpg",
+      title: "Woodfibre LNG",
+    },
+    {
+      image: "/slider/industrial/4.jpg",
+      title: "Imperial Oil",
+    },
+    {
+      image: "/slider/industrial/5.jpg",
+      title: "Suncor Energy",
+    },
+    {
+      image: "/slider/industrial/6.jpg",
+      title: "Syncrude Canada",
     },
   ];
 
@@ -316,10 +356,10 @@ const AboutUs = () => {
                 Certifications
               </h3>
               <p className="text-gray-700 leading-relaxed text-[18px]">
-                Safety is our top priority. Every team member is IRATA-certified
-                and undergoes ongoing training to stay ahead of industry
-                standards. We follow strict safety protocols on every job,
-                ensuring safety at every step.
+                Safety is the foundation of every project we take on. Our team
+                works in accordance with internationally recognized rope access
+                standards and follows established safety procedures on every
+                site.
               </p>
             </div>
 

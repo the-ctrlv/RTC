@@ -39,14 +39,14 @@ const ProjectsSection = () => {
       title: "400 West Georgia",
       location: "400 West Georgia, Vancouver",
       address: "Downtown Vancouver",
-      services: ["Glass Installation", "Rope Access System"],
+      services: ["Sealant Applications", "Rope Access System"],
       image: "/projects/400.jpeg",
     },
     {
       title: "Keltic Place",
       location: "Keltic Place, Richmond",
-      address: "1550 Alberni St",
-      services: ["Storefront Installation", "Sealant Applications"],
+      address: "6388 No. 3 Road",
+      services: ["Sunshade Installation", "Sealant Applications"],
       image: "/projects/keltic.jpeg",
     },
   ];

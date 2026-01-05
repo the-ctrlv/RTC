@@ -20,8 +20,26 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-[url('/home-bg-mob.jpg')] lg:bg-[url('/home-bg.jpg')]">
+      <div className="absolute w-full h-full inset-0 overflow-hidden">
+        <video
+          src="/videos/about.mp4"
+          muted
+          autoPlay
+          loop
+          playsInline
+          className="w-full object-cover aspect-[16/10] hidden lg:block"
+        />
+        <video
+          src="/videos/about-mob.mp4"
+          muted
+          autoPlay
+          loop
+          playsInline
+          className="w-full object-cover h-full block lg:hidden"
+        />
+      </div>
       {/* Overlay for better text readability on mobile */}
-      <div className="absolute inset-0 bg-black/30 lg:bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
       <div className="relative container justify-center items-start lg:justify-start mx-auto flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-20 px-3 lg:px-0">

@@ -4,7 +4,7 @@ const BenefitsSection = () => {
       icon: "expertise.svg",
       title: "Expertise",
       description:
-        "Our certified rope access and confined space specialists deliver innovative and tailored solutions for complex industrial environments.",
+        "Our team consists of trained and certified rope access technicians with hands-on experience in industrial and building environments.",
     },
     {
       icon: "quality.svg",

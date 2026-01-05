@@ -87,18 +87,12 @@ const ServiceDetail = () => {
       realConditions: {
         title: "Our Work in Real Conditions",
         images: [
-          "/projects/cardero.jpeg",
-          "/projects/jim.jpeg",
-          "/projects/400.jpeg",
-          "/projects/keltic.jpeg",
-          "/projects/park.jpeg",
-          "/projects/business.jpeg",
-          "/projects/bayshore.jpeg",
-          "/projects/401.jpeg",
-          "/projects/grande.jpeg",
-          "/projects/river.jpeg",
-          "/projects/four.jpeg",
-          "/projects/soleil.jpeg",
+          "/slider/industrial/1.jpg",
+          "/slider/industrial/2.jpg",
+          "/slider/industrial/3.jpg",
+          "/slider/industrial/4.jpg",
+          "/slider/industrial/5.jpg",
+          "/slider/industrial/6.jpg",
         ],
       },
       whyChoose: {
@@ -186,7 +180,7 @@ const ServiceDetail = () => {
           {
             title: "Envelope Restoration & Repairs",
             content:
-              "Comprehensive façade repair and restoration solutions to improve performance, safety, and appearance.",
+              "Building envelope restoration and repairs to prevent water intrusion and structural damage.",
             bullets: [
               "Waterproofing systems for façades, podiums, balconies, and roofs",
               "Concrete repairs, crack injection, spall repairs, and restoration",
@@ -204,18 +198,22 @@ const ServiceDetail = () => {
       realConditions: {
         title: "Our Work in Real Conditions",
         images: [
-          "/projects/cardero.jpeg",
-          "/projects/jim.jpeg",
-          "/projects/400.jpeg",
-          "/projects/keltic.jpeg",
-          "/projects/park.jpeg",
-          "/projects/business.jpeg",
-          "/projects/bayshore.jpeg",
-          "/projects/401.jpeg",
-          "/projects/grande.jpeg",
-          "/projects/river.jpeg",
-          "/projects/four.jpeg",
-          "/projects/soleil.jpeg",
+          "/slider/building/1.jpg",
+          "/slider/building/2.jpg",
+          "/slider/building/3.jpg",
+          "/slider/building/4.jpg",
+          "/slider/building/5.jpg",
+          "/slider/building/6.jpg",
+          "/slider/building/7.jpg",
+          "/slider/building/8.jpg",
+          "/slider/building/9.jpg",
+          "/slider/building/10.jpg",
+          "/slider/building/11.jpg",
+          "/slider/building/12.jpg",
+          "/slider/building/13.jpg",
+          "/slider/building/14.jpg",
+          "/slider/building/15.jpg",
+          "/slider/building/16.jpg",
         ],
       },
       whyChoose: {
@@ -478,7 +476,7 @@ const ServiceDetail = () => {
                         <img
                           src={image}
                           alt={`Completed rope access project showcasing ${service.title.toLowerCase()} work`}
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300 object-[0px_-70px]"
                         />
                       </div>
                     </SwiperSlide>
