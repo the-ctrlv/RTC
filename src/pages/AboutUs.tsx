@@ -283,7 +283,7 @@ const AboutUs = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
             <div className="mx-auto">
               <video
-                src="/videos/about.mp4"
+                src="https://pkdu5dfj3jz0ripz.public.blob.vercel-storage.com/about.mp4"
                 controls
                 loop
                 playsInline

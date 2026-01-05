@@ -22,7 +22,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-[url('/home_video_bg-mob.jpeg')] lg:bg-[url('/home_video_bg.jpg')]">
       <div className="absolute w-full h-full inset-0 overflow-hidden">
         <video
-          src="/videos/home.mp4"
+          src="https://pkdu5dfj3jz0ripz.public.blob.vercel-storage.com/home.mp4"
           muted
           autoPlay
           loop
@@ -30,7 +30,7 @@ const HeroSection = () => {
           className="w-full hidden lg:block"
         />
         <video
-          src="/videos/about-mob.mp4"
+          src="https://pkdu5dfj3jz0ripz.public.blob.vercel-storage.com/about-mob.mp4"
           muted
           autoPlay
           loop
