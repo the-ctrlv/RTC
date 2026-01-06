@@ -115,10 +115,6 @@ const AboutUs = () => {
       title: "Vancouver House",
     },
     {
-      image: "/slider/industrial/1.jpg",
-      title: "LNG Canada",
-    },
-    {
       image: "/slider/industrial/2.jpg",
       title: "Teck Resources",
     },
@@ -282,13 +278,19 @@ const AboutUs = () => {
         <section className="mt-[80px] lg:mt-[120px]">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
             <div className="mx-auto">
-              <video
-                src="https://pkdu5dfj3jz0ripz.public.blob.vercel-storage.com/about.mp4"
-                controls
-                loop
-                playsInline
-                className="rounded-3xl w-full object-cover aspect-[16/10]"
-              />
+              <div className="rounded-3xl overflow-hidden w-full aspect-[16/10]">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/l1QbdfqiElU?controls=0&rel=0&playsinline=1&cc_load_policy=0&modestbranding=1&showinfo=0&iv_load_policy=3&enablejsapi=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </section>

@@ -25,7 +25,7 @@ const testimonials = [
     author: "Steven Danzing",
     role: "Metalife LTD",
     rating: 5,
-    avatar: "/slider/popkov.jpeg",
+    avatar: null,
     sponsor: "/home/sponsor.svg",
     company: "Metalife LTD",
   },
@@ -42,10 +42,10 @@ const testimonials = [
   {
     id: 4,
     text: "We have collaborated on many high-rise glass replacement and installation projects across the Lower Mainland. Their rope access support allowed us to complete work in very hard-to-reach areas, including cladding assistance. Skilled technicians, smooth coordination, and professional execution every time.",
-    author: "Sergii",
+    author: "Sergii Popkov",
     role: "High Rise Glass LTD",
     rating: 5,
-    avatar: "/slider/sokolov.jpeg",
+    avatar: "/slider/popkov.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "High Rise Glass LTD",
   },
@@ -62,9 +62,9 @@ const testimonials = [
   {
     id: 6,
     text: "Strong rope access glazing support on multiple projects. Their technicians were experienced, efficient, and integrated well with our installation crews. A reliable partner for complex glazing work at height.",
-    author: "Pavel Sokol",
+    author: "Pavel Sokolov",
     role: "Altitude Installations LTD",
-    rating: 4.5,
+    rating: 4.2,
     avatar: "/slider/sokolov.jpeg",
     sponsor: "/home/sponsor.svg",
     company: "Altitude Installations LTD",
@@ -205,12 +205,14 @@ const TestimonialsSection = () => {
                 {/* Author Info */}
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 overflow-hidden flex-shrink-0">
-                      <img
-                        src={testimonial.avatar}
-                        alt={testimonial.author}
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="w-20 h-auto-12 sm:w-14 sm:h-14 overflow-hidden flex-shrink-0 flex items-center justify-center">
+                      {testimonial.avatar && (
+                        <img
+                          src={testimonial.avatar}
+                          alt={testimonial.author}
+                          className="w-20 h-auto object-contain"
+                        />
+                      )}
                     </div>
                     <div>
                       <div className="font-bold text-sm sm:text-base text-gray-900">

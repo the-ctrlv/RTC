@@ -145,7 +145,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 sm:px-6 mt-3 lg:mt-6 lg:mb-12">
-          <div className="flex flex-col sm:flex-row justify-between items-start lg:items-center gap-3 sm:gap-4 text-xs sm:text-sm">
+          <div className="flex flex-col sm:flex-row justify-between items-start lg:items-center gap-3 sm:gap-4 text-xs sm:text-sm mb-5 lg:mb-0">
             <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-6">
               <p className="text-gray-300 text-center sm:text-left">
                 © {new Date().getFullYear()} All Rights Reserved Rope Tech
