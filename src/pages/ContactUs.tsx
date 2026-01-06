@@ -3,7 +3,7 @@ import SEO from "@/components/SEO";
 
 const ContactUs = () => {
   return (
-    <div className="min-h-screen mb-[-50vh] lg:mb-0">
+    <div className="min-h-screen mb-[-40vh] lg:mb-0">
       <SEO
         title="Contact Us"
         description="Get in touch with Rope Tech Group for professional rope access services in Vancouver and across Canada. Request a quote or consultation for your industrial or building project."

@@ -24,7 +24,7 @@ const Careers = () => {
   };
 
   return (
-    <div className="min-h-screen mb-[-50vh] lg:mb-0">
+    <div className="min-h-screen mb-[-40vh] lg:mb-0">
       <SEO
         title="Careers"
         description="Join the Rope Tech Group team. We're looking for skilled IRATA-certified rope access technicians and professionals to join our growing team in Vancouver and across Canada."
