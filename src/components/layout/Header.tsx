@@ -106,8 +106,13 @@ const Header = () => {
             "
           >
             {/* TOP BAR */}
-            <div className="shrink-0 w-full py-3.5 px-6 flex justify-between items-center bg-[#343434]">
-              <img src="/logo.svg" alt="RTC Logo" className="w-[87px]" />
+            <div className="shrink-0 w-full py-3.5 px-3 flex justify-between items-center bg-[#343434]">
+              <img
+                src="/logo.svg"
+                alt="RTC Logo"
+                className="w-[87px] hidden lg:block"
+              />
+              <div className="block lg:hidden" />
               <Button
                 onClick={closeMobileMenu}
                 variant="rounded"
