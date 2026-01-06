@@ -124,7 +124,7 @@ const Header = () => {
             </div>
 
             {/* CONTENT AREA */}
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 overflow-y-auto h-[calc(100dvh-76px)]">
               <div className="min-h-full flex flex-col justify-center items-center px-6 py-12">
                 {/* Navigation Links */}
                 <ul className="flex flex-col items-center gap-6 mb-10">
