@@ -21,21 +21,17 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-[url('/home_video_bg-mob.jpeg')] lg:bg-[url('/home_video_bg.jpg')]">
       <div className="absolute w-full h-full inset-0 overflow-hidden">
-        <video
-          src="https://pkdu5dfj3jz0ripz.public.blob.vercel-storage.com/home.mp4"
-          muted
-          autoPlay
-          loop
-          playsInline
-          className="w-full hidden lg:block"
+        <iframe
+          src="https://www.youtube.com/embed/mjUXiQOhgzM?autoplay=1&mute=1&loop=1&controls=0&playlist=mjUXiQOhgzM&playsinline=1&rel=0&modestbranding=1&showinfo=0"
+          allow="autoplay; encrypted-media"
+          className="w-full h-full hidden lg:block pointer-events-none"
+          style={{ border: "none", transform: "scale(1.1)" }}
         />
-        <video
-          src="https://pkdu5dfj3jz0ripz.public.blob.vercel-storage.com/about-mob.mp4"
-          muted
-          autoPlay
-          loop
-          playsInline
-          className="w-full object-cover h-full block lg:hidden"
+        <iframe
+          src="https://www.youtube.com/embed/mjUXiQOhgzM?autoplay=1&mute=1&loop=1&controls=0&playlist=mjUXiQOhgzM&playsinline=1&rel=0&modestbranding=1&showinfo=0"
+          allow="autoplay; encrypted-media"
+          className="w-full object-cover h-full block lg:hidden pointer-events-none"
+          style={{ border: "none" }}
         />
       </div>
       {/* Overlay for better text readability on mobile */}
