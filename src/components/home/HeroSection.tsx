@@ -41,7 +41,7 @@ const HeroSection = () => {
       <div className="relative container justify-center items-start lg:justify-start mx-auto flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-20 px-3 lg:px-0 z-20">
         {/* Location Badge */}
         <div>
-          <div className="inline-flex mt-[40vh] lg:mt-40 lg:mt-0 items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
+          <div className="inline-flex mt-[40vh] lg:mt-0 items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
             <img
               src="/map_pin.svg"
               alt="Location icon"
