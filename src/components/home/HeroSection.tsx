@@ -31,7 +31,7 @@ const HeroSection = () => {
           src="https://www.youtube.com/embed/mjUXiQOhgzM?autoplay=1&mute=1&loop=1&controls=0&playlist=mjUXiQOhgzM&playsinline=1&rel=0&modestbranding=1&showinfo=0"
           allow="autoplay; encrypted-media"
           className="w-full object-cover h-full block lg:hidden pointer-events-none"
-          style={{ border: "none" }}
+          style={{ border: "none", transform: "scale(1.5) translateY(-10%)" }}
         />
       </div>
       {/* Overlay for better text readability on mobile */}
@@ -41,7 +41,7 @@ const HeroSection = () => {
       <div className="relative container justify-center items-start lg:justify-start mx-auto flex flex-col min-h-screen gap-6 sm:gap-8 lg:gap-10 pt-32 sm:pt-[20vh] pb-20 px-3 lg:px-0 z-20">
         {/* Location Badge */}
         <div>
-          <div className="inline-flex mt-40 lg:mt-0 items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
+          <div className="inline-flex mt-[40vh] lg:mt-40 lg:mt-0 items-center gap-2 border border-white/80 rounded-full px-4 py-2.5 text-white backdrop-blur-md bg-white/10">
             <img
               src="/map_pin.svg"
               alt="Location icon"
