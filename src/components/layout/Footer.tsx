@@ -52,7 +52,7 @@ const Footer = () => {
                   Email us anytime
                 </span>
                 <span className="text-sm lg:text-md text-white font-semibold">
-                  info.ropetechgroup@gmail.com
+                  info@ropetechgroup.com
                 </span>
               </div>
               <div className="flex justify-center gap-6">

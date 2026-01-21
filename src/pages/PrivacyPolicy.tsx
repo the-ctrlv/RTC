@@ -133,7 +133,7 @@ const PrivacyPolicy = () => {
             <p>
               Rope Tech Group
               <br />
-              Email: Info@ropetechgroup.com
+              Email: info@ropetechgroup.com
               <br />
               Website: yourwebsite.com
             </p>

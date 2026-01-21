@@ -17,12 +17,12 @@ const ContactSection = () => {
 
   const onSubmit = (data: FormData) => {
     const subject = encodeURIComponent(
-      `Contact Form Submission from ${data.name}`
+      `Contact Form Submission from ${data.name}`,
     );
     const body = encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+      `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`,
     );
-    const mailtoLink = `mailto:Info@ropetechgroup.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:info@ropetechgroup.com?subject=${subject}&body=${body}`;
 
     window.location.href = mailtoLink;
     reset();
@@ -48,10 +48,10 @@ const ContactSection = () => {
                   EMAIL
                 </h4>
                 <a
-                  href="mailto:info.ropetechgroup@gmail.com"
+                  href="mailto:info@ropetechgroup.com"
                   className="text-gray-900 hover:text-[#a5b715] transition-colors text-sm block"
                 >
-                  info.ropetechgroup@gmail.com
+                  info@ropetechgroup.com
                 </a>
               </div>
 
@@ -247,10 +247,10 @@ const ContactSection = () => {
                   EMAIL
                 </h4>
                 <a
-                  href="mailto:info.ropetechgroup@gmail.com"
+                  href="mailto:info@ropetechgroup.com"
                   className="hover:text-[#a5b715] transition-colors text-base text-black block font-bold"
                 >
-                  info.ropetechgroup@gmail.com
+                  info@ropetechgroup.com
                 </a>
               </div>
 

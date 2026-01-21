@@ -183,10 +183,10 @@ const Header = () => {
                       Email us anytime
                     </p>
                     <a
-                      href="mailto:info.ropetechgroup@gmail.com"
+                      href="mailto:info@ropetechgroup.com"
                       className="text-white hover:text-[#c3d533] transition-colors"
                     >
-                      info.ropetechgroup@gmail.com
+                      info@ropetechgroup.com
                     </a>
                   </div>
 

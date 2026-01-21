@@ -230,7 +230,7 @@ Create `.env` file:
 
 ```env
 VITE_API_URL=your_api_url
-VITE_CONTACT_EMAIL=info.ropetechgroup@gmail.com
+VITE_CONTACT_EMAIL=info@ropetechgroup.com
 ```
 
 ## 🔄 Version Control
@@ -251,7 +251,7 @@ chore: Build process or auxiliary tool changes
 ## 📞 Support
 
 For questions or issues:
-- Email: info.ropetechgroup@gmail.com
+- Email: info@ropetechgroup.com
 - GitHub: Create an issue
 
 ---

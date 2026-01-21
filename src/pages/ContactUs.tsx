@@ -34,10 +34,10 @@ const ContactUs = () => {
                   EMAIL
                 </h2>
                 <a
-                  href="mailto:info.ropetechgroup@gmail.com"
+                  href="mailto:info@ropetechgroup.com"
                   className="hover:text-brand-lime font-bold transition-colors text-base lg:text-lg block text-darkGray"
                 >
-                  info.ropetechgroup@gmail.com
+                  info@ropetechgroup.com
                 </a>
               </div>
 
