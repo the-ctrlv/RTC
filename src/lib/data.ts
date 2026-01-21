@@ -1,7 +1,7 @@
 // Company contact information and data
 
 export const CONTACT_INFO = {
-  email: "info.ropetechgroup@gmail.com",
+  email: "Info@ropetechgroup.com",
   phone: {
     primary: "1(778)980-7798",
     secondary: "1(604)657-4744",

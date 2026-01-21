@@ -22,7 +22,7 @@ const ContactSection = () => {
     const body = encodeURIComponent(
       `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
     );
-    const mailtoLink = `mailto:Skyaccessbc@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:Info@ropetechgroup.com?subject=${subject}&body=${body}`;
 
     window.location.href = mailtoLink;
     reset();

@@ -156,7 +156,7 @@ const TermsAndConditions = () => {
             <p>
               <span className="!text-lg !font-medium">Rope Tech Group</span>
               <br />
-              Email: info@ropetechgroup@gmail.com
+              Email: Info@ropetechgroup.com
               <br />
               Website: www.ropetechgroup.ca
             </p>
