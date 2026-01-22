@@ -15,19 +15,45 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    // eslint-disable-next-line no-console
-    console.log("Form submitted:", data);
-    alert("Thank you for contacting us! We will get back to you soon.");
-    reset();
+  const onSubmit = async (data: FormData) => {
+    try {
+      const response = await fetch("https://formspree.io/f/mdaeonze", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          message: data.message,
+          _replyto: data.email,
+          _subject: `Contact Form Submission from ${data.name}`,
+        }),
+      });
+
+      if (response.ok) {
+        alert("Thank you! Your message has been sent.");
+        reset();
+      } else {
+        alert("An error occurred. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred while sending. Please try again.");
+    }
   };
 
   return (
     <div className="bg-white p-7 sm:p-8 lg:p-10 rounded-[40px] order-1 lg:order-2">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">Fill Out the Form</h2>
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">
+        Fill Out the Form
+      </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-base font-semibold text-gray-700 mb-2">
+          <label
+            htmlFor="name"
+            className="block text-base font-semibold text-gray-700 mb-2"
+          >
             Your name
           </label>
           <input
@@ -37,11 +63,16 @@ export const ContactForm = () => {
             placeholder="Enter your name"
             className="bg-white placeholder:font-semibold placeholder:text-[#9D9D9D] w-full h-12 px-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all"
           />
-          {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
+          {errors.name && (
+            <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
+          )}
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-base font-semibold text-gray-700 mb-2">
+          <label
+            htmlFor="email"
+            className="block text-base font-semibold text-gray-700 mb-2"
+          >
             Your e-mail
           </label>
           <input
@@ -51,11 +82,16 @@ export const ContactForm = () => {
             placeholder="olivia@untitledui.com"
             className="bg-white placeholder:font-semibold placeholder:text-[#9D9D9D] w-full h-12 px-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all rounded-[8px]"
           />
-          {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
+          {errors.email && (
+            <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+          )}
         </div>
 
         <div className="mb-10">
-          <label htmlFor="message" className="block text-base font-semibold text-gray-700 mb-2">
+          <label
+            htmlFor="message"
+            className="block text-base font-semibold text-gray-700 mb-2"
+          >
             Message
           </label>
           <textarea

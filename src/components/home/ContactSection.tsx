@@ -15,17 +15,32 @@ const ContactSection = () => {
     formState: { errors },
   } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    const subject = encodeURIComponent(
-      `Contact Form Submission from ${data.name}`,
-    );
-    const body = encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`,
-    );
-    const mailtoLink = `mailto:info@ropetechgroup.com?subject=${subject}&body=${body}`;
+  const onSubmit = async (data: FormData) => {
+    try {
+      const response = await fetch("https://formspree.io/f/mdaeonze", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          message: data.message,
+          _replyto: data.email,
+          _subject: `Contact Form Submission from ${data.name}`,
+        }),
+      });
 
-    window.location.href = mailtoLink;
-    reset();
+      if (response.ok) {
+        alert("Thank you! Your message has been sent.");
+        reset();
+      } else {
+        alert("An error occurred. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred while sending. Please try again.");
+    }
   };
 
   return (
