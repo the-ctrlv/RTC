@@ -2,6 +2,15 @@ import { ContactForm } from "@/components/ContactForm";
 import SEO from "@/components/SEO";
 
 const ContactUs = () => {
+  const trackPhoneClick = (phoneNumber: string) => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "phone_click",
+      phone_number: phoneNumber,
+      click_location: "contact_us_page",
+    });
+  };
+
   return (
     <div className="min-h-screen mb-[-40vh] lg:mb-0">
       <SEO
@@ -49,6 +58,7 @@ const ContactUs = () => {
                   <div>
                     <a
                       href="tel:+17789807798"
+                      onClick={() => trackPhoneClick("1(778)980-7798")}
                       className="hover:text-brand-lime font-bold transition-colors text-base lg:text-lg inline-block text-darkGray"
                     >
                       1(778)980-7798
@@ -56,6 +66,7 @@ const ContactUs = () => {
                     ,{" "}
                     <a
                       href="tel:+16046574744"
+                      onClick={() => trackPhoneClick("1(604)657-4744")}
                       className="hover:text-brand-lime font-bold transition-colors text-base lg:text-lg inline-block text-darkGray"
                     >
                       1(604)657-4744

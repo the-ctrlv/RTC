@@ -8,6 +8,15 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const trackPhoneClick = (phoneNumber: string, location: string) => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "phone_click",
+      phone_number: phoneNumber,
+      click_location: location,
+    });
+  };
+
   useEffect(() => {
     if (isMobileMenuOpen) {
       const scrollY = window.scrollY;
@@ -85,7 +94,11 @@ const Header = () => {
             </ul>
           </div>
 
-          <a href="tel:+17789807798" className="hidden lg:block">
+          <a
+            href="tel:+17789807798"
+            className="hidden lg:block"
+            onClick={() => trackPhoneClick("1(778)980-7798", "header_desktop")}
+          >
             <Button
               size="lg"
               className="bg-[#c3d533] hover:bg-[#c3d533]/90 text-black lg:text-base font-semibold w-[146px] h-11"
@@ -164,6 +177,9 @@ const Header = () => {
                     <div className="flex gap-2">
                       <a
                         href="tel:+17789807798"
+                        onClick={() =>
+                          trackPhoneClick("1(778)980-7798", "header_mobile")
+                        }
                         className="text-white text-md hover:text-[#c3d533] transition-colors"
                       >
                         1 (778) 980-7798
@@ -171,6 +187,9 @@ const Header = () => {
                       <span className="text-gray-600">|</span>
                       <a
                         href="tel:+16046574744"
+                        onClick={() =>
+                          trackPhoneClick("1(604)657-4744", "header_mobile")
+                        }
                         className="text-white text-md hover:text-[#c3d533] transition-colors"
                       >
                         1 (604) 657-4744

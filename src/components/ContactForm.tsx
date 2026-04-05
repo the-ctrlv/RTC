@@ -32,6 +32,14 @@ export const ContactForm = () => {
       });
 
       if (response.ok) {
+        // Отправляем событие в Google Tag Manager
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "form_submission",
+          form_name: "contact_form",
+          form_location: "contact_page",
+        });
+
         alert("Thank you! Your message has been sent.");
         reset();
       } else {

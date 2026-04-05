@@ -15,6 +15,15 @@ const ContactSection = () => {
     formState: { errors },
   } = useForm<FormData>();
 
+  const trackPhoneClick = (phoneNumber: string) => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "phone_click",
+      phone_number: phoneNumber,
+      click_location: "contact_section",
+    });
+  };
+
   const onSubmit = async (data: FormData) => {
     try {
       const response = await fetch("https://formspree.io/f/mdaeonze", {
@@ -32,6 +41,14 @@ const ContactSection = () => {
       });
 
       if (response.ok) {
+        // Отправляем событие в Google Tag Manager
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "form_submission",
+          form_name: "contact_form",
+          form_location: "contact_section",
+        });
+
         alert("Thank you! Your message has been sent.");
         reset();
       } else {
@@ -77,6 +94,7 @@ const ContactSection = () => {
                 <div className="text-gray-900 text-sm">
                   <a
                     href="tel:+17789807798"
+                    onClick={() => trackPhoneClick("1(778)980-7798")}
                     className="hover:text-[#a5b715] transition-colors"
                   >
                     1(778)980-7798
@@ -84,6 +102,7 @@ const ContactSection = () => {
                   ,{" "}
                   <a
                     href="tel:+16046574744"
+                    onClick={() => trackPhoneClick("1(604)657-4744")}
                     className="hover:text-[#a5b715] transition-colors"
                   >
                     1(604)657-4744
@@ -276,6 +295,7 @@ const ContactSection = () => {
                 <div className="text-gray-900 text-base">
                   <a
                     href="tel:+17789807798"
+                    onClick={() => trackPhoneClick("1(778)980-7798")}
                     className="hover:text-[#a5b715] transition-colors text-black font-bold"
                   >
                     1(778)980-7798
@@ -283,6 +303,7 @@ const ContactSection = () => {
                   ,{" "}
                   <a
                     href="tel:+16046574744"
+                    onClick={() => trackPhoneClick("1(604)657-4744")}
                     className="hover:text-[#a5b715] transition-colors text-black font-bold"
                   >
                     1(604)657-4744
