@@ -8,6 +8,7 @@ const LANGUAGES = [
   { code: "ru", labelKey: "language.ru" },
   { code: "ka", labelKey: "language.ka" },
   { code: "tr", labelKey: "language.tr" },
+  { code: "ar", labelKey: "language.ar" },
 ] as const;
 
 type LanguageCode = (typeof LANGUAGES)[number]["code"];
@@ -77,30 +78,32 @@ const LanguageSwitcher = ({ variant = "desktop" }: LanguageSwitcherProps) => {
   }
 
   return (
-    <div ref={containerRef} className="relative">
+    <div ref={containerRef} className="relative inline-block">
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         aria-label={t("language.label")}
         aria-expanded={open}
-        className="flex items-center gap-1.5 text-white hover:text-[#c3d533] transition-colors text-sm font-medium px-2 py-1"
+        className="flex w-full min-w-[4.5rem] items-center justify-center gap-1.5 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:text-[#c3d533]"
       >
-        <Globe className="w-4 h-4 shrink-0" />
-        <span>{t(currentLang.labelKey)}</span>
+        <Globe className="h-4 w-4 shrink-0" />
+        <span className="min-w-[2ch]">{t(currentLang.labelKey)}</span>
         <ChevronDown
-          className={`w-3.5 h-3.5 shrink-0 transition-transform ${open ? "rotate-180" : ""}`}
+          className={`h-3.5 w-3.5 shrink-0 transition-transform ${open ? "rotate-180" : ""}`}
         />
       </button>
 
       {open && (
-        <ul className="absolute right-0 top-full mt-2 min-w-[96px] rounded-md border border-white/20 bg-[#343434] py-1 shadow-lg z-[1001]">
+        <ul className="absolute inset-x-0 top-full z-[1001] mt-1 border border-white/20 bg-[#343434] shadow-lg">
           {LANGUAGES.map((lang) => (
-            <li key={lang.code}>
+            <li key={lang.code} className="border-t border-white/10 first:border-t-0">
               <button
                 type="button"
                 onClick={() => changeLanguage(lang.code)}
-                className={`block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-white/10 ${
-                  currentCode === lang.code ? "text-[#D9F043] font-semibold" : "text-white"
+                className={`block w-full px-3 py-2 text-center text-sm transition-colors hover:bg-white/10 ${
+                  currentCode === lang.code
+                    ? "bg-white/5 font-semibold text-[#D9F043]"
+                    : "text-white"
                 }`}
               >
                 {t(lang.labelKey)}
