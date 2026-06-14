@@ -5,10 +5,20 @@ import { ChevronDown, Globe } from "lucide-react";
 const LANGUAGES = [
   { code: "en", labelKey: "language.en" },
   { code: "zh", labelKey: "language.zh" },
+  { code: "ru", labelKey: "language.ru" },
+  { code: "ka", labelKey: "language.ka" },
+  { code: "tr", labelKey: "language.tr" },
 ] as const;
+
+type LanguageCode = (typeof LANGUAGES)[number]["code"];
 
 type LanguageSwitcherProps = {
   variant?: "desktop" | "mobile";
+};
+
+const resolveLanguageCode = (lng?: string): LanguageCode => {
+  const base = lng?.split("-")[0] ?? "en";
+  return LANGUAGES.some((lang) => lang.code === base) ? (base as LanguageCode) : "en";
 };
 
 const LanguageSwitcher = ({ variant = "desktop" }: LanguageSwitcherProps) => {
@@ -16,17 +26,14 @@ const LanguageSwitcher = ({ variant = "desktop" }: LanguageSwitcherProps) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const currentCode = i18n.resolvedLanguage?.startsWith("zh") ? "zh" : "en";
+  const currentCode = resolveLanguageCode(i18n.resolvedLanguage);
   const currentLang = LANGUAGES.find((l) => l.code === currentCode)!;
 
   useEffect(() => {
     if (!open) return;
 
     const handleClickOutside = (e: MouseEvent) => {
-      if (
-        containerRef.current &&
-        !containerRef.current.contains(e.target as Node)
-      ) {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         setOpen(false);
       }
     };
@@ -43,21 +50,21 @@ const LanguageSwitcher = ({ variant = "desktop" }: LanguageSwitcherProps) => {
     };
   }, [open]);
 
-  const changeLanguage = (code: string) => {
+  const changeLanguage = (code: LanguageCode) => {
     i18n.changeLanguage(code);
     setOpen(false);
   };
 
   if (variant === "mobile") {
     return (
-      <div className="flex items-center justify-center gap-4 mb-8">
+      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 mb-8 px-2">
         {LANGUAGES.map((lang, index) => (
-          <span key={lang.code} className="flex items-center gap-4">
+          <span key={lang.code} className="flex items-center gap-3">
             {index > 0 && <span className="text-gray-600">|</span>}
             <button
               type="button"
               onClick={() => changeLanguage(lang.code)}
-              className={`text-lg font-semibold transition-colors hover:text-[#c3d533] ${
+              className={`text-base font-semibold transition-colors hover:text-[#c3d533] ${
                 currentCode === lang.code ? "text-[#c3d533]" : "text-white"
               }`}
             >
@@ -86,16 +93,14 @@ const LanguageSwitcher = ({ variant = "desktop" }: LanguageSwitcherProps) => {
       </button>
 
       {open && (
-        <ul className="absolute right-0 top-full mt-2 min-w-[88px] rounded-md border border-white/20 bg-[#343434] py-1 shadow-lg z-[1001]">
+        <ul className="absolute right-0 top-full mt-2 min-w-[96px] rounded-md border border-white/20 bg-[#343434] py-1 shadow-lg z-[1001]">
           {LANGUAGES.map((lang) => (
             <li key={lang.code}>
               <button
                 type="button"
                 onClick={() => changeLanguage(lang.code)}
                 className={`block w-full px-4 py-2 text-left text-sm transition-colors hover:bg-white/10 ${
-                  currentCode === lang.code
-                    ? "text-[#D9F043] font-semibold"
-                    : "text-white"
+                  currentCode === lang.code ? "text-[#D9F043] font-semibold" : "text-white"
                 }`}
               >
                 {t(lang.labelKey)}

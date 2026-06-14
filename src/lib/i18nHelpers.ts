@@ -1,22 +1,23 @@
 import { useTranslation } from "react-i18next";
 
-/** Slightly tighter typography for Chinese within existing blocks (font-size / line-height only). */
+/** Slightly tighter typography for non-English locales within existing blocks. */
 export const useZhTypography = () => {
   const { i18n } = useTranslation();
-  const isZh = i18n.resolvedLanguage?.startsWith("zh") ?? false;
+  const lang = i18n.resolvedLanguage?.split("-")[0] ?? "en";
+  const isCompact = lang !== "en";
 
   return {
-    isZh,
+    isZh: isCompact,
     /** Nav / header links */
-    nav: isZh ? "text-[13px] leading-snug" : "",
+    nav: isCompact ? "text-[13px] leading-snug" : "",
     /** Fixed-width CTA buttons */
-    callBtn: isZh ? "text-sm leading-tight" : "",
+    callBtn: isCompact ? "text-sm leading-tight" : "",
     /** Section headings in tight containers */
-    heading: isZh ? "text-[0.92em] leading-snug" : "",
+    heading: isCompact ? "text-[0.92em] leading-snug" : "",
     /** Body copy in cards */
-    body: isZh ? "text-[0.9em] leading-snug" : "",
+    body: isCompact ? "text-[0.9em] leading-snug" : "",
     /** Small labels / stats */
-    label: isZh ? "text-[0.85em] leading-snug" : "",
+    label: isCompact ? "text-[0.85em] leading-snug" : "",
   };
 };
 

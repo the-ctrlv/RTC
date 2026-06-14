@@ -1,5 +1,6 @@
 {
   "common": {
+    "companyName": "Rope Tech Group",
     "callUs": "致电我们",
     "contactUs": "联系我们",
     "getInTouch": "取得联系",
@@ -25,6 +26,9 @@
   "language": {
     "en": "EN",
     "zh": "中文",
+    "ru": "RU",
+    "ka": "ქართ",
+    "tr": "TR",
     "label": "语言"
   },
   "header": {
@@ -70,7 +74,7 @@
   "homeAbout": {
     "label": "关于我们",
     "title": "提供安全且经过认证的绳索高空作业解决方案",
-    "description": "我们在加拿大各地提供安全高效的高层、工业及基础设施服务。我们的国际绳索高空作业协会认证技术人员采用先进的绳索高空作业方法，以最小干扰进入复杂区域。我们专注于可靠性、安全标准与专业执行，支持各种规模与复杂度的项目。",
+    "description": "Rope Tech Group 在加拿大各地提供安全高效的高层、工业及基础设施服务。我们的 IRATA 认证技术人员采用先进的绳索高空作业方法，以最小干扰进入复杂区域。我们专注于可靠性、安全标准与专业执行，支持各种规模与复杂度的项目。",
     "stat1Value": "95%",
     "stat1Label": "在全国范围内成功交付的项目",
     "stat2Value": "500+",
@@ -132,25 +136,25 @@
   },
   "projectsData": {
     "cardero": {
-      "title": "卡德罗大厦",
-      "location": "BC省温哥华Cardero街620号",
-      "subtitle": "阿尔伯尼街1550号",
+      "title": "Cardero",
+      "location": "BC省温哥华 Cardero街620号",
+      "subtitle": "Alberni街1550号",
       "tags": [
         "Rope Access Glazing",
         "Sealant Application"
       ]
     },
     "jimPattisonToyota": {
-      "title": "吉姆·帕蒂森丰田",
-      "location": "吉姆·帕蒂森丰田（市区店）",
-      "subtitle": "布兰德街1290号",
+      "title": "Jim Pattison Toyota",
+      "location": "Jim Pattison Toyota Downtown",
+      "subtitle": "Burrard街1290号",
       "tags": [
         "Rope Access Glazing"
       ]
     },
     "westGeorgia400": {
-      "title": "西乔治亚街400号",
-      "location": "温哥华，西乔治亚街400号",
+      "title": "400 West Georgia",
+      "location": "温哥华 West Georgia街400号",
       "subtitle": "温哥华市中心",
       "tags": [
         "Sealant Application",
@@ -158,8 +162,8 @@
       ]
     },
     "kelticPlace": {
-      "title": "凯尔特广场",
-      "location": "列治文凯尔特广场",
+      "title": "Keltic Place",
+      "location": "列治文 Keltic Place",
       "subtitle": "3号路6388号",
       "tags": [
         "Sunshade Installation",
@@ -167,9 +171,9 @@
       ]
     },
     "parkTowers": {
-      "title": "公园塔",
-      "location": "列治文Minoru大道",
-      "subtitle": "Minoru大道6080号",
+      "title": "Park Towers",
+      "location": "列治文 Minoru Boulevard",
+      "subtitle": "Minoru Boulevard 6080号",
       "tags": [
         "Water Ingress Investigations",
         "Concrete Repairs",
@@ -178,9 +182,9 @@
       ]
     },
     "businessCenterLangley": {
-      "title": "兰里商务中心",
+      "title": "Business Center, Langley",
       "location": "BC省兰里 Township",
-      "subtitle": "西88大道8700号",
+      "subtitle": "88 Ave W 8700号",
       "tags": [
         "Water Ingress Investigations",
         "Flashing Installation",
@@ -189,25 +193,25 @@
       ]
     },
     "bayshoreGardens": {
-      "title": "贝肖尔花园",
-      "location": "温哥华Bayshore Drive 1710号",
-      "subtitle": "贝肖尔花园",
+      "title": "Bayshore Gardens",
+      "location": "温哥华 Bayshore Drive 1710号",
+      "subtitle": "Bayshore Gardens",
       "tags": [
         "Rope Access Glass Replacement"
       ]
     },
     "georgia401": {
-      "title": "西乔治亚街401号",
-      "location": "温哥华，西乔治亚街401号",
-      "subtitle": "加拿大广场区域",
+      "title": "401 W Georgia Street",
+      "location": "温哥华 W Georgia Street 401号",
+      "subtitle": "Canada Place 区域",
       "tags": [
         "Rope Access Glass Replacement"
       ]
     },
     "theGrande": {
-      "title": "格兰德大厦",
-      "location": "穆迪港格兰德",
-      "subtitle": "莫里西街300号",
+      "title": "The Grande",
+      "location": "穆迪港 The Grande",
+      "subtitle": "Morrissey Road 300号",
       "tags": [
         "Rope Access Glass Replacement",
         "Sealant Application"
@@ -215,7 +219,7 @@
     },
     "riverGreen": {
       "title": "River Green",
-      "location": "列治文River Green",
+      "location": "列治文 River Green",
       "subtitle": "Bridgehouse Way 5177号",
       "tags": [
         "Glass Replacement",
@@ -223,8 +227,8 @@
       ]
     },
     "fourSeasonsResort": {
-      "title": "四季度假村",
-      "location": "惠斯勒四季度假村",
+      "title": "Four Seasons Resort",
+      "location": "惠斯勒 Four Seasons Resort",
       "subtitle": "Blackcomb Way 4591号",
       "tags": [
         "Heat Trace Cable Installation"
@@ -232,62 +236,62 @@
     },
     "soleil": {
       "title": "Soleil",
-      "location": "白石Soleil",
-      "subtitle": "约翰斯顿路1588号",
+      "location": "白石 Soleil",
+      "subtitle": "Johnston Road 1588号",
       "tags": [
         "Rope Access Membrane Application"
       ]
     },
     "theErickson": {
-      "title": "埃里克森大厦",
+      "title": "The Erickson",
       "location": "",
       "subtitle": "",
       "tags": []
     },
     "theDouglas": {
-      "title": "道格拉斯大厦",
+      "title": "The Douglas",
       "location": "",
       "subtitle": "",
       "tags": []
     },
     "woodwards": {
-      "title": "伍德沃德大楼",
+      "title": "Woodwards",
       "location": "",
       "subtitle": "",
       "tags": []
     },
     "vancouverHouse": {
-      "title": "温哥华之家",
+      "title": "Vancouver House",
       "location": "",
       "subtitle": "",
       "tags": []
     },
     "teckResources": {
-      "title": "泰克资源",
+      "title": "Teck Resources",
       "location": "",
       "subtitle": "",
       "tags": []
     },
     "woodfibreLng": {
-      "title": "伍德菲厄LNG",
+      "title": "Woodfibre LNG",
       "location": "",
       "subtitle": "",
       "tags": []
     },
     "imperialOil": {
-      "title": "帝国石油",
+      "title": "Imperial Oil",
       "location": "",
       "subtitle": "",
       "tags": []
     },
     "suncorEnergy": {
-      "title": "森科能源",
+      "title": "Suncor Energy",
       "location": "",
       "subtitle": "",
       "tags": []
     },
     "syncrudeCanada": {
-      "title": "辛克鲁德加拿大",
+      "title": "Syncrude Canada",
       "location": "",
       "subtitle": "",
       "tags": []
@@ -472,14 +476,14 @@
     }
   },
   "aboutPage": {
-    "heroTitle": "关于 Rope Tech Group",
+    "heroTitle": "关于 {{companyName}}",
     "companyDetails": "公司信息",
     "businessHours": "营业时间",
-    "businessHoursValue": "Mon–Fri, 8:00 AM – 6:00 PM",
+    "businessHoursValue": "周一至周五，上午 8:00 – 下午 6:00",
     "location": "地点",
     "locationValue": "加拿大BC省温哥华第八大道西142B号 V6H 1E1",
     "aboutLabel": "关于我们",
-    "aboutText": "自 2013 年以来，Rope Tech Group 在不列颠哥伦比亚省提供专业的绳索高空作业与高层维护服务。总部位于温哥华，我们承接住宅、商业、工业与基础设施项目。\n\n我们的认证技术人员专长于外墙维护、混凝土修复、防水、玻璃幕墙、检测、桥梁工程、工业设施、落石清理，以及石油天然气行业的支持服务。",
+    "aboutText": "自 2013 年以来，{{companyName}} 在不列颠哥伦比亚省提供专业的绳索高空作业与高层维护服务。总部位于温哥华，我们承接住宅、商业、工业与基础设施项目。\n\n我们的认证技术人员专长于外墙维护、混凝土修复、防水、玻璃幕墙、检测、桥梁工程、工业设施、落石清理，以及石油天然气行业的支持服务。",
     "stat1Value": "95%",
     "stat1Label": "成功交付的项目",
     "stat2Value": "500+",

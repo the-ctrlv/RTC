@@ -1,0 +1,709 @@
+{
+  "common": {
+    "companyName": "Rope Tech Group",
+    "callUs": "Bizi arayın",
+    "contactUs": "Bize Ulaşın",
+    "getInTouch": "İletişime Geçin",
+    "learnMore": "Daha fazla bilgi",
+    "learnMoreCap": "Daha Fazla Bilgi",
+    "send": "Gönder",
+    "applyNow": "Hemen Başvur",
+    "viewAllProjects": "Tüm Projeleri Görüntüle",
+    "backHome": "Ana sayfaya dön",
+    "discussProject": "Projenizi bizimle görüşün",
+    "whatSetsUsApart": "Bizi farklı kılan:",
+    "ourServices": "Hizmetlerimiz",
+    "ourWork": "Çalışmalarımız"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "careers": "Kariyer",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "language": {
+    "en": "EN",
+    "zh": "中文",
+    "ru": "RU",
+    "ka": "ქართ",
+    "tr": "TR",
+    "label": "Dil"
+  },
+  "header": {
+    "callOrText": "Bizi arayın veya mesaj gönderin",
+    "emailUs": "Bize istediğiniz zaman e-posta gönderin"
+  },
+  "footer": {
+    "aboutUs": "Hakkımızda",
+    "tagline": "Kanada genelinde profesyonel endüstriyel ve bina erişim çözümleri.",
+    "location": "Konum",
+    "locationValue": "Vancouver, Kanada",
+    "emailUs": "Bize istediğiniz zaman e-posta gönderin",
+    "termsOfUse": "Kullanım koşulları",
+    "privacyPolicy": "Gizlilik politikası",
+    "rights": "© {{year}} Tüm Hakları Saklıdır Rope Tech Group"
+  },
+  "form": {
+    "fillOutForm": "Formu Doldurun",
+    "yourName": "Adınız",
+    "yourEmail": "E-posta adresiniz",
+    "message": "Mesaj",
+    "namePlaceholder": "Adınızı girin",
+    "emailPlaceholder": "olivia@untitledui.com",
+    "messagePlaceholder": "Bir şeyler yazın...",
+    "messagePlaceholderExperience": "Deneyiminizden bahsedin...",
+    "nameRequired": "Ad zorunludur",
+    "emailRequired": "E-posta zorunludur",
+    "successMessage": "Teşekkürler! Mesajınız gönderildi.",
+    "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "errorSending": "Gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
+    "applicationSuccess": "Başvurunuz için teşekkürler! En kısa sürede size dönüş yapacağız."
+  },
+  "hero": {
+    "badge": "Vancouver, BC merkezli",
+    "titleLine1": "İmkansıza Ulaşmak.",
+    "titleLine2": "Güvenle. Verimli.",
+    "expertiseHeading": "Uzmanlığımızı Keşfedin",
+    "cardServicesTitle": "Hizmetlerimiz",
+    "cardServicesDesc": "Yüksek binalar ve ulaşılması zor yapılar için halat erişimi bakımında uzmanız.",
+    "cardProjectsTitle": "Projelerimiz",
+    "cardProjectsDesc": "Tamamladığımız halat erişimi ve bina bakım projelerini inceleyin."
+  },
+  "homeAbout": {
+    "label": "HAKKIMIZDA",
+    "title": "Güvenli ve Sertifikalı Halat Erişimi Çözümleri Sunuyoruz",
+    "description": "Rope Tech Group, Kanada genelinde güvenli ve verimli yüksek bina, endüstriyel ve altyapı hizmetleri sunmaktadır. IRATA sertifikalı teknisyenlerimiz, gelişmiş halat erişimi yöntemleriyle minimum kesintiyle karmaşık alanlara ulaşır. Her ölçek ve karmaşıklıktaki projeleri desteklemek için güvenilirlik, güvenlik standartları ve profesyonel uygulamaya odaklanıyoruz.",
+    "stat1Value": "95%",
+    "stat1Label": "ÜLKE GENELİNDE BAŞARIYLA TAMAMLANAN PROJELER",
+    "stat2Value": "500+",
+    "stat2Label": "KANADA GENELİNDE BAŞARIYLA TAMAMLANAN PROJELER"
+  },
+  "benefits": {
+    "label": "NEDEN BİZİ SEÇMELİSİNİZ",
+    "title": "Bizimle Çalışmanın Temel Avantajları",
+    "description": "Karmaşık ortamlarda kesin ve güvenilir sonuçlar sunmaya odaklanıyoruz — net iletişim, güçlü planlama ve güvenebileceğiniz uygulama ile.",
+    "expertiseTitle": "Uzmanlık",
+    "expertiseDesc": "Ekibimiz, endüstriyel ve bina ortamlarında uygulamalı deneyime sahip eğitimli ve sertifikalı halat erişimi teknisyenlerinden oluşmaktadır.",
+    "qualityTitle": "Kalite",
+    "qualityDesc": "En yüksek güvenlik ve performans standartlarını koruyarak, ödüllü uzmanlığımızla desteklenen güvenilir sonuçlar sunuyoruz.",
+    "costTitle": "Maliyet etkinliği",
+    "costDesc": "Kalite veya güvenlikten ödün vermeden, geleneksel yöntemlere kıyasla proje maliyetlerini %50'nin üzerinde düşürebiliriz."
+  },
+  "ourServices": {
+    "label": "HİZMETLER",
+    "title": "Hizmetlerimiz",
+    "description": "Ekibimiz, güvenlik, güvenilirlik ve uzun vadeli performans sağlayan uzman endüstriyel ve bina hizmetleri sunmaktadır. Ulaşılması zor alanlarda bile profesyonel bakım, muayene ve onarım çözümleri sağlıyoruz.",
+    "industrialTitle": "Endüstriyel Hizmetler",
+    "industrialItem1Title": "Erişim, Güvenlik ve Düşme Koruması",
+    "industrialItem1Desc": "Endüstriyel ortamlar için mühendislik erişimi, düşme koruması ve kapalı alan çözümleri.",
+    "industrialItem2Title": "Muayeneler, Bakım ve Güvenilirlik",
+    "industrialItem2Desc": "Uzun vadeli varlık performansını destekleyen muayene, bakım ve onarım hizmetleri.",
+    "industrialItem3Title": "Özel ve Yüksek Riskli Operasyonlar",
+    "industrialItem3Desc": "Duruşlar, acil müdahale, kurtarma operasyonları ve karmaşık kaldırma görevleri.",
+    "exploreIndustrial": "Endüstriyel Hizmetleri Keşfedin",
+    "buildingTitle": "Bina Hizmetleri",
+    "buildingItem1Title": "Erişim, Güvenlik ve Düşme Koruması",
+    "buildingItem1Desc": "Konut ve ticari binalar için güvenli erişim sistemleri ve düşme koruması çözümleri.",
+    "buildingItem2Title": "Kabuk Muayeneleri ve Bakımı",
+    "buildingItem2Desc": "Bina ömrünü uzatmak için cephe muayeneleri, bakım ve onarım hizmetleri.",
+    "buildingItem3Title": "Kabuk Restorasyonu ve Onarımları",
+    "buildingItem3Desc": "Beton onarımları, su yalıtımı, cam cephe ve dış kabuk iyileştirmeleri.",
+    "exploreBuilding": "Bina Hizmetlerini Keşfedin"
+  },
+  "projectsSection": {
+    "label": "ÇALIŞMALARIMIZ",
+    "title": "Son Projeler"
+  },
+  "projectTags": {
+    "Rope Access Glazing": "Halat Erişimi ile Cam Cephe İşleri",
+    "Sealant Applications": "Derz Dolgu Uygulamaları",
+    "Sealant Application": "Derz Dolgu Uygulaması",
+    "Rope Access System": "Halat Erişim Sistemi",
+    "Sunshade Installation": "Güneşlik Montajı",
+    "Water Ingress Investigations": "Su Sızıntısı İncelemeleri",
+    "Concrete Repairs": "Beton Onarımları",
+    "Painting": "Boyama",
+    "Liquid Membrane Replacement": "Sıvı Membran Değişimi",
+    "Flashing Installation": "Sızdırmazlık Profili Montajı",
+    "Sealant Replacement": "Derz Dolgu Değişimi",
+    "Fish Tank Installation": "Pencere Havuzu Montajı",
+    "Rope Access Glass Replacement": "Halat Erişimi ile Cam Değişimi",
+    "Glass Replacement": "Cam Değişimi",
+    "Heat Trace Cable Installation": "Isıtma Kablosu Montajı",
+    "Rope Access Membrane Application": "Halat Erişimi ile Membran Uygulaması"
+  },
+  "projectsData": {
+    "cardero": {
+      "title": "Cardero",
+      "location": "620 Cardero St, Vancouver, Britanya Kolumbiyası",
+      "subtitle": "1550 Alberni St",
+      "tags": [
+        "Rope Access Glazing",
+        "Sealant Application"
+      ]
+    },
+    "jimPattisonToyota": {
+      "title": "Jim Pattison Toyota",
+      "location": "Jim Pattison Toyota Downtown",
+      "subtitle": "1290 Burrard St",
+      "tags": [
+        "Rope Access Glazing"
+      ]
+    },
+    "westGeorgia400": {
+      "title": "400 West Georgia",
+      "location": "400 West Georgia, Vancouver, Britanya Kolumbiyası",
+      "subtitle": "Vancouver Şehir Merkezi",
+      "tags": [
+        "Sealant Application",
+        "Rope Access Glazing"
+      ]
+    },
+    "kelticPlace": {
+      "title": "Keltic Place",
+      "location": "Keltic Place, Richmond, Britanya Kolumbiyası",
+      "subtitle": "6388 No. 3 Road",
+      "tags": [
+        "Sunshade Installation",
+        "Sealant Application"
+      ]
+    },
+    "parkTowers": {
+      "title": "Park Towers",
+      "location": "Minoru Boulevard, Richmond, Britanya Kolumbiyası",
+      "subtitle": "6080 Minoru Blvd",
+      "tags": [
+        "Water Ingress Investigations",
+        "Concrete Repairs",
+        "Painting",
+        "Liquid Membrane Replacement"
+      ]
+    },
+    "businessCenterLangley": {
+      "title": "Business Center, Langley",
+      "location": "Langley Twp, Britanya Kolumbiyası",
+      "subtitle": "8700 88 Ave W",
+      "tags": [
+        "Water Ingress Investigations",
+        "Flashing Installation",
+        "Sealant Replacement",
+        "Fish Tank Installation"
+      ]
+    },
+    "bayshoreGardens": {
+      "title": "Bayshore Gardens",
+      "location": "1710 Bayshore Drive, Vancouver, Britanya Kolumbiyası",
+      "subtitle": "Bayshore Gardens",
+      "tags": [
+        "Rope Access Glass Replacement"
+      ]
+    },
+    "georgia401": {
+      "title": "401 W Georgia Street",
+      "location": "401 W Georgia Street, Vancouver, Britanya Kolumbiyası",
+      "subtitle": "Canada Place Bölgesi",
+      "tags": [
+        "Rope Access Glass Replacement"
+      ]
+    },
+    "theGrande": {
+      "title": "The Grande",
+      "location": "The Grande, Port Moody, Britanya Kolumbiyası",
+      "subtitle": "300 Morrissey Road",
+      "tags": [
+        "Rope Access Glass Replacement",
+        "Sealant Application"
+      ]
+    },
+    "riverGreen": {
+      "title": "River Green",
+      "location": "River Green, Richmond, Britanya Kolumbiyası",
+      "subtitle": "5177 Bridgehouse Way",
+      "tags": [
+        "Glass Replacement",
+        "Sealant Application"
+      ]
+    },
+    "fourSeasonsResort": {
+      "title": "Four Seasons Resort",
+      "location": "Four Seasons Resort, Whistler, Britanya Kolumbiyası",
+      "subtitle": "4591 Blackcomb Way",
+      "tags": [
+        "Heat Trace Cable Installation"
+      ]
+    },
+    "soleil": {
+      "title": "Soleil",
+      "location": "Soleil, White Rock, Britanya Kolumbiyası",
+      "subtitle": "1588 Johnston Road",
+      "tags": [
+        "Rope Access Membrane Application"
+      ]
+    },
+    "theErickson": {
+      "title": "The Erickson",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "theDouglas": {
+      "title": "The Douglas",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "woodwards": {
+      "title": "Woodwards",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "vancouverHouse": {
+      "title": "Vancouver House",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "teckResources": {
+      "title": "Teck Resources",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "woodfibreLng": {
+      "title": "Woodfibre LNG",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "imperialOil": {
+      "title": "Imperial Oil",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "suncorEnergy": {
+      "title": "Suncor Energy",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "syncrudeCanada": {
+      "title": "Syncrude Canada",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    }
+  },
+  "testimonials": {
+    "label": "REFERANSLAR",
+    "title": "Müşterilerimizden Dinleyin",
+    "t1": "Bu halat erişimi ekibiyle beton onarımları, kaplamalar, membran uygulamaları ve çatlak enjeksiyonu içeren birçok projede birlikte çalıştık. Ekipleri sürekli olarak yüksek kaliteli işçilik sunuyor ve karmaşık saha koşullarına iyi uyum sağlıyor. Güvenilir, bilgili ve güvenliğe odaklı — zorlu projelerde harika bir ortak.",
+    "t1Author": "Dan Miller",
+    "t1Role": "Norsco Construction LTD",
+    "t2": "Çok profesyonel bir halat erişimi şirketi. Ekip güvenli çalıştı, programa uydu ve kaliteli sonuçlar sundu.",
+    "t2Author": "Steven Danzing",
+    "t2Role": "Metalife LTD",
+    "t3": "Erişimin son derece kısıtlı olduğu birçok cam değişim projesinde bu şirketle ortaklık kurduk. Halat erişimi teknisyenleri, gecikme olmadan karmaşık montajları mümkün kıldı. Mükemmel koordinasyon, güçlü güvenlik uygulamaları ve harika sonuçlar.",
+    "t3Author": "Merle Beck",
+    "t3Role": "Action Glass Inc.",
+    "t4": "Lower Mainland genelinde birçok yüksek bina cam değişimi ve montaj projesinde birlikte çalıştık. Halat erişimi destekleri, cephe yardımı dahil olmak üzere ulaşılması çok zor alanlarda işi tamamlamamızı sağladı. Yetenekli teknisyenler, sorunsuz koordinasyon ve her seferinde profesyonel uygulama.",
+    "t4Author": "Sergii Popkov",
+    "t4Role": "High Rise Glass LTD",
+    "t5": "Profesyonel halat erişimi ekibi. İş güvenli bir şekilde, zamanında ve yüksek standartlarda tamamlandı.",
+    "t5Author": "Dennis Lesik",
+    "t5Role": "Siber Facade Group LTD",
+    "t6": "Birden fazla projede güçlü halat erişimi cam cephe desteği. Teknisyenleri deneyimli, verimli ve montaj ekiplerimizle iyi entegre oldu. Yükseklikte karmaşık cam cephe işleri için güvenilir bir ortak.",
+    "t6Author": "Pavel Sokolov",
+    "t6Role": "Altitude Installations LTD",
+    "t7": "Binamıza ısıtma kablosu sistemi kurulumunu içeren büyük bir projede bu şirketle çalıştık. İş güvenli, profesyonel bir şekilde ve operasyonlara minimum kesintiyle tamamlandı. Proje boyunca mükemmel planlama, uygulama ve iletişim.",
+    "t7Author": "Darren Boyd",
+    "t7Role": "Four Seasons Resort Whistler",
+    "t8": "Bu ekibi birkaç endüstriyel halat erişimi ve inşaatla ilgili proje için görevlendirdik. Zor alanlara güvenli erişim ve kaliteli sonuçlar sunma yetenekleri, saha alanlarımızda değerli bir yüklenici olmalarını sağladı. Profesyonel, duyarlı ve güvenlik odaklı.",
+    "t8Author": "Stan Phillips",
+    "t8Role": "Pomerleau LTD",
+    "t9": "Yüksek bina muayeneleri, pencere sistemi desteği ve su sızıntısı incelemelerinde bize yardımcı oldular. Halat erişimi yaklaşımları, invaziv yöntemler olmadan kapsamlı değerlendirmelere olanak tanıdı. Net raporlama, güçlü teknik bilgi ve profesyonel hizmet.",
+    "t9Author": "James Payette",
+    "t9Role": "Tribe Management Inc."
+  },
+  "cta": {
+    "readyLine1": "Bizimle Çalışmaya",
+    "readyLine2": "Hazır mısınız?",
+    "discussLine1": "Projenizi",
+    "discussLine2": "Konuşalım",
+    "readyTitle": "Bizimle Çalışmaya Hazır mısınız?",
+    "discussTitle": "Projenizi Konuşalım"
+  },
+  "modal": {
+    "close": "Pencereyi kapat"
+  },
+  "aria": {
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Mobil menüyü kapat",
+    "prevSlide": "Önceki slayt",
+    "nextSlide": "Sonraki slayt",
+    "contactForm": "İletişim formuna git",
+    "locationIcon": "Konum simgesi",
+    "decorativeLine": "Dekoratif çizgi öğesi",
+    "decorativeDivider": "Dekoratif ayırıcı",
+    "mapPin": "Harita işaretçisi",
+    "projectImageAlt": "{{title}} bina projesi — tamamlanan halat erişimi çalışması",
+    "galleryProjectAlt": "{{title}} — çalışmalarımızı sergileyen tamamlanan halat erişimi projesi",
+    "quoteMark": "Tırnak işareti"
+  },
+  "contactSection": {
+    "label": "BİZE ULAŞIN",
+    "title": "İletişime Geçin",
+    "email": "E-POSTA",
+    "phone": "TELEFON",
+    "location": "KONUM",
+    "locationValue": "142B W 8th Ave, Vancouver, BC V6H 1E1, Kanada"
+  },
+  "servicesPage": {
+    "title": "Hizmetler",
+    "industrialTitle": "Endüstriyel Hizmetler",
+    "industrialDesc": "Endüstriyel tesisler, altyapı ve karmaşık ortamlar için güvenli, uyumlu ve verimli erişim ve bakım çözümleri sunuyoruz — Kanada genelinde kritik operasyonları ve büyük ölçekli projeleri destekliyoruz.",
+    "buildingTitle": "Bina Hizmetleri",
+    "buildingDesc": "Konut, ticari ve kurumsal binalar için dayanıklılık, hava koşullarına karşı koruma ve uzun vadeli performansa odaklanan kapsamlı bina kabuğu çözümleri sunuyoruz — Kanada genelinde alçak ve yüksek bina projelerinden."
+  },
+  "serviceDetail": {
+    "serviceOverview": "Hizmet Genel Bakış",
+    "ourServices": "Hizmetlerimiz",
+    "ourWork": "Çalışmalarımız",
+    "whyChooseUs": "Neden bizi seçmelisiniz",
+    "discussCta": "Projenizi bizimle görüşün",
+    "whatSetsUsApart": "Bizi farklı kılan:",
+    "industrial": {
+      "title": "Endüstriyel Hizmetler",
+      "seoDescription": "Kanada genelinde profesyonel endüstriyel halat erişimi hizmetleri. Muayene, bakım ve özel operasyonlar için IRATA sertifikalı teknisyenler. Güvenli, verimli ve maliyet etkin çözümler.",
+      "seoKeywords": "endüstriyel halat erişimi, IRATA sertifikalı, endüstriyel muayeneler, bakım hizmetleri, halat erişimi Kanada, endüstriyel erişim çözümleri",
+      "heroTitle": "Endüstriyel Hizmetler",
+      "whatTitle": "Endüstriyel Halat Erişimi Hizmetleri",
+      "whatDescription": "Birçok endüstriyel tesis, geleneksel erişim yöntemleriyle ulaşılması zor veya imkansız alanlara sahiptir. Halat erişimi, iskele veya liftlerin pratik olmadığı durumlarda muayene, onarım ve bakım için güvenli, verimli ve maliyet etkin bir çözüm sunar. <br /><br /> Sertifikalı halat erişimi teknisyenlerimiz işi daha hızlı tamamlar, saha kesintisini azaltır ve en yüksek güvenlik standartlarını korurken genel proje maliyetlerini düşürür.",
+      "keyServicesTitle": "Sunduğumuz Temel Halat Erişimi Hizmetleri",
+      "service1Title": "Erişim, Güvenlik ve Düşme Koruması",
+      "service1Content": "Karmaşık ve yüksek riskli endüstriyel ortamlar için sertifikalı erişim ve düşme koruması çözümleri.",
+      "service1Bullets": [
+        "Mühendislik erişim platformları ve sertifikalı düşme koruma sistemleri",
+        "Kapalı alan giriş hizmetleri (iş uygulaması ve güvenlik bekleme)",
+        "Güvenlik ağları, kuş kontrolü ve enkaz tutma sistemleri",
+        "Kaya düşmesi koruma sistemleri, ağ ve stabilizasyon montajları"
+      ],
+      "service2Title": "Muayeneler, Bakım ve Güvenilirlik",
+      "service2Content": "Uzun vadeli varlık performansını destekleyen muayene, bakım ve güvenilirlik hizmetleri.",
+      "service2Bullets": [
+        "Yapısal muayeneler, testler ve durum değerlendirmeleri",
+        "Mekanik ve elektrik muayeneleri, onarımları ve montajları",
+        "Ekipman bakımı ve güvenilirlik hizmetleri",
+        "Korozyon koruması, yüzey hazırlığı ve endüstriyel kaplamalar",
+        "Termal yalıtım, akustik kontrol ve ısı kaybı koruması",
+        "Sızdırmazlık, su yalıtımı ve derz sistemleri"
+      ],
+      "service3Title": "Özel ve Yüksek Riskli Operasyonlar",
+      "service3Content": "Duruşlar, acil müdahale ve ağır endüstriyel işler için özel halat erişimi operasyonları.",
+      "service3Bullets": [
+        "Duruş ve TAR (Turnaround) desteği",
+        "Acil müdahale ve teknik halat kurtarma",
+        "Rigging, kaldırma ve yük taşıma operasyonları",
+        "Yapısal çelik onarımları, saha kaynağı ve imalat desteği",
+        "Kaya temizleme, eğim stabilizasyonu ve gevşek kaya kaldırma"
+      ],
+      "realConditionsTitle": "Gerçek Koşullardaki Çalışmalarımız",
+      "whyChooseTitle": "Endüstriyel Hizmetler İçin Neden <br /> Rope Tech Group'u <br /> Seçmelisiniz?",
+      "whyChooseDescription": "Rope Tech Group, yüksek eğitimli IRATA teknisyenleri tarafından güvenli, verimli ve uyumlu halat erişimi çözümleri sunar. Hassasiyetle çalışır, tutarlı sonuçlar sağlar ve her projeyi sahanızın özel zorluklarına göre uyarlarız.",
+      "reasons": [
+        "IRATA sertifikalı halat erişimi teknisyenleri",
+        "Sıfır kaza güvenlik kaydı",
+        "Hızlı seferberlik ve esnek programlama",
+        "Maliyet etkin çözümler",
+        "Karmaşık endüstriyel sahalar genelinde kanıtlanmış deneyim",
+        "Tam sigortalı ve tüm düzenlemelere uyumlu",
+        "Güçlü kalite kontrolü ve dokümantasyon standartları"
+      ]
+    },
+    "building": {
+      "title": "Bina Hizmetleri",
+      "seoDescription": "Vancouver ve Kanada genelinde uzman bina bakım ve onarım hizmetleri. Su yalıtımı, beton onarımları, cephe restorasyonu ve bina kabuğu çözümlerinde uzmanız.",
+      "seoKeywords": "bina bakımı, su yalıtım hizmetleri, beton onarımları, cephe restorasyonu, bina kabuğu, halat erişimi bina hizmetleri, Vancouver",
+      "heroTitle": "Bina Hizmetleri",
+      "whatTitle": "Bina ve <br /> Ticari Hizmetler",
+      "whatDescription": "Yapısal bütünlüğü korumak ve su hasarını önlemek için profesyonel bina bakım ve onarım hizmetleri sunuyoruz. Çalışmalarımız beton onarımları, çatlak enjeksiyonu, su yalıtımı ve dış bakımı kapsar.<br /><br />Gerektiğinde halat erişimi dahil verimli erişim yöntemleri kullanarak, bina operasyonlarına minimum kesintiyle güvenilir, yüksek kaliteli sonuçlar sunuyoruz.",
+      "keyServicesTitle": "Sunduğumuz Temel Halat Erişimi Hizmetleri",
+      "service1Title": "Erişim, Güvenlik ve Düşme Koruması",
+      "service1Content": "Her yükseklikteki binalarda cephe muayeneleri, bakım ve onarım çalışmalarını destekleyen güvenli erişim ve düşme koruma sistemleri.",
+      "service1Bullets": [
+        "Bina kabuğu muayeneleri, değerlendirmeleri ve durum raporları",
+        "Mühendisler ve danışmanlar için cephe muayeneleri ve erişim desteği",
+        "Mühendislik desteği, teknik yardım ve uygulanabilirlik önerileri",
+        "Düşme koruması ve kalıcı yaşam hattı sistemi montajları",
+        "Kuş önleme ve enkaz ağı sistemleri"
+      ],
+      "service2Title": "Kabuk Muayeneleri ve Bakımı",
+      "service2Content": "Bina kabuklarını korumak ve ömrünü uzatmak için önleyici muayeneler ve bakım.",
+      "service2Bullets": [
+        "Su sızıntısı incelemeleri ve sızıntı teşhisi",
+        "Pencereler, genleşme derzleri ve kontrol derzleri için derz dolgu sökümü ve değişimi, pencere sistemi havuzu montajı dahil",
+        "Bina kabukları için planlı önleyici bakım (PPM)",
+        "Termal ve hava bariyeri onarımları ve yükseltmeleri",
+        "Isıtma kablosu sistemi montajı, muayenesi ve bakımı"
+      ],
+      "service3Title": "Kabuk Restorasyonu ve Onarımları",
+      "service3Content": "Su sızıntısını ve yapısal hasarı önlemek için bina kabuğu restorasyonu ve onarımları.",
+      "service3Bullets": [
+        "Cepheler, podiyumlar, balkonlar ve çatılar için su yalıtım sistemleri",
+        "Beton onarımları, çatlak enjeksiyonu, yıkıntı onarımları ve restorasyon",
+        "Koruyucu kaplamalar ve elastomerik membran uygulamaları",
+        "Pencere, cam cephe ve curtain wall onarımları ve değişimleri",
+        "Cephe ve çatı birleşimlerinde sızdırmazlık profili montajı ve onarımları",
+        "Cephe sistemi muayeneleri, onarımları ve montajları",
+        "Balkon onarımları, trafik kaplamaları ve korkuluk sistemleri",
+        "Dış yalıtım ve kaplama sistemi (EIFS) onarımları",
+        "Dış boyama, yüzey hazırlığı ve cephe temizliği"
+      ],
+      "realConditionsTitle": "Gerçek Koşullardaki Çalışmalarımız",
+      "whyChooseTitle": "Bina Hizmetleri İçin Neden <br /> Rope Tech Group'u <br />Seçmelisiniz?",
+      "whyChooseDescription": "Rope Tech Group, yüksek eğitimli IRATA teknisyenleri tarafından güvenli, verimli ve uyumlu halat erişimi çözümleri sunar. Hassasiyetle çalışır, tutarlı sonuçlar sağlar ve her projeyi sahanızın özel zorluklarına göre uyarlarız.",
+      "reasons": [
+        "Sertifikalı bina uzmanları",
+        "Kapsamlı hizmet portföyü",
+        "Garantili kaliteli işçilik",
+        "Zamanında proje teslimi",
+        "Rekabetçi fiyatlandırma",
+        "Tam sigorta kapsamı"
+      ]
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "{{companyName}} Hakkında",
+    "companyDetails": "Şirket Bilgileri",
+    "businessHours": "Çalışma Saatleri",
+    "businessHoursValue": "Pzt–Cuma, 08:00 – 18:00",
+    "location": "Konum",
+    "locationValue": "1428 W 8th Ave, Vancouver, BC V6H 1E1, Kanada",
+    "aboutLabel": "HAKKIMIZDA",
+    "aboutText": "2013'ten bu yana {{companyName}}, Britanya Kolumbiyası genelinde profesyonel halat erişimi ve yüksek bina bakım hizmetleri sunmaktadır. Vancouver merkezli olarak konut, ticari, endüstriyel ve altyapı projelerinde çalışıyoruz.\n\nSertifikalı teknisyenlerimiz cephe bakımı, beton onarımları, su yalıtımı, cam cephe, muayeneler, köprü çalışmaları, endüstriyel tesisler, kaya temizleme ve petrol-gaz sektörü destek hizmetlerinde uzmanlaşmıştır.",
+    "stat1Value": "95%",
+    "stat1Label": "BAŞARILI PROJELER",
+    "stat2Value": "500+",
+    "stat2Label": "Tamamlanan İşler",
+    "stat3Value": "15+",
+    "stat3Label": "YIL DENEYİM",
+    "stat4Value": "100%",
+    "stat4Label": "GÜVENLİK ODAĞI",
+    "approachLabel": "YAKLAŞIMIMIZ",
+    "approachTitle": "Çalışmalarımızın Arkasındaki İlkeler",
+    "approachDescription": "Güvenlik, verimlilik ve minimum kesintiye odaklanarak, kanıtlanmış halat erişimi teknikleriyle yükseklikte ve ulaşılması zor noktalarda güvenilir sonuçlar sunuyoruz.",
+    "missionTitle": "Misyon",
+    "missionDesc": "Karmaşık zorlukları verimli bir şekilde çözen kesin ve güvenilir halat erişimi çözümleri sunmak.",
+    "visionTitle": "Vizyon",
+    "visionDesc": "Yüksek bina ve endüstriyel bakım projeleri için güvenilir uzun vadeli ortak olmak.",
+    "purposeTitle": "Amaç",
+    "purposeDesc": "Müşterilerin akıllı ve iyi uygulanmış erişim çözümleriyle varlıklarının ömrünü uzatmalarına yardımcı olmak.",
+    "safetyLabel": "GÜVENLİK STANDARTLARIMIZ",
+    "safetyTitle": "Güvenlik ve Sertifikalar",
+    "safetyDescription": "Güvenlik, üstlendiğimiz her projenin temelidir. Ekibimiz uluslararası kabul görmüş halat erişimi standartlarına uygun çalışır ve her sahadaki yerleşik güvenlik prosedürlerini uygular.",
+    "certifications": [
+      "IRATA sertifikalı halat erişimi teknisyenleri",
+      "Düzenli güvenlik ve beceri eğitimi",
+      "Ekipmanın tam muayenesi, kaydı ve bakımı",
+      "Sahaya özel risk değerlendirmeleri ve kurtarma planlaması",
+      "Bölgesel işyeri ve sektör düzenlemelerine uyum"
+    ],
+    "workLabel": "ÇALIŞMALARIMIZ",
+    "workTitle": "Gerçek Koşullardaki Çalışmalarımız"
+  },
+  "projectsPage": {
+    "title": "Projelerimiz"
+  },
+  "contactPage": {
+    "title": "Bize Ulaşın",
+    "email": "E-POSTA",
+    "phone": "TELEFON",
+    "location": "KONUM",
+    "locationValue": "142B W 8th Ave, Vancouver, BC V6H 1E1, Kanada"
+  },
+  "careersPage": {
+    "title": "Ekibimize Katılın",
+    "intro": "Ekibimize katılmak için yetenekli, motive ve güvenlik odaklı profesyoneller arıyoruz.",
+    "paragraph1": "Halat erişimi, bina kabuğu, muayene, bakım veya endüstriyel operasyonlar konusunda deneyiminiz varsa — sizden haber almak isteriz.",
+    "paragraph2": "Rope Tech Group'ta profesyonellik, ekip çalışması ve güvenlik ile kaliteye güçlü bağlılığa değer veriyoruz. İster deneyimli bir uzman olun ister zorlu, uygulamalı bir ortamda kariyerinizi geliştirmek isteyin, başvurunuzu göndermenizi teşvik ediyoruz.",
+    "formTitle": "Başvurunuzu Gönderin"
+  },
+  "industriesPage": {
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "subtitle": "Farklı sektörler için uzman çözümler",
+    "expertiseTitle": "Sektör Uzmanlığı",
+    "expertiseDesc": "Her sektörün benzersiz zorluklarını ve gereksinimlerini karşılayan çözümler sunmak için derin sektör bilgisi ve teknik uzmanlık getiriyoruz.",
+    "keySolutions": "Temel Çözümler:",
+    "ctaTitle": "Sektörünüzü Göremiyor musunuz?",
+    "ctaDesc": "Tüm sektörlerdeki işletmelerle çalışıyoruz. Özel ihtiyaçlarınızı görüşmek için bizimle iletişime geçin.",
+    "items": [
+      {
+        "title": "Sağlık",
+        "description": "Hastaneler, klinikler ve sağlık hizmeti sağlayıcıları için hasta bakımını iyileştirmek ve operasyonları kolaylaştırmak amacıyla HIPAA uyumlu çözümler.",
+        "solutions": ["Elektronik Sağlık Kayıtları", "Tele-Tıp Platformları", "Hasta Portalları", "Sağlık Analitiği"]
+      },
+      {
+        "title": "Finans ve Bankacılık",
+        "description": "Bankalar, fintech şirketleri ve finans kurumları için güvenli ve ölçeklenebilir finansal teknoloji çözümleri.",
+        "solutions": ["Mobil Bankacılık", "Ödeme Ağ Geçitleri", "İşlem Platformları", "Risk Yönetim Sistemleri"]
+      },
+      {
+        "title": "E-Ticaret",
+        "description": "İşletmelerin çevrimiçi varlıklarını ve satışlarını büyütmelerine yardımcı olan sağlam e-ticaret platformları ve çözümleri.",
+        "solutions": ["Çevrimiçi Mağazalar", "Envanter Yönetimi", "Ödeme Entegrasyonu", "Müşteri Analitiği"]
+      },
+      {
+        "title": "Eğitim",
+        "description": "Okullar, üniversiteler ve çevrimiçi öğrenme platformları için yenilikçi eğitim teknolojisi çözümleri.",
+        "solutions": ["Öğrenme Yönetim Sistemleri", "Sanal Sınıflar", "Öğrenci Portalları", "Değerlendirme Araçları"]
+      },
+      {
+        "title": "İmalat",
+        "description": "Üretim, tedarik zinciri ve operasyon yönetimini optimize etmek için dijital dönüşüm çözümleri.",
+        "solutions": ["IoT Entegrasyonu", "Tedarik Zinciri Yönetimi", "Kalite Kontrol Sistemleri", "Üretim Analitiği"]
+      },
+      {
+        "title": "Gayrimenkul",
+        "description": "Mülk yönetimi, emlak acenteleri ve gayrimenkul geliştiricileri için teknoloji çözümleri.",
+        "solutions": ["Mülk Yönetim Sistemleri", "Sanal Turlar", "CRM Çözümleri", "İlan Platformları"]
+      },
+      {
+        "title": "Perakende",
+        "description": "Müşteri deneyimini ve operasyonel verimliliği artırmak için omnichannel perakende çözümleri.",
+        "solutions": ["POS Sistemleri", "Envanter Takibi", "Müşteri Sadakat Programları", "Satış Analitiği"]
+      },
+      {
+        "title": "Lojistik ve Taşımacılık",
+        "description": "Taşımacılık şirketleri, nakliye acenteleri ve teslimat hizmetleri için akıllı lojistik çözümleri.",
+        "solutions": ["Filo Yönetimi", "Rota Optimizasyonu", "Takip Sistemleri", "Depo Yönetimi"]
+      }
+    ]
+  },
+  "notFound": {
+    "oops": "Hay aksi!",
+    "title": "Sayfa bulunamadı!",
+    "description": "Üzgünüz, aradığınız sayfa mevcut değil."
+  },
+  "terms": {
+    "title": "Şartlar ve Koşullar",
+    "lastUpdated": "Son güncelleme: 22 Aralık 2025",
+    "intro1": "Bu Şartlar ve Koşullar (\"Şartlar\"), Rope Tech Group (\"Şirket\", \"biz\", \"bize\" veya \"bizim\") tarafından işletilen web sitesine (\"Web Sitesi\") erişiminizi ve kullanımınızı düzenler.",
+    "intro2": "Bu Web Sitesine erişerek veya kullanarak bu Şartlara bağlı kalmayı kabul edersiniz. Kabul etmiyorsanız, lütfen bu Web Sitesini kullanmayın.",
+    "websiteUseTitle": "Web Sitesi Kullanımı",
+    "websiteUseText": "Bu Web Sitesi, Rope Tech Group tarafından sunulan halat erişimi, muayene, bakım ve ilgili hizmetler hakkında genel bilgi amaçlı sağlanmaktadır. Web Sitesini Kanada'daki tüm geçerli federal, eyalet ve belediye yasalarına uygun olarak kullanmayı kabul edersiniz.",
+    "noAdviceTitle": "Profesyonel veya Güvenlik Tavsiyesi Değildir",
+    "noAdviceText": "Bu Web Sitesindeki içerik mühendislik, hukuk veya güvenlik tavsiyesi teşkil etmez. Tüm projeler, herhangi bir iş yapılmadan önce sahaya özel değerlendirmeler, güvenli iş planlaması ve resmi anlaşmalar gerektirir.",
+    "disclaimerTitle": "Halat Erişimi ve Güvenlik Sorumluluk Reddi",
+    "disclaimerText": "Rope Tech Group tarafından sağlanan tüm halat erişimi hizmetleri, sahaya özel risk değerlendirmelerine, onaylı çalışma yöntemlerine ve IRATA, SPRAT, CSA ve eyalet iş sağlığı ve güvenliği düzenlemeleri dahil ancak bunlarla sınırlı olmamak üzere geçerli güvenlik standartlarına tabidir.",
+    "clientsResponsible": "Müşteriler şunlardan sorumludur:",
+    "clientsBullets": [
+      "Çalışma sahasına güvenli ve yasal erişim sağlamak.",
+      "Yapısal elemanların ve ankraj noktalarının uygunluğunu sağlamak (yazılı olarak aksi kararlaştırılmadıkça).",
+      "Bilinen tehlikeleri, kısıtlamaları veya çevresel koşulları bildirmek."
+    ],
+    "suspendText": "Rope Tech Group, koşulların güvensiz olduğu değerlendirildiğinde işi askıya alma veya reddetme hakkını saklı tutar.",
+    "estimatesTitle": "Tahminler, Teklifler ve İş Kapsamı",
+    "estimatesText": "Bu Web Sitesinde görüntülenen fiyatlandırma, zaman çizelgeleri veya hizmet açıklamaları yalnızca genel bilgi amaçlıdır ve bağlayıcı bir teklif teşkil etmez.",
+    "finalPricing": "Nihai fiyatlandırma ve iş kapsamı şunlara tabidir:",
+    "finalPricingBullets": [
+      "Saha muayeneleri",
+      "Erişim koşulları",
+      "Hava ve çevresel faktörler",
+      "Öngörülemeyen veya gizli koşullar"
+    ],
+    "bindingText": "Yalnızca Rope Tech Group tarafından verilen yazılı teklif veya sözleşme bağlayıcı kabul edilir.",
+    "ipTitle": "Fikri Mülkiyet",
+    "ipText": "Metin, görseller, logolar, grafikler ve tasarım öğeleri dahil tüm Web Sitesi içeriği, Rope Tech Group veya lisans verenlerinin münhasır mülkiyetindedir ve Kanada fikri mülkiyet yasaları kapsamında korunmaktadır.",
+    "thirdPartyTitle": "Üçüncü Taraf Bağlantıları",
+    "thirdPartyText": "Bu Web Sitesi kolaylık sağlamak amacıyla üçüncü taraf web sitelerine bağlantılar içerebilir. Rope Tech Group bu web sitelerini kontrol etmez veya onaylamaz ve içeriklerinden veya uygulamalarından sorumlu değildir. Üçüncü taraf web sitelerine erişim kendi riskinizdedir.",
+    "liabilityTitle": "Sorumluluk Sınırlaması",
+    "liabilityText": "Kanada yasalarının izin verdiği en geniş ölçüde, Rope Tech Group bu Web Sitesini veya içeriğini kullanmanızdan veya bunlara güvenmenizden kaynaklanan dolaylı veya sonuçsal kayıplar dahil herhangi bir zarardan sorumlu olmayacaktır.",
+    "availabilityTitle": "Web Sitesi Erişilebilirliği",
+    "availabilityText": "Rope Tech Group Web Sitesine kesintisiz erişimi garanti etmez ve önceden haber vermeksizin Web Sitesi içeriğini istediği zaman değiştirebilir veya durdurabilir.",
+    "terminationTitle": "Fesih",
+    "terminationText": "Bu Şartların ihlal edilmesi veya herhangi bir yasal nedenle, Web Sitesine erişimi kendi takdirimize bağlı olarak önceden haber vermeksizin kısıtlama veya sonlandırma hakkını saklı tutarız.",
+    "governingTitle": "Uygulanacak Hukuk",
+    "governingText": "Bu Şartlar, kanunlar ihtilafı kurallarına bakılmaksızın Kanada ve Britanya Kolumbiyası Eyaleti yasalarına tabi olacak ve bu yasalara göre yorumlanacaktır.",
+    "changesTitle": "Bu Şartlardaki Değişiklikler",
+    "changesText": "Rope Tech Group bu Şartları istediği zaman güncelleyebilir. Değişiklikler güncellenmiş revizyon tarihiyle bu sayfada yayınlanacaktır. Web Sitesini kullanmaya devam etmek, revize edilmiş Şartların kabul edildiği anlamına gelir.",
+    "contactTitle": "İletişim Bilgileri",
+    "contactText": "Bu Şartlar ve Koşullar hakkında sorularınız için lütfen iletişime geçin:",
+    "contactCompany": "Rope Tech Group",
+    "contactEmail": "E-posta: info@ropetechgroup.com",
+    "contactWebsite": "Web sitesi: www.ropetechgroup.ca"
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme: 22 Aralık 2025",
+    "intro1": "Rope Tech Group (\"biz\", \"bize\" veya \"bizim\") web sitesini (\"Web Sitesi\") işletmektedir. Bu Gizlilik Politikası, Web Sitemizi ziyaret ettiğinizde veya etkileşimde bulunduğunuzda kişisel bilgileri nasıl topladığımızı, kullandığımızı, sakladığımızı ve koruduğumuzu açıklar.",
+    "intro2": "Web Sitemizi kullanarak, bu Gizlilik Politikası uyarınca bilgilerin toplanmasını ve kullanılmasını kabul etmiş olursunuz.",
+    "collectTitle": "Topladığımız Bilgiler",
+    "collectIntro": "Web Sitemizi kullandığınızda veya bizimle iletişime geçtiğinizde, gönüllü olarak sağladığınız kişisel bilgileri aşağıdakiler dahil ancak bunlarla sınırlı olmamak üzere toplayabiliriz:",
+    "collectBullets": ["Ad", "E-posta adresi", "Telefon numarası", "Şirket adı", "İletişim veya sorgu formları aracılığıyla gönderdiğiniz her türlü bilgi"],
+    "useTitle": "Bilgilerinizi Nasıl Kullanıyoruz",
+    "useIntro": "Rope Tech Group tarafından toplanan kişisel bilgiler şu amaçlarla kullanılabilir:",
+    "useBullets": [
+      "Sorgulara veya taleplere yanıt vermek",
+      "Hizmetlerimiz hakkında iletişim kurmak",
+      "Teklif veya proje ile ilgili bilgi sağlamak",
+      "Web Sitemizi ve müşteri deneyimini iyileştirmek",
+      "Yasal veya düzenleyici gerekliliklere uymak"
+    ],
+    "logTitle": "Günlük Verileri",
+    "logText": "Web Sitemizi ziyaret ettiğinizde, tarayıcınız veya barındırma hizmetleri tarafından belirli bilgiler otomatik olarak toplanabilir. Buna IP adresi, tarayıcı türü ve sürümü, ziyaret edilen sayfalar, ziyaret tarihi ve saati ile sayfalarda geçirilen süre dahil olabilir. Bu bilgiler yalnızca Web Sitesi analitiği ve performans izleme amacıyla kullanılır.",
+    "cookiesTitle": "Çerezler",
+    "cookiesText": "Çerezler, Web Sitesi işlevselliğini ve kullanıcı deneyimini iyileştirmek için cihazınızda saklanan küçük veri dosyalarıdır. Rope Tech Group, Web Sitesi trafiğini analiz etmek ve kullanıcı etkileşimini anlamak için çerezler kullanabilir. Tarayıcı ayarlarınız aracılığıyla çerezleri devre dışı bırakabilirsiniz, ancak çerezler devre dışı bırakılırsa bazı Web Sitesi özellikleri düzgün çalışmayabilir.",
+    "thirdPartyTitle": "Üçüncü Taraf Hizmet Sağlayıcıları",
+    "thirdPartyText": "Web Sitesi işlevselliği, analitiği veya iletişim hizmetlerini desteklemek için güvenilir üçüncü taraf hizmet sağlayıcıları kullanabiliriz. Bu sağlayıcılar kişisel bilgilere yalnızca hizmetlerini yerine getirmek için gerekli olduğu ölçüde erişebilir ve bilgilerinizi korumak ve kötüye kullanmamak için sözleşmeyle yükümlüdür.",
+    "securityTitle": "Veri Güvenliği",
+    "securityText": "Kişisel bilgileri yetkisiz erişim, kayıp, kötüye kullanım veya ifşaya karşı korumak için makul idari, teknik ve fiziksel önlemler alıyoruz. Ancak internet üzerinden iletim veya elektronik depolama yöntemlerinin tamamen güvenli olacağı garanti edilemez.",
+    "externalTitle": "Harici Web Sitelerine Bağlantılar",
+    "externalText": "Web Sitemiz, Rope Tech Group tarafından işletilmeyen harici web sitelerine bağlantılar içerebilir. Üçüncü taraf web sitelerinin içeriğinden, gizlilik uygulamalarından veya politikalarından sorumlu değiliz. Ziyaret ettiğiniz harici web sitelerinin gizlilik politikalarını incelemenizi öneririz.",
+    "childrenTitle": "Çocukların Gizliliği",
+    "childrenText": "Web Sitemiz 18 yaşın altındaki bireyler için tasarlanmamıştır. 18 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz. Böyle bir bilginin toplandığını fark edersek derhal sileriz.",
+    "legalTitle": "Yasal Açıklama",
+    "legalText": "Kanada'daki geçerli yasa, düzenleme, mahkeme kararı veya diğer yasal süreçler gerektirdiğinde kişisel bilgileri açıklayabiliriz.",
+    "changesTitle": "Bu Gizlilik Politikasındaki Değişiklikler",
+    "changesText": "Rope Tech Group bu Gizlilik Politikasını zaman zaman güncelleyebilir. Değişiklikler revize edilmiş \"Son güncelleme\" tarihiyle bu sayfada yayınlanacaktır. Değişiklikler yayınlandıktan sonra Web Sitesini kullanmaya devam etmek, güncellenmiş Gizlilik Politikasının kabul edildiği anlamına gelir.",
+    "contactTitle": "İletişim Bilgileri",
+    "contactText": "Bu Gizlilik Politikası veya kişisel bilgilerinizin nasıl işlendiği hakkında sorularınız varsa, lütfen bizimle iletişime geçin:",
+    "contactCompany": "Rope Tech Group",
+    "contactEmail": "E-posta: info@ropetechgroup.com",
+    "contactWebsite": "Web sitesi: yourwebsite.com"
+  },
+  "seo": {
+    "homeTitle": "Ana Sayfa",
+    "homeDesc": "Kanada genelinde profesyonel halat erişimi ve endüstriyel hizmetler. Vancouver ve ötesinde bina bakımı, muayeneler ve özel erişim çözümleri için IRATA sertifikalı teknisyenler.",
+    "homeKeywords": "halat erişimi, endüstriyel hizmetler, bina bakımı, IRATA sertifikalı, Vancouver, Kanada, cephe onarımları, su yalıtımı, muayeneler",
+    "aboutTitle": "Hakkımızda",
+    "aboutDesc": "Rope Tech Group hakkında bilgi edinin — Vancouver'ın güvenilir halat erişimi uzmanları. Uzman ekip, güvenlik öncelikli yaklaşım ve Kanada genelinde endüstriyel ve bina hizmetlerinde kanıtlanmış başarı.",
+    "aboutKeywords": "Rope Tech Group hakkında, halat erişimi şirketi, Vancouver uzmanları, IRATA ekibi, endüstriyel erişim uzmanları, güvenlik kaydı",
+    "servicesTitle": "Hizmetlerimiz",
+    "servicesDesc": "Endüstriyel muayeneler, bina bakımı, cephe onarımları, su yalıtımı ve özel erişim çözümleri dahil kapsamlı halat erişimi hizmetleri. Vancouver ve Kanada genelinde hizmet veren IRATA sertifikalı profesyoneller.",
+    "servicesKeywords": "halat erişimi hizmetleri, endüstriyel muayeneler, bina bakımı, cephe onarımları, su yalıtım hizmetleri, IRATA sertifikalı, Vancouver hizmetleri",
+    "industriesTitle": "Hizmet Verdiğimiz Sektörler",
+    "industriesDesc": "Rope Tech Group, petrol ve gaz, inşaat, madencilik, altyapı ve ticari binalar dahil Kanada genelinde çeşitli sektörlere uzman halat erişimi çözümleri sunmaktadır.",
+    "industriesKeywords": "halat erişimi sektörleri, petrol ve gaz hizmetleri, inşaat erişimi, madencilik halat erişimi, altyapı bakımı, ticari bina hizmetleri",
+    "projectsTitle": "Projelerimiz",
+    "projectsDesc": "Vancouver ve Kanada genelinde tamamladığımız halat erişimi projeleri portföyümüzü görüntüleyin. Yüksek binalardan endüstriyel tesislere — uzmanlığımızı uygulamada görün.",
+    "projectsKeywords": "halat erişimi projeleri, Vancouver projeleri, bina bakım portföyü, endüstriyel erişim çalışmaları, tamamlanan projeler, vaka çalışmaları",
+    "contactTitle": "Bize Ulaşın",
+    "contactDesc": "Vancouver ve Kanada genelinde profesyonel halat erişimi hizmetleri için Rope Tech Group ile iletişime geçin. Endüstriyel veya bina projeniz için teklif veya danışmanlık talep edin.",
+    "contactKeywords": "halat erişimi iletişim, Vancouver halat erişimi, teklif al, danışmanlık, halat erişimi sorgusu, endüstriyel hizmetler iletişim",
+    "careersTitle": "Kariyer",
+    "careersDesc": "Rope Tech Group ekibine katılın. Vancouver ve Kanada genelinde büyüyen ekibimize katılmak için yetenekli IRATA sertifikalı halat erişimi teknisyenleri ve profesyoneller arıyoruz.",
+    "careersKeywords": "halat erişimi işleri, IRATA kariyer, Vancouver işleri, halat erişimi teknisyeni pozisyonları, endüstriyel işler Kanada, bina bakım kariyerleri",
+    "termsTitle": "Şartlar ve Koşullar",
+    "termsDesc": "Rope Tech Group hizmetlerini kullanma şartları ve koşulları. Hizmet sözleşmelerimizi, kullanım koşullarımızı ve yasal politikalarımızı inceleyin.",
+    "termsKeywords": "şartlar ve koşullar, hizmet sözleşmesi, kullanım koşulları, Rope Tech Group şartları, yasal politikalar",
+    "privacyTitle": "Gizlilik Politikası",
+    "privacyDesc": "Rope Tech Group gizlilik politikası. Hizmetlerimizi kullandığınızda kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin.",
+    "privacyKeywords": "gizlilik politikası, veri koruma, kişisel bilgiler, Rope Tech Group politikası",
+    "notFoundTitle": "Sayfa Bulunamadı",
+    "notFoundDesc": "Aradığınız sayfa bulunamadı. Halat erişimi hizmetlerimizi keşfetmek için Rope Tech Group ana sayfasına dönün.",
+    "notFoundKeywords": "404, sayfa bulunamadı, Rope Tech Group"
+  }
+}

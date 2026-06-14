@@ -16,6 +16,7 @@ import { ABOUT_GALLERY_IDS, useProjects } from "@/lib/projects";
 
 const AboutUs = () => {
   const { t } = useTranslation();
+  const companyName = t("common.companyName");
   const stats = [
     { value: t("aboutPage.stat1Value"), label: t("aboutPage.stat1Label") },
     { value: t("aboutPage.stat2Value"), label: t("aboutPage.stat2Label") },
@@ -60,9 +61,9 @@ const AboutUs = () => {
       <section className="relative bg-cover bg-[position:15%] lg:bg-center bg-[url('/about-us/hero.jpg')]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[40vh] lg:min-h-[70vh]">
           {/* <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between h-full gap-8"> */}
-          <div className="max-w-2xl">
+          <div className="max-w-2xl lg:-translate-y-[30px]">
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
-              {t("aboutPage.heroTitle")}
+              {t("aboutPage.heroTitle", { companyName })}
             </h1>
           </div>
           <div className="absolute bottom-[7vh] right-0">
@@ -144,7 +145,7 @@ const AboutUs = () => {
               </h2>
               <div className="max-w-[872px]">
                 <p className="text-[#292929] text-[16px] lg:text-[24px] font-semibold leading-relaxed whitespace-pre-line">
-                  {t("aboutPage.aboutText")}
+                  {t("aboutPage.aboutText", { companyName })}
                 </p>
                 <img
                   src="/home/decoration_line_wide.svg"

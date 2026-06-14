@@ -1,5 +1,6 @@
 {
   "common": {
+    "companyName": "Rope Tech Group",
     "callUs": "Call us",
     "contactUs": "Contact Us",
     "getInTouch": "Get in Touch",
@@ -25,6 +26,9 @@
   "language": {
     "en": "EN",
     "zh": "中文",
+    "ru": "RU",
+    "ka": "ქართ",
+    "tr": "TR",
     "label": "Language"
   },
   "header": {
@@ -447,14 +451,14 @@
     }
   },
   "aboutPage": {
-    "heroTitle": "About Rope Tech Group",
+    "heroTitle": "About {{companyName}}",
     "companyDetails": "Company Details",
     "businessHours": "Business Hours",
     "businessHoursValue": "Mon–Fri, 8:00 AM – 6:00 PM",
     "location": "Location",
     "locationValue": "1428 W 8th Ave, Vancouver, BC V6H 1E1",
     "aboutLabel": "ABOUT US",
-    "aboutText": "Since 2013, Rope Tech Group has provided professional rope access and high-rise maintenance services across British Columbia. Based in Vancouver, we work on residential, commercial, industrial, and infrastructure projects.\n\nOur certified technicians specialize in façade maintenance, concrete repairs, waterproofing, glazing, inspections, bridge work, industrial facilities, rock scaling, and support services for the oil and gas sector.",
+    "aboutText": "Since 2013, {{companyName}} has provided professional rope access and high-rise maintenance services across British Columbia. Based in Vancouver, we work on residential, commercial, industrial, and infrastructure projects.\n\nOur certified technicians specialize in façade maintenance, concrete repairs, waterproofing, glazing, inspections, bridge work, industrial facilities, rock scaling, and support services for the oil and gas sector.",
     "stat1Value": "95%",
     "stat1Label": "SUCCESSFUL PROJECTS",
     "stat2Value": "500+",
