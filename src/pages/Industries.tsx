@@ -1,4 +1,5 @@
 import SEO from "@/components/SEO";
+import LocaleLink from "@/components/LocaleLink";
 import { useTranslation } from "react-i18next";
 
 type IndustryItem = {
@@ -75,12 +76,12 @@ const Industries = () => {
         <div className="container mx-auto px-4 text-center xl:px-14">
           <h2 className="text-3xl font-bold mb-4">{t("industriesPage.ctaTitle")}</h2>
           <p className="text-lg text-gray-700 mb-8">{t("industriesPage.ctaDesc")}</p>
-          <a
-            href="/contact"
+          <LocaleLink
+            to="/contact"
             className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
             {t("common.contactUs")}
-          </a>
+          </LocaleLink>
         </div>
       </section>
     </div>

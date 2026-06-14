@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LocaleLink from "@/components/LocaleLink";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
@@ -62,14 +62,14 @@ const HeroSection = () => {
 
         {/* Contact Button - Mobile Only */}
         <div className="lg:hidden mt-5">
-          <Link to="/contact">
+          <LocaleLink to="/contact">
             <Button
               size="lg"
               className="w-full sm:w-auto bg-[#c3d533] hover:bg-[#c3d533]/90 text-gray-900 font-semibold px-10 py-6 text-base rounded-sm"
             >
               {t("common.contactUs")}
             </Button>
-          </Link>
+          </LocaleLink>
         </div>
 
         {/* Expertise Cards - Desktop Only */}
@@ -80,7 +80,7 @@ const HeroSection = () => {
 
           <div className="flex gap-6 w-full">
             {expertiseCards.map((card, index) => (
-              <Link key={index} to={card.link}>
+              <LocaleLink key={index} to={card.link}>
                 <div className="group relative backdrop-blur-lg py-8 px-7 rounded-r-[25px] rounded-l-[10px] cursor-pointer text-white overflow-hidden w-[343px] h-[172px] bg-white/10 transition-all">
                   <div className="absolute bg-[#c3d533] h-full w-2 left-0 top-0 z-10" />
                   <div className="flex items-center justify-between mb-10">
@@ -95,7 +95,7 @@ const HeroSection = () => {
                     {card.description}
                   </p>
                 </div>
-              </Link>
+              </LocaleLink>
             ))}
           </div>
         </div>

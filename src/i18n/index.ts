@@ -7,13 +7,19 @@ import ru from "./locales/ru.json";
 import ka from "./locales/ka.json";
 import tr from "./locales/tr.json";
 import ar from "./locales/ar.json";
+import {
+  DEFAULT_LANG,
+  getLangFromPath,
+  isSupportedLang,
+  SUPPORTED_LANGS,
+  type SupportedLang,
+} from "@/lib/localePath";
 
-const SUPPORTED_LANGS = ["en", "zh", "ru", "ka", "tr", "ar"] as const;
-const RTL_LANGS = new Set(["ar"]);
+const RTL_LANGS = new Set<SupportedLang>(["ar"]);
 
 const normalizeLang = (lng: string) => {
   const base = lng.split("-")[0];
-  return SUPPORTED_LANGS.includes(base as (typeof SUPPORTED_LANGS)[number]) ? base : "en";
+  return isSupportedLang(base) ? base : DEFAULT_LANG;
 };
 
 const updateDocumentLang = (lng: string) => {
@@ -21,6 +27,9 @@ const updateDocumentLang = (lng: string) => {
   document.documentElement.lang = lang;
   document.documentElement.dir = RTL_LANGS.has(lang) ? "rtl" : "ltr";
 };
+
+const pathLang =
+  typeof window !== "undefined" ? getLangFromPath(window.location.pathname) : null;
 
 i18n
   .use(LanguageDetector)
@@ -34,7 +43,8 @@ i18n
       tr: { translation: tr },
       ar: { translation: ar },
     },
-    fallbackLng: "en",
+    lng: pathLang ?? undefined,
+    fallbackLng: DEFAULT_LANG,
     supportedLngs: [...SUPPORTED_LANGS],
     interpolation: { escapeValue: false },
     detection: {
@@ -43,7 +53,7 @@ i18n
     },
   });
 
-updateDocumentLang(i18n.resolvedLanguage ?? "en");
+updateDocumentLang(pathLang ?? i18n.resolvedLanguage ?? DEFAULT_LANG);
 i18n.on("languageChanged", updateDocumentLang);
 
 export default i18n;

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LocaleLink from "@/components/LocaleLink";
 import { useTranslation } from "react-i18next";
 import { useZhTypography } from "@/lib/i18nHelpers";
 
@@ -89,7 +89,7 @@ const OurServicesSection = () => {
                   </div>
                 </div>
 
-                <Link to="/services/industrial-services">
+                <LocaleLink to="/services/industrial-services">
                   <button className="w-full bg-[#d9f143] text-center hover:bg-[#d9f143]/90 text-gray-900 font-semibold py-4 px-6 rounded-md flex items-center gap-4 justify-center transition-colors group">
                     <span className="text-sm lg:text-lg font-semibold">
                       {t("ourServices.exploreIndustrial")}
@@ -100,7 +100,7 @@ const OurServicesSection = () => {
                       className="w-3 h-3"
                     />
                   </button>
-                </Link>
+                </LocaleLink>
               </div>
             </div>
 
@@ -148,7 +148,7 @@ const OurServicesSection = () => {
                     </p>
                   </div>
                 </div>
-                <Link to="/services/building-services">
+                <LocaleLink to="/services/building-services">
                   <button className="w-full bg-[#d9f143] text-center hover:bg-[#d9f143]/90 text-gray-900 font-semibold py-4 px-6 rounded-md flex items-center gap-4 justify-center transition-colors group">
                     <span className="text-sm lg:text-lg  font-semibold">
                       {t("ourServices.exploreBuilding")}
@@ -159,7 +159,7 @@ const OurServicesSection = () => {
                       className="w-3 h-3"
                     />
                   </button>
-                </Link>
+                </LocaleLink>
               </div>
             </div>
           </div>

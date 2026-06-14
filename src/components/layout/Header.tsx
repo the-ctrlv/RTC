@@ -1,9 +1,11 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import LocaleLink from "@/components/LocaleLink";
+import { isNavPathActive } from "@/lib/localePath";
 import { useZhTypography } from "@/lib/i18nHelpers";
 
 const Header = () => {
@@ -57,9 +59,7 @@ const Header = () => {
     { path: "/contact", label: t("nav.contact") },
   ];
 
-  const isActive = (path: string) => {
-    return location.pathname === path;
-  };
+  const isActive = (path: string) => isNavPathActive(location.pathname, path);
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
@@ -73,27 +73,27 @@ const Header = () => {
     >
       <nav className="container mx-auto py-3.5 max-w-[1350px] px-3 lg:px-0">
         <div className="relative flex items-center justify-between">
-          <Link
+          <LocaleLink
             to="/"
             className="flex items-center z-[1000]"
             onClick={closeMobileMenu}
           >
             <img src="/logo.svg" alt="RTC Logo" className="w-[87px]" />
-          </Link>
+          </LocaleLink>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-center gap-8">
             <ul className="flex items-center gap-8">
               {navItems.map((item) => (
                 <li key={item.path}>
-                  <Link
+                  <LocaleLink
                     to={item.path}
                     className={`text-md font-medium transition-colors hover:text-[#c3d533] ${zh.nav} ${
                       isActive(item.path) ? "text-[#D9F043]" : "text-white"
                     }`}
                   >
                     {item.label}
-                  </Link>
+                  </LocaleLink>
                 </li>
               ))}
             </ul>
@@ -161,7 +161,7 @@ const Header = () => {
                 <ul className="flex flex-col items-center gap-6 mb-10">
                   {navItems.map((item) => (
                     <li key={item.path}>
-                      <Link
+                      <LocaleLink
                         to={item.path}
                         onClick={closeMobileMenu}
                         className={`text-lg font-semibold transition-colors hover:text-[#c3d533] ${
@@ -169,7 +169,7 @@ const Header = () => {
                         }`}
                       >
                         {item.label}
-                      </Link>
+                      </LocaleLink>
                     </li>
                   ))}
                 </ul>

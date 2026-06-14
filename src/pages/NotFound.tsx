@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LocaleLink from "@/components/LocaleLink";
 import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
@@ -30,14 +30,14 @@ const NotFound = () => {
         <p className="text-md sm:text-xl text-gray-300 mb-12 max-w-md mx-auto">
           {t("notFound.description")}
         </p>
-        <Link to="/">
+        <LocaleLink to="/">
           <Button
             size="lg"
             className="bg-[#c3d533] hover:bg-[#c3d533]/90 text-black font-semibold px-10 py-6 text-lg"
           >
             {t("common.backHome")}
           </Button>
-        </Link>
+        </LocaleLink>
       </div>
     </div>
   );

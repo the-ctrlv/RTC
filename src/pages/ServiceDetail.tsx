@@ -1,4 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
+import { toLocalizedPath } from "@/components/LocaleLink";
 import { ArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -55,7 +56,7 @@ const SERVICE_IMAGES: Record<string, { hero: string; what: string; images: strin
 };
 
 const ServiceDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug, lang } = useParams<{ slug: string; lang: string }>();
   const swiperRef = useRef<SwiperType | null>(null);
   const { openModal } = useContactModal();
   const { t } = useTranslation();
@@ -70,7 +71,7 @@ const ServiceDetail = () => {
 
   // If slug doesn't exist or is invalid, redirect to services page
   if (!key) {
-    return <Navigate to="/services" replace />;
+    return <Navigate to={toLocalizedPath(lang, "/services")} replace />;
   }
 
   const base = `serviceDetail.${key}`;

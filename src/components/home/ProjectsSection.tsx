@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import LocaleLink from "@/components/LocaleLink";
 import { MapPin } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
@@ -146,11 +146,11 @@ const ProjectsSection = () => {
         </Swiper>
       </div>
       <div className="block text-center container px-4 sm:px-6 lg:px-8 xl:px-14 mx-auto">
-        <Link to="/projects">
+        <LocaleLink to="/projects">
           <Button className="bg-brand-lime hover:bg-brand-lime/90 text-gray-900 lg:max-h-[50px] max-w-[200px] font-semibold px-8 sm:px-10 py-5 xl:py-6 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
             {t("common.viewAllProjects")}
           </Button>
-        </Link>
+        </LocaleLink>
       </div>
     </section>
   );

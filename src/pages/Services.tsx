@@ -1,5 +1,5 @@
 import { CTASection } from "@/components/common/CTASection";
-import { Link } from "react-router-dom";
+import LocaleLink from "@/components/LocaleLink";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 
@@ -65,7 +65,7 @@ const Services = () => {
 
                   <p className="">{service.description}</p>
 
-                  <Link to={service.link} className="mt-auto">
+                  <LocaleLink to={service.link} className="mt-auto">
                     <span
                       className="
                         inline-flex items-center gap-3
@@ -80,7 +80,7 @@ const Services = () => {
                       <span>{t("common.learnMoreCap")}</span>
                       <img src="/home/arrow_diagonal.svg" alt="" />
                     </span>
-                  </Link>
+                  </LocaleLink>
                 </div>
               </div>
             ))}

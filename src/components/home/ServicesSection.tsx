@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LocaleLink from "@/components/LocaleLink";
 import { Plus, Minus, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
@@ -105,7 +105,7 @@ const ServicesSection = () => {
             ))}
           </div>
 
-          <Link to="/services">
+          <LocaleLink to="/services">
             <div className="bg-brand-lime hover:bg-brand-lime/90 p-6 rounded-2xl flex items-center justify-between cursor-pointer transition-all group relative overflow-hidden">
               <span className="text-gray-900 font-bold text-lg pr-4">
                 Explore Our Full Range of Services
@@ -114,7 +114,7 @@ const ServicesSection = () => {
                 <ArrowRight className="w-6 h-6 text-brand-lime" />
               </div>
             </div>
-          </Link>
+          </LocaleLink>
         </div>
 
         {/* Desktop Layout */}
@@ -176,7 +176,7 @@ const ServicesSection = () => {
               </div>
             ))}
 
-            <Link to="/services">
+            <LocaleLink to="/services">
               <div className="bg-brand-lime hover:bg-brand-lime/90 p-6 rounded-2xl flex items-center justify-between cursor-pointer transition-all group mt-8">
                 <span className="text-gray-900 font-bold text-lg">
                   Explore Our Full Range of Services
@@ -185,7 +185,7 @@ const ServicesSection = () => {
                   <ArrowRight className="w-6 h-6 text-brand-lime" />
                 </div>
               </div>
-            </Link>
+            </LocaleLink>
           </div>
         </div>
       </div>

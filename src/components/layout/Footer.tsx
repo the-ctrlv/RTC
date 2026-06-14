@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { useContactModal } from "@/contexts/ContactModalContext";
 import { useTranslation } from "react-i18next";
+import LocaleLink from "@/components/LocaleLink";
 
 const Footer = () => {
   const { openModal } = useContactModal();
@@ -21,13 +21,13 @@ const Footer = () => {
         <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
           {/* Logo and Contact Info */}
           <div className="flex flex-col gap-7 items-start justify-center max-w-xs">
-            <Link to="/" className="inline-block">
+            <LocaleLink to="/" className="inline-block">
               <img
                 src="/logo.svg"
                 alt="Rope Tech Group Logo"
                 className="w-[134px] lg:w-[172px]"
               />
-            </Link>
+            </LocaleLink>
             <p className="text-[#7F7F7F]">{t("footer.tagline")}</p>
             <Button
               className="bg-[#D9F043] text-gray-600 w-full max-w-[220px] h-12 hover:bg-[#D9F043]"
@@ -127,12 +127,12 @@ const Footer = () => {
               <ul className="flex flex-col gap-[18px] lg:pe-10">
                 {links.map((link, idx) => (
                   <li key={idx}>
-                    <Link
+                    <LocaleLink
                       to={link.path}
                       className="text-sm lg:text-md text-white hover:text-white hover:underline"
                     >
                       {link.label}
-                    </Link>
+                    </LocaleLink>
                   </li>
                 ))}
               </ul>
@@ -151,18 +151,18 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex gap-6 sm:gap-8">
-              <Link
+              <LocaleLink
                 to="/terms"
                 className="text-gray-300 hover:text-brand-lime transition-colors underline"
               >
                 {t("footer.termsOfUse")}
-              </Link>
-              <Link
+              </LocaleLink>
+              <LocaleLink
                 to="/privacy"
                 className="text-gray-300 hover:text-brand-lime transition-colors underline"
               >
                 {t("footer.privacyPolicy")}
-              </Link>
+              </LocaleLink>
             </div>
           </div>
         </div>

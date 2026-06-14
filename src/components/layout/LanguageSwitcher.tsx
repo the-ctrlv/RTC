@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ChevronDown, Globe } from "lucide-react";
+import { localizedPath, useLocale } from "@/lib/localePath";
 
 const LANGUAGES = [
   { code: "en", labelKey: "language.en" },
@@ -24,6 +26,8 @@ const resolveLanguageCode = (lng?: string): LanguageCode => {
 
 const LanguageSwitcher = ({ variant = "desktop" }: LanguageSwitcherProps) => {
   const { i18n, t } = useTranslation();
+  const navigate = useNavigate();
+  const { path } = useLocale();
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -52,7 +56,7 @@ const LanguageSwitcher = ({ variant = "desktop" }: LanguageSwitcherProps) => {
   }, [open]);
 
   const changeLanguage = (code: LanguageCode) => {
-    i18n.changeLanguage(code);
+    navigate(localizedPath(code, path));
     setOpen(false);
   };
 
