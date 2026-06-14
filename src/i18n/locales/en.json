@@ -452,7 +452,7 @@
     }
   },
   "aboutPage": {
-    "heroTitle": "About {{companyName}}",
+    "heroTitle": "About<br/><ltr>{{companyName}}</ltr>",
     "companyDetails": "Company Details",
     "businessHours": "Business Hours",
     "businessHoursValue": "Mon–Fri, 8:00 AM – 6:00 PM",

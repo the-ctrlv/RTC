@@ -477,7 +477,7 @@
     }
   },
   "aboutPage": {
-    "heroTitle": "关于 {{companyName}}",
+    "heroTitle": "关于<br/><ltr>{{companyName}}</ltr>",
     "companyDetails": "公司信息",
     "businessHours": "营业时间",
     "businessHoursValue": "周一至周五，上午 8:00 – 下午 6:00",

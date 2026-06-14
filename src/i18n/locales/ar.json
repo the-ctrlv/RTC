@@ -452,7 +452,7 @@
     }
   },
   "aboutPage": {
-    "heroTitle": "عن {{companyName}}",
+    "heroTitle": "عن<br/><ltr>{{companyName}}</ltr>",
     "companyDetails": "تفاصيل الشركة",
     "businessHours": "ساعات العمل",
     "businessHoursValue": "الإثنين–الجمعة، 8:00 صباحاً – 6:00 مساءً",

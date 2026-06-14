@@ -11,7 +11,7 @@ import missonIcon from "../../public/about-us/mission.svg";
 import purposeIcon from "../../public/about-us/purpose.svg";
 import visionIcon from "../../public/about-us/vision.svg";
 import { CTASection } from "@/components/common/CTASection";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import { ABOUT_GALLERY_IDS, useProjects } from "@/lib/projects";
 
 const AboutUs = () => {
@@ -61,12 +61,19 @@ const AboutUs = () => {
       <section className="relative bg-cover bg-[position:15%] lg:bg-center bg-[url('/about-us/hero.jpg')]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[40vh] lg:min-h-[70vh]">
           {/* <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between h-full gap-8"> */}
-          <div className="max-w-2xl lg:-translate-y-[30px]">
-            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
-              {t("aboutPage.heroTitle", { companyName })}
+          <div className="max-w-2xl text-start lg:-translate-y-[30px]">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-start">
+              <Trans
+                i18nKey="aboutPage.heroTitle"
+                values={{ companyName }}
+                components={{
+                  br: <br />,
+                  ltr: <span dir="ltr" className="inline-block" />,
+                }}
+              />
             </h1>
           </div>
-          <div className="absolute bottom-[7vh] right-0">
+          <div className="absolute bottom-[7vh] end-0 flex flex-col items-end rtl:items-start">
             <div className="xl:flex items-center gap-2 mb-6 hidden">
               <span className="text-white text-base font-medium">
                 {t("aboutPage.companyDetails")}
@@ -74,13 +81,13 @@ const AboutUs = () => {
               <img
                 src="/about-us/arrow_down_right.svg"
                 alt="Decorative arrow icon"
-                className="w-5"
+                className="w-5 rtl:-scale-x-100"
               />
             </div>
 
             <div className="xl:flex flex-col sm:flex-row gap-4 hidden">
               {/* Business Hours Card */}
-              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 min-w-[260px]">
+              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 w-[260px] shrink-0">
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-brand-dark"
@@ -98,13 +105,13 @@ const AboutUs = () => {
                   </svg>
                 </div>
                 <div className="text-white text-[16px] mb-2">{t("aboutPage.businessHours")}</div>
-                <div className="text-white font-semibold text-lg">
+                <div className="text-white font-semibold text-lg leading-snug">
                   {t("aboutPage.businessHoursValue")}
                 </div>
               </div>
 
               {/* Location Card */}
-              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 min-w-[260px]">
+              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 w-[260px] shrink-0">
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-brand-dark"
@@ -127,7 +134,7 @@ const AboutUs = () => {
                   </svg>
                 </div>
                 <div className="text-white text-[16px] mb-2">{t("aboutPage.location")}</div>
-                <div className="text-white font-semibold text-lg">
+                <div className="text-white font-semibold text-lg leading-snug" dir="ltr">
                   {t("aboutPage.locationValue")}
                 </div>
               </div>

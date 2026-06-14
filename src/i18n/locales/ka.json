@@ -477,7 +477,7 @@
     }
   },
   "aboutPage": {
-    "heroTitle": "{{companyName}} შესახებ",
+    "heroTitle": "<ltr>{{companyName}}</ltr><br/>შესახებ",
     "companyDetails": "კომპანიის დეტალები",
     "businessHours": "სამუშაო საათები",
     "businessHoursValue": "ორშ–პარ, 8:00 – 18:00",

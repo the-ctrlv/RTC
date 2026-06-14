@@ -477,7 +477,7 @@
     }
   },
   "aboutPage": {
-    "heroTitle": "{{companyName}} Hakkında",
+    "heroTitle": "<ltr>{{companyName}}</ltr><br/>Hakkında",
     "companyDetails": "Şirket Bilgileri",
     "businessHours": "Çalışma Saatleri",
     "businessHoursValue": "Pzt–Cuma, 08:00 – 18:00",
