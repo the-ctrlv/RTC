@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
+import { useTranslation } from "react-i18next";
 
 const NotFound = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-brand-dark flex items-center justify-center relative overflow-hidden">
       <SEO
-        title="Page Not Found"
-        description="The page you are looking for could not be found. Return to Rope Tech Group homepage to explore our rope access services."
-        keywords="404, page not found, Rope Tech Group"
+        title={t("seo.notFoundTitle")}
+        description={t("seo.notFoundDesc")}
+        keywords={t("seo.notFoundKeywords")}
       />
       {/* Large 404 Background Text */}
       <div className="absolute inset-0 flex items-center justify-center opacity-10">
@@ -20,20 +22,20 @@ const NotFound = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-4">
-          Oops!
+          {t("notFound.oops")}
         </h2>
         <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-          Page not found!
+          {t("notFound.title")}
         </h3>
         <p className="text-md sm:text-xl text-gray-300 mb-12 max-w-md mx-auto">
-          Sorry, the page you are looking for doesn't exist.
+          {t("notFound.description")}
         </p>
         <Link to="/">
           <Button
             size="lg"
             className="bg-[#c3d533] hover:bg-[#c3d533]/90 text-black font-semibold px-10 py-6 text-lg"
           >
-            Back home
+            {t("common.backHome")}
           </Button>
         </Link>
       </div>

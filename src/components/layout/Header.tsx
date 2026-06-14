@@ -2,9 +2,14 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useZhTypography } from "@/lib/i18nHelpers";
 
 const Header = () => {
   const location = useLocation();
+  const { t } = useTranslation();
+  const zh = useZhTypography();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -44,12 +49,12 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About Us" },
-    { path: "/services", label: "Services" },
-    { path: "/careers", label: "Careers" },
-    { path: "/projects", label: "Projects" },
-    { path: "/contact", label: "Contact" },
+    { path: "/", label: t("nav.home") },
+    { path: "/about", label: t("nav.about") },
+    { path: "/services", label: t("nav.services") },
+    { path: "/careers", label: t("nav.careers") },
+    { path: "/projects", label: t("nav.projects") },
+    { path: "/contact", label: t("nav.contact") },
   ];
 
   const isActive = (path: string) => {
@@ -83,7 +88,7 @@ const Header = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className={`text-md font-medium transition-colors hover:text-[#c3d533] ${
+                    className={`text-md font-medium transition-colors hover:text-[#c3d533] ${zh.nav} ${
                       isActive(item.path) ? "text-[#D9F043]" : "text-white"
                     }`}
                   >
@@ -94,24 +99,28 @@ const Header = () => {
             </ul>
           </div>
 
-          <a
-            href="tel:+17789807798"
-            className="hidden lg:block"
-            onClick={() => trackPhoneClick("1(778)980-7798", "header_desktop")}
-          >
-            <Button
-              size="lg"
-              className="bg-[#c3d533] hover:bg-[#c3d533]/90 text-black lg:text-base font-semibold w-[146px] h-11"
+          <div className="hidden lg:flex items-center gap-3">
+            <LanguageSwitcher />
+            <a
+              href="tel:+17789807798"
+              onClick={() =>
+                trackPhoneClick("1(778)980-7798", "header_desktop")
+              }
             >
-              Call us
-            </Button>
-          </a>
+              <Button
+                size="lg"
+                className={`bg-[#c3d533] hover:bg-[#c3d533]/90 text-black lg:text-base font-semibold w-[146px] h-11 ${zh.callBtn}`}
+              >
+                {t("common.callUs")}
+              </Button>
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
             className="lg:hidden w-12 h-12 bg-[#c3d533] rounded-full flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(true)}
-            aria-label="Open menu"
+            aria-label={t("aria.openMenu")}
           >
             <Menu className="min-w-6 min-h-6 text-black" />
           </button>
@@ -139,7 +148,7 @@ const Header = () => {
                 onClick={closeMobileMenu}
                 variant="rounded"
                 className="bg-white w-12 h-12"
-                aria-label="Close mobile menu"
+                aria-label={t("aria.closeMenu")}
               >
                 <X className="w-6 h-6 text-black" />
               </Button>
@@ -165,6 +174,9 @@ const Header = () => {
                   ))}
                 </ul>
 
+                {/* Language Switcher */}
+                <LanguageSwitcher variant="mobile" />
+
                 {/* Divider */}
                 <div className="w-full border-t border-gray-600 mb-10" />
 
@@ -172,7 +184,7 @@ const Header = () => {
                 <div className="space-y-6 text-center">
                   <div>
                     <p className="text-[#c3d533] text-sm font-bold uppercase tracking-wider mb-2">
-                      Call or text us
+                      {t("header.callOrText")}
                     </p>
                     <div className="flex gap-2">
                       <a
@@ -199,7 +211,7 @@ const Header = () => {
 
                   <div>
                     <p className="text-[#c3d533] text-sm font-bold uppercase tracking-wider mb-2">
-                      Email us anytime
+                      {t("header.emailUs")}
                     </p>
                     <a
                       href="mailto:info@ropetechgroup.com"

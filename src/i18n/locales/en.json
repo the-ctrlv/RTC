@@ -1,0 +1,680 @@
+{
+  "common": {
+    "callUs": "Call us",
+    "contactUs": "Contact Us",
+    "getInTouch": "Get in Touch",
+    "learnMore": "Learn more",
+    "learnMoreCap": "Learn More",
+    "send": "Send",
+    "applyNow": "Apply Now",
+    "viewAllProjects": "View All Projects",
+    "backHome": "Back home",
+    "discussProject": "Discuss your project with us",
+    "whatSetsUsApart": "What sets us apart:",
+    "ourServices": "Our Services",
+    "ourWork": "Our Work"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "careers": "Careers",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "language": {
+    "en": "EN",
+    "zh": "中文",
+    "label": "Language"
+  },
+  "header": {
+    "callOrText": "Call or text us",
+    "emailUs": "Email us anytime"
+  },
+  "footer": {
+    "aboutUs": "About us",
+    "tagline": "Professional industrial & building access solutions across Canada.",
+    "location": "Location",
+    "locationValue": "Vancouver, Canada",
+    "emailUs": "Email us anytime",
+    "termsOfUse": "Terms of use",
+    "privacyPolicy": "Privacy policy",
+    "rights": "© {{year}} All Rights Reserved Rope Tech Group"
+  },
+  "form": {
+    "fillOutForm": "Fill Out the Form",
+    "yourName": "Your name",
+    "yourEmail": "Your e-mail",
+    "message": "Message",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "olivia@untitledui.com",
+    "messagePlaceholder": "Type something...",
+    "messagePlaceholderExperience": "Tell us about your experience...",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "successMessage": "Thank you! Your message has been sent.",
+    "errorMessage": "An error occurred. Please try again.",
+    "errorSending": "An error occurred while sending. Please try again.",
+    "applicationSuccess": "Thank you for your application! We will get back to you soon."
+  },
+  "hero": {
+    "badge": "Based in Vancouver, BC",
+    "titleLine1": "Accessing the Impossible.",
+    "titleLine2": "Safely. Efficiently.",
+    "expertiseHeading": "Checkout Our Expertise",
+    "cardServicesTitle": "Our Services",
+    "cardServicesDesc": "Experts in rope access maintenance for high-rise and hard-to-reach structures.",
+    "cardProjectsTitle": "Our Projects",
+    "cardProjectsDesc": "Explore our completed rope access and building maintenance projects."
+  },
+  "homeAbout": {
+    "label": "ABOUT US",
+    "title": "Delivering Safe & Certified Rope Access Solutions",
+    "description": "Rope Tech Group provides safe and efficient high-rise, industrial, and infrastructure services across Canada. Our IRATA-certified technicians use advanced rope access methods to reach complex areas with minimal disruption. We focus on reliability, safety standards, and professional execution to support projects of any scale and complexity.",
+    "stat1Value": "95%",
+    "stat1Label": "SUCCESSFUL PROJECTS DELIVERED NATIONWIDE",
+    "stat2Value": "500+",
+    "stat2Label": "SUCCESSFUL PROJECTS ACROSS CANADA"
+  },
+  "benefits": {
+    "label": "WHY CHOOSE US",
+    "title": "Key Benefits of Working With Us",
+    "description": "We focus on delivering precise, reliable results in complex environments—through clear communication, strong planning, and execution you can trust.",
+    "expertiseTitle": "Expertise",
+    "expertiseDesc": "Our team consists of trained and certified rope access technicians with hands-on experience in industrial and building environments.",
+    "qualityTitle": "Quality",
+    "qualityDesc": "We maintain the highest safety and performance standards, delivering reliable results backed by award-winning expertise.",
+    "costTitle": "Cost-effectiveness",
+    "costDesc": "We can lower project costs by over 50% compared to traditional techniques without compromising quality or safety."
+  },
+  "ourServices": {
+    "label": "SERVICES",
+    "title": "Our Services",
+    "description": "Our team provides specialized industrial and building services that ensure safety, reliability, and long-term performance. We deliver professional maintenance, inspection, and repair solutions — even in hard-to-access areas.",
+    "industrialTitle": "Industrial Services",
+    "industrialItem1Title": "Access, Safety & Fall Protection",
+    "industrialItem1Desc": "Engineered access, fall protection, and confined space solutions for industrial environments.",
+    "industrialItem2Title": "Inspections, Maintenance & Reliability",
+    "industrialItem2Desc": "Inspections, maintenance, and repair services supporting long-term asset performance.",
+    "industrialItem3Title": "Specialized & High-Risk Operations",
+    "industrialItem3Desc": "Shutdowns, emergency response, rescue operations, and complex lifting tasks.",
+    "exploreIndustrial": "Explore Industrial Services",
+    "buildingTitle": "Building Services",
+    "buildingItem1Title": "Access, Safety & Fall Protection",
+    "buildingItem1Desc": "Safe access systems and fall protection solutions for residential and commercial buildings.",
+    "buildingItem2Title": "Envelope Inspections & Maintenance",
+    "buildingItem2Desc": "Façade inspections, maintenance, and repair services to extend building lifespan.",
+    "buildingItem3Title": "Envelope Restoration & Repairs",
+    "buildingItem3Desc": "Concrete repairs, waterproofing, glazing, and exterior envelope improvements.",
+    "exploreBuilding": "Explore Building Services"
+  },
+  "projectsSection": {
+    "label": "OUR WORK",
+    "title": "Latest Projects"
+  },
+  "projectTags": {
+    "Rope Access Glazing": "Rope Access Glazing",
+    "Sealant Applications": "Sealant Applications",
+    "Sealant Application": "Sealant Application",
+    "Rope Access System": "Rope Access System",
+    "Sunshade Installation": "Sunshade Installation",
+    "Water Ingress Investigations": "Water Ingress Investigations",
+    "Concrete Repairs": "Concrete Repairs",
+    "Painting": "Painting",
+    "Liquid Membrane Replacement": "Liquid Membrane Replacement",
+    "Flashing Installation": "Flashing Installation",
+    "Sealant Replacement": "Sealant Replacement",
+    "Fish Tank Installation": "Fish Tank Installation",
+    "Rope Access Glass Replacement": "Rope Access Glass Replacement",
+    "Glass Replacement": "Glass Replacement",
+    "Heat Trace Cable Installation": "Heat Trace Cable Installation",
+    "Rope Access Membrane Application": "Rope Access Membrane Application"
+  },
+  "projectsData": {
+    "cardero": {
+      "title": "Cardero",
+      "location": "620 Cardero St,Vancouver,BC",
+      "subtitle": "1550 Alberni St",
+      "tags": ["Rope Access Glazing", "Sealant Application"]
+    },
+    "jimPattisonToyota": {
+      "title": "Jim Pattison Toyota",
+      "location": "Jim Pattison Toyota Downtown",
+      "subtitle": "1290 Burrard St",
+      "tags": ["Rope Access Glazing"]
+    },
+    "westGeorgia400": {
+      "title": "400 West Georgia",
+      "location": "400 West Georgia, Vancouver",
+      "subtitle": "Downtown Vancouver",
+      "tags": ["Sealant Application", "Rope Access Glazing"]
+    },
+    "kelticPlace": {
+      "title": "Keltic Place",
+      "location": "Keltic Place, Richmond",
+      "subtitle": "6388 No. 3 Road",
+      "tags": ["Sunshade Installation", "Sealant Application"]
+    },
+    "parkTowers": {
+      "title": "Park Towers",
+      "location": "Minoru Boulevard, Richmond",
+      "subtitle": "6080 Minoru Blvd",
+      "tags": [
+        "Water Ingress Investigations",
+        "Concrete Repairs",
+        "Painting",
+        "Liquid Membrane Replacement"
+      ]
+    },
+    "businessCenterLangley": {
+      "title": "Business Center, Langley",
+      "location": "Langley Twp, BC",
+      "subtitle": "8700 88 Ave W ",
+      "tags": [
+        "Water Ingress Investigations",
+        "Flashing Installation",
+        "Sealant Replacement",
+        "Fish Tank Installation"
+      ]
+    },
+    "bayshoreGardens": {
+      "title": "Bayshore Gardens",
+      "location": "1710 Bayshore Drive, Vancouver",
+      "subtitle": "Bayshore Gardens",
+      "tags": ["Rope Access Glass Replacement"]
+    },
+    "georgia401": {
+      "title": "401 W Georgia Street",
+      "location": "401 W Georgia Street, Vancouver",
+      "subtitle": "Canada Place Area",
+      "tags": ["Rope Access Glass Replacement"]
+    },
+    "theGrande": {
+      "title": "The Grande",
+      "location": "The Grande, Port Moody",
+      "subtitle": "300 Morrissey Road",
+      "tags": ["Rope Access Glass Replacement", "Sealant Application"]
+    },
+    "riverGreen": {
+      "title": "River Green",
+      "location": "River Green, Richmond",
+      "subtitle": "5177 Bridgehouse Way",
+      "tags": ["Glass Replacement", "Sealant Application"]
+    },
+    "fourSeasonsResort": {
+      "title": "Four Seasons Resort",
+      "location": "Four Seasons Resort, Whistler",
+      "subtitle": "4591 Blackcomb Way",
+      "tags": ["Heat Trace Cable Installation"]
+    },
+    "soleil": {
+      "title": "Soleil",
+      "location": "Soleil, White Rock",
+      "subtitle": "1588 Johnston Road",
+      "tags": ["Rope Access Membrane Application"]
+    },
+    "theErickson": {
+      "title": "The Erickson",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "theDouglas": {
+      "title": "The Douglas",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "woodwards": {
+      "title": "Woodwards",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "vancouverHouse": {
+      "title": "Vancouver House",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "teckResources": {
+      "title": "Teck Resources",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "woodfibreLng": {
+      "title": "Woodfibre LNG",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "imperialOil": {
+      "title": "Imperial Oil",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "suncorEnergy": {
+      "title": "Suncor Energy",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "syncrudeCanada": {
+      "title": "Syncrude Canada",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    }
+  },
+  "testimonials": {
+    "label": "TESTIMONIALS",
+    "title": "Hear From Our Clients",
+    "t1": "We have worked with this rope access team on multiple projects involving concrete repairs, coatings, membrane applications, and crack injection. Their crew consistently delivers high-quality workmanship and adapts well to complex site conditions. Reliable, knowledgeable, and safety focused — a great partner on challenging projects.",
+    "t1Author": "Dan Miller",
+    "t1Role": "Norsco Construction LTD",
+    "t2": "Very professional rope access company. The team worked safely, stayed on schedule, and delivered quality results.",
+    "t2Author": "Steven Danzing",
+    "t2Role": "Metalife LTD",
+    "t3": "We partnered with this company on several glass replacement projects where access was extremely limited. Their rope access technicians made complex installations possible without delays. Excellent coordination, strong safety practices, and great results.",
+    "t3Author": "Merle Beck",
+    "t3Role": "Action Glass Inc.",
+    "t4": "We have collaborated on many high-rise glass replacement and installation projects across the Lower Mainland. Their rope access support allowed us to complete work in very hard-to-reach areas, including cladding assistance. Skilled technicians, smooth coordination, and professional execution every time.",
+    "t4Author": "Sergii Popkov",
+    "t4Role": "High Rise Glass LTD",
+    "t5": "Professional rope access team. Work was completed safely, on time, and to a high standard.",
+    "t5Author": "Dennis Lesik",
+    "t5Role": "Siber Facade Group LTD",
+    "t6": "Strong rope access glazing support on multiple projects. Their technicians were experienced, efficient, and integrated well with our installation crews. A reliable partner for complex glazing work at height.",
+    "t6Author": "Pavel Sokolov",
+    "t6Role": "Altitude Installations LTD",
+    "t7": "We worked with this company on a large project involving the installation of a heat trace cable system on our building. The work was completed safely, professionally, and with minimal disruption to operations. Excellent planning, execution, and communication throughout the project.",
+    "t7Author": "Darren Boyd",
+    "t7Role": "Four Seasons Resort Whistler",
+    "t8": "We engaged this team for several industrial rope access and construction-related projects. Their ability to safely access difficult areas and deliver quality results made them a valuable contractor on our sites. Professional, responsive, and safety driven.",
+    "t8Author": "Stan Phillips",
+    "t8Role": "Pomerleau LTD",
+    "t9": "They assisted us with high-rise inspections, window system support, and water leak investigations. Their rope access approach allowed for thorough assessments without invasive methods. Clear reporting, strong technical knowledge, and professional service.",
+    "t9Author": "James Payette",
+    "t9Role": "Tribe Management Inc."
+  },
+  "cta": {
+    "readyLine1": "Ready to Work",
+    "readyLine2": "With Us?",
+    "discussLine1": "Let's Discuss Your",
+    "discussLine2": "Project",
+    "readyTitle": "Ready to Work With Us?",
+    "discussTitle": "Let's Discuss Your Project"
+  },
+  "modal": {
+    "close": "Close modal"
+  },
+  "aria": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close mobile menu",
+    "prevSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "contactForm": "Navigate to contact form",
+    "locationIcon": "Location icon",
+    "decorativeLine": "Decorative line element",
+    "decorativeDivider": "Decorative divider",
+    "mapPin": "Map pin",
+    "projectImageAlt": "{{title}} building project - completed rope access work",
+    "galleryProjectAlt": "{{title}} - completed rope access project showcasing our work",
+    "quoteMark": "Quote mark"
+  },
+  "contactSection": {
+    "label": "CONTACT US",
+    "title": "Get in Touch",
+    "email": "EMAIL",
+    "phone": "PHONE",
+    "location": "LOCATION",
+    "locationValue": "142B W 8th Ave,Vancouver, BC V6H 1E1"
+  },
+  "servicesPage": {
+    "title": "Services",
+    "industrialTitle": "Industrial Services",
+    "industrialDesc": "We provide safe, compliant, and efficient access and maintenance solutions for industrial facilities, infrastructure, and complex environments — supporting critical operations and large-scale projects across Canada.",
+    "buildingTitle": "Building Services",
+    "buildingDesc": "We deliver comprehensive building envelope solutions focused on durability, weather protection, and long-term performance for residential, commercial, and institutional buildings — from low-rise to high-rise projects across Canada."
+  },
+  "serviceDetail": {
+    "serviceOverview": "Service Overview",
+    "ourServices": "Our Services",
+    "ourWork": "Our Work",
+    "whyChooseUs": "Why choose us",
+    "discussCta": "Discuss your project with us",
+    "whatSetsUsApart": "What sets us apart:",
+    "industrial": {
+      "title": "Industrial Services",
+      "seoDescription": "Professional industrial rope access services across Canada. IRATA-certified technicians for inspections, maintenance, and specialized operations. Safe, efficient, and cost-effective solutions.",
+      "seoKeywords": "industrial rope access, IRATA certified, industrial inspections, maintenance services, rope access Canada, industrial access solutions",
+      "heroTitle": "Industrial Services",
+      "whatTitle": "Industrial Rope Access Services",
+      "whatDescription": "Many industrial facilities have areas that are difficult or impossible to reach using conventional access methods. Rope access provides a safe, efficient, and cost-effective solution for inspections, repairs, and maintenance where scaffolding or lifts are impractical. <br /><br /> Our certified rope access technicians complete work faster, reduce site disruption, and lower overall project costs while maintaining the highest safety standards.",
+      "keyServicesTitle": "Key Rope Access Services We Provide",
+      "service1Title": "Access, Safety & Fall Protection",
+      "service1Content": "Certified access and fall protection solutions for complex and high-risk industrial environments.",
+      "service1Bullets": [
+        "Engineered access platforms and certified fall protection systems",
+        "Confined space entry services (work execution and safety standby)",
+        "Safety netting, bird control, and debris containment systems",
+        "Rockfall protection systems, mesh, and stabilization installations"
+      ],
+      "service2Title": "Inspections, Maintenance & Reliability",
+      "service2Content": "Inspection, maintenance, and reliability services supporting long-term asset performance.",
+      "service2Bullets": [
+        "Structural inspections, testing, and condition assessments",
+        "Mechanical and electrical inspections, repairs, and installations",
+        "Equipment maintenance and reliability services",
+        "Corrosion protection, surface preparation, and industrial coatings",
+        "Thermal insulation, acoustic control, and heat-loss protection",
+        "Sealing, waterproofing, and joint systems"
+      ],
+      "service3Title": "Specialized & High-Risk Operations",
+      "service3Content": "Specialized rope access operations for shutdowns, emergency response, and heavy-duty industrial work.",
+      "service3Bullets": [
+        "Shutdowns and Turnarounds (TAR) support",
+        "Emergency response and technical rope rescue",
+        "Rigging, lifting, and load handling operations",
+        "Structural steel repairs, on-site welding, and fabrication support",
+        "Rock scaling, slope stabilization, and loose rock removal"
+      ],
+      "realConditionsTitle": "Our Work in Real Conditions",
+      "whyChooseTitle": "Why Choose <br /> Rope Tech Group <br /> for Industrial Services?",
+      "whyChooseDescription": "Rope Tech Group delivers safe, efficient, and compliant rope access solutions performed by highly trained IRATA technicians. We work with precision, provide consistent results, and tailor each project to the specific challenges of your site.",
+      "reasons": [
+        "IRATA-certified rope access technicians",
+        "Zero-accident safety record",
+        "Fast mobilisation and flexible scheduling",
+        "Cost-effective solutions",
+        "Proven experience across complex industrial sites",
+        "Fully insured and compliant with all regulations",
+        "Strong quality control and documentation standards"
+      ]
+    },
+    "building": {
+      "title": "Building Services",
+      "seoDescription": "Expert building maintenance and repair services in Vancouver and across Canada. Specialized in waterproofing, concrete repairs, facade restoration, and building envelope solutions.",
+      "seoKeywords": "building maintenance, waterproofing services, concrete repairs, facade restoration, building envelope, rope access building services, Vancouver",
+      "heroTitle": "Building Services",
+      "whatTitle": "Building & <br /> Commercial Services",
+      "whatDescription": "We provide professional building maintenance and repair services to protect structural integrity and prevent water damage. Our work includes concrete repairs, crack injection, waterproofing, and exterior maintenance.<br /><br />Using efficient access methods, including rope access when required, we deliver reliable, high-quality results with minimal disruption to building operations.",
+      "keyServicesTitle": "Key Rope Access Services We Provide",
+      "service1Title": "Access, Safety & Fall Protection",
+      "service1Content": "Safe access and fall protection systems supporting façade inspections, maintenance, and repair work on buildings of all heights.",
+      "service1Bullets": [
+        "Building envelope inspections, assessments, and condition reports",
+        "Façade inspections and access support for engineers and consultants",
+        "Engineering assistance, technical support, and constructability input",
+        "Fall protection and permanent lifeline system installations",
+        "Bird deterrent and debris netting systems"
+      ],
+      "service2Title": "Envelope Inspections & Maintenance",
+      "service2Content": "Preventative inspections and maintenance to protect building envelopes and extend lifespan.",
+      "service2Bullets": [
+        "Water ingress investigations and leak diagnostics",
+        "Sealant removal and replacement for windows, expansion joints, and control joints, including window system fish tank installation",
+        "Planned preventative maintenance (PPM) for building envelopes",
+        "Thermal and air barrier repairs and upgrades",
+        "Heat trace system installation, inspection, and maintenance"
+      ],
+      "service3Title": "Envelope Restoration & Repairs",
+      "service3Content": "Building envelope restoration and repairs to prevent water intrusion and structural damage.",
+      "service3Bullets": [
+        "Waterproofing systems for façades, podiums, balconies, and roofs",
+        "Concrete repairs, crack injection, spall repairs, and restoration",
+        "Protective coatings and elastomeric membrane applications",
+        "Window, glazing, and curtain wall repairs and replacements",
+        "Flashing installation and repairs at façade and roof interfaces",
+        "Cladding system inspections, repairs, and installations",
+        "Balcony repairs, traffic coatings, and guardrail systems",
+        "Exterior insulation and finish system (EIFS) repairs",
+        "Exterior painting, surface preparation, and façade cleaning"
+      ],
+      "realConditionsTitle": "Our Work in Real Conditions",
+      "whyChooseTitle": "Why Choose <br /> Rope Tech Group <br />for Building Services?",
+      "whyChooseDescription": "Rope Tech Group delivers safe, efficient, and compliant rope access solutions performed by highly trained IRATA technicians. We work with precision, provide consistent results, and tailor each project to the specific challenges of your site.",
+      "reasons": [
+        "Certified building specialists",
+        "Comprehensive service portfolio",
+        "Quality workmanship guaranteed",
+        "Timely project delivery",
+        "Competitive pricing",
+        "Full insurance coverage"
+      ]
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "About Rope Tech Group",
+    "companyDetails": "Company Details",
+    "businessHours": "Business Hours",
+    "businessHoursValue": "Mon–Fri, 8:00 AM – 6:00 PM",
+    "location": "Location",
+    "locationValue": "1428 W 8th Ave, Vancouver, BC V6H 1E1",
+    "aboutLabel": "ABOUT US",
+    "aboutText": "Since 2013, Rope Tech Group has provided professional rope access and high-rise maintenance services across British Columbia. Based in Vancouver, we work on residential, commercial, industrial, and infrastructure projects.\n\nOur certified technicians specialize in façade maintenance, concrete repairs, waterproofing, glazing, inspections, bridge work, industrial facilities, rock scaling, and support services for the oil and gas sector.",
+    "stat1Value": "95%",
+    "stat1Label": "SUCCESSFUL PROJECTS",
+    "stat2Value": "500+",
+    "stat2Label": "Completed Jobs",
+    "stat3Value": "15+",
+    "stat3Label": "YEARS EXPERIENCE",
+    "stat4Value": "100%",
+    "stat4Label": "SAFETY FOCUS",
+    "approachLabel": "OUR APPROACH",
+    "approachTitle": "The Principles Behind Our Work",
+    "approachDescription": "We focus on safety, efficiency, and minimal disruption, using proven rope access techniques to deliver reliable results at height and in hard-to-reach locations.",
+    "missionTitle": "Mission",
+    "missionDesc": "To deliver precise, reliable rope access solutions that solve complex challenges efficiently.",
+    "visionTitle": "Vision",
+    "visionDesc": "To be a trusted long-term partner for high-rise and industrial maintenance projects.",
+    "purposeTitle": "Purpose",
+    "purposeDesc": "To help clients extend the life of their assets through smart, well-executed access solutions.",
+    "safetyLabel": "OUR SAFETY STANDARDS",
+    "safetyTitle": "Safety & Certifications",
+    "safetyDescription": "Safety is the foundation of every project we take on. Our team works in accordance with internationally recognized rope access standards and follows established safety procedures on every site.",
+    "certifications": [
+      "IRATA-certified rope access technicians",
+      "Regular safety and skills training",
+      "Full equipment inspection, logging, and maintenance",
+      "Site-specific risk assessments and rescue planning",
+      "Compliance with regional workplace and industry regulations"
+    ],
+    "workLabel": "OUR WORK",
+    "workTitle": "Our Work in Real Conditions"
+  },
+  "projectsPage": {
+    "title": "Our Projects"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "email": "EMAIL",
+    "phone": "PHONE",
+    "location": "LOCATION",
+    "locationValue": "142B W 8th Ave, Vancouver, BC V6H 1E1"
+  },
+  "careersPage": {
+    "title": "Join Our Team",
+    "intro": "We're always looking for skilled, motivated, and safety-driven professionals to join our team.",
+    "paragraph1": "If you have experience in rope access, building envelope work, inspections, maintenance, or industrial operations — we'd love to hear from you.",
+    "paragraph2": "At Rope Tech Group, we value professionalism, teamwork, and a strong commitment to safety and quality. Whether you're an experienced specialist or looking to grow your career in a challenging, hands-on environment, we encourage you to submit your application.",
+    "formTitle": "Submit Your Application"
+  },
+  "industriesPage": {
+    "title": "Industries We Serve",
+    "subtitle": "Specialized solutions for diverse sectors",
+    "expertiseTitle": "Industry Expertise",
+    "expertiseDesc": "We bring deep industry knowledge and technical expertise to deliver solutions that address the unique challenges and requirements of each sector.",
+    "keySolutions": "Key Solutions:",
+    "ctaTitle": "Don't See Your Industry?",
+    "ctaDesc": "We work with businesses across all sectors. Contact us to discuss your specific needs.",
+    "items": [
+      {
+        "title": "Healthcare",
+        "description": "HIPAA-compliant solutions for hospitals, clinics, and healthcare providers to improve patient care and streamline operations.",
+        "solutions": ["Electronic Health Records", "Telemedicine Platforms", "Patient Portals", "Healthcare Analytics"]
+      },
+      {
+        "title": "Finance & Banking",
+        "description": "Secure and scalable financial technology solutions for banks, fintech companies, and financial institutions.",
+        "solutions": ["Mobile Banking", "Payment Gateways", "Trading Platforms", "Risk Management Systems"]
+      },
+      {
+        "title": "E-Commerce",
+        "description": "Robust e-commerce platforms and solutions to help businesses grow their online presence and sales.",
+        "solutions": ["Online Stores", "Inventory Management", "Payment Integration", "Customer Analytics"]
+      },
+      {
+        "title": "Education",
+        "description": "Innovative educational technology solutions for schools, universities, and online learning platforms.",
+        "solutions": ["Learning Management Systems", "Virtual Classrooms", "Student Portals", "Assessment Tools"]
+      },
+      {
+        "title": "Manufacturing",
+        "description": "Digital transformation solutions to optimize production, supply chain, and operations management.",
+        "solutions": ["IoT Integration", "Supply Chain Management", "Quality Control Systems", "Production Analytics"]
+      },
+      {
+        "title": "Real Estate",
+        "description": "Technology solutions for property management, real estate agents, and property developers.",
+        "solutions": ["Property Management Systems", "Virtual Tours", "CRM Solutions", "Listing Platforms"]
+      },
+      {
+        "title": "Retail",
+        "description": "Omnichannel retail solutions to enhance customer experience and operational efficiency.",
+        "solutions": ["POS Systems", "Inventory Tracking", "Customer Loyalty Programs", "Sales Analytics"]
+      },
+      {
+        "title": "Logistics & Transportation",
+        "description": "Smart logistics solutions for transportation companies, freight forwarders, and delivery services.",
+        "solutions": ["Fleet Management", "Route Optimization", "Tracking Systems", "Warehouse Management"]
+      }
+    ]
+  },
+  "notFound": {
+    "oops": "Oops!",
+    "title": "Page not found!",
+    "description": "Sorry, the page you are looking for doesn't exist."
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last updated: December 22, 2025",
+    "intro1": "These Terms and Conditions (\"Terms\") govern your access to and use of the website (the \"Website\") operated by Rope Tech Group (\"Company\", \"we\", \"us\", or \"our\").",
+    "intro2": "By accessing or using this Website, you agree to be bound by these Terms. If you do not agree, please do not use this Website.",
+    "websiteUseTitle": "Website Use",
+    "websiteUseText": "This Website is provided for general informational purposes regarding rope access, inspection, maintenance, and related services offered by Rope Tech Group. You agree to use the Website in compliance with all applicable federal, provincial, and municipal laws in Canada.",
+    "noAdviceTitle": "No Professional or Safety Advice",
+    "noAdviceText": "Content on this Website does not constitute engineering, legal, or safety advice. All projects require site-specific assessments, safe work planning, and formal agreements before any work is performed.",
+    "disclaimerTitle": "Rope Access & Safety Disclaimer",
+    "disclaimerText": "All rope access services provided by Rope Tech Group are subject to site-specific risk assessments, approved work methods, and applicable safety standards, including but not limited to IRATA, SPRAT, CSA, and provincial occupational health and safety regulations.",
+    "clientsResponsible": "Clients are responsible for:",
+    "clientsBullets": [
+      "Providing safe and legal access to the work site.",
+      "Ensuring the suitability of structural elements and anchor points (unless otherwise agreed in writing).",
+      "Disclosing known hazards, restrictions or environmental conditions."
+    ],
+    "suspendText": "Rope Tech Group reserves the right to suspend or refuse work if conditions are deemed unsafe.",
+    "estimatesTitle": "Estimates, Quotes & Scope of Work",
+    "estimatesText": "Any pricing, timelines, or service descriptions displayed on this Website are for general information only and do not constitute a binding offer.",
+    "finalPricing": "Final pricing and scope of work are subject to:",
+    "finalPricingBullets": [
+      "Site inspections",
+      "Access conditions",
+      "Weather and environmental factors",
+      "Unforeseen or hidden conditions"
+    ],
+    "bindingText": "Only a written quotation or contract issued by Rope Tech Group shall be considered binding.",
+    "ipTitle": "Intellectual Property",
+    "ipText": "All Website content, including text, images, logos, graphics, and design elements, is the exclusive property of Rope Tech Group or its licensors and is protected under Canadian intellectual property laws.",
+    "thirdPartyTitle": "Third-Party Links",
+    "thirdPartyText": "This Website may contain links to third-party websites for convenience. Rope Tech Group does not control or endorse those websites and is not responsible for their content or practices. Access to third-party websites is at your own risk.",
+    "liabilityTitle": "Limitation of Liability",
+    "liabilityText": "To the fullest extent permitted by Canadian law, Rope Tech Group shall not be liable for any damages arising from your use of, or reliance on, this Website or its content, including indirect or consequential losses.",
+    "availabilityTitle": "Website Availability",
+    "availabilityText": "Rope Tech Group does not guarantee uninterrupted access to the Website and may modify or discontinue Website content at any time without notice.",
+    "terminationTitle": "Termination",
+    "terminationText": "We reserve the right to restrict or terminate access to the Website at our sole discretion, without notice, if these Terms are violated or for any lawful reason.",
+    "governingTitle": "Governing Law",
+    "governingText": "These Terms shall be governed by and interpreted in accordance with the laws of Canada and the Province of British Columbia without regard to conflict of law rules.",
+    "changesTitle": "Changes to These Terms",
+    "changesText": "Rope Tech Group may update these Terms at any time. Changes will be posted on this page with an updated revision date. Continued use of the Website constitutes acceptance of the revised Terms.",
+    "contactTitle": "Contact Information",
+    "contactText": "For questions regarding these Terms and Conditions, please contact:",
+    "contactCompany": "Rope Tech Group",
+    "contactEmail": "Email: info@ropetechgroup.com",
+    "contactWebsite": "Website: www.ropetechgroup.ca"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: December 22, 2025",
+    "intro1": "Rope Tech Group (\"we\", \"us\", or \"our\") operates the website (the \"Website\"). This Privacy Policy explains how we collect, use, store, and protect personal information when you visit or interact with our Website.",
+    "intro2": "By using our Website, you consent to the collection and use of information in accordance with this Privacy Policy.",
+    "collectTitle": "Information We Collect",
+    "collectIntro": "When you use our Website or contact us, we may collect personal information that you voluntarily provide, including but not limited to:",
+    "collectBullets": ["Name", "Email address", "Phone number", "Company name", "Any information you submit through contact or inquiry forms"],
+    "useTitle": "How We Use Your Information",
+    "useIntro": "Personal information collected by Rope Tech Group may be used to:",
+    "useBullets": [
+      "Respond to inquiries or requests",
+      "Communicate regarding our services",
+      "Provide quotations or project-related information",
+      "Improve our Website and customer experience",
+      "Comply with legal or regulatory requirements"
+    ],
+    "logTitle": "Log Data",
+    "logText": "When you visit our Website, certain information may be collected automatically by your browser or hosting services. This may include IP address, browser type and version, pages visited, date and time of visits, and time spent on pages. This information is used for Website analytics and performance monitoring only.",
+    "cookiesTitle": "Cookies",
+    "cookiesText": "Cookies are small data files stored on your device to improve Website functionality and user experience. Rope Tech Group may use cookies to analyze Website traffic and understand user interaction. You can disable cookies via your browser settings, but some Website features may not function properly if cookies are disabled.",
+    "thirdPartyTitle": "Third-Party Service Providers",
+    "thirdPartyText": "We may use trusted third-party service providers to support Website functionality, analytics, or communication services. These providers may have access to personal information only as required to perform their services and are contractually obligated to protect and not misuse your information.",
+    "securityTitle": "Data Security",
+    "securityText": "We take reasonable administrative, technical, and physical measures to protect personal information against unauthorized access, loss, misuse, or disclosure. However, no method of transmission over the internet or electronic storage can be guaranteed to be completely secure.",
+    "externalTitle": "Links to External Websites",
+    "externalText": "Our Website may contain links to external websites not operated by Rope Tech Group. We are not responsible for the content, privacy practices, or policies of third-party websites. We encourage you to review the privacy policies of any external websites you visit.",
+    "childrenTitle": "Children's Privacy",
+    "childrenText": "Our Website is not intended for individuals under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that such information has been collected, we will delete it promptly.",
+    "legalTitle": "Legal Disclosure",
+    "legalText": "We may disclose personal information when required to do so by applicable law, regulation, court order, or other legal process in Canada.",
+    "changesTitle": "Changes to This Privacy Policy",
+    "changesText": "Rope Tech Group may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised \"Last updated\" date. Continued use of the Website after changes are posted constitutes acceptance of the updated Privacy Policy.",
+    "contactTitle": "Contact Information",
+    "contactText": "If you have any questions about this Privacy Policy or how your personal information is handled, please contact us:",
+    "contactCompany": "Rope Tech Group",
+    "contactEmail": "Email: info@ropetechgroup.com",
+    "contactWebsite": "Website: yourwebsite.com"
+  },
+  "seo": {
+    "homeTitle": "Home",
+    "homeDesc": "Professional rope access and industrial services across Canada. IRATA-certified technicians for building maintenance, inspections, and specialized access solutions in Vancouver and beyond.",
+    "homeKeywords": "rope access, industrial services, building maintenance, IRATA certified, Vancouver, Canada, facade repairs, waterproofing, inspections",
+    "aboutTitle": "About Us",
+    "aboutDesc": "Learn about Rope Tech Group - Vancouver's trusted rope access specialists. Expert team, safety-first approach, and proven track record in industrial and building services across Canada.",
+    "aboutKeywords": "about Rope Tech Group, rope access company, Vancouver specialists, IRATA team, industrial access experts, safety record",
+    "servicesTitle": "Our Services",
+    "servicesDesc": "Comprehensive rope access services including industrial inspections, building maintenance, facade repairs, waterproofing, and specialized access solutions. IRATA-certified professionals serving Vancouver and Canada.",
+    "servicesKeywords": "rope access services, industrial inspections, building maintenance, facade repairs, waterproofing services, IRATA certified, Vancouver services",
+    "industriesTitle": "Industries We Serve",
+    "industriesDesc": "Rope Tech Group serves diverse industries with specialized rope access solutions including oil & gas, construction, mining, infrastructure, and commercial buildings across Canada.",
+    "industriesKeywords": "rope access industries, oil and gas services, construction access, mining rope access, infrastructure maintenance, commercial building services",
+    "projectsTitle": "Our Projects",
+    "projectsDesc": "View our portfolio of completed rope access projects across Vancouver and Canada. From high-rise buildings to industrial facilities - see our expertise in action.",
+    "projectsKeywords": "rope access projects, Vancouver projects, building maintenance portfolio, industrial access work, completed projects, case studies",
+    "contactTitle": "Contact Us",
+    "contactDesc": "Get in touch with Rope Tech Group for professional rope access services in Vancouver and across Canada. Request a quote or consultation for your industrial or building project.",
+    "contactKeywords": "contact rope access, Vancouver rope access, get quote, consultation, rope access inquiry, industrial services contact",
+    "careersTitle": "Careers",
+    "careersDesc": "Join the Rope Tech Group team. We're looking for skilled IRATA-certified rope access technicians and professionals to join our growing team in Vancouver and across Canada.",
+    "careersKeywords": "rope access jobs, IRATA careers, Vancouver jobs, rope access technician positions, industrial jobs Canada, building maintenance careers",
+    "termsTitle": "Terms and Conditions",
+    "termsDesc": "Terms and conditions for using Rope Tech Group's services. Review our service agreements, terms of use, and legal policies.",
+    "termsKeywords": "terms and conditions, service agreement, terms of use, Rope Tech Group terms, legal policies",
+    "privacyTitle": "Privacy Policy",
+    "privacyDesc": "Rope Tech Group's privacy policy. Learn how we collect, use, and protect your personal information when you use our services.",
+    "privacyKeywords": "privacy policy, data protection, personal information, Rope Tech Group policy",
+    "notFoundTitle": "Page Not Found",
+    "notFoundDesc": "The page you are looking for could not be found. Return to Rope Tech Group homepage to explore our rope access services.",
+    "notFoundKeywords": "404, page not found, Rope Tech Group"
+  }
+}

@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { useContactModal } from "@/contexts/ContactModalContext";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { openModal } = useContactModal();
+  const { t } = useTranslation();
   const links = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About us" },
-    { path: "/services", label: "Services" },
-    { path: "/careers", label: "Careers" },
-    { path: "/projects", label: "Projects" },
-    { path: "/contact", label: "Contact" },
+    { path: "/", label: t("nav.home") },
+    { path: "/about", label: t("footer.aboutUs") },
+    { path: "/services", label: t("nav.services") },
+    { path: "/careers", label: t("nav.careers") },
+    { path: "/projects", label: t("nav.projects") },
+    { path: "/contact", label: t("nav.contact") },
   ];
 
   return (
@@ -26,30 +28,27 @@ const Footer = () => {
                 className="w-[134px] lg:w-[172px]"
               />
             </Link>
-            <p className="text-[#7F7F7F]">
-              Professional industrial & building <br /> access solutions across
-              Canada.
-            </p>
+            <p className="text-[#7F7F7F]">{t("footer.tagline")}</p>
             <Button
               className="bg-[#D9F043] text-gray-600 w-full max-w-[220px] h-12 hover:bg-[#D9F043]"
               onClick={openModal}
             >
-              Get in Touch
+              {t("common.getInTouch")}
             </Button>
           </div>
           <div className="flex flex-row-reverse gap-10 items-start lg:flex-row justify-between lg:gap-[15vw]">
             <div className="flex flex-col gap-5 items-start justify-center">
               <div className="flex flex-col">
                 <span className="text-sm lg:text-md text-[#7F7F7F]">
-                  Location
+                  {t("footer.location")}
                 </span>
                 <span className="text-sm lg:text-md text-white font-semibold">
-                  Vancouver, Canada
+                  {t("footer.locationValue")}
                 </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-sm lg:text-md text-[#7F7F7F]">
-                  Email us anytime
+                  {t("footer.emailUs")}
                 </span>
                 <span className="text-sm lg:text-md text-white font-semibold">
                   info@ropetechgroup.com
@@ -148,8 +147,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start lg:items-center gap-3 sm:gap-4 text-xs sm:text-sm mb-5 lg:mb-0">
             <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-6">
               <p className="text-gray-300 text-center sm:text-left">
-                © {new Date().getFullYear()} All Rights Reserved Rope Tech
-                Group
+                {t("footer.rights", { year: new Date().getFullYear() })}
               </p>
             </div>
             <div className="flex gap-6 sm:gap-8">
@@ -157,13 +155,13 @@ const Footer = () => {
                 to="/terms"
                 className="text-gray-300 hover:text-brand-lime transition-colors underline"
               >
-                Terms of use
+                {t("footer.termsOfUse")}
               </Link>
               <Link
                 to="/privacy"
                 className="text-gray-300 hover:text-brand-lime transition-colors underline"
               >
-                Privacy policy
+                {t("footer.privacyPolicy")}
               </Link>
             </div>
           </div>

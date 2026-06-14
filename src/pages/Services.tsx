@@ -1,43 +1,38 @@
 import { CTASection } from "@/components/common/CTASection";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
-
-const services = [
-  {
-    title: "Industrial Services",
-    description:
-      "We provide safe, compliant, and efficient access and maintenance solutions for industrial facilities, infrastructure, and complex environments — supporting critical operations and large-scale projects across Canada.",
-    image: "/home/services.jpg",
-    link: "/services/industrial-services",
-  },
-  {
-    title: "Building Services",
-    description:
-      "We deliver comprehensive building envelope solutions focused on durability, weather protection, and long-term performance for residential, commercial, and institutional buildings — from low-rise to high-rise projects across Canada.",
-    image: "/home/building-services.jpg",
-    link: "/services/building-services",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+  const services = [
+    {
+      title: t("servicesPage.industrialTitle"),
+      description: t("servicesPage.industrialDesc"),
+      image: "/home/services.jpg",
+      link: "/services/industrial-services",
+    },
+    {
+      title: t("servicesPage.buildingTitle"),
+      description: t("servicesPage.buildingDesc"),
+      image: "/home/building-services.jpg",
+      link: "/services/building-services",
+    },
+  ];
   return (
     <div className="min-h-screen relative">
       <SEO
-        title="Our Services"
-        description="Comprehensive rope access services including industrial inspections, building maintenance, facade repairs, waterproofing, and specialized access solutions. IRATA-certified professionals serving Vancouver and Canada."
-        keywords="rope access services, industrial inspections, building maintenance, facade repairs, waterproofing services, IRATA certified, Vancouver services"
+        title={t("seo.servicesTitle")}
+        description={t("seo.servicesDesc")}
+        keywords={t("seo.servicesKeywords")}
       />
       {/* HERO */}
       <section className="relative bg-brand-dark text-white pt-32 pb-32 sm:pt-36 sm:pb-36 lg:pt-44 lg:pb-44">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-            Services
+            {t("servicesPage.title")}
           </h1>
-          <img
-            src="decoration_line.svg"
-            alt="Decorative divider"
-            className="h-[14px] w-auto"
-          />
+          <img src="decoration_line.svg" alt="Decorative divider" className="h-[14px] w-auto" />
         </div>
       </section>
 
@@ -66,9 +61,7 @@ const Services = () => {
 
                 {/* Content */}
                 <div className="p-6 flex flex-col gap-4">
-                  <h2 className="text-xl font-bold text-gray-900">
-                    {service.title}
-                  </h2>
+                  <h2 className="text-xl font-bold text-gray-900">{service.title}</h2>
 
                   <p className="">{service.description}</p>
 
@@ -84,7 +77,7 @@ const Services = () => {
                         transition-colors
                       "
                     >
-                      <span>Learn More</span>
+                      <span>{t("common.learnMoreCap")}</span>
                       <img src="/home/arrow_diagonal.svg" alt="" />
                     </span>
                   </Link>

@@ -1,5 +1,6 @@
 import { type ReactNode, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "../ui/button";
 
 interface ModalProps {
@@ -9,6 +10,7 @@ interface ModalProps {
 }
 
 export function Modal({ isOpen, onClose, children }: ModalProps) {
+  const { t } = useTranslation();
   const [mounted, setMounted] = useState(false);
   const [active, setActive] = useState(false);
   const [portalEl, setPortalEl] = useState<HTMLElement | null>(null);
@@ -68,7 +70,7 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
         `}
       >
         <Button
-          aria-label="Close modal"
+          aria-label={t("modal.close")}
           variant="ghost"
           className="absolute top-3 right-0 bg-transparent hover:bg-transparent rounded-full"
           onClick={onClose}

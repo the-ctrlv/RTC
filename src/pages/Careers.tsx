@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
+import { useTranslation } from "react-i18next";
 
 type FormData = {
   name: string;
@@ -9,6 +10,7 @@ type FormData = {
 };
 
 const Careers = () => {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -19,16 +21,16 @@ const Careers = () => {
   const onSubmit = (data: FormData) => {
     // eslint-disable-next-line no-console
     console.log("Form submitted:", data);
-    alert("Thank you for your application! We will get back to you soon.");
+    alert(t("form.applicationSuccess"));
     reset();
   };
 
   return (
     <div className="min-h-screen mb-[-40vh] lg:mb-0">
       <SEO
-        title="Careers"
-        description="Join the Rope Tech Group team. We're looking for skilled IRATA-certified rope access technicians and professionals to join our growing team in Vancouver and across Canada."
-        keywords="rope access jobs, IRATA careers, Vancouver jobs, rope access technician positions, industrial jobs Canada, building maintenance careers"
+        title={t("seo.careersTitle")}
+        description={t("seo.careersDesc")}
+        keywords={t("seo.careersKeywords")}
       />
       {/* Hero Section */}
       <section
@@ -39,13 +41,9 @@ const Careers = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14 relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 lg:mb-10">
-            Join Our Team
+            {t("careersPage.title")}
           </h1>
-          <img
-            src="/decoration_line.svg"
-            alt="Decorative divider"
-            className="h-[14px] w-auto"
-          />
+          <img src="/decoration_line.svg" alt="Decorative divider" className="h-[14px] w-auto" />
         </div>
       </section>
 
@@ -55,28 +53,19 @@ const Careers = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mx-auto">
             {/* Career Information */}
             <div className="space-y-6 order-2 lg:order-1">
-              <h4 className="text-lg font-bold">
-                We're always looking for skilled, motivated, and safety-driven
-                professionals to join our team.
-              </h4>
+              <h4 className="text-lg font-bold">{t("careersPage.intro")}</h4>
               <p className="text-base font-medium text-[#292929] leading-relaxed">
-                If you have experience in rope access, building envelope work,
-                inspections, maintenance, or industrial operations — we'd love
-                to hear from you.
+                {t("careersPage.paragraph1")}
               </p>
               <p className="text-base font-medium text-[#292929] leading-relaxed">
-                At Rope Tech Group, we value professionalism, teamwork, and a
-                strong commitment to safety and quality. Whether you're an
-                experienced specialist or looking to grow your career in a
-                challenging, hands-on environment, we encourage you to submit
-                your application.
+                {t("careersPage.paragraph2")}
               </p>
             </div>
 
             {/* Application Form */}
             <div className="bg-white p-7 sm:p-8 lg:p-10 rounded-[40px] order-1 lg:order-2 lg:-translate-y-[33vh] max-w-[562px] shadow-lg">
               <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-bold mb-6 sm:mb-8">
-                Submit Your Application
+                {t("careersPage.formTitle")}
               </h2>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
@@ -84,19 +73,17 @@ const Careers = () => {
                     htmlFor="name"
                     className="block text-base font-semibold text-gray-700 mb-2"
                   >
-                    Your name
+                    {t("form.yourName")}
                   </label>
                   <input
                     type="text"
                     id="name"
-                    {...register("name", { required: "Name is required" })}
-                    placeholder="Enter your name"
+                    {...register("name", { required: t("form.nameRequired") })}
+                    placeholder={t("form.namePlaceholder")}
                     className="bg-white placeholder:font-semibold placeholder:text-[#9D9D9D] w-full h-12 px-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all"
                   />
                   {errors.name && (
-                    <p className="mt-1 text-sm text-red-600">
-                      {errors.name.message}
-                    </p>
+                    <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
                   )}
                 </div>
 
@@ -105,19 +92,17 @@ const Careers = () => {
                     htmlFor="email"
                     className="block text-base font-semibold text-gray-700 mb-2"
                   >
-                    Your e-mail
+                    {t("form.yourEmail")}
                   </label>
                   <input
                     type="email"
                     id="email"
-                    {...register("email", { required: "Email is required" })}
-                    placeholder="olivia@untitledui.com"
+                    {...register("email", { required: t("form.emailRequired") })}
+                    placeholder={t("form.emailPlaceholder")}
                     className="bg-white placeholder:font-semibold placeholder:text-[#9D9D9D] w-full h-12 px-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all rounded-[8px]"
                   />
                   {errors.email && (
-                    <p className="mt-1 text-sm text-red-600">
-                      {errors.email.message}
-                    </p>
+                    <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
                   )}
                 </div>
 
@@ -126,12 +111,12 @@ const Careers = () => {
                     htmlFor="message"
                     className="block text-base font-semibold text-gray-700 mb-2"
                   >
-                    Message
+                    {t("form.message")}
                   </label>
                   <textarea
                     id="message"
                     {...register("message")}
-                    placeholder="Tell us about your experience..."
+                    placeholder={t("form.messagePlaceholderExperience")}
                     rows={4}
                     className="bg-white placeholder:font-semibold placeholder:text-[#9D9D9D] w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all resize-none"
                   />
@@ -141,7 +126,7 @@ const Careers = () => {
                   type="submit"
                   className="w-full bg-brand-lime hover:bg-brand-lime/90 text-gray-900 font-bold py-6 text-base"
                 >
-                  Apply Now
+                  {t("common.applyNow")}
                 </Button>
               </form>
             </div>

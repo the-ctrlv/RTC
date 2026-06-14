@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 type FormData = {
   name: string;
@@ -8,6 +9,7 @@ type FormData = {
 };
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -40,21 +42,21 @@ export const ContactForm = () => {
           form_location: "contact_page",
         });
 
-        alert("Thank you! Your message has been sent.");
+        alert(t("form.successMessage"));
         reset();
       } else {
-        alert("An error occurred. Please try again.");
+        alert(t("form.errorMessage"));
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred while sending. Please try again.");
+      alert(t("form.errorSending"));
     }
   };
 
   return (
     <div className="bg-white p-7 sm:p-8 lg:p-10 rounded-[40px] order-1 lg:order-2">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">
-        Fill Out the Form
+        {t("form.fillOutForm")}
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div>
@@ -62,13 +64,13 @@ export const ContactForm = () => {
             htmlFor="name"
             className="block text-base font-semibold text-gray-700 mb-2"
           >
-            Your name
+            {t("form.yourName")}
           </label>
           <input
             type="text"
             id="name"
-            {...register("name", { required: "Name is required" })}
-            placeholder="Enter your name"
+            {...register("name", { required: t("form.nameRequired") })}
+            placeholder={t("form.namePlaceholder")}
             className="bg-white placeholder:font-semibold placeholder:text-[#9D9D9D] w-full h-12 px-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all"
           />
           {errors.name && (
@@ -81,13 +83,13 @@ export const ContactForm = () => {
             htmlFor="email"
             className="block text-base font-semibold text-gray-700 mb-2"
           >
-            Your e-mail
+            {t("form.yourEmail")}
           </label>
           <input
             type="email"
             id="email"
-            {...register("email", { required: "Email is required" })}
-            placeholder="olivia@untitledui.com"
+            {...register("email", { required: t("form.emailRequired") })}
+            placeholder={t("form.emailPlaceholder")}
             className="bg-white placeholder:font-semibold placeholder:text-[#9D9D9D] w-full h-12 px-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all rounded-[8px]"
           />
           {errors.email && (
@@ -100,12 +102,12 @@ export const ContactForm = () => {
             htmlFor="message"
             className="block text-base font-semibold text-gray-700 mb-2"
           >
-            Message
+            {t("form.message")}
           </label>
           <textarea
             id="message"
             {...register("message")}
-            placeholder="Type something..."
+            placeholder={t("form.messagePlaceholder")}
             rows={4}
             className="bg-white placeholder:font-semibold placeholder:text-[#9D9D9D] w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime focus:border-transparent outline-none transition-all resize-none"
           />
@@ -115,7 +117,7 @@ export const ContactForm = () => {
           type="submit"
           className="w-full bg-brand-lime hover:bg-brand-lime/90 text-gray-900 font-bold py-6 text-base"
         >
-          Send
+          {t("common.send")}
         </Button>
       </form>
     </div>

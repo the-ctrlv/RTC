@@ -1,7 +1,12 @@
+import { useTranslation } from "react-i18next";
+import { useZhTypography } from "@/lib/i18nHelpers";
+
 const AboutSection = () => {
+  const { t } = useTranslation();
+  const zh = useZhTypography();
   const stats = [
-    { value: "95%", label: "SUCCESSFUL PROJECTS DELIVERED NATIONWIDE" },
-    { value: "500+", label: "SUCCESSFUL PROJECTS ACROSS CANADA" },
+    { value: t("homeAbout.stat1Value"), label: t("homeAbout.stat1Label") },
+    { value: t("homeAbout.stat2Value"), label: t("homeAbout.stat2Label") },
   ];
 
   return (
@@ -11,18 +16,15 @@ const AboutSection = () => {
         <div className="lg:hidden max-w-md mx-auto">
           {/* Header */}
           <span className="block text-[#c3d533] font-bold mb-4 uppercase text-base tracking-wider">
-            ABOUT US
+            {t("homeAbout.label")}
           </span>
           <h3 className="text-3xl font-bold mb-8 text-gray-900 leading-tight">
-            Delivering Safe & Certified Rope <br /> Access Solutions
+            {t("homeAbout.title")}
           </h3>
-          <p className="lg:hidden block text-gray-700 mb-10 leading-relaxed text-lg">
-            Rope Tech Group provides safe and efficient high-rise, industrial,
-            and infrastructure services across Canada. Our IRATA-certified
-            technicians use advanced rope access methods to reach complex areas
-            with minimal disruption. We focus on reliability, safety standards,
-            and professional execution to support projects of any scale and
-            complexity.
+          <p
+            className={`lg:hidden block text-gray-700 mb-10 leading-relaxed text-lg ${zh.body}`}
+          >
+            {t("homeAbout.description")}
           </p>
           {/* Image */}
           <div className="mb-8">
@@ -34,12 +36,7 @@ const AboutSection = () => {
           </div>
           {/* Description */}
           <p className="lg:block hidden text-gray-700 mb-10 leading-relaxed text-base">
-            Rope Tech Group provides safe and efficient high-rise, industrial,
-            and infrastructure services across Canada. Our IRATA-certified
-            technicians use advanced rope access methods to reach complex areas
-            with minimal disruption. We focus on reliability, safety standards,
-            and professional execution to support projects of any scale and
-            complexity.
+            {t("homeAbout.description")}
           </p>
           <div className="grid grid-cols-2 gap-8 mb-6">
             {stats.map((stat, index) => (
@@ -67,18 +64,13 @@ const AboutSection = () => {
           {/* Content */}
           <div className="py-10 flex flex-col justify-between">
             <h3 className="text-[#c3d533] font-bold uppercase text-base tracking-wider mb-3">
-              ABOUT US
+              {t("homeAbout.label")}
             </h3>
             <h2 className="text-3xl lg:text-[54px] font-bold mb-5 text-gray-900 leading-tight">
-              Delivering Safe & Certified Rope Access Solutions
+              {t("homeAbout.title")}
             </h2>
             <p className="text-gray-700 mb-5 leading-relaxed text-lg">
-              Rope Tech Group provides safe and efficient high-rise, industrial,
-              and infrastructure services across Canada. Our IRATA-certified
-              technicians use advanced rope access methods to reach complex
-              areas with minimal disruption. We focus on reliability, safety
-              standards, and professional execution to support projects of any
-              scale and complexity.
+              {t("homeAbout.description")}
             </p>
 
             {/* Stats */}
