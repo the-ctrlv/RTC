@@ -3,6 +3,7 @@ import { useZhTypography } from "@/lib/i18nHelpers";
 
 const AboutSection = () => {
   const { t } = useTranslation();
+  const companyName = t("common.companyName");
   const zh = useZhTypography();
   const stats = [
     { value: t("homeAbout.stat1Value"), label: t("homeAbout.stat1Label") },
@@ -24,7 +25,7 @@ const AboutSection = () => {
           <p
             className={`lg:hidden block text-gray-700 mb-10 leading-relaxed text-lg ${zh.body}`}
           >
-            {t("homeAbout.description")}
+            {t("homeAbout.description", { companyName })}
           </p>
           {/* Image */}
           <div className="mb-8">
@@ -36,7 +37,7 @@ const AboutSection = () => {
           </div>
           {/* Description */}
           <p className="lg:block hidden text-gray-700 mb-10 leading-relaxed text-base">
-            {t("homeAbout.description")}
+            {t("homeAbout.description", { companyName })}
           </p>
           <div className="grid grid-cols-2 gap-8 mb-6">
             {stats.map((stat, index) => (
@@ -70,7 +71,7 @@ const AboutSection = () => {
               {t("homeAbout.title")}
             </h2>
             <p className="text-gray-700 mb-5 leading-relaxed text-lg">
-              {t("homeAbout.description")}
+              {t("homeAbout.description", { companyName })}
             </p>
 
             {/* Stats */}

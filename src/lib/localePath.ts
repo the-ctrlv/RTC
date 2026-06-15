@@ -53,7 +53,11 @@ export function isNavPathActive(pathname: string, itemPath: string): boolean {
 export function useLocale() {
   const { lang: paramLang } = useParams<{ lang: string }>();
   const location = useLocation();
-  const lang = isSupportedLang(paramLang) ? paramLang : DEFAULT_LANG;
+  const langFromPath = getLangFromPath(location.pathname);
+  // Header/Footer render outside /:lang — read lang from pathname, not useParams
+  const lang = isSupportedLang(paramLang)
+    ? paramLang
+    : langFromPath ?? DEFAULT_LANG;
   const path = pathWithoutLocale(location.pathname);
 
   return { lang, path, pathname: location.pathname };

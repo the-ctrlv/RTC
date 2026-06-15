@@ -32,7 +32,7 @@ const Services = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
             {t("servicesPage.title")}
           </h1>
-          <img src="decoration_line.svg" alt="Decorative divider" className="h-[14px] w-auto" />
+          <img src="/decoration_line.svg" alt="Decorative divider" className="h-[14px] w-auto" />
         </div>
       </section>
 

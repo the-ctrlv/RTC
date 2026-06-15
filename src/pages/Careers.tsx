@@ -11,6 +11,7 @@ type FormData = {
 
 const Careers = () => {
   const { t } = useTranslation();
+  const companyName = t("common.companyName");
   const {
     register,
     handleSubmit,
@@ -58,7 +59,7 @@ const Careers = () => {
                 {t("careersPage.paragraph1")}
               </p>
               <p className="text-base font-medium text-[#292929] leading-relaxed">
-                {t("careersPage.paragraph2")}
+                {t("careersPage.paragraph2", { companyName })}
               </p>
             </div>
 
