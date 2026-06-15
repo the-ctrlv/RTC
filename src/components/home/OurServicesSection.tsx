@@ -59,7 +59,7 @@ const OurServicesSection = () => {
                 <div className="space-y-5 lg:space-y-6 mb-8">
                   <div>
                     <h5
-                      className={`font-bold mb-2 text-base lg:text-lg whitespace-nowrap ${zh.heading}`}
+                      className={`font-bold mb-2 text-base lg:text-lg leading-snug ${zh.heading}`}
                     >
                       {t("ourServices.industrialItem1Title")}
                     </h5>
@@ -79,7 +79,7 @@ const OurServicesSection = () => {
                   <hr />
                   <div>
                     <h5
-                      className={`font-bold mb-2 text-base lg:text-lg whitespace-nowrap ${zh.heading}`}
+                      className={`font-bold mb-2 text-base lg:text-lg leading-snug ${zh.heading}`}
                     >
                       {t("ourServices.industrialItem3Title")}
                     </h5>
