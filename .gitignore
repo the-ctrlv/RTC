@@ -1,3 +1,4 @@
 node_modules
+.DS_Store
 # Large video files
 public/videos/*.mp4

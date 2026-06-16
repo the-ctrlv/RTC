@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom";
+import LocaleLink from "@/components/LocaleLink";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const expertiseCards = [
     {
-      title: "Our Services",
-      description:
-        "Experts in rope access maintenance for high-rise and hard-to-reach structures.",
+      title: t("hero.cardServicesTitle"),
+      description: t("hero.cardServicesDesc"),
       link: "/services",
     },
     {
-      title: "Our Projects",
-      description:
-        "Explore our completed rope access and building maintenance projects.",
+      title: t("hero.cardProjectsTitle"),
+      description: t("hero.cardProjectsDesc"),
       link: "/projects",
     },
   ];
@@ -48,39 +48,39 @@ const HeroSection = () => {
               className="w-5 h-5 sm:w-6 sm:h-6"
             />
             <span className="text-xs sm:text-sm font-medium">
-              Based in Vancouver, BC
+              {t("hero.badge")}
             </span>
           </div>
         </div>
 
         {/* Hero Title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold text-white leading-tight max-w-4xl">
-          Accessing <br className="lg:hidden" /> the Impossible.
+          {t("hero.titleLine1")}
           <br />
-          Safely. Efficiently.
+          {t("hero.titleLine2")}
         </h1>
 
         {/* Contact Button - Mobile Only */}
         <div className="lg:hidden mt-5">
-          <Link to="/contact">
+          <LocaleLink to="/contact">
             <Button
               size="lg"
               className="w-full sm:w-auto bg-[#c3d533] hover:bg-[#c3d533]/90 text-gray-900 font-semibold px-10 py-6 text-base rounded-sm"
             >
-              Contact Us
+              {t("common.contactUs")}
             </Button>
-          </Link>
+          </LocaleLink>
         </div>
 
         {/* Expertise Cards - Desktop Only */}
         <div className="hidden lg:block mt-auto">
           <h2 className="text-white text-2xl font-bold mb-8">
-            Checkout Our Expertise
+            {t("hero.expertiseHeading")}
           </h2>
 
           <div className="flex gap-6 w-full">
             {expertiseCards.map((card, index) => (
-              <Link key={index} to={card.link}>
+              <LocaleLink key={index} to={card.link}>
                 <div className="group relative backdrop-blur-lg py-8 px-7 rounded-r-[25px] rounded-l-[10px] cursor-pointer text-white overflow-hidden w-[343px] h-[172px] bg-white/10 transition-all">
                   <div className="absolute bg-[#c3d533] h-full w-2 left-0 top-0 z-10" />
                   <div className="flex items-center justify-between mb-10">
@@ -95,7 +95,7 @@ const HeroSection = () => {
                     {card.description}
                   </p>
                 </div>
-              </Link>
+              </LocaleLink>
             ))}
           </div>
         </div>

@@ -1,0 +1,756 @@
+{
+  "common": {
+    "companyName": "Rope Tech Group",
+    "callUs": "致电我们",
+    "contactUs": "联系我们",
+    "getInTouch": "取得联系",
+    "learnMore": "了解更多",
+    "learnMoreCap": "了解更多",
+    "send": "发送",
+    "applyNow": "立即申请",
+    "viewAllProjects": "查看所有项目",
+    "backHome": "返回首页",
+    "discussProject": "与我们讨论您的项目",
+    "whatSetsUsApart": "我们的独特优势：",
+    "ourServices": "我们的服务",
+    "ourWork": "我们的作品"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "careers": "招聘",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "language": {
+    "en": "EN",
+    "zh": "中文",
+    "ru": "RU",
+    "ka": "ქართ",
+    "tr": "TR",
+    "ar": "AR",
+    "label": "语言"
+  },
+  "header": {
+    "callOrText": "致电或短信联系我们",
+    "emailUs": "随时发送邮件"
+  },
+  "footer": {
+    "aboutUs": "关于我们",
+    "tagline": "在加拿大提供专业的工业与建筑高空作业解决方案。",
+    "location": "地点",
+    "locationValue": "温哥华，加拿大",
+    "emailUs": "随时发送邮件",
+    "termsOfUse": "使用条款",
+    "privacyPolicy": "隐私政策",
+    "rights": "© {{year}} 版权所有 Rope Tech Group"
+  },
+  "form": {
+    "fillOutForm": "填写表单",
+    "yourName": "您的姓名",
+    "yourEmail": "您的电子邮箱",
+    "message": "留言",
+    "namePlaceholder": "请输入您的姓名",
+    "emailPlaceholder": "olivia@untitledui.com",
+    "messagePlaceholder": "请输入内容...",
+    "messagePlaceholderExperience": "请介绍您的工作经验...",
+    "nameRequired": "姓名为必填项",
+    "emailRequired": "电子邮箱为必填项",
+    "successMessage": "谢谢！您的留言已发送。",
+    "errorMessage": "发生错误，请重试。",
+    "errorSending": "发送时发生错误，请重试。",
+    "applicationSuccess": "感谢您的申请！我们会尽快与您联系。"
+  },
+  "hero": {
+    "badge": "总部位于温哥华，不列颠哥伦比亚省",
+    "titleLine1": "抵达不可能之处。",
+    "titleLine2": "安全。高效。",
+    "expertiseHeading": "了解我们的专业能力",
+    "cardServicesTitle": "我们的服务",
+    "cardServicesDesc": "擅长为高层及难以到达的建筑结构提供绳索高空作业维护服务。",
+    "cardProjectsTitle": "我们的项目",
+    "cardProjectsDesc": "浏览我们已完成的绳索高空作业与建筑维护项目。"
+  },
+  "homeAbout": {
+    "label": "关于我们",
+    "title": "提供安全且经过认证的绳索高空作业解决方案",
+    "description": "Rope Tech Group 在加拿大各地提供安全高效的高层、工业及基础设施服务。我们的 IRATA 认证技术人员采用先进的绳索高空作业方法，以最小干扰进入复杂区域。我们专注于可靠性、安全标准与专业执行，支持各种规模与复杂度的项目。",
+    "stat1Value": "95%",
+    "stat1Label": "在全国范围内成功交付的项目",
+    "stat2Value": "500+",
+    "stat2Label": "在加拿大各地成功完成的项目"
+  },
+  "benefits": {
+    "label": "为何选择我们",
+    "title": "与我们合作的主要优势",
+    "description": "我们专注于在复杂环境中交付精准、可靠的结果——通过清晰沟通、周密规划以及值得信赖的执行。",
+    "expertiseTitle": "专业能力",
+    "expertiseDesc": "我们的团队由经过培训并取得认证的绳索高空作业技术人员组成，在工业与建筑环境中拥有丰富的实战经验。",
+    "qualityTitle": "品质",
+    "qualityDesc": "我们保持最高的安全与性能标准，凭借屡获殊荣的专业能力交付可靠成果。",
+    "costTitle": "成本效益",
+    "costDesc": "与传统方法相比，我们可将项目成本降低 50% 以上，同时不牺牲质量与安全。"
+  },
+  "ourServices": {
+    "label": "服务",
+    "title": "我们的服务",
+    "description": "我们的团队提供专业的工业与建筑服务，确保安全、可靠与长期性能。即使在难以到达的区域，我们也能提供专业的维护、检测与维修解决方案。",
+    "industrialTitle": "工业服务",
+    "industrialItem1Title": "高空作业、安全与防坠落保护",
+    "industrialItem1Desc": "为工业环境提供工程化高空作业、防坠落保护及受限空间解决方案。",
+    "industrialItem2Title": "检测、维护与可靠性",
+    "industrialItem2Desc": "检测、维护与维修服务，支持资产的长期性能。",
+    "industrialItem3Title": "专项与高风险作业",
+    "industrialItem3Desc": "停工检修、应急响应、救援作业及复杂吊装任务。",
+    "exploreIndustrial": "了解工业服务",
+    "buildingTitle": "建筑服务",
+    "buildingItem1Title": "高空作业、安全与防坠落保护",
+    "buildingItem1Desc": "为住宅与商业建筑提供安全的高空作业系统及防坠落保护解决方案。",
+    "buildingItem2Title": "围护结构检测与维护",
+    "buildingItem2Desc": "外墙检测、维护与维修服务，延长建筑使用寿命。",
+    "buildingItem3Title": "围护结构修复与修缮",
+    "buildingItem3Desc": "混凝土修复、防水、玻璃幕墙及外墙围护结构改善。",
+    "exploreBuilding": "了解建筑服务"
+  },
+  "projectsSection": {
+    "label": "我们的作品",
+    "title": "最新项目"
+  },
+  "projectTags": {
+    "Rope Access Glazing": "绳索高空玻璃幕墙作业",
+    "Sealant Applications": "密封胶施工",
+    "Sealant Application": "密封胶施工",
+    "Rope Access System": "绳索高空作业系统",
+    "Sunshade Installation": "遮阳板安装",
+    "Water Ingress Investigations": "渗水调查",
+    "Concrete Repairs": "混凝土修复",
+    "Painting": "涂装",
+    "Liquid Membrane Replacement": "液体防水膜更换",
+    "Flashing Installation": "泛水板安装",
+    "Sealant Replacement": "密封胶更换",
+    "Fish Tank Installation": "窗框水槽安装",
+    "Rope Access Glass Replacement": "绳索高空玻璃更换",
+    "Glass Replacement": "玻璃更换",
+    "Heat Trace Cable Installation": "伴热电缆安装",
+    "Rope Access Membrane Application": "绳索高空防水膜施工"
+  },
+  "projectsData": {
+    "cardero": {
+      "title": "Cardero",
+      "location": "BC省温哥华 Cardero街620号",
+      "subtitle": "Alberni街1550号",
+      "tags": [
+        "Rope Access Glazing",
+        "Sealant Application"
+      ]
+    },
+    "jimPattisonToyota": {
+      "title": "Jim Pattison Toyota",
+      "location": "Jim Pattison Toyota Downtown",
+      "subtitle": "Burrard街1290号",
+      "tags": [
+        "Rope Access Glazing"
+      ]
+    },
+    "westGeorgia400": {
+      "title": "400 West Georgia",
+      "location": "温哥华 West Georgia街400号",
+      "subtitle": "温哥华市中心",
+      "tags": [
+        "Sealant Application",
+        "Rope Access Glazing"
+      ]
+    },
+    "kelticPlace": {
+      "title": "Keltic Place",
+      "location": "列治文 Keltic Place",
+      "subtitle": "3号路6388号",
+      "tags": [
+        "Sunshade Installation",
+        "Sealant Application"
+      ]
+    },
+    "parkTowers": {
+      "title": "Park Towers",
+      "location": "列治文 Minoru Boulevard",
+      "subtitle": "Minoru Boulevard 6080号",
+      "tags": [
+        "Water Ingress Investigations",
+        "Concrete Repairs",
+        "Painting",
+        "Liquid Membrane Replacement"
+      ]
+    },
+    "businessCenterLangley": {
+      "title": "Business Center, Langley",
+      "location": "BC省兰里 Township",
+      "subtitle": "88 Ave W 8700号",
+      "tags": [
+        "Water Ingress Investigations",
+        "Flashing Installation",
+        "Sealant Replacement",
+        "Fish Tank Installation"
+      ]
+    },
+    "bayshoreGardens": {
+      "title": "Bayshore Gardens",
+      "location": "温哥华 Bayshore Drive 1710号",
+      "subtitle": "Bayshore Gardens",
+      "tags": [
+        "Rope Access Glass Replacement"
+      ]
+    },
+    "georgia401": {
+      "title": "401 W Georgia Street",
+      "location": "温哥华 W Georgia Street 401号",
+      "subtitle": "Canada Place 区域",
+      "tags": [
+        "Rope Access Glass Replacement"
+      ]
+    },
+    "theGrande": {
+      "title": "The Grande",
+      "location": "穆迪港 The Grande",
+      "subtitle": "Morrissey Road 300号",
+      "tags": [
+        "Rope Access Glass Replacement",
+        "Sealant Application"
+      ]
+    },
+    "riverGreen": {
+      "title": "River Green",
+      "location": "列治文 River Green",
+      "subtitle": "Bridgehouse Way 5177号",
+      "tags": [
+        "Glass Replacement",
+        "Sealant Application"
+      ]
+    },
+    "fourSeasonsResort": {
+      "title": "Four Seasons Resort",
+      "location": "惠斯勒 Four Seasons Resort",
+      "subtitle": "Blackcomb Way 4591号",
+      "tags": [
+        "Heat Trace Cable Installation"
+      ]
+    },
+    "soleil": {
+      "title": "Soleil",
+      "location": "白石 Soleil",
+      "subtitle": "Johnston Road 1588号",
+      "tags": [
+        "Rope Access Membrane Application"
+      ]
+    },
+    "theErickson": {
+      "title": "The Erickson",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "theDouglas": {
+      "title": "The Douglas",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "woodwards": {
+      "title": "Woodwards",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "vancouverHouse": {
+      "title": "Vancouver House",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "teckResources": {
+      "title": "Teck Resources",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "woodfibreLng": {
+      "title": "Woodfibre LNG",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "imperialOil": {
+      "title": "Imperial Oil",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "suncorEnergy": {
+      "title": "Suncor Energy",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    },
+    "syncrudeCanada": {
+      "title": "Syncrude Canada",
+      "location": "",
+      "subtitle": "",
+      "tags": []
+    }
+  },
+  "testimonials": {
+    "label": "客户评价",
+    "title": "聆听客户心声",
+    "t1": "我们与这支绳索高空作业团队在多项目中合作，涉及混凝土修复、涂装、防水膜施工及裂缝注浆。他们的团队始终交付高品质工艺，并能很好地适应复杂的现场条件。可靠、专业、注重安全——是挑战性项目的优秀合作伙伴。",
+    "t1Author": "丹·米勒",
+    "t1Role": "诺斯科建筑有限公司",
+    "t2": "非常专业的绳索高空作业公司。团队作业安全、进度准时、成果优质。",
+    "t2Author": "史蒂文·丹金",
+    "t2Role": "美塔生活有限公司",
+    "t3": "我们在多个玻璃更换项目中与该司合作，现场高空作业条件极为受限。他们的绳索高空作业技术人员使复杂安装得以顺利进行、无延误。协调出色、安全措施到位、成果优异。",
+    "t3Author": "默尔·贝克",
+    "t3Role": "行动玻璃公司",
+    "t4": "我们在大温哥华地区合作了多项高层玻璃更换与安装项目。他们的绳索高空作业支持使我们能在极难到达的区域完成工作，包括幕墙辅助作业。技术人员技能娴熟、协调顺畅、每次执行都很专业。",
+    "t4Author": "谢尔盖·波普科夫",
+    "t4Role": "高层玻璃有限公司",
+    "t5": "专业的绳索高空作业团队。工作安全、按时完成、标准很高。",
+    "t5Author": "丹尼斯·莱西克",
+    "t5Role": "西伯利亚幕墙集团有限公司",
+    "t6": "在多个项目中提供出色的绳索高空玻璃幕墙支持。他们的技术人员经验丰富、效率高，与我们的安装团队配合良好。是高空复杂玻璃幕墙作业的可靠合作伙伴。",
+    "t6Author": "帕维尔·索科洛夫",
+    "t6Role": "高度安装有限公司",
+    "t7": "我们与该司合作完成了建筑伴热电缆系统的大型安装项目。工作安全、专业，对运营干扰极小。项目全程规划、执行与沟通都很出色。",
+    "t7Author": "达伦·博伊德",
+    "t7Role": "惠斯勒四季度假酒店",
+    "t8": "我们委托该团队完成多项工业绳索高空作业与施工相关项目。他们安全抵达困难区域并交付优质成果的能力，使其成为我们现场的重要承包商。专业、响应迅速、以安全为导向。",
+    "t8Author": "斯坦·菲利普斯",
+    "t8Role": "波默洛有限公司",
+    "t9": "他们协助我们进行高层检测、窗系统支持及漏水调查。绳索高空作业方式使我们得以全面评估，无需采用侵入性方法。报告清晰、技术扎实、服务专业。",
+    "t9Author": "詹姆斯·佩耶特",
+    "t9Role": "特里布管理公司"
+  },
+  "cta": {
+    "readyLine1": "准备好与我们",
+    "readyLine2": "合作了吗？",
+    "discussLine1": "让我们讨论",
+    "discussLine2": "您的项目",
+    "readyTitle": "准备好与我们合作了吗？",
+    "discussTitle": "让我们讨论您的项目"
+  },
+  "modal": {
+    "close": "关闭弹窗"
+  },
+  "aria": {
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭移动菜单",
+    "prevSlide": "上一张",
+    "nextSlide": "下一张",
+    "contactForm": "跳转到联系表单",
+    "locationIcon": "位置图标",
+    "decorativeLine": "装饰线条",
+    "decorativeDivider": "装饰分隔线",
+    "mapPin": "地图标记",
+    "projectImageAlt": "{{title}}建筑项目——已完成的绳索高空作业",
+    "galleryProjectAlt": "{{title}}——已完成的绳索高空作业项目展示",
+    "quoteMark": "引号图标"
+  },
+  "contactSection": {
+    "label": "联系我们",
+    "title": "取得联系",
+    "email": "电子邮箱",
+    "phone": "电话",
+    "location": "地点",
+    "locationValue": "加拿大BC省温哥华第八大道西142B号 V6H 1E1"
+  },
+  "servicesPage": {
+    "title": "服务",
+    "industrialTitle": "工业服务",
+    "industrialDesc": "我们为工业设施、基础设施及复杂环境提供安全、合规且高效的高空作业与维护解决方案，支持加拿大各地的关键运营与大型项目。",
+    "buildingTitle": "建筑服务",
+    "buildingDesc": "我们提供全面的建筑围护结构解决方案，专注于耐久性、防水保护与长期性能，服务住宅、商业及机构建筑——涵盖从低层到高层、遍布加拿大的各类项目。"
+  },
+  "serviceDetail": {
+    "serviceOverview": "服务概览",
+    "ourServices": "我们的服务",
+    "ourWork": "我们的作品",
+    "whyChooseUs": "为何选择我们",
+    "discussCta": "与我们讨论您的项目",
+    "whatSetsUsApart": "我们的独特优势：",
+    "industrial": {
+      "title": "工业服务",
+      "seoDescription": "在加拿大提供专业的工业绳索高空作业服务。IRATA 认证技术人员负责检测、维护与专项作业。安全、高效、具成本效益的解决方案。",
+      "seoKeywords": "工业绳索高空作业, IRATA 认证, 工业检测, 维护服务, 加拿大绳索高空作业, 工业高空作业解决方案",
+      "heroTitle": "工业服务",
+      "whatTitle": "工业绳索高空作业服务",
+      "whatDescription": "许多工业设施存在使用常规高空作业方法难以或无法到达的区域。绳索高空作业为检测、维修与维护提供安全、高效且具成本效益的解决方案，在脚手架或升降设备不适用时尤为有效。<br /><br />我们认证的绳索高空作业技术人员能更快完成工作、减少现场干扰，并在保持最高安全标准的同时降低整体项目成本。",
+      "keyServicesTitle": "我们提供的主要绳索高空作业服务",
+      "service1Title": "高空作业、安全与防坠落保护",
+      "service1Content": "为复杂及高风险工业环境提供认证的高空作业与防坠落保护解决方案。",
+      "service1Bullets": [
+        "工程化高空作业平台与认证防坠落系统",
+        "受限空间进入服务（作业执行与安全监护）",
+        "安全网、防鸟系统及碎屑围护系统",
+        "落石防护系统、防护网及稳定化安装"
+      ],
+      "service2Title": "检测、维护与可靠性",
+      "service2Content": "检测、维护与可靠性服务，支持资产的长期性能。",
+      "service2Bullets": [
+        "结构检测、测试与状况评估",
+        "机械与电气检测、维修与安装",
+        "设备维护与可靠性服务",
+        "防腐保护、表面处理与工业涂装",
+        "保温隔热、声学控制与热损失防护",
+        "密封、防水与接缝系统"
+      ],
+      "service3Title": "专项与高风险作业",
+      "service3Content": "针对停工检修、应急响应及重型工业作业的专项绳索高空作业。",
+      "service3Bullets": [
+        "停工检修与 TAR 支持",
+        "应急响应与技术绳索救援",
+        "索具、吊装与载荷搬运作业",
+        "钢结构修复、现场焊接与制造支持",
+        "落石清理、边坡稳定与松散岩石移除"
+      ],
+      "realConditionsTitle": "真实工况下的我们的工作",
+      "whyChooseTitle": "为何选择 <br /> Rope Tech Group <br /> 的工业服务？",
+      "whyChooseDescription": "Rope Tech Group 由训练有素的 IRATA 技术人员执行安全、高效且合规的绳索高空作业解决方案。我们精准作业、成果稳定，并根据您现场的具体挑战量身定制每个项目。",
+      "reasons": [
+        "IRATA 认证绳索高空作业技术人员",
+        "零事故安全记录",
+        "快速部署与灵活排期",
+        "具成本效益的解决方案",
+        "在复杂工业现场拥有丰富经验",
+        "全额投保并符合所有法规要求",
+        "严格的质量控制与文档标准"
+      ]
+    },
+    "building": {
+      "title": "建筑服务",
+      "seoDescription": "在温哥华及加拿大各地提供专业的建筑维护与维修服务。专长于防水、混凝土修复、外墙修复及建筑围护结构解决方案。",
+      "seoKeywords": "建筑维护, 防水服务, 混凝土修复, 外墙修复, 建筑围护结构, 绳索高空建筑服务, 温哥华",
+      "heroTitle": "建筑服务",
+      "whatTitle": "建筑与 <br /> 商业服务",
+      "whatDescription": "我们提供专业的建筑维护与维修服务，保护结构完整性并防止水损。工作内容包括混凝土修复、裂缝注浆、防水及外墙维护。<br /><br />采用高效的高空作业方式，必要时使用绳索高空作业，我们以最小干扰交付可靠、高品质的成果。",
+      "keyServicesTitle": "我们提供的主要绳索高空作业服务",
+      "service1Title": "高空作业、安全与防坠落保护",
+      "service1Content": "安全的高空作业与防坠落系统，支持各类高度建筑的外墙检测、维护与维修作业。",
+      "service1Bullets": [
+        "建筑围护结构检测、评估与状况报告",
+        "外墙检测及为工程师与顾问提供高空作业支持",
+        "工程协助、技术支持与可施工性建议",
+        "防坠落及永久生命线系统安装",
+        "防鸟网与碎屑防护网系统"
+      ],
+      "service2Title": "围护结构检测与维护",
+      "service2Content": "预防性检测与维护，保护建筑围护结构并延长使用寿命。",
+      "service2Bullets": [
+        "渗水调查与漏水诊断",
+        "窗户、伸缩缝及控制缝的密封胶拆除与更换，包括窗系统水槽安装",
+        "建筑围护结构计划性预防维护（PPM）",
+        "热工与气密屏障修复与升级",
+        "伴热系统安装、检测与维护"
+      ],
+      "service3Title": "围护结构修复与修缮",
+      "service3Content": "建筑围护结构修复与修缮，防止渗水与结构损坏。",
+      "service3Bullets": [
+        "外墙、平台、阳台及屋顶防水系统",
+        "混凝土修复、裂缝注浆、剥落修复与结构修复",
+        "保护性涂装与弹性防水膜施工",
+        "窗户、玻璃幕墙及幕墙系统修复与更换",
+        "外墙与屋顶交接处泛水板安装与修复",
+        "幕墙系统检测、修复与安装",
+        "阳台修复、通行面涂装与护栏系统",
+        "外墙保温装饰系统（EIFS）修复",
+        "外墙涂装、表面处理与外墙清洗"
+      ],
+      "realConditionsTitle": "真实工况下的我们的工作",
+      "whyChooseTitle": "为何选择 <br /> Rope Tech Group <br />的建筑服务？",
+      "whyChooseDescription": "Rope Tech Group 由训练有素的 IRATA 技术人员执行安全、高效且合规的绳索高空作业解决方案。我们精准作业、成果稳定，并根据您现场的具体挑战量身定制每个项目。",
+      "reasons": [
+        "认证建筑专家",
+        "全面的服务组合",
+        "品质工艺有保障",
+        "按时交付项目",
+        "具有竞争力的价格",
+        "全额保险保障"
+      ]
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "关于<br/><ltr>{{companyName}}</ltr>",
+    "companyDetails": "公司信息",
+    "businessHours": "营业时间",
+    "businessHoursValue": "周一至周五，上午 8:00 – 下午 6:00",
+    "location": "地点",
+    "locationValue": "加拿大BC省温哥华第八大道西142B号 V6H 1E1",
+    "aboutLabel": "关于我们",
+    "aboutText": "自 2013 年以来，{{companyName}} 在不列颠哥伦比亚省提供专业的绳索高空作业与高层维护服务。总部位于温哥华，我们承接住宅、商业、工业与基础设施项目。\n\n我们的认证技术人员专长于外墙维护、混凝土修复、防水、玻璃幕墙、检测、桥梁工程、工业设施、落石清理，以及石油天然气行业的支持服务。",
+    "stat1Value": "95%",
+    "stat1Label": "成功交付的项目",
+    "stat2Value": "500+",
+    "stat2Label": "已完成的工作",
+    "stat3Value": "15+",
+    "stat3Label": "年行业经验",
+    "stat4Value": "100%",
+    "stat4Label": "安全至上",
+    "approachLabel": "我们的方法",
+    "approachTitle": "我们工作的核心理念",
+    "approachDescription": "我们专注于安全、效率与最小干扰，运用成熟的绳索高空作业技术，在高空及难以到达的位置交付可靠成果。",
+    "missionTitle": "使命",
+    "missionDesc": "提供精准、可靠的绳索高空作业解决方案，高效解决复杂挑战。",
+    "visionTitle": "愿景",
+    "visionDesc": "成为高层与工业维护项目值得信赖的长期合作伙伴。",
+    "purposeTitle": "宗旨",
+    "purposeDesc": "通过智能、执行到位的高空作业解决方案，帮助客户延长资产使用寿命。",
+    "safetyLabel": "我们的安全标准",
+    "safetyTitle": "安全与认证",
+    "safetyDescription": "安全是我们承接的每个项目的基础。我们的团队遵循国际认可的绳索高空作业标准，在每个现场都执行既定的安全程序。",
+    "certifications": [
+      "IRATA 认证绳索高空作业技术人员",
+      "定期安全与技能培训",
+      "设备全面检查、记录与维护",
+      "针对现场的风险评估与救援规划",
+      "符合地区工作场所与行业法规"
+    ],
+    "workLabel": "我们的作品",
+    "workTitle": "真实工况下的我们的工作"
+  },
+  "projectsPage": {
+    "title": "我们的项目"
+  },
+  "contactPage": {
+    "title": "联系我们",
+    "email": "电子邮箱",
+    "phone": "电话",
+    "location": "地点",
+    "locationValue": "加拿大BC省温哥华第八大道西142B号 V6H 1E1"
+  },
+  "careersPage": {
+    "title": "加入我们的团队",
+    "intro": "我们一直在寻找技术娴熟、积极主动且注重安全的专业人士加入团队。",
+    "paragraph1": "若您在绳索高空作业、建筑围护结构、检测、维护或工业运营方面有经验——我们期待您的来信。",
+    "paragraph2": "在 Rope Tech Group，我们重视专业精神、团队协作以及对安全与品质的坚定承诺。无论您是经验丰富的专家，还是希望在充满挑战的实战环境中发展职业生涯，都欢迎您提交申请。",
+    "formTitle": "提交您的申请"
+  },
+  "industriesPage": {
+    "title": "我们服务的行业",
+    "subtitle": "为多元领域提供专项解决方案",
+    "expertiseTitle": "行业专长",
+    "expertiseDesc": "我们凭借深厚的行业知识与技术专长，提供针对各行业独特挑战与需求的解决方案。",
+    "keySolutions": "主要解决方案：",
+    "ctaTitle": "没有看到您的行业？",
+    "ctaDesc": "我们与各行业的客户合作。请联系我们讨论您的具体需求。",
+    "items": [
+      {
+        "title": "医疗健康",
+        "description": "符合 HIPAA 的解决方案，帮助医院、诊所及医疗服务提供商改善患者护理并优化运营。",
+        "solutions": [
+          "电子健康档案",
+          "远程医疗平台",
+          "患者门户",
+          "医疗数据分析"
+        ]
+      },
+      {
+        "title": "金融与银行",
+        "description": "为银行、金融科技公司及金融机构提供安全、可扩展的金融技术解决方案。",
+        "solutions": [
+          "移动银行",
+          "支付网关",
+          "交易平台",
+          "风险管理系统"
+        ]
+      },
+      {
+        "title": "电子商务",
+        "description": "稳健的电子商务平台与解决方案，助力企业拓展线上业务与销售额。",
+        "solutions": [
+          "在线商店",
+          "库存管理",
+          "支付集成",
+          "客户分析"
+        ]
+      },
+      {
+        "title": "教育",
+        "description": "为学校、大学及在线学习平台提供创新的教育技术解决方案。",
+        "solutions": [
+          "学习管理系统",
+          "虚拟教室",
+          "学生门户",
+          "评估工具"
+        ]
+      },
+      {
+        "title": "制造业",
+        "description": "数字化转型解决方案，优化生产、供应链与运营管理。",
+        "solutions": [
+          "物联网集成",
+          "供应链管理",
+          "质量控制系统",
+          "生产数据分析"
+        ]
+      },
+      {
+        "title": "房地产",
+        "description": "为物业管理、房产经纪及开发商提供技术解决方案。",
+        "solutions": [
+          "物业管理系统",
+          "虚拟看房",
+          "CRM 解决方案",
+          "房源平台"
+        ]
+      },
+      {
+        "title": "零售",
+        "description": "全渠道零售解决方案，提升客户体验与运营效率。",
+        "solutions": [
+          "POS 系统",
+          "库存追踪",
+          "客户忠诚度计划",
+          "销售分析"
+        ]
+      },
+      {
+        "title": "物流与运输",
+        "description": "为运输公司、货运代理及配送服务提供智能物流解决方案。",
+        "solutions": [
+          "车队管理",
+          "路线优化",
+          "追踪系统",
+          "仓储管理"
+        ]
+      }
+    ]
+  },
+  "notFound": {
+    "oops": "哎呀！",
+    "title": "页面未找到！",
+    "description": "抱歉，您访问的页面不存在。"
+  },
+  "terms": {
+    "title": "条款与条件",
+    "lastUpdated": "最后更新：2025年12月22日",
+    "intro1": "本条款与条件（\"条款\"）规范您对由 Rope Tech Group（\"公司\"、\"我们\"或\"我方\"）运营的网站（\"网站\"）的访问与使用。",
+    "intro2": "访问或使用本网站即表示您同意受本条款约束。若您不同意，请勿使用本网站。",
+    "websiteUseTitle": "网站使用",
+    "websiteUseText": "本网站用于提供有关 Rope Tech Group 所提供的绳索高空作业、检测、维护及相关服务的一般信息。您同意在使用本网站时遵守加拿大所有适用的联邦、省级及市级法律。",
+    "noAdviceTitle": "非专业或安全建议",
+    "noAdviceText": "本网站内容不构成工程、法律或安全建议。所有项目在执行任何工作前均需进行现场专项评估、安全工作规划及正式协议。",
+    "disclaimerTitle": "绳索高空作业与安全免责声明",
+    "disclaimerText": "Rope Tech Group 提供的所有绳索高空作业服务均须进行现场专项风险评估、经批准的工作方法，并符合适用的安全标准，包括但不限于 IRATA、SPRAT、CSA 及省级职业健康与安全法规。",
+    "clientsResponsible": "客户须负责：",
+    "clientsBullets": [
+      "提供安全且合法的工作现场进入条件。",
+      "确保结构构件及锚点的适用性（除非书面另有约定）。",
+      "披露已知危害、限制或环境条件。"
+    ],
+    "suspendText": "若条件被认为不安全，Rope Tech Group 保留暂停或拒绝作业的权利。",
+    "estimatesTitle": "估算、报价与工作范围",
+    "estimatesText": "本网站显示的任何价格、时间表或服务描述仅供一般参考，不构成具有约束力的要约。",
+    "finalPricing": "最终定价与工作范围取决于：",
+    "finalPricingBullets": [
+      "现场勘查",
+      "高空作业条件",
+      "天气与环境因素",
+      "不可预见或隐蔽条件"
+    ],
+    "bindingText": "仅 Rope Tech Group 出具的书面报价或合同具有约束力。",
+    "ipTitle": "知识产权",
+    "ipText": "网站所有内容，包括文字、图片、标识、图形及设计元素，均为 Rope Tech Group 或其许可方的专有财产，受加拿大知识产权法保护。",
+    "thirdPartyTitle": "第三方链接",
+    "thirdPartyText": "本网站可能包含指向第三方网站的链接以方便访问。Rope Tech Group 不控制或认可这些网站，对其内容或做法不承担责任。访问第三方网站风险自负。",
+    "liabilityTitle": "责任限制",
+    "liabilityText": "在加拿大法律允许的最大范围内，Rope Tech Group 不对因您使用或依赖本网站或其内容而产生的任何损害承担责任，包括间接或后果性损失。",
+    "availabilityTitle": "网站可用性",
+    "availabilityText": "Rope Tech Group 不保证网站不间断访问，并可能随时修改或停止网站内容，恕不另行通知。",
+    "terminationTitle": "终止",
+    "terminationText": "若违反本条款或出于任何合法原因，我们保留自行决定限制或终止网站访问的权利，恕不另行通知。",
+    "governingTitle": "适用法律",
+    "governingText": "本条款受加拿大及不列颠哥伦比亚省法律管辖并依其解释，不适用法律冲突规则。",
+    "changesTitle": "条款变更",
+    "changesText": "Rope Tech Group 可随时更新本条款。变更将发布在本页面并更新修订日期。继续使用本网站即表示接受修订后的条款。",
+    "contactTitle": "联系信息",
+    "contactText": "如对本条款与条件有疑问，请联系：",
+    "contactCompany": "Rope Tech Group",
+    "contactEmail": "邮箱：info@ropetechgroup.com",
+    "contactWebsite": "Website: www.ropetechgroup.ca"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2025年12月22日",
+    "intro1": "Rope Tech Group（\"我们\"或\"我方\"）运营本网站（\"网站\"）。本隐私政策说明您访问或与我们的网站互动时，我们如何收集、使用、存储及保护个人信息。",
+    "intro2": "使用本网站即表示您同意按照本隐私政策收集和使用信息。",
+    "collectTitle": "我们收集的信息",
+    "collectIntro": "当您使用本网站或联系我们时，我们可能收集您自愿提供的个人信息，包括但不限于：",
+    "collectBullets": [
+      "姓名",
+      "电子邮箱地址",
+      "电话号码",
+      "公司名称",
+      "您通过联系或咨询表单提交的任何信息"
+    ],
+    "useTitle": "我们如何使用您的信息",
+    "useIntro": "Rope Tech Group 收集的个人信息可能用于：",
+    "useBullets": [
+      "回复咨询或请求",
+      "就我们的服务进行沟通",
+      "提供报价或项目相关信息",
+      "改进我们的网站与客户体验",
+      "遵守法律或监管要求"
+    ],
+    "logTitle": "日志数据",
+    "logText": "当您访问本网站时，浏览器或托管服务可能会自动收集某些信息。这可能包括 IP 地址、浏览器类型与版本、访问页面、访问日期与时间，以及在页面上停留的时间。这些信息仅用于网站分析与性能监控。",
+    "cookiesTitle": "Cookie",
+    "cookiesText": "Cookie 是存储在您设备上的小型数据文件，用于改善网站功能与用户体验。Rope Tech Group 可能使用 Cookie 分析网站流量并了解用户互动。您可通过浏览器设置禁用 Cookie，但禁用后部分网站功能可能无法正常使用。",
+    "thirdPartyTitle": "第三方服务提供商",
+    "thirdPartyText": "我们可能使用值得信赖的第三方服务提供商来支持网站功能、分析或通信服务。这些提供商仅在履行服务所需时访问个人信息，并有合同义务保护您的信息且不得滥用。",
+    "securityTitle": "数据安全",
+    "securityText": "我们采取合理的管理、技术与物理措施，保护个人信息免遭未经授权的访问、丢失、滥用或披露。然而，无法保证通过互联网传输或电子存储的方法完全安全。",
+    "externalTitle": "外部网站链接",
+    "externalText": "我们的网站可能包含指向非 Rope Tech Group 运营的外部网站的链接。我们不对第三方网站的内容、隐私做法或政策负责。我们建议您查阅所访问外部网站的隐私政策。",
+    "childrenTitle": "儿童隐私",
+    "childrenText": "本网站不面向 18 岁以下人士。我们不会故意收集 18 岁以下儿童的个人信息。若我们发现已收集此类信息，将立即删除。",
+    "legalTitle": "法律披露",
+    "legalText": "当加拿大适用法律、法规、法院命令或其他法律程序要求时，我们可能披露个人信息。",
+    "changesTitle": "隐私政策变更",
+    "changesText": "Rope Tech Group 可能不时更新本隐私政策。任何变更将发布在本页面并更新\"最后更新\"日期。变更发布后继续使用本网站即表示接受更新后的隐私政策。",
+    "contactTitle": "联系信息",
+    "contactText": "如对本隐私政策或个人信息处理方式有任何疑问，请联系我们：",
+    "contactCompany": "Rope Tech Group",
+    "contactEmail": "邮箱：info@ropetechgroup.com",
+    "contactWebsite": "Website: www.ropetechgroup.ca"
+  },
+  "seo": {
+    "homeTitle": "首页",
+    "homeDesc": "在加拿大提供专业的绳索高空作业与工业服务。IRATA 认证技术人员负责建筑维护、检测及专项高空作业解决方案，服务温哥华及更广地区。",
+    "homeKeywords": "绳索高空作业, 工业服务, 建筑维护, IRATA 认证, 温哥华, 加拿大, 外墙修复, 防水, 检测",
+    "aboutTitle": "关于我们",
+    "aboutDesc": "了解 Rope Tech Group——温哥华值得信赖的绳索高空作业专家。专业团队、安全优先的方法，以及在加拿大工业与建筑服务领域的可靠业绩。",
+    "aboutKeywords": "关于 Rope Tech Group, 绳索高空作业公司, 温哥华专家, IRATA 团队, 工业高空作业专家, 安全记录",
+    "servicesTitle": "我们的服务",
+    "servicesDesc": "全面的绳索高空作业服务，包括工业检测、建筑维护、外墙修复、防水及专项高空作业解决方案。IRATA 认证专业人员服务温哥华及加拿大各地。",
+    "servicesKeywords": "绳索高空作业服务, 工业检测, 建筑维护, 外墙修复, 防水服务, IRATA 认证, 温哥华服务",
+    "industriesTitle": "我们服务的行业",
+    "industriesDesc": "Rope Tech Group 为多元行业提供专项绳索高空作业解决方案，涵盖石油天然气、建筑、采矿、基础设施及商业建筑，服务加拿大各地。",
+    "industriesKeywords": "绳索高空作业行业, 石油天然气服务, 建筑高空作业, 采矿绳索高空作业, 基础设施维护, 商业建筑服务",
+    "projectsTitle": "我们的项目",
+    "projectsDesc": "浏览我们在温哥华及加拿大各地完成的绳索高空作业项目作品集。从高层建筑到工业设施——见证我们的专业能力。",
+    "projectsKeywords": "绳索高空作业项目, 温哥华项目, 建筑维护作品集, 工业高空作业, 已完成项目, 案例研究",
+    "contactTitle": "联系我们",
+    "contactDesc": "联系 Rope Tech Group，获取温哥华及加拿大各地的专业绳索高空作业服务。为您的工业或建筑项目申请报价或咨询。",
+    "contactKeywords": "联系绳索高空作业, 温哥华绳索高空作业, 获取报价, 咨询, 绳索高空作业咨询, 工业服务联系",
+    "careersTitle": "招聘",
+    "careersDesc": "加入 Rope Tech Group 团队。我们正在寻找技术娴熟的 IRATA 认证绳索高空作业技术人员及专业人士，加入我们在温哥华及加拿大各地不断壮大的团队。",
+    "careersKeywords": "绳索高空作业工作, IRATA 招聘, 温哥华工作, 绳索高空作业技术员职位, 加拿大工业工作, 建筑维护职业",
+    "termsTitle": "条款与条件",
+    "termsDesc": "使用 Rope Tech Group 服务的条款与条件。查阅我们的服务协议、使用条款及法律政策。",
+    "termsKeywords": "条款与条件, 服务协议, 使用条款, Rope Tech Group 条款, 法律政策",
+    "privacyTitle": "隐私政策",
+    "privacyDesc": "Rope Tech Group 隐私政策。了解您使用我们的服务时，我们如何收集、使用及保护您的个人信息。",
+    "privacyKeywords": "隐私政策, 数据保护, 个人信息, Rope Tech Group 政策",
+    "notFoundTitle": "页面未找到",
+    "notFoundDesc": "您访问的页面无法找到。返回 Rope Tech Group 首页，了解我们的绳索高空作业服务。",
+    "notFoundKeywords": "404, 页面未找到, Rope Tech Group"
+  }
+}

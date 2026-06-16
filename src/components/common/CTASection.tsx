@@ -1,8 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import { useContactModal } from "@/contexts/ContactModalContext";
+import { useTranslation } from "react-i18next";
 
 export const CTASection = ({ option }: { option?: number }) => {
   const { openModal } = useContactModal();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -15,17 +17,17 @@ export const CTASection = ({ option }: { option?: number }) => {
               >
                 {option === 2 ? (
                   <>
-                    Ready to Work <br /> With Us?
+                    {t("cta.readyLine1")} <br /> {t("cta.readyLine2")}
                   </>
                 ) : (
                   <>
-                    Let’s Discuss Your <br /> Project
+                    {t("cta.discussLine1")} <br /> {t("cta.discussLine2")}
                   </>
                 )}
               </span>
               <div className="flex justify-end w-full">
                 <button
-                  aria-label="Navigate to contact form"
+                  aria-label={t("aria.contactForm")}
                   className="h-20 w-20 lg:w-[58px] lg:h-[58px] rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors flex-shrink-0 ml-6"
                 >
                   <ArrowRight className="text-white w-6 h-6" />

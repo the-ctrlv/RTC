@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useParams, Navigate } from "react-router-dom";
+import { toLocalizedPath } from "@/components/LocaleLink";
 import { ArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -11,11 +11,55 @@ import { Accordion } from "@/components/ui/Accordion/Accordion";
 import { AccordionItem } from "@/components/ui/Accordion/AccordionItem";
 import { CTASection } from "@/components/common/CTASection";
 import SEO from "@/components/SEO";
+import { useTranslation } from "react-i18next";
+
+const SLUG_TO_KEY: Record<string, "industrial" | "building"> = {
+  "industrial-services": "industrial",
+  "building-services": "building",
+};
+
+const SERVICE_IMAGES: Record<string, { hero: string; what: string; images: string[] }> = {
+  industrial: {
+    hero: "/home/services.jpg",
+    what: "/home/industrial-service.jpg",
+    images: [
+      "/slider/industrial/1.jpg",
+      "/slider/industrial/2.jpg",
+      "/slider/industrial/3.jpg",
+      "/slider/industrial/4.jpg",
+      "/slider/industrial/5.jpg",
+      "/slider/industrial/6.jpg",
+    ],
+  },
+  building: {
+    hero: "/home/building-services2.jpg",
+    what: "/home/building-service.jpg",
+    images: [
+      "/slider/building/1.jpg",
+      "/slider/building/2.jpg",
+      "/slider/building/3.jpg",
+      "/slider/building/4.jpg",
+      "/slider/building/5.jpg",
+      "/slider/building/6.jpg",
+      "/slider/building/7.jpg",
+      "/slider/building/8.jpg",
+      "/slider/building/9.jpg",
+      "/slider/building/10.jpg",
+      "/slider/building/11.jpg",
+      "/slider/building/12.jpg",
+      "/slider/building/13.jpg",
+      "/slider/building/14.jpg",
+      "/slider/building/15.jpg",
+      "/slider/building/16.jpg",
+    ],
+  },
+};
 
 const ServiceDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug, lang } = useParams<{ slug: string; lang: string }>();
   const swiperRef = useRef<SwiperType | null>(null);
   const { openModal } = useContactModal();
+  const { t } = useTranslation();
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -23,242 +67,52 @@ const ServiceDetail = () => {
     setOpenIndex((prev) => (prev === index ? null : index));
   };
 
-  // Service data configuration
-  const servicesData: Record<string, any> = {
-    "industrial-services": {
-      title: "Industrial Services",
-      seo: {
-        description:
-          "Professional industrial rope access services across Canada. IRATA-certified technicians for inspections, maintenance, and specialized operations. Safe, efficient, and cost-effective solutions.",
-        keywords:
-          "industrial rope access, IRATA certified, industrial inspections, maintenance services, rope access Canada, industrial access solutions",
-      },
-      hero: {
-        title: "Industrial Services",
-        image: "/home/services.jpg",
-      },
-      whatIsWork: {
-        title: "Industrial Rope Access Services",
-        description:
-          "Many industrial facilities have areas that are difficult or impossible to reach using conventional access methods. Rope access provides a safe, efficient, and cost-effective solution for inspections, repairs, and maintenance where scaffolding or lifts are impractical. <br /><br /> Our certified rope access technicians complete work faster, reduce site disruption, and lower overall project costs while maintaining the highest safety standards.",
-        image: "/home/industrial-service.jpg",
-      },
-      keyServices: {
-        title: "Key Rope Access Services We Provide",
-        services: [
-          {
-            title: "Access, Safety & Fall Protection",
-            content:
-              "Certified access and fall protection solutions for complex and high-risk industrial environments.",
-            bullets: [
-              "Engineered access platforms and certified fall protection systems",
-              "Confined space entry services (work execution and safety standby)",
-              "Safety netting, bird control, and debris containment systems",
-              "Rockfall protection systems, mesh, and stabilization installations",
-            ],
-          },
-          {
-            title: "Inspections, Maintenance & Reliability",
-            content:
-              "Inspection, maintenance, and reliability services supporting long-term asset performance.",
-            bullets: [
-              "Structural inspections, testing, and condition assessments",
-              "Mechanical and electrical inspections, repairs, and installations",
-              "Equipment maintenance and reliability services",
-              "Corrosion protection, surface preparation, and industrial coatings",
-              "Thermal insulation, acoustic control, and heat-loss protection",
-              "Sealing, waterproofing, and joint systems",
-            ],
-          },
-          {
-            title: "Specialized & High-Risk Operations",
-            content:
-              "Specialized rope access operations for shutdowns, emergency response, and heavy-duty industrial work.",
-            bullets: [
-              "Shutdowns and Turnarounds (TAR) support",
-              "Emergency response and technical rope rescue",
-              "Rigging, lifting, and load handling operations",
-              "Structural steel repairs, on-site welding, and fabrication support",
-              "Rock scaling, slope stabilization, and loose rock removal",
-            ],
-          },
-        ],
-      },
-      realConditions: {
-        title: "Our Work in Real Conditions",
-        images: [
-          "/slider/industrial/1.jpg",
-          "/slider/industrial/2.jpg",
-          "/slider/industrial/3.jpg",
-          "/slider/industrial/4.jpg",
-          "/slider/industrial/5.jpg",
-          "/slider/industrial/6.jpg",
-        ],
-      },
-      whyChoose: {
-        title:
-          "Why Choose <br /> Rope Tech Group <br /> for Industrial Services?",
-        reasons: [
-          "IRATA-certified rope access technicians",
-          "Zero-accident safety record",
-          "Fast mobilisation and flexible scheduling",
-          "Cost-effective solutions",
-          "Proven experience across complex industrial sites",
-          "Fully insured and compliant with all regulations",
-          "Strong quality control and documentation standards",
-        ],
-        cta: "Let's Discuss Your Project",
-        description:
-          "Rope Tech Group delivers safe, efficient, and compliant rope access solutions performed by highly trained IRATA technicians. We work with precision, provide consistent results, and tailor each project to the specific challenges of your site.",
-      },
-      faq: {
-        title: "Frequently Asked Questions",
-        questions: [
-          {
-            question: "What is rope access?",
-            answer:
-              "Rope Tech Group delivers safe, efficient, and compliant rope access solutions performed by highly trained IRATA technicians. We work with precision, provide consistent results, and tailor each project to the specific challenges of your site.",
-          },
-          {
-            question: "Is rope access safe?",
-            answer:
-              "Yes, rope access is statistically one of the safest methods of working at height when performed by certified professionals following industry standards.",
-          },
-          {
-            question: "What certifications do your technicians have?",
-            answer:
-              "All our technicians are IRATA-certified and undergo regular training to maintain the highest safety standards.",
-          },
-        ],
-      },
-    },
-    "building-services": {
-      title: "Building Services",
-      seo: {
-        description:
-          "Expert building maintenance and repair services in Vancouver and across Canada. Specialized in waterproofing, concrete repairs, facade restoration, and building envelope solutions.",
-        keywords:
-          "building maintenance, waterproofing services, concrete repairs, facade restoration, building envelope, rope access building services, Vancouver",
-      },
-      hero: {
-        title: "Building Services",
-        image: "/home/building-services2.jpg",
-      },
-      whatIsWork: {
-        title: "Building & <br /> Commercial Services",
-        description:
-          "We provide professional building maintenance and repair services to protect structural integrity and prevent water damage. Our work includes concrete repairs, crack injection, waterproofing, and exterior maintenance.<br /><br />Using efficient access methods, including rope access when required, we deliver reliable, high-quality results with minimal disruption to building operations.",
-        image: "/home/building-service.jpg",
-      },
-      keyServices: {
-        title: "Key Rope Access Services We Provide",
-        services: [
-          {
-            title: "Access, Safety & Fall Protection",
-            content:
-              "Safe access and fall protection systems supporting façade inspections, maintenance, and repair work on buildings of all heights.",
-            bullets: [
-              "Building envelope inspections, assessments, and condition reports",
-              "Façade inspections and access support for engineers and consultants",
-              "Engineering assistance, technical support, and constructability input",
-              "Fall protection and permanent lifeline system installations",
-              "Bird deterrent and debris netting systems",
-            ],
-          },
-          {
-            title: "Envelope Inspections & Maintenance",
-            content:
-              "Preventative inspections and maintenance to protect building envelopes and extend lifespan.",
-            bullets: [
-              "Water ingress investigations and leak diagnostics",
-              "Sealant removal and replacement for windows, expansion joints, and control joints, including window system fish tank installation",
-              "Planned preventative maintenance (PPM) for building envelopes",
-              "Thermal and air barrier repairs and upgrades",
-              "Heat trace system installation, inspection, and maintenance",
-            ],
-          },
-          {
-            title: "Envelope Restoration & Repairs",
-            content:
-              "Building envelope restoration and repairs to prevent water intrusion and structural damage.",
-            bullets: [
-              "Waterproofing systems for façades, podiums, balconies, and roofs",
-              "Concrete repairs, crack injection, spall repairs, and restoration",
-              "Protective coatings and elastomeric membrane applications",
-              "Window, glazing, and curtain wall repairs and replacements",
-              "Flashing installation and repairs at façade and roof interfaces",
-              "Cladding system inspections, repairs, and installations",
-              "Balcony repairs, traffic coatings, and guardrail systems",
-              "Exterior insulation and finish system (EIFS) repairs",
-              "Exterior painting, surface preparation, and façade cleaning",
-            ],
-          },
-        ],
-      },
-      realConditions: {
-        title: "Our Work in Real Conditions",
-        images: [
-          "/slider/building/1.jpg",
-          "/slider/building/2.jpg",
-          "/slider/building/3.jpg",
-          "/slider/building/4.jpg",
-          "/slider/building/5.jpg",
-          "/slider/building/6.jpg",
-          "/slider/building/7.jpg",
-          "/slider/building/8.jpg",
-          "/slider/building/9.jpg",
-          "/slider/building/10.jpg",
-          "/slider/building/11.jpg",
-          "/slider/building/12.jpg",
-          "/slider/building/13.jpg",
-          "/slider/building/14.jpg",
-          "/slider/building/15.jpg",
-          "/slider/building/16.jpg",
-        ],
-      },
-      whyChoose: {
-        title: "Why Choose <br /> Rope Tech Group <br />for Building Services?",
-        reasons: [
-          "Certified building specialists",
-          "Comprehensive service portfolio",
-          "Quality workmanship guaranteed",
-          "Timely project delivery",
-          "Competitive pricing",
-          "Full insurance coverage",
-        ],
-        cta: "Let's Discuss Your Project",
-        description:
-          "Rope Tech Group delivers safe, efficient, and compliant rope access solutions performed by highly trained IRATA technicians. We work with precision, provide consistent results, and tailor each project to the specific challenges of your site.",
-      },
-      faq: {
-        title: "Frequently Asked Questions",
-        questions: [
-          {
-            question: "What types of buildings do you service?",
-            answer:
-              "We service all types of buildings including residential high-rises, commercial properties, and industrial facilities.",
-          },
-          {
-            question: "How long does a typical project take?",
-            answer:
-              "Project duration varies based on scope and complexity. We provide detailed timelines during the consultation phase.",
-          },
-          {
-            question: "Do you provide warranties on your work?",
-            answer:
-              "Yes, we provide comprehensive warranties on all our services. Specific terms depend on the type of work performed.",
-          },
-        ],
-      },
-    },
-  };
+  const key = slug ? SLUG_TO_KEY[slug] : undefined;
 
   // If slug doesn't exist or is invalid, redirect to services page
-  if (!slug || !servicesData[slug]) {
-    return <Navigate to="/services" replace />;
+  if (!key) {
+    return <Navigate to={toLocalizedPath(lang, "/services")} replace />;
   }
 
-  const service = servicesData[slug];
+  const base = `serviceDetail.${key}`;
+  const media = SERVICE_IMAGES[key];
+
+  const buildBullets = (n: number): string[] =>
+    (t(`${base}.service${n}Bullets`, { returnObjects: true }) as string[]) ?? [];
+
+  const service = {
+    title: t(`${base}.title`),
+    seo: {
+      description: t(`${base}.seoDescription`),
+      keywords: t(`${base}.seoKeywords`),
+    },
+    hero: {
+      title: t(`${base}.heroTitle`),
+      image: media.hero,
+    },
+    whatIsWork: {
+      title: t(`${base}.whatTitle`),
+      description: t(`${base}.whatDescription`),
+      image: media.what,
+    },
+    keyServices: {
+      title: t(`${base}.keyServicesTitle`),
+      services: [1, 2, 3].map((n) => ({
+        title: t(`${base}.service${n}Title`),
+        content: t(`${base}.service${n}Content`),
+        bullets: buildBullets(n),
+      })),
+    },
+    realConditions: {
+      title: t(`${base}.realConditionsTitle`),
+      images: media.images,
+    },
+    whyChoose: {
+      title: t(`${base}.whyChooseTitle`),
+      reasons: (t(`${base}.reasons`, { returnObjects: true }) as string[]) ?? [],
+      description: t(`${base}.whyChooseDescription`),
+    },
+  };
 
   return (
     <div className="min-h-screen">
@@ -294,7 +148,7 @@ const ServiceDetail = () => {
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20 items-start">
             <div className="flex flex-col">
               <span className="text-[#A5B716] font-bold uppercase text-[16px] mb-[18px]">
-                Service Overview
+                {t("serviceDetail.serviceOverview")}
               </span>
               <h2
                 className="text-[34px] lg:text-5xl font-bold text-gray-900 mb-[32px]"
@@ -354,7 +208,7 @@ const ServiceDetail = () => {
             </svg> */}
             <div className="flex flex-col gap-8 items-start z-10">
               <span className="text-[#A5B716] font-bold uppercase">
-                Our Services
+                {t("serviceDetail.ourServices")}
               </span>
               <h2 className="text-3xl lg:text-5xl font-bold text-white">
                 {service.keyServices.title}
@@ -368,17 +222,13 @@ const ServiceDetail = () => {
                 onClick={openModal}
                 className="hidden lg:flex items-center justify-between gap-[10px] bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-6"
               >
-                Discuss your project with us
+                {t("serviceDetail.discussCta")}
                 <img src="/home/arrow_diagonal.svg" alt="Arrow icon" />
               </Button>
             </div>
             <Accordion>
               {service.keyServices.services.map(
-                (service: {
-                  title: string;
-                  content: string | undefined;
-                  bullets: string[];
-                }) => {
+                (service: { title: string; content: string | undefined; bullets: string[] }) => {
                   return (
                     <AccordionItem
                       dark
@@ -391,25 +241,21 @@ const ServiceDetail = () => {
                       <ul className="list-none space-y-3 text-white">
                         {service.bullets.map((bullet: string, idx: number) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <img
-                              src="/green_check.svg"
-                              alt="Checkmark icon"
-                              className="w-5 h-5"
-                            />
+                            <img src="/green_check.svg" alt="Checkmark icon" className="w-5 h-5" />
                             <p className="font-semibold">{bullet}</p>
                           </li>
                         ))}
                       </ul>
                     </AccordionItem>
                   );
-                }
+                },
               )}
             </Accordion>
             <Button
               onClick={openModal}
               className="flex lg:hidden bg-[#D9F043] hover:bg-[#D9F043] text-gray-800 rounded-md p-5"
             >
-              Discuss your project with us
+              {t("serviceDetail.discussCta")}
               <img src="/home/arrow_diagonal.svg" alt="Arrow icon" />
             </Button>
           </div>
@@ -420,7 +266,7 @@ const ServiceDetail = () => {
       <section className="py-16 lg:py-24 bg-white">
         <div>
           <div className="text-center">
-            <span className="text-[#A5B716] font-bold uppercase">Our Work</span>
+            <span className="text-[#A5B716] font-bold uppercase">{t("serviceDetail.ourWork")}</span>
             <h2 className="text-[34px] lg:text-[48px] font-bold text-gray-900 mt-4 mb-12 text-center">
               {service.realConditions.title}
             </h2>
@@ -455,33 +301,26 @@ const ServiceDetail = () => {
                     if (index === swiper.activeIndex) {
                       slide.style.transform = "scale(1)";
                       slide.style.opacity = "1";
-                      slide.style.transition =
-                        "transform 0.3s ease, opacity 0.5s ease";
+                      slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
                     } else {
                       slide.style.transform = "scale(0.85)";
                       slide.style.opacity = "0.5";
-                      slide.style.transition =
-                        "transform 0.3s ease, opacity 0.5s ease";
+                      slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
                     }
                   });
                 }}
               >
-                {service.realConditions.images.map(
-                  (image: string, index: number) => (
-                    <SwiperSlide key={index} className="max-w-[320px]">
-                      <div
-                        key={index}
-                        className="relative overflow-hidden rounded-3xl aspect-[4/5]"
-                      >
-                        <img
-                          src={image}
-                          alt={`Completed rope access project showcasing ${service.title.toLowerCase()} work`}
-                          className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300 object-[0px_-70px]"
-                        />
-                      </div>
-                    </SwiperSlide>
-                  )
-                )}
+                {service.realConditions.images.map((image: string, index: number) => (
+                  <SwiperSlide key={index} className="max-w-[320px]">
+                    <div key={index} className="relative overflow-hidden rounded-3xl aspect-[4/5]">
+                      <img
+                        src={image}
+                        alt={`Completed rope access project showcasing ${service.title.toLowerCase()} work`}
+                        className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300 object-[0px_-70px]"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
 
@@ -500,8 +339,7 @@ const ServiceDetail = () => {
                 pagination={{
                   clickable: true,
                   bulletClass: "swiper-pagination-bullet !bg-white/40",
-                  bulletActiveClass:
-                    "swiper-pagination-bullet-active !bg-brand-lime",
+                  bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
                 }}
                 className="!pb-12"
                 onSlideChange={(swiper) => {
@@ -522,30 +360,26 @@ const ServiceDetail = () => {
                     if (index === swiper.activeIndex) {
                       slide.style.transform = "scale(1)";
                       slide.style.opacity = "1";
-                      slide.style.transition =
-                        "transform 0.3s ease, opacity 0.5s ease";
+                      slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
                     } else {
                       slide.style.transform = "scale(0.85)";
                       slide.style.opacity = "0.5";
-                      slide.style.transition =
-                        "transform 0.3s ease, opacity 0.5s ease";
+                      slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
                     }
                   });
                 }}
               >
-                {service.realConditions.images.map(
-                  (image: string, index: number) => (
-                    <SwiperSlide key={index} className="max-w-[720px]">
-                      <div className="relative overflow-hidden rounded-3xl aspect-[3/3] min-h-[450px]">
-                        <img
-                          src={image}
-                          alt={`Completed rope access project showcasing ${service.title.toLowerCase()} work`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </SwiperSlide>
-                  )
-                )}
+                {service.realConditions.images.map((image: string, index: number) => (
+                  <SwiperSlide key={index} className="max-w-[720px]">
+                    <div className="relative overflow-hidden rounded-3xl aspect-[3/3] min-h-[450px]">
+                      <img
+                        src={image}
+                        alt={`Completed rope access project showcasing ${service.title.toLowerCase()} work`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
               </Swiper>
 
               {/* NAVIGATION */}
@@ -606,7 +440,7 @@ const ServiceDetail = () => {
           <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center gap-10 lg:gap-16">
             <div className="flex flex-col gap-[18px] items-start">
               <span className="text-[#A5B716] font-bold uppercase">
-                Why choose us
+                {t("serviceDetail.whyChooseUs")}
               </span>
               <h2
                 className="text-3xl lg:text-5xl font-bold text-gray-900"
@@ -616,35 +450,33 @@ const ServiceDetail = () => {
             </div>
             <div className="bg-white px-6 py-7 lg:px-10 lg:py-11 rounded-3xl">
               <h3 className="text-xl font-bold text-gray-900 mb-6">
-                What sets us apart:
+                {t("serviceDetail.whatSetsUsApart")}
               </h3>
               <ul className="space-y-4">
-                {service.whyChoose.reasons.map(
-                  (reason: string, index: number) => (
-                    <li key={index} className="flex items-start gap-3">
-                      {/* FIXED ICON WRAPPER */}
-                      <span className="flex-shrink-0 w-4 h-4 mt-1">
-                        <svg
-                          viewBox="0 0 16 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-full h-full"
-                        >
-                          <path
-                            d="M14.5833 1.25L5.41667 10.4167L1.25 6.25"
-                            stroke="#A5B716"
-                            strokeWidth="2.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </span>
+                {service.whyChoose.reasons.map((reason: string, index: number) => (
+                  <li key={index} className="flex items-start gap-3">
+                    {/* FIXED ICON WRAPPER */}
+                    <span className="flex-shrink-0 w-4 h-4 mt-1">
+                      <svg
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-full h-full"
+                      >
+                        <path
+                          d="M14.5833 1.25L5.41667 10.4167L1.25 6.25"
+                          stroke="#A5B716"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
 
-                      {/* TEXT */}
-                      <span className="leading-snug text-lg">{reason}</span>
-                    </li>
-                  )
-                )}
+                    {/* TEXT */}
+                    <span className="leading-snug text-lg">{reason}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

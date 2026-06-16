@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 type FormData = {
   name: string;
@@ -8,6 +9,7 @@ type FormData = {
 };
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -49,14 +51,14 @@ const ContactSection = () => {
           form_location: "contact_section",
         });
 
-        alert("Thank you! Your message has been sent.");
+        alert(t("form.successMessage"));
         reset();
       } else {
-        alert("An error occurred. Please try again.");
+        alert(t("form.errorMessage"));
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred while sending. Please try again.");
+      alert(t("form.errorSending"));
     }
   };
 
@@ -68,16 +70,16 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="bg-brand-gray py-6">
             <h2 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
-              CONTACT US
+              {t("contactSection.label")}
             </h2>
             <h3 className="text-3xl font-bold mb-8 text-gray-900">
-              Get in Touch
+              {t("contactSection.title")}
             </h3>
 
             <div className="space-y-6">
               <div>
                 <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
-                  EMAIL
+                  {t("contactSection.email")}
                 </h4>
                 <a
                   href="mailto:info@ropetechgroup.com"
@@ -89,7 +91,7 @@ const ContactSection = () => {
 
               <div>
                 <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
-                  PHONE
+                  {t("contactSection.phone")}
                 </h4>
                 <div className="text-gray-900 text-sm">
                   <a
@@ -112,10 +114,10 @@ const ContactSection = () => {
 
               <div>
                 <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
-                  LOCATION
+                  {t("contactSection.location")}
                 </h4>
                 <p className="text-gray-900 text-sm">
-                  142B W 8th Ave,Vancouver, BC V6H 1E1
+                  {t("contactSection.locationValue")}
                 </p>
               </div>
 
@@ -193,7 +195,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="bg-white p-6 rounded-2xl shadow-sm">
             <h4 className="text-2xl font-bold mb-6 text-gray-900">
-              Fill Out the Form
+              {t("form.fillOutForm")}
             </h4>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
               <div>
@@ -201,13 +203,13 @@ const ContactSection = () => {
                   htmlFor="name-mobile"
                   className="block text-sm font-medium text-gray-900 mb-2"
                 >
-                  Your name
+                  {t("form.yourName")}
                 </label>
                 <input
                   type="text"
                   id="name-mobile"
-                  {...register("name", { required: "Name is required" })}
-                  placeholder="Enter your name"
+                  {...register("name", { required: t("form.nameRequired") })}
+                  placeholder={t("form.namePlaceholder")}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all bg-white text-sm"
                 />
                 {errors.name && (
@@ -222,13 +224,13 @@ const ContactSection = () => {
                   htmlFor="email-mobile"
                   className="block text-sm font-medium text-gray-900 mb-2"
                 >
-                  Your e-mail
+                  {t("form.yourEmail")}
                 </label>
                 <input
                   type="email"
                   id="email-mobile"
-                  {...register("email", { required: "Email is required" })}
-                  placeholder="olivia@untitledui.com"
+                  {...register("email", { required: t("form.emailRequired") })}
+                  placeholder={t("form.emailPlaceholder")}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all bg-white text-sm"
                 />
                 {errors.email && (
@@ -243,12 +245,12 @@ const ContactSection = () => {
                   htmlFor="message-mobile"
                   className="block text-sm font-medium text-gray-900 mb-2"
                 >
-                  Message
+                  {t("form.message")}
                 </label>
                 <textarea
                   id="message-mobile"
                   {...register("message")}
-                  placeholder="Type something..."
+                  placeholder={t("form.messagePlaceholder")}
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all resize-none bg-white text-sm"
                 />
@@ -258,7 +260,7 @@ const ContactSection = () => {
                 type="submit"
                 className="w-full bg-[#d3f143] hover:bg-[#d3f143]/90 text-gray-900 font-semibold py-5 text-base rounded-lg"
               >
-                Send
+                {t("common.send")}
               </Button>
             </form>
           </div>
@@ -269,16 +271,16 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div>
             <h3 className="text-lime3 font-bold mb-4 uppercase text-base tracking-wider">
-              CONTACT US
+              {t("contactSection.label")}
             </h3>
             <h2 className="text-[48px] font-bold mb-14 text-gray-900">
-              Get in Touch
+              {t("contactSection.title")}
             </h2>
 
             <div className="space-y-8">
               <div>
                 <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
-                  EMAIL
+                  {t("contactSection.email")}
                 </h4>
                 <a
                   href="mailto:info@ropetechgroup.com"
@@ -290,7 +292,7 @@ const ContactSection = () => {
 
               <div>
                 <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
-                  PHONE
+                  {t("contactSection.phone")}
                 </h4>
                 <div className="text-gray-900 text-base">
                   <a
@@ -313,10 +315,10 @@ const ContactSection = () => {
 
               <div>
                 <h4 className="text-[#a5b715] font-bold mb-2 uppercase text-base tracking-wider">
-                  LOCATION
+                  {t("contactSection.location")}
                 </h4>
                 <p className="text-base text-black font-bold">
-                  142B W 8th Ave,Vancouver, BC V6H 1E1
+                  {t("contactSection.locationValue")}
                 </p>
               </div>
 
@@ -394,7 +396,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="p-12 bg-white rounded-[40px]">
             <h4 className="text-[36px] font-bold mb-8 text-gray-900">
-              Fill Out the Form
+              {t("form.fillOutForm")}
             </h4>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
@@ -402,13 +404,13 @@ const ContactSection = () => {
                   htmlFor="name-desktop"
                   className="block text-base font-semibold mb-2"
                 >
-                  Your name
+                  {t("form.yourName")}
                 </label>
                 <input
                   type="text"
                   id="name-desktop"
-                  {...register("name", { required: "Name is required" })}
-                  placeholder="Enter your name"
+                  {...register("name", { required: t("form.nameRequired") })}
+                  placeholder={t("form.namePlaceholder")}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all bg-white"
                 />
                 {errors.name && (
@@ -423,13 +425,13 @@ const ContactSection = () => {
                   htmlFor="email-desktop"
                   className="block text-base font-semibold mb-2"
                 >
-                  Your e-mail
+                  {t("form.yourEmail")}
                 </label>
                 <input
                   type="email"
                   id="email-desktop"
-                  {...register("email", { required: "Email is required" })}
-                  placeholder="olivia@untitledui.com"
+                  {...register("email", { required: t("form.emailRequired") })}
+                  placeholder={t("form.emailPlaceholder")}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all bg-white"
                 />
                 {errors.email && (
@@ -444,12 +446,12 @@ const ContactSection = () => {
                   htmlFor="message-desktop"
                   className="block text-base font-semibold mb-2"
                 >
-                  Message
+                  {t("form.message")}
                 </label>
                 <textarea
                   id="message-desktop"
                   {...register("message")}
-                  placeholder="Type something..."
+                  placeholder={t("form.messagePlaceholder")}
                   rows={2}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-lime3 focus:border-transparent outline-none transition-all resize-none bg-white"
                 />
@@ -459,7 +461,7 @@ const ContactSection = () => {
                 type="submit"
                 className="w-full bg-[#d9f143] hover:bg-[#d9f143]/90 text-gray-900 font-semibold py-6 text-base"
               >
-                Send
+                {t("common.send")}
               </Button>
             </form>
           </div>

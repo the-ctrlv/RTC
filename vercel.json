@@ -1,3 +1,14 @@
 {
+  "redirects": [
+    { "source": "/about", "destination": "/en/about", "permanent": true },
+    { "source": "/services", "destination": "/en/services", "permanent": true },
+    { "source": "/services/:slug", "destination": "/en/services/:slug", "permanent": true },
+    { "source": "/industries", "destination": "/en/industries", "permanent": true },
+    { "source": "/projects", "destination": "/en/projects", "permanent": true },
+    { "source": "/careers", "destination": "/en/careers", "permanent": true },
+    { "source": "/contact", "destination": "/en/contact", "permanent": true },
+    { "source": "/terms", "destination": "/en/terms", "permanent": true },
+    { "source": "/privacy", "destination": "/en/privacy", "permanent": true }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }

@@ -11,164 +11,83 @@ import missonIcon from "../../public/about-us/mission.svg";
 import purposeIcon from "../../public/about-us/purpose.svg";
 import visionIcon from "../../public/about-us/vision.svg";
 import { CTASection } from "@/components/common/CTASection";
+import { useTranslation, Trans } from "react-i18next";
+import { ABOUT_GALLERY_IDS, useProjects } from "@/lib/projects";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+  const companyName = t("common.companyName");
   const stats = [
-    { value: "95%", label: "SUCCESSFUL PROJECTS" },
-    { value: "500+", label: "Completed Jobs" },
-    { value: "15+", label: "YEARS EXPERIENCE" },
-    { value: "100%", label: "SAFETY FOCUS" },
+    { value: t("aboutPage.stat1Value"), label: t("aboutPage.stat1Label") },
+    { value: t("aboutPage.stat2Value"), label: t("aboutPage.stat2Label") },
+    { value: t("aboutPage.stat3Value"), label: t("aboutPage.stat3Label") },
+    { value: t("aboutPage.stat4Value"), label: t("aboutPage.stat4Label") },
   ];
 
   const principles = [
     {
-      title: "Mission",
-      description:
-        "To deliver precise, reliable rope access solutions that solve complex challenges efficiently.",
+      title: t("aboutPage.missionTitle"),
+      description: t("aboutPage.missionDesc"),
       icon: missonIcon,
     },
     {
-      title: "Vision",
-      description:
-        "To be a trusted long-term partner for high-rise and industrial maintenance projects.",
+      title: t("aboutPage.visionTitle"),
+      description: t("aboutPage.visionDesc"),
       icon: purposeIcon,
     },
     {
-      title: "Purpose",
-      description:
-        "To help clients extend the life of their assets through smart, well-executed access solutions.",
+      title: t("aboutPage.purposeTitle"),
+      description: t("aboutPage.purposeDesc"),
       icon: visionIcon,
     },
   ];
 
-  const certifications = [
-    "IRATA-certified rope access technicians",
-    "Regular safety and skills training",
-    "Full equipment inspection, logging, and maintenance",
-    "Site-specific risk assessments and rescue planning",
-    "Compliance with regional workplace and industry regulations",
-  ];
+  const certifications = (t("aboutPage.certifications", { returnObjects: true }) as string[]) ?? [];
 
-  const projects = [
-    {
-      image: "/slider/building/1.jpg",
-      title: "Cardero",
-    },
-    {
-      image: "/slider/building/2.jpg",
-      title: "Jim Pattison Toyota",
-    },
-    {
-      image: "/slider/building/3.jpg",
-      title: "400 West Georgia",
-    },
-    {
-      image: "/slider/building/4.jpg",
-      title: "Keltic Place",
-    },
-    {
-      image: "/slider/building/5.jpg",
-      title: "Park Towers",
-    },
-    {
-      image: "/slider/building/6.jpg",
-      title: "Business Center, Langley",
-    },
-    {
-      image: "/slider/building/7.jpg",
-      title: "Bayshore Gardens",
-    },
-    {
-      image: "/slider/building/8.jpg",
-      title: "401 W Georgia Street",
-    },
-    {
-      image: "/slider/building/9.jpg",
-      title: "The Grande",
-    },
-    {
-      image: "/slider/building/10.jpg",
-      title: "River Green",
-    },
-    {
-      image: "/slider/building/11.jpg",
-      title: "Four Seasons Resort",
-    },
-    {
-      image: "/slider/building/12.jpg",
-      title: "Soleil",
-    },
-    {
-      image: "/slider/building/13.jpg",
-      title: "The Erickson",
-    },
-    {
-      image: "/slider/building/14.jpg",
-      title: "The Douglas",
-    },
-    {
-      image: "/slider/building/15.jpg",
-      title: "Woodwards",
-    },
-    {
-      image: "/slider/building/16.jpg",
-      title: "Vancouver House",
-    },
-    {
-      image: "/slider/industrial/2.jpg",
-      title: "Teck Resources",
-    },
-    {
-      image: "/slider/industrial/3.jpg",
-      title: "Woodfibre LNG",
-    },
-    {
-      image: "/slider/industrial/4.jpg",
-      title: "Imperial Oil",
-    },
-    {
-      image: "/slider/industrial/5.jpg",
-      title: "Suncor Energy",
-    },
-    {
-      image: "/slider/industrial/6.jpg",
-      title: "Syncrude Canada",
-    },
-  ];
+  const projects = useProjects(ABOUT_GALLERY_IDS).map((project) => ({
+    image: project.galleryImage ?? project.image,
+    title: project.title,
+    id: project.id,
+  }));
 
   return (
     <div className="min-h-screen">
       <SEO
-        title="About Us"
-        description="Learn about Rope Tech Group - Vancouver's trusted rope access specialists. Expert team, safety-first approach, and proven track record in industrial and building services across Canada."
-        keywords="about Rope Tech Group, rope access company, Vancouver specialists, IRATA team, industrial access experts, safety record"
+        title={t("seo.aboutTitle")}
+        description={t("seo.aboutDesc")}
+        keywords={t("seo.aboutKeywords")}
       />
       {/* Hero Section */}
       <section className="relative bg-cover bg-[position:15%] lg:bg-center bg-[url('/about-us/hero.jpg')]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-end lg:items-center pb-20 lg:pb-0 min-h-[40vh] lg:min-h-[70vh]">
           {/* <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between h-full gap-8"> */}
-          <div className="max-w-2xl">
-            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
-              About
-              <br />
-              Rope Tech Group
+          <div className="max-w-2xl text-start lg:-translate-y-[30px]">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-start">
+              <Trans
+                i18nKey="aboutPage.heroTitle"
+                values={{ companyName }}
+                components={{
+                  br: <br />,
+                  ltr: <span dir="ltr" className="inline-block" />,
+                }}
+              />
             </h1>
           </div>
-          <div className="absolute bottom-[7vh] right-0">
+          <div className="absolute bottom-[7vh] end-0 flex flex-col items-end rtl:items-start">
             <div className="xl:flex items-center gap-2 mb-6 hidden">
               <span className="text-white text-base font-medium">
-                Company Details
+                {t("aboutPage.companyDetails")}
               </span>
               <img
                 src="/about-us/arrow_down_right.svg"
                 alt="Decorative arrow icon"
-                className="w-5"
+                className="w-5 rtl:-scale-x-100"
               />
             </div>
 
             <div className="xl:flex flex-col sm:flex-row gap-4 hidden">
               {/* Business Hours Card */}
-              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 min-w-[260px]">
+              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 w-[260px] shrink-0">
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-brand-dark"
@@ -185,18 +104,14 @@ const AboutUs = () => {
                     />
                   </svg>
                 </div>
-                <div className="text-white text-[16px] mb-2">
-                  Business Hours
-                </div>
-                <div className="text-white font-semibold text-lg">
-                  Mon–Fri,
-                  <br />
-                  8:00 AM – 6:00 PM
+                <div className="text-white text-[16px] mb-2">{t("aboutPage.businessHours")}</div>
+                <div className="text-white font-semibold text-lg leading-snug">
+                  {t("aboutPage.businessHoursValue")}
                 </div>
               </div>
 
               {/* Location Card */}
-              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 min-w-[260px]">
+              <div className="backdrop-blur-xl rounded-[40px] p-6 border border-white bg-black/10 w-[260px] shrink-0">
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-brand-dark"
@@ -218,11 +133,9 @@ const AboutUs = () => {
                     />
                   </svg>
                 </div>
-                <div className="text-white text-[16px] mb-2">Location</div>
-                <div className="text-white font-semibold text-lg">
-                  1428 W 8th Ave,
-                  <br />
-                  Vancouver, BC V6H 1E1
+                <div className="text-white text-[16px] mb-2">{t("aboutPage.location")}</div>
+                <div className="text-white font-semibold text-lg leading-snug" dir="ltr">
+                  {t("aboutPage.locationValue")}
                 </div>
               </div>
             </div>
@@ -235,20 +148,11 @@ const AboutUs = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
             <div className="flex justify-between w-full flex-col xl:flex-row">
               <h2 className="text-[#a5b715] font-bold mb-[24px] lg:mb-0 uppercase text-[16px] tracking-wider">
-                ABOUT US
+                {t("aboutPage.aboutLabel")}
               </h2>
               <div className="max-w-[872px]">
-                <p className="text-[#292929] text-[16px] lg:text-[24px] font-semibold leading-relaxed">
-                  Since 2013, Rope Tech Group has provided professional rope
-                  access and high-rise maintenance services across British
-                  Columbia. Based in Vancouver, we work on residential,
-                  commercial, industrial, and infrastructure projects.
-                  <br />
-                  <br />
-                  Our certified technicians specialize in façade maintenance,
-                  concrete repairs, waterproofing, glazing, inspections, bridge
-                  work, industrial facilities, rock scaling, and support
-                  services for the oil and gas sector.
+                <p className="text-[#292929] text-[16px] lg:text-[24px] font-semibold leading-relaxed whitespace-pre-line">
+                  {t("aboutPage.aboutText", { companyName })}
                 </p>
                 <img
                   src="/home/decoration_line_wide.svg"
@@ -300,19 +204,13 @@ const AboutUs = () => {
       <section className="py-[80px] lg:py-[140px] bg-brand-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-14">
           <h2 className="text-[#a5b715] font-bold mb-6 uppercase text-[16px] tracking-wider">
-            OUR APPROACH
+            {t("aboutPage.approachLabel")}
           </h2>
           <div className="flex flex-col gap-6 lg:grid lg:gap-16 lg:grid-cols-2">
             <h3 className="text-4xl lg:text-5xl font-bold text-white mb-0 lg:mb-16">
-              The Principles
-              <br />
-              Behind Our Work
+              {t("aboutPage.approachTitle")}
             </h3>
-            <p className="text-white text-[18px]">
-              We focus on safety, efficiency, and minimal disruption, using
-              proven rope access techniques to deliver reliable results at
-              height and in hard-to-reach locations.
-            </p>
+            <p className="text-white text-[18px]">{t("aboutPage.approachDescription")}</p>
           </div>
           <img
             src="/home/decoration_line_wide.svg"
@@ -326,12 +224,8 @@ const AboutUs = () => {
                 <div className="w-12 h-12 rounded-full bg-brand-lime flex items-center justify-center mb-14">
                   <img src={principle.icon} alt={`${principle.title} icon`} />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-4">
-                  {principle.title}
-                </h4>
-                <p className="text-white leading-relaxed font-normal">
-                  {principle.description}
-                </p>
+                <h4 className="text-xl font-bold text-white mb-4">{principle.title}</h4>
+                <p className="text-white leading-relaxed font-normal">{principle.description}</p>
               </div>
             ))}
           </div>
@@ -349,23 +243,19 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider">
-                OUR SAFETY STANDARDS
+                {t("aboutPage.safetyLabel")}
               </h2>
               <h3 className="text-[34px] lg:text-6xl font-bold text-gray-900 mb-6">
-                Safety &<br />
-                Certifications
+                {t("aboutPage.safetyTitle")}
               </h3>
               <p className="text-gray-700 leading-relaxed text-[18px]">
-                Safety is the foundation of every project we take on. Our team
-                works in accordance with internationally recognized rope access
-                standards and follows established safety procedures on every
-                site.
+                {t("aboutPage.safetyDescription")}
               </p>
             </div>
 
             <div className="bg-white px-6 py-7 lg:px-10 lg:py-11 rounded-3xl">
               <h4 className="text-xl font-bold text-gray-900 mb-6">
-                What sets us apart:
+                {t("serviceDetail.whatSetsUsApart")}
               </h4>
 
               <ul className="space-y-4">
@@ -377,9 +267,7 @@ const AboutUs = () => {
                     </span>
 
                     {/* TEXT */}
-                    <span className="text-[#404040] leading-snug font-medium">
-                      {cert}
-                    </span>
+                    <span className="text-[#404040] leading-snug font-medium">{cert}</span>
                   </li>
                 ))}
               </ul>
@@ -394,10 +282,10 @@ const AboutUs = () => {
       {/* Our Work Section - Dark */}
       <section className="py-[80px] lg:py-[140px] bg-brand-dark relative overflow-hidden">
         <h2 className="text-[#a5b715] font-bold mb-3 uppercase text-[16px] tracking-wider text-center">
-          OUR WORK
+          {t("aboutPage.workLabel")}
         </h2>
         <h3 className="text-[34px] lg:text-[48px] font-bold text-white text-center mb-12 lg:mb-16">
-          Our Work in Real Conditions
+          {t("aboutPage.workTitle")}
         </h3>
 
         {/* ================= MOBILE ================= */}
@@ -410,8 +298,7 @@ const AboutUs = () => {
             pagination={{
               clickable: true,
               bulletClass: "swiper-pagination-bullet !bg-white/40",
-              bulletActiveClass:
-                "swiper-pagination-bullet-active !bg-brand-lime",
+              bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
             }}
             onSlideChange={(swiper) => {
               const slides = swiper.slides;
@@ -431,23 +318,21 @@ const AboutUs = () => {
                 if (index === swiper.activeIndex) {
                   slide.style.transform = "scale(1)";
                   slide.style.opacity = "1";
-                  slide.style.transition =
-                    "transform 0.3s ease, opacity 0.5s ease";
+                  slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
                 } else {
                   slide.style.transform = "scale(0.85)";
                   slide.style.opacity = "0.5";
-                  slide.style.transition =
-                    "transform 0.3s ease, opacity 0.5s ease";
+                  slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
                 }
               });
             }}
           >
-            {projects.map((project, index) => (
-              <SwiperSlide key={index} className="!w-[80vw] max-w-[320px]">
+            {projects.map((project) => (
+              <SwiperSlide key={project.id} className="!w-[80vw] max-w-[320px]">
                 <div className="relative overflow-hidden rounded-2xl aspect-[9/14]">
                   <img
                     src={project.image}
-                    alt={`${project.title} - completed rope access project showcasing our work`}
+                    alt={t("aria.galleryProjectAlt", { title: project.title })}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -471,8 +356,7 @@ const AboutUs = () => {
             pagination={{
               clickable: true,
               bulletClass: "swiper-pagination-bullet !bg-white/40",
-              bulletActiveClass:
-                "swiper-pagination-bullet-active !bg-brand-lime",
+              bulletActiveClass: "swiper-pagination-bullet-active !bg-brand-lime",
             }}
             onSlideChange={(swiper) => {
               const slides = swiper.slides;
@@ -492,23 +376,21 @@ const AboutUs = () => {
                 if (index === swiper.activeIndex) {
                   slide.style.transform = "scale(1)";
                   slide.style.opacity = "1";
-                  slide.style.transition =
-                    "transform 0.3s ease, opacity 0.5s ease";
+                  slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
                 } else {
                   slide.style.transform = "scale(0.85)";
                   slide.style.opacity = "0.5";
-                  slide.style.transition =
-                    "transform 0.3s ease, opacity 0.5s ease";
+                  slide.style.transition = "transform 0.3s ease, opacity 0.5s ease";
                 }
               });
             }}
           >
-            {projects.map((project, index) => (
-              <SwiperSlide key={index} className="max-w-[720px]">
+            {projects.map((project) => (
+              <SwiperSlide key={project.id} className="max-w-[720px]">
                 <div className="relative overflow-hidden rounded-3xl aspect-[3/3] min-h-[450px]">
                   <img
                     src={project.image}
-                    alt={`${project.title} - completed rope access project showcasing our work`}
+                    alt={t("aria.galleryProjectAlt", { title: project.title })}
                     className="w-full h-full object-cover"
                   />
                 </div>

@@ -1,22 +1,22 @@
+import { useTranslation } from "react-i18next";
+
 const BenefitsSection = () => {
+  const { t } = useTranslation();
   const benefits = [
     {
       icon: "expertise.svg",
-      title: "Expertise",
-      description:
-        "Our team consists of trained and certified rope access technicians with hands-on experience in industrial and building environments.",
+      title: t("benefits.expertiseTitle"),
+      description: t("benefits.expertiseDesc"),
     },
     {
       icon: "quality.svg",
-      title: "Quality",
-      description:
-        "We maintain the highest safety and performance standards, delivering reliable results backed by award-winning expertise.",
+      title: t("benefits.qualityTitle"),
+      description: t("benefits.qualityDesc"),
     },
     {
       icon: "bar.svg",
-      title: "Cost-effectiveness",
-      description:
-        "We can lower project costs by over 50% compared to traditional techniques without compromising quality or safety.",
+      title: t("benefits.costTitle"),
+      description: t("benefits.costDesc"),
     },
   ];
 
@@ -28,19 +28,17 @@ const BenefitsSection = () => {
             {/* Left Column - Title */}
             <div>
               <h2 className="text-[#c3d533] font-bold mb-5 uppercase text-base tracking-wider">
-                WHY CHOOSE US
+                {t("benefits.label")}
               </h2>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                Key Benefits of Working With Us
+                {t("benefits.title")}
               </h3>
             </div>
 
             {/* Right Column - Description */}
             <div className="flex items-center">
               <p className="text-white text-lg sm:text-lg leading-relaxed lg:mt-12">
-                We focus on delivering precise, reliable results in complex
-                environments—through clear communication, strong planning, and
-                execution you can trust.
+                {t("benefits.description")}
               </p>
             </div>
             <img
