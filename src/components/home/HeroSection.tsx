@@ -2,9 +2,11 @@ import LocaleLink from "@/components/LocaleLink";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useZhTypography } from "@/lib/i18nHelpers";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const zh = useZhTypography();
   const expertiseCards = [
     {
       title: t("hero.cardServicesTitle"),
@@ -81,7 +83,11 @@ const HeroSection = () => {
           <div className="flex gap-6 w-full">
             {expertiseCards.map((card, index) => (
               <LocaleLink key={index} to={card.link}>
-                <div className="group relative backdrop-blur-lg py-8 px-7 rounded-r-[25px] rounded-l-[10px] cursor-pointer text-white overflow-hidden w-[343px] h-[172px] bg-white/10 transition-all">
+                <div
+                  className={`group relative backdrop-blur-lg py-8 px-7 rounded-r-[25px] rounded-l-[10px] cursor-pointer text-white w-[343px] bg-white/10 transition-all ${
+                    zh.isZh ? "min-h-[210px]" : "h-[172px] overflow-hidden"
+                  }`}
+                >
                   <div className="absolute bg-[#c3d533] h-full w-2 left-0 top-0 z-10" />
                   <div className="flex items-center justify-between mb-10">
                     <h3 className="text-white text-xl font-semibold">
@@ -91,7 +97,7 @@ const HeroSection = () => {
                       <ArrowRight className="w-5 h-5 text-black -rotate-45" />
                     </div>
                   </div>
-                  <p className="text-white/90 text-sm leading-relaxed">
+                  <p className={`text-white/90 text-sm leading-relaxed ${zh.body}`}>
                     {card.description}
                   </p>
                 </div>
